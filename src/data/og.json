@@ -1,0 +1,13 @@
+{
+ "accent": "#3C3B6E",
+ "symbol": "VIN",
+ "variants": [
+  {
+   "file": "og-en.png",
+   "title": "Free VIN decoder,\nno paid report",
+   "subtitle": "Specs · recalls · crash ratings · mpg",
+   "badge": "NHTSA vPIC · Recalls · NCAP · EPA",
+   "brand": "US VIN Decoder"
+  }
+ ]
+}

@@ -1,0 +1,385 @@
+{
+ "_doc": "Marques et modèles publiés. rcl = noms exacts du fichier de rappels NHTSA (MAKETXT / MODELTXT) ; epa = make/baseModel de fueleconomy.gov ; ncap = make/model de l'API SafetyRatings.",
+ "brands": [
+  {
+   "slug": "ford",
+   "name": "Ford",
+   "rcl": [
+    "FORD"
+   ],
+   "epa": "Ford",
+   "parent": "Ford Motor Company"
+  },
+  {
+   "slug": "chevrolet",
+   "name": "Chevrolet",
+   "rcl": [
+    "CHEVROLET"
+   ],
+   "epa": "Chevrolet",
+   "parent": "General Motors"
+  },
+  {
+   "slug": "toyota",
+   "name": "Toyota",
+   "rcl": [
+    "TOYOTA"
+   ],
+   "epa": "Toyota",
+   "parent": "Toyota Motor North America"
+  },
+  {
+   "slug": "honda",
+   "name": "Honda",
+   "rcl": [
+    "HONDA"
+   ],
+   "epa": "Honda",
+   "parent": "American Honda Motor Co."
+  },
+  {
+   "slug": "nissan",
+   "name": "Nissan",
+   "rcl": [
+    "NISSAN"
+   ],
+   "epa": "Nissan",
+   "parent": "Nissan North America"
+  },
+  {
+   "slug": "jeep",
+   "name": "Jeep",
+   "rcl": [
+    "JEEP"
+   ],
+   "epa": "Jeep",
+   "parent": "FCA US (Stellantis)"
+  },
+  {
+   "slug": "ram",
+   "name": "Ram",
+   "rcl": [
+    "RAM"
+   ],
+   "epa": "Ram",
+   "parent": "FCA US (Stellantis)"
+  },
+  {
+   "slug": "gmc",
+   "name": "GMC",
+   "rcl": [
+    "GMC"
+   ],
+   "epa": "GMC",
+   "parent": "General Motors"
+  },
+  {
+   "slug": "hyundai",
+   "name": "Hyundai",
+   "rcl": [
+    "HYUNDAI"
+   ],
+   "epa": "Hyundai",
+   "parent": "Hyundai Motor America"
+  },
+  {
+   "slug": "kia",
+   "name": "Kia",
+   "rcl": [
+    "KIA"
+   ],
+   "epa": "Kia",
+   "parent": "Kia America"
+  },
+  {
+   "slug": "subaru",
+   "name": "Subaru",
+   "rcl": [
+    "SUBARU"
+   ],
+   "epa": "Subaru",
+   "parent": "Subaru of America"
+  },
+  {
+   "slug": "tesla",
+   "name": "Tesla",
+   "rcl": [
+    "TESLA"
+   ],
+   "epa": "Tesla",
+   "parent": "Tesla, Inc."
+  },
+  {
+   "slug": "dodge",
+   "name": "Dodge",
+   "rcl": [
+    "DODGE"
+   ],
+   "epa": "Dodge",
+   "parent": "FCA US (Stellantis)"
+  },
+  {
+   "slug": "bmw",
+   "name": "BMW",
+   "rcl": [
+    "BMW"
+   ],
+   "epa": "BMW",
+   "parent": "BMW of North America"
+  },
+  {
+   "slug": "mercedes-benz",
+   "name": "Mercedes-Benz",
+   "rcl": [
+    "MERCEDES-BENZ"
+   ],
+   "epa": "Mercedes-Benz",
+   "parent": "Mercedes-Benz USA"
+  },
+  {
+   "slug": "volkswagen",
+   "name": "Volkswagen",
+   "rcl": [
+    "VOLKSWAGEN"
+   ],
+   "epa": "Volkswagen",
+   "parent": "Volkswagen Group of America"
+  },
+  {
+   "slug": "mazda",
+   "name": "Mazda",
+   "rcl": [
+    "MAZDA"
+   ],
+   "epa": "Mazda",
+   "parent": "Mazda North American Operations"
+  },
+  {
+   "slug": "chrysler",
+   "name": "Chrysler",
+   "rcl": [
+    "CHRYSLER"
+   ],
+   "epa": "Chrysler",
+   "parent": "FCA US (Stellantis)"
+  }
+ ],
+ "models": [
+  {
+   "slug": "f-150",
+   "brand": "ford",
+   "name": "F-150",
+   "rcl": [
+    "F-150",
+    "F-150 HYBRID",
+    "F-150 LIGHTNING BEV"
+   ],
+   "epa": [
+    "F150",
+    "F-150 Lightning"
+   ],
+   "ncap": "F-150"
+  },
+  {
+   "slug": "explorer",
+   "brand": "ford",
+   "name": "Explorer",
+   "rcl": [
+    "EXPLORER",
+    "EXPLORER HYBRID",
+    "EXPLORER PHEV"
+   ],
+   "epa": [
+    "Explorer"
+   ],
+   "ncap": "EXPLORER"
+  },
+  {
+   "slug": "escape",
+   "brand": "ford",
+   "name": "Escape",
+   "rcl": [
+    "ESCAPE",
+    "ESCAPE HYBRID",
+    "ESCAPE PHEV"
+   ],
+   "epa": [
+    "Escape"
+   ],
+   "ncap": "ESCAPE"
+  },
+  {
+   "slug": "silverado-1500",
+   "brand": "chevrolet",
+   "name": "Silverado 1500",
+   "rcl": [
+    "SILVERADO 1500"
+   ],
+   "epa": [
+    "Silverado"
+   ],
+   "ncap": "SILVERADO 1500"
+  },
+  {
+   "slug": "equinox",
+   "brand": "chevrolet",
+   "name": "Equinox",
+   "rcl": [
+    "EQUINOX"
+   ],
+   "epa": [
+    "Equinox"
+   ],
+   "ncap": "EQUINOX"
+  },
+  {
+   "slug": "rav4",
+   "brand": "toyota",
+   "name": "RAV4",
+   "rcl": [
+    "RAV4",
+    "RAV4 HYBRID",
+    "RAV4 PRIME",
+    "RAV4 PLUG-IN HYBRID"
+   ],
+   "epa": [
+    "RAV4",
+    "RAV4 Prime"
+   ],
+   "ncap": "RAV4"
+  },
+  {
+   "slug": "camry",
+   "brand": "toyota",
+   "name": "Camry",
+   "rcl": [
+    "CAMRY",
+    "CAMRY HYBRID"
+   ],
+   "epa": [
+    "Camry"
+   ],
+   "ncap": "CAMRY"
+  },
+  {
+   "slug": "tacoma",
+   "brand": "toyota",
+   "name": "Tacoma",
+   "rcl": [
+    "TACOMA",
+    "TACOMA HYBRID"
+   ],
+   "epa": [
+    "Tacoma"
+   ],
+   "ncap": "TACOMA"
+  },
+  {
+   "slug": "cr-v",
+   "brand": "honda",
+   "name": "CR-V",
+   "rcl": [
+    "CR-V",
+    "CR-V HYBRID"
+   ],
+   "epa": [
+    "CR-V"
+   ],
+   "ncap": "CR-V"
+  },
+  {
+   "slug": "civic",
+   "brand": "honda",
+   "name": "Civic",
+   "rcl": [
+    "CIVIC",
+    "CIVIC HATCHBACK",
+    "CIVIC HYBRID",
+    "CIVIC HATCHBACK HYBRID",
+    "CIVIC TYPE R"
+   ],
+   "epa": [
+    "Civic"
+   ],
+   "ncap": "CIVIC"
+  },
+  {
+   "slug": "accord",
+   "brand": "honda",
+   "name": "Accord",
+   "rcl": [
+    "ACCORD",
+    "ACCORD HYBRID"
+   ],
+   "epa": [
+    "Accord"
+   ],
+   "ncap": "ACCORD"
+  },
+  {
+   "slug": "1500",
+   "brand": "ram",
+   "name": "Ram 1500",
+   "rcl": [
+    "1500"
+   ],
+   "epa": [
+    "1500"
+   ],
+   "ncap": "1500"
+  },
+  {
+   "slug": "grand-cherokee",
+   "brand": "jeep",
+   "name": "Grand Cherokee",
+   "rcl": [
+    "GRAND CHEROKEE",
+    "GRAND CHEROKEE 4XE",
+    "GRAND CHEROKEE L"
+   ],
+   "epa": [
+    "Grand Cherokee"
+   ],
+   "ncap": "GRAND CHEROKEE"
+  },
+  {
+   "slug": "rogue",
+   "brand": "nissan",
+   "name": "Rogue",
+   "rcl": [
+    "ROGUE",
+    "ROGUE HYBRID"
+   ],
+   "epa": [
+    "Rogue"
+   ],
+   "ncap": "ROGUE"
+  },
+  {
+   "slug": "model-y",
+   "brand": "tesla",
+   "name": "Model Y",
+   "rcl": [
+    "MODEL Y"
+   ],
+   "epa": [
+    "Model Y"
+   ],
+   "ncap": "MODEL Y"
+  },
+  {
+   "slug": "tucson",
+   "brand": "hyundai",
+   "name": "Tucson",
+   "rcl": [
+    "TUCSON",
+    "TUCSON HYBRID",
+    "TUCSON PLUG-IN HYBRID"
+   ],
+   "epa": [
+    "Tucson"
+   ],
+   "ncap": "TUCSON"
+  }
+ ]
+}

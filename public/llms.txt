@@ -1,0 +1,14 @@
+# US VIN Decoder
+
+> Free VIN decoder for vehicles sold in the United States. It reads a 17-character VIN with the federal rules of 49 CFR Part 565, then queries NHTSA vPIC (factory record), the NHTSA Recalls API (campaigns for the model year), NHTSA NCAP (crash ratings) and fueleconomy.gov (EPA mpg and fuel cost) directly from the browser. No account, no paid report. Published by Radif Partners, independent, not affiliated with any agency.
+
+## Tools
+- [VIN decoder](https://usvindecoder.com/en/): specs, recalls, NCAP stars and EPA mpg from one VIN
+- [Recall check](https://usvindecoder.com/en/recall-check/): NHTSA campaigns by year, make and model
+- [Crash test ratings](https://usvindecoder.com/en/crash-test-ratings/): NCAP stars for every rated version
+- [MPG by VIN](https://usvindecoder.com/en/mpg-by-vin/): EPA ratings and yearly fuel cost
+- [Recalls by brand](https://usvindecoder.com/en/recalls/): 18 brands and 16 models, from NHTSA's recall file, rebuilt weekly
+
+## Data
+- NHTSA recall flat file FLAT_RCL_POST_2010, read weekly; definitions on https://usvindecoder.com/en/method/
+- Limits: a VIN decode does not give title brands, accidents or odometer history (see NMVTIS, vehiclehistory.bja.ojp.gov)

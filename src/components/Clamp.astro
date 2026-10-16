@@ -1,0 +1,22 @@
+---
+/**
+ * Paragraphe de réponse replié sur trois lignes (règle « texte replié » du 2026-10-02) : UN seul <p>,
+ * entier dans le HTML servi (les moteurs et check-seo le lisent, RECETTE §21), déplié par une case à
+ * cocher sans JavaScript.
+ */
+interface Props { text: string; id: string; class?: string; more?: string }
+const { text, id, class: cls = '', more = 'Read the full answer' } = Astro.props;
+---
+<div class={`clamp ${cls}`}>
+  <input type="checkbox" id={id} class="clamp-toggle sr-only" />
+  <p class="clamp-text text-navy-800">{text}</p>
+  <label for={id} class="clamp-more">{more}</label>
+</div>
+<style>
+  .clamp-text { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-clamp: 3; overflow: hidden; margin: 0; }
+  .clamp-toggle:checked ~ .clamp-text { display: block; -webkit-line-clamp: unset; line-clamp: unset; }
+  .clamp-more { display: inline-block; margin-top: .35rem; cursor: pointer; font-size: .9rem; font-weight: 600; color: var(--color-accent-700); text-decoration: underline; text-underline-offset: 3px; }
+  .clamp-toggle:checked ~ .clamp-more { display: none; }
+  .clamp-toggle:focus-visible ~ .clamp-more { outline: 2px solid var(--color-accent-500); outline-offset: 2px; }
+  @media print { .clamp-text { display: block; -webkit-line-clamp: unset; } .clamp-more { display: none; } }
+</style>

@@ -1,0 +1,46 @@
+---
+/**
+ * Page outil ou guide : titre, réponse directe (1 à 3 lignes), outil au premier écran (RECETTE §5),
+ * paragraphe citable replié, corps rédigé avec ses mini-simulateurs, FAQ, sources.
+ */
+import PageLayout from '../layouts/PageLayout.astro';
+import Tool from './Tool.astro';
+import Clamp from './Clamp.astro';
+import Body from './Body.astro';
+import { route, ROUTES } from '../i18n/routes';
+import { label } from '../i18n/nav';
+import { t } from '../i18n/ui';
+import { pageById, brandDef, modelDef } from '../lib/pages';
+import { helpers, sourceList } from '../lib/helpers';
+import { meneParSimu } from '../lib/mene-par-simu';
+import { articleSchema, faqSchema, breadcrumbSchema, webPageSchema, webApplicationSchema } from '../lib/seo';
+import type { PageDef } from '../lib/page-types';
+interface Props { page: PageDef }
+const { page } = Astro.props;
+const lang = 'en';
+const ui = t(lang);
+const path = route(page.id, lang);
+const isHome = page.id === 'home';
+const body = page.body(helpers());
+const crumbs = isHome ? [] : [{ name: ui.breadcrumbHome, path: route('home', lang) }, { name: label(page.id), path }];
+const jsonLd = [page.tool ? webApplicationSchema({ name: page.h1, description: page.description, path, lang }) : articleSchema({ title: page.h1, description: page.description, path, lang }), webPageSchema({ name: page.h1, description: page.description, path, lang })];
+if (crumbs.length) jsonLd.push(breadcrumbSchema(crumbs));
+if (page.faqs.length) jsonLd.push(faqSchema(page.faqs, lang));
+const card = (id: string) => pageById(id)?.card ?? (id.startsWith('brand:') ? 'Campaigns by year, components and a model lookup' : id.startsWith('model:') ? 'Every campaign by model year, with ratings and mpg' : '');
+const related = page.related.filter((r) => ROUTES.some((x) => x.id === r)).map((r) => ({ href: route(r, lang), name: label(r), description: card(r) }));
+// Page de lecture (guide) : date en haut seulement si elle ne s'ouvre pas sur un simulateur (RECETTE §8.4).
+const dateEnHaut = !page.tool && !meneParSimu(`${page.intro} ${page.resume}`, body.replace(/<!--mini:[a-z0-9-]+-->/, '<input type="text">'));
+void brandDef; void modelDef;
+---
+<PageLayout title={page.title} description={page.description} lang={lang} jsonLd={jsonLd} faqs={page.faqs} related={related} sources={sourceList(page.sources)} breadcrumbs={isHome ? [] : [{ label: label(page.id) }]} dateEnHaut={dateEnHaut}>
+  <article>
+    <header class="mb-5">
+      <h1 class="font-serif text-3xl font-bold leading-tight text-navy-900 md:text-[2.5rem]">{page.h1}</h1>
+      <p class="mt-2 max-w-none text-lg text-navy-700">{page.intro}</p>
+    </header>
+    {page.tool && <Clamp text={page.resume} id={`clamp-${page.id}`} class="mb-6" />}
+    {page.tool && <Tool kind={page.tool} />}
+    {!page.tool && <Clamp text={page.resume} id={`clamp-${page.id}`} class="mb-8 mt-2" />}
+    <Body html={body} />
+  </article>
+</PageLayout>

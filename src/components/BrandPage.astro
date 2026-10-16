@@ -1,0 +1,69 @@
+---
+/**
+ * Page marque : l'outil de rappels réglé sur la marque (premier écran), la réponse repliée, la prose
+ * écrite pour cette marque, puis les tableaux tirés du fichier officiel des rappels NHTSA.
+ */
+import PageLayout from '../layouts/PageLayout.astro';
+import RecallCheck from './calc/RecallCheck';
+import Clamp from './Clamp.astro';
+import Body from './Body.astro';
+import { route } from '../i18n/routes';
+import { label } from '../i18n/nav';
+import { t } from '../i18n/ui';
+import { brandId, modelId, MODELS, HUB } from '../lib/pages';
+import { helpers, table, sourceList } from '../lib/helpers';
+import { brand, CATALOG, RECALLS, units, n, day, brandRank } from '../lib/data';
+import { webApplicationSchema, webPageSchema, breadcrumbSchema, faqSchema } from '../lib/seo';
+import type { BrandDef } from '../lib/page-types';
+import type { RecallRow } from '../lib/nhtsa';
+interface Props { def: BrandDef }
+const { def } = Astro.props;
+const lang = 'en'; const ui = t(lang);
+const b = brand(def.slug); const cat = CATALOG.brands.find((x) => x.slug === def.slug)!;
+const path = route(brandId(def.slug), lang);
+const jsonLd = [webApplicationSchema({ name: def.h1, description: def.description, path, lang }), webPageSchema({ name: def.h1, description: def.description, path, lang }), breadcrumbSchema([{ name: ui.breadcrumbHome, path: route('home', lang) }, { name: label(HUB), path: route(HUB, lang) }, { name: label(brandId(def.slug)), path }])];
+if (def.faqs.length) jsonLd.push(faqSchema(def.faqs, lang));
+const toRow = (c: any): RecallRow => ({ id: c.id, date: c.date, component: c.components.join(', '), summary: c.summary, consequence: c.consequence, remedy: c.fix, parkIt: c.dnd, parkOutside: c.po, ota: false });
+const modelPages = MODELS.filter((m) => m.brand === def.slug);
+const linkModel = (md: string) => { const m = modelPages.find((x) => CATALOG.models.find((c) => c.slug === x.slug)!.rcl.includes(md)); return m ? `<a href="${route(modelId(m.slug), lang)}">${md}</a>` : md; };
+const years = Object.entries(b.byYear);
+const yearRows = years.map(([y, v]) => [y === '2026' ? '2026 (to date)' : y, n(v.campaigns), units(v.units)]);
+const compRows = b.components.map(([c, k]) => [c, n(k), `${Math.round((k / (b.campaigns10 + b.byYear['2026'].campaigns)) * 100)} %`]);
+const modelRows = b.topModels.map(([m, k]) => [linkModel(m), n(k)]);
+const recent = b.recent.map((c) => [`<span class="font-mono">${c.id}</span>`, day(c.date), c.models.slice(0, 2).join('; ') + (c.models.length > 2 || c.more ? ' and more' : ''), c.component, units(c.units)]);
+const related = [HUB, 'recall-check', ...modelPages.map((m) => modelId(m.slug)), 'do-not-drive-recalls', ...def.related].filter((x, i, a) => a.indexOf(x) === i).slice(0, 6).map((r) => ({ href: route(r, lang), name: label(r), description: r.startsWith('model:') ? 'Every campaign by model year' : r === HUB ? 'All 18 brands compared' : 'Free lookup, no account' }));
+const rank = brandRank(def.slug);
+---
+<PageLayout title={def.title} description={def.description} lang={lang} jsonLd={jsonLd} faqs={def.faqs} related={related} sources={sourceList(['recallfile', 'recalls', 'nhtsarecalls'])} breadcrumbs={[{ label: label(HUB), href: route(HUB, lang) }, { label: cat.name }]}>
+  <article>
+    <header class="mb-5">
+      <h1 class="font-serif text-3xl font-bold leading-tight text-navy-900 md:text-[2.5rem]">{def.h1}</h1>
+      <p class="mt-2 text-lg text-navy-700">{def.intro}</p>
+    </header>
+    <Clamp text={def.resume} id={`clamp-${def.slug}`} class="mb-6" />
+    <div data-outil data-chrome><RecallCheck client:load year={b.default.year} make={cat.rcl[0]} model={b.default.model} modelLabel={b.default.name} rows={b.default.rows.map(toRow)} lastYear={2027} idPrefix={`b-${def.slug}`} /></div>
+    <dl data-chrome class="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+      <div class="border-l-2 border-accent-500 pl-3"><dt class="text-xs text-navy-600">Campaigns 2016-2025</dt><dd class="tabular-nums text-xl font-bold text-navy-900">{n(b.campaigns10)}</dd></div>
+      <div class="border-l-2 border-accent-500 pl-3"><dt class="text-xs text-navy-600">Filed in 2026 so far</dt><dd class="tabular-nums text-xl font-bold text-navy-900">{n(b.byYear['2026'].campaigns)}</dd></div>
+      <div class="border-l-2 border-accent-500 pl-3"><dt class="text-xs text-navy-600">Vehicles covered, 2016-2025</dt><dd class="tabular-nums text-xl font-bold text-navy-900">{units(b.units10)}</dd></div>
+      <div class="border-l-2 border-accent-500 pl-3"><dt class="text-xs text-navy-600">Rank among 18 brands</dt><dd class="tabular-nums text-xl font-bold text-navy-900">{rank}</dd></div>
+    </dl>
+    <Body html={def.body(helpers())} />
+    <section data-chrome class="mt-10 grid gap-8 lg:grid-cols-2">
+      <div>
+        <h2 class="font-serif text-2xl font-bold text-navy-900">{cat.name} campaigns per year</h2>
+        <Fragment set:html={table(['Year received', 'Campaigns', 'Vehicles covered'], yearRows, `Vehicle campaigns naming ${cat.name}, by date NHTSA received the defect report. A campaign shared with a sister brand counts for both.`, ['l', 'r', 'r'])} />
+      </div>
+      <div>
+        <h2 class="font-serif text-2xl font-bold text-navy-900">Systems recalled most often</h2>
+        <Fragment set:html={table(['Component group', 'Campaigns', 'Share'], compRows, 'One campaign can involve several components; 2016 to 2026.', ['l', 'r', 'r'])} />
+        <h3 class="mt-6 font-serif text-xl font-semibold text-navy-900">Models in the most campaigns since 2021</h3>
+        <Fragment set:html={table(['Model (NHTSA name)', 'Campaigns'], modelRows, undefined, ['l', 'r'])} />
+      </div>
+    </section>
+    <section data-chrome class="mt-10">
+      <h2 class="font-serif text-2xl font-bold text-navy-900">Latest {cat.name} campaigns</h2>
+      <Fragment set:html={table(['Campaign', 'Received', 'Vehicles', 'Component', 'Units'], recent, `From NHTSA's recall file dated ${RECALLS.file_date ? day(RECALLS.file_date) : day(RECALLS.retrieved_at)}.`, ['l', 'l', 'l', 'l', 'r'])} />
+    </section>
+  </article>
+</PageLayout>

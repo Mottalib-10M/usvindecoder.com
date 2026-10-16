@@ -1,0 +1,16 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { CONTACT_EMAIL } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { contactPageSchema } from '../../lib/seo';
+const lang = 'en';
+const path = route('contact', lang);
+---
+<PageLayout title="Contact US VIN Decoder: Report a Decoding or Recall Error" description="Contact the publisher of US VIN Decoder to report a decoding error, a missing recall campaign or a broken link. No VIN needed; we answer every message within a week." lang={lang} noindex={true} jsonLd={[contactPageSchema({ name: 'Contact', description: 'Contact the publisher', path, lang })]} breadcrumbs={[{ label: 'Contact' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none prose-headings:font-serif">
+    <h1>Contact</h1>
+    <p>Write to <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Useful messages say which page, which figure, and where you saw a different one: a campaign number such as 24V123000, a model and year, an EPA vehicle. You do not need to send your VIN; if a decode looks wrong, the first eleven characters are enough for us to reproduce it on vPIC.</p>
+    <p>We cannot tell you whether a specific car has an open recall, a clean title or an accident history: those answers belong to the manufacturer, NHTSA's VIN search and NMVTIS providers. We do not sell reports and do not pass messages to dealers.</p>
+    <p>Bloggers, credit unions and car clubs can embed the decoder for free: see the <a href={route('widget', lang)}>widget page</a>. How corrections are handled: <a href={route('editorial', lang)}>editorial policy</a>.</p>
+  </div>
+</PageLayout>

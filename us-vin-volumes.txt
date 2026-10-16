@@ -1,0 +1,13 @@
+# US décodeur VIN, rappels — Keyword Planner « Obtenir le volume », objetech, États-Unis, relevé 2026-10-15
+# (reports/etude-niches-2026-10-15-volumes-KP.txt, ligne A10 : ~1,74 M sur la liste fermée de 27 requêtes).
+# Seules les requêtes dont la fourchette est consignée dans le relevé sont reprises ici (minimum prudent).
+vin decoder
+100 k – 1 M
+vin lookup
+100 k – 1 M
+vin check
+100 k – 1 M
+nhtsa recall lookup
+10 k – 100 k
+free vin check
+10 k – 100 k

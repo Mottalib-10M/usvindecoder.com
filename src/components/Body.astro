@@ -1,0 +1,18 @@
+---
+/** Corps rédigé d'une page : HTML de la page, mini-simulateurs insérés là où le texte les appelle (<!--mini:kind-->). */
+import MiniSim from './calc/MiniSim';
+import { MiniPositions, MiniMatch } from './calc/MiniVin';
+import { route } from '../i18n/routes';
+import { SAMPLE_VIN } from '../lib/initial';
+interface Props { html: string; ctaHref?: string }
+const { html, ctaHref } = Astro.props;
+const parts = html.split(/<!--mini:([a-z0-9-]+)-->/);
+const home = route('home', 'en');
+const target: Record<string, string> = { remedy: route('recall-check', 'en'), odometer: home, rollover: route('crash-test-ratings', 'en'), advisory: route('recall-check', 'en'), airbag: route('recall-check', 'en'), mpgdiff: route('mpg-by-vin', 'en'), yearcode: home };
+---
+<div class="prose prose-slate max-w-none prose-headings:font-serif prose-headings:text-navy-900 prose-a:text-accent-700">
+  {parts.map((p, i) => i % 2 === 0 ? <Fragment set:html={p} />
+    : p === 'positions' ? <MiniPositions client:load initialVin={SAMPLE_VIN.car} href={home} />
+    : p === 'match' ? <MiniMatch client:load a={SAMPLE_VIN.car} b={`${SAMPLE_VIN.car.slice(0, 8)}S${SAMPLE_VIN.car.slice(9)}`} href={home} />
+    : <MiniSim client:load kind={p} href={ctaHref ?? target[p] ?? home} />)}
+</div>

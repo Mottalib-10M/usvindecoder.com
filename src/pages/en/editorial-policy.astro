@@ -1,0 +1,20 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { route } from '../../i18n/routes';
+const lang = 'en';
+---
+<PageLayout title="Editorial Policy of US VIN Decoder: Sources and Corrections" description="How US VIN Decoder chooses its sources, rebuilds its recall tables every week from NHTSA's file, checks figures against the agencies' own tools and corrects errors." lang={lang} noindex={true} breadcrumbs={[{ label: 'Editorial policy' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none prose-headings:font-serif">
+    <h1>Editorial policy</h1>
+    <h2>Sources</h2>
+    <p>Only federal primary sources feed the figures: NHTSA vPIC for VIN decoding, NHTSA's recall file and Recalls API for campaigns, NHTSA's Safety Ratings API for NCAP stars, fueleconomy.gov for EPA ratings and fuel prices, and the Code of Federal Regulations and US Code for the rules the tools apply (49 CFR Parts 565 and 580, 49 U.S.C. 30120). News articles and commercial report sites are never used as a source of a figure.</p>
+    <h2>How figures reach a page</h2>
+    <p>No figure is typed by hand. Scripts in the site's code download the official files, count campaigns, read ratings and fuel economy, and write data files; pages compute every number from those files at build time. A scheduled job repeats this every week and republishes the site, so the counts follow NHTSA's file. Lookups and the decoder query the agencies live from your browser.</p>
+    <h2>Checks</h2>
+    <p>The VIN engine is tested against the federal check digit and model year rules, the fuel cost formula against hand calculations, and the parsers against real API responses kept in the code. Pages are compared with the decoder output on the same vehicles before publication. Every source link is tested.</p>
+    <h2>Corrections</h2>
+    <p>Report an error through the <a href={route('contact', lang)}>contact page</a>. A confirmed error in a rule or a parser is fixed in the code, so every page using it changes at once; a data error from an agency is reported to that agency and noted on the page until it is fixed at the source. Pages are reviewed every twelve months, and whenever a rule changes.</p>
+    <h2>Independence</h2>
+    <p>The site earns nothing from dealers, insurers or report sellers and links to paid services only when no free source exists, as with NMVTIS title reports, without affiliate links. More on the <a href={route('about', lang)}>about page</a> and the <a href={route('method', lang)}>method page</a>.</p>
+  </div>
+</PageLayout>

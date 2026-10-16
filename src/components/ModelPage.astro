@@ -1,0 +1,56 @@
+---
+/** Page modèle : l'outil par année-modèle (premier écran), puis campagnes, notes NCAP et consommation EPA par année. */
+import PageLayout from '../layouts/PageLayout.astro';
+import ModelYearTool, { type YearInfo } from './calc/ModelYearTool';
+import Clamp from './Clamp.astro';
+import Body from './Body.astro';
+import { route } from '../i18n/routes';
+import { label } from '../i18n/nav';
+import { t } from '../i18n/ui';
+import { brandId, modelId, HUB, MODELS } from '../lib/pages';
+import { helpers, table, sourceList } from '../lib/helpers';
+import { model, modelCat, CATALOG, ncapYear, epaYear, n, units, EPA } from '../lib/data';
+import { webApplicationSchema, webPageSchema, breadcrumbSchema, faqSchema } from '../lib/seo';
+import type { ModelDef } from '../lib/page-types';
+import type { RecallRow } from '../lib/nhtsa';
+interface Props { def: ModelDef }
+const { def } = Astro.props;
+const lang = 'en'; const ui = t(lang);
+const m = model(def.slug); const c = modelCat(def.slug); const b = CATALOG.brands.find((x) => x.slug === c.brand)!;
+const path = route(modelId(def.slug), lang);
+const full = c.brand === 'ram' ? c.name : `${b.name} ${c.name}`;
+const jsonLd = [webApplicationSchema({ name: def.h1, description: def.description, path, lang }), webPageSchema({ name: def.h1, description: def.description, path, lang }), breadcrumbSchema([{ name: ui.breadcrumbHome, path: route('home', lang) }, { name: label(HUB), path: route(HUB, lang) }, { name: label(brandId(c.brand)), path: route(brandId(c.brand), lang) }, { name: full, path }])];
+if (def.faqs.length) jsonLd.push(faqSchema(def.faqs, lang));
+const usd = (x: number) => new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(x);
+const mpgTxt = (e: any) => !e ? '' : e.gasMin ? (e.gasMin === e.gasMax ? `${e.gasMin} mpg` : `${e.gasMin}-${e.gasMax} mpg`) : e.combMax ? `${e.combMax} MPGe` : '';
+const yearsList = Object.keys(m.byModelYear).map(Number).filter((y) => y >= 2012 && y <= 2026).reverse();
+const rowFor = (y: number): RecallRow[] => m.list.filter((r) => r.ys!.includes(y)).map((r) => ({ id: r.id, date: r.date, component: r.components.join(', '), summary: r.summary, consequence: '', remedy: '', parkIt: r.dnd, parkOutside: r.po, ota: false }));
+const infos: YearInfo[] = yearsList.map((y) => { const nc = ncapYear(def.slug, y); const e = epaYear(def.slug, y); return { year: y, rows: rowFor(y), ncapBest: nc.best, ncapRated: nc.rated.length, mpg: mpgTxt(e), cost: e && e.costMin ? `EPA label fuel cost ${usd(e.costMin)}${e.costMax && e.costMax !== e.costMin ? ` to ${usd(e.costMax)}` : ''} a year, at the fuel prices fueleconomy.gov uses.` : '' }; });
+const initialYear = yearsList.includes(2022) ? 2022 : yearsList[0];
+const tableRows = yearsList.map((y) => { const nc = ncapYear(def.slug, y); const e = epaYear(def.slug, y); return [String(y), n(m.byModelYear[String(y)] ?? 0), nc.best ? `${nc.best} of 5 (${nc.rated.length} rated)` : 'not rated', mpgTxt(e) || 'n/a']; });
+const comps = m.components.map(([k, v]) => [k, n(v)]);
+const siblings = MODELS.filter((x) => x.brand === c.brand && x.slug !== def.slug).map((x) => modelId(x.slug));
+const related = [brandId(c.brand), ...siblings, 'recall-check', 'crash-test-ratings', 'mpg-by-vin', ...def.related].filter((x, i, a) => a.indexOf(x) === i).slice(0, 6).map((r) => ({ href: route(r, lang), name: label(r), description: r.startsWith('model:') ? 'Campaigns by model year' : r.startsWith('brand:') ? 'The whole brand, year by year' : 'Free lookup, no account' }));
+void units; void EPA;
+---
+<PageLayout title={def.title} description={def.description} lang={lang} jsonLd={jsonLd} faqs={def.faqs} related={related} sources={sourceList(['recallfile', 'ncap', 'epa'])} breadcrumbs={[{ label: label(HUB), href: route(HUB, lang) }, { label: b.name, href: route(brandId(c.brand), lang) }, { label: c.name }]}>
+  <article>
+    <header class="mb-5">
+      <h1 class="font-serif text-3xl font-bold leading-tight text-navy-900 md:text-[2.5rem]">{def.h1}</h1>
+      <p class="mt-2 text-lg text-navy-700">{def.intro}</p>
+    </header>
+    <Clamp text={def.resume} id={`clamp-${def.slug}`} class="mb-6" />
+    <div data-outil data-chrome><ModelYearTool client:load make={b.rcl[0]} apiModels={c.rcl} name={full} years={infos} initialYear={initialYear} idPrefix={`m-${def.slug}`} /></div>
+    <Body html={def.body(helpers())} />
+    <section data-chrome class="mt-10 grid gap-8 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)]">
+      <div>
+        <h2 class="font-serif text-2xl font-bold text-navy-900">{full} by model year</h2>
+        <Fragment set:html={table(['Model year', 'Recall campaigns', 'Best NCAP overall', 'EPA combined'], tableRows, `Campaigns from NHTSA's recall file (${c.rcl.join(', ')}); NCAP from the Safety Ratings API; EPA from fueleconomy.gov.`, ['l', 'r', 'l', 'l'])} />
+      </div>
+      <div>
+        <h2 class="font-serif text-2xl font-bold text-navy-900">Systems recalled most often</h2>
+        <Fragment set:html={table(['Component group', 'Campaigns'], comps, `Model years 2012 to 2026, ${n(m.campaigns)} campaigns.`, ['l', 'r'])} />
+      </div>
+    </section>
+  </article>
+</PageLayout>

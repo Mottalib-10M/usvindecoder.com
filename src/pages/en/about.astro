@@ -1,0 +1,22 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { route } from '../../i18n/routes';
+import { profilePageSchema, organizationSchema, breadcrumbSchema } from '../../lib/seo';
+import { RECALLS, WMI_COUNT, n, day } from '../../lib/data';
+const lang = 'en';
+const path = route('about', lang);
+---
+<PageLayout title="Radif Partners, Publisher of US VIN Decoder: Why It Is Free" description="US VIN Decoder is published by Radif Partners, an independent site that reads NHTSA and EPA records for any VIN, with no account, email or report to unlock." lang={lang} jsonLd={[profilePageSchema({ path, lang }), organizationSchema(lang), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'About', path }])]} breadcrumbs={[{ label: 'About' }]}>
+  <div class="prose prose-slate max-w-none prose-headings:font-serif">
+    <h1>About US VIN Decoder</h1>
+    <p>US VIN Decoder is published by Radif Partners, an independent publisher of free calculators and data tools. We built it after comparing the sites that rank for "free VIN check": most decode the factory specs, then ask for an email, a card or a subscription before showing anything else, even though the recall campaigns, crash ratings and fuel economy of a vehicle are public federal data. One well-known free site even promises a full history report at no charge, which no public source can supply. This site does the opposite: it shows everything the federal agencies publish for a VIN, on one page, and says plainly what it cannot know.</p>
+    <h2>What the site does</h2>
+    <p>The decoder reads the structure of any 17-character VIN in your browser, with a table of {n(WMI_COUNT)} manufacturer codes from NHTSA, then asks NHTSA vPIC for the factory record, the NHTSA Recalls API for every campaign on that model year, the NCAP Safety Ratings API for crash stars, and fueleconomy.gov for EPA mileage. The brand and model pages are built from NHTSA's recall file, {n(Object.keys(RECALLS.brands).length)} brands and {n(Object.keys(RECALLS.models).length)} best-selling models, rebuilt every week; this version uses the file dated {day(RECALLS.file_date ?? RECALLS.retrieved_at)}.</p>
+    <h2>What it does not do</h2>
+    <p>It does not sell vehicle history reports, collect VINs, pass leads to dealers or insurers, or carry affiliate links. It is not a government site and is not affiliated with NHTSA, the EPA or any carmaker. When title or odometer history is needed, we point to NMVTIS, the federal title system, and its approved providers, and to NICB VINCheck for thefts and total losses.</p>
+    <h2>How it is funded</h2>
+    <p>The site is static and costs little to run. It may carry a limited number of clearly marked advertising spaces, never above a tool and never mixed with results. No advertiser influences what the tools show.</p>
+    <h2>How to reach us</h2>
+    <p>Errors, suggestions and embedding requests go through the <a href={route('contact', lang)}>contact page</a>. How figures are produced and checked is described on the <a href={route('method', lang)}>method page</a> and in the <a href={route('editorial', lang)}>editorial policy</a>.</p>
+  </div>
+</PageLayout>

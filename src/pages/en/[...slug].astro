@@ -1,0 +1,18 @@
+---
+/** Outils et guides (src/content/tools, guides), marques et modèles (src/content/brands, models). */
+import ContentPage from '../../components/ContentPage.astro';
+import BrandPage from '../../components/BrandPage.astro';
+import ModelPage from '../../components/ModelPage.astro';
+import { PAGES, BRANDS, MODELS, pageById, HUB } from '../../lib/pages';
+import type { PageDef, BrandDef, ModelDef } from '../../lib/page-types';
+export function getStaticPaths() {
+  const hub = pageById(HUB)?.slug ?? HUB;
+  return [
+    ...PAGES.filter((p) => p.id !== 'home').map((page) => ({ params: { slug: page.slug }, props: { page } })),
+    ...BRANDS.map((b) => ({ params: { slug: `${hub}/${b.slug}` }, props: { brand: b } })),
+    ...MODELS.map((m) => ({ params: { slug: `${hub}/${m.brand}/${m.slug}` }, props: { model: m } })),
+  ];
+}
+const { page, brand, model } = Astro.props as { page?: PageDef; brand?: BrandDef; model?: ModelDef };
+---
+{page ? <ContentPage page={page} /> : brand ? <BrandPage def={brand} /> : <ModelPage def={model!} />}

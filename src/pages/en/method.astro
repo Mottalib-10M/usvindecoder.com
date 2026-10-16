@@ -1,0 +1,42 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { route } from '../../i18n/routes';
+import { webPageSchema, breadcrumbSchema } from '../../lib/seo';
+import { RECALLS, EPA, NCAP, SAMPLES, WMI_COUNT, n, day, LATEST } from '../../lib/data';
+import { helpers } from '../../lib/helpers';
+import P from '../../data/params-2026.json';
+const lang = 'en';
+const path = route('method', lang);
+const h = helpers();
+const title = 'VIN Decoder Method: Sources, Rules, Tests and Limits';
+const description = 'How US VIN Decoder reads a VIN: Part 565 rules in your browser, then NHTSA vPIC, recalls, NCAP and EPA data, a weekly recall file rebuild, tests and limits.';
+---
+<PageLayout title={title} description={description} lang={lang} jsonLd={[webPageSchema({ name: title, description, path, lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'Method and data', path }])]} breadcrumbs={[{ label: 'Method and data' }]} sources={Object.values(P.sources).map((s) => ({ name: s.label.en, url: s.url }))}>
+  <div class="prose prose-slate max-w-none prose-headings:font-serif">
+    <h1>Method and data</h1>
+    <p>This page lists every source the site uses, the rules the tools apply, how the data is refreshed and what the tools cannot do.</p>
+    <h2>1. Reading the VIN in the browser</h2>
+    <p>The first pass applies 49 CFR Part 565 without any network request: 17 characters, no I, O or Q; the check digit of position 9 with the transliteration table and weights 8, 7, 6, 5, 4, 3, 2, 10, 0, 9, 8, 7, 6, 5, 4, 3, 2, remainder of the sum divided by 11, 10 written X; the model year from position 10 in the 30-code cycle, the seventh character choosing between 1980-2009 and 2010-2039 for light vehicles; the maker from the first three characters, completed by positions 12 to 14 when the third is a 9. The maker table holds {n(WMI_COUNT)} codes downloaded from vPIC (GetWMIsForManufacturer, DecodeWMI).</p>
+    <h2>2. Federal lookups</h2>
+    <p>Your browser then calls, directly: vPIC <code>DecodeVinValuesExtended</code> for the factory record; the NHTSA Recalls API <code>recallsByVehicle</code> with the make, model and year vPIC returned, and when it returns nothing, the model names NHTSA lists for that make and year that match after removing punctuation; the NCAP Safety Ratings API for every version whose name starts with the model; and the fueleconomy.gov menus and vehicle records, matched by model name, drive type, displacement and cylinders. No request goes through our servers.</p>
+    <h2>3. Recall tables on the brand and model pages</h2>
+    <p>The tables come from NHTSA's flat file <code>FLAT_RCL_POST_2010</code>, downloaded and parsed by <code>scripts/data/build-recalls.py</code>. A campaign is one NHTSA number of type V (vehicle); equipment, tire and child seat campaigns are excluded. Its year is the year NHTSA received the Part 573 report. "Vehicles covered" is the potentially affected population the maker declared for the whole campaign, so a campaign naming two brands counts its vehicles for each. Rows NHTSA marks "redundant" or "duplicate" are dropped. This build uses the file dated {day(RECALLS.file_date ?? RECALLS.retrieved_at)}, whose latest campaign was received on {day(LATEST)}: {n(Object.values(RECALLS.byYear).reduce((a, b) => a + b, 0))} vehicle campaigns received since 2016.</p>
+    <h2>4. Ratings and fuel economy</h2>
+    <p>NCAP ratings of the model pages come from the Safety Ratings API, read on {day(NCAP.retrieved_at)} for model years 2015 onward. EPA figures come from <code>vehicles.csv</code> and the fuel prices of fueleconomy.gov, read on {day(EPA.retrieved_at)}: regular ${EPA.prices.regular}, premium ${EPA.prices.premium}, diesel ${EPA.prices.diesel} a gallon, electricity ${EPA.prices.electric} per kWh. The yearly cost is miles divided by combined mpg times the price, or miles times kWh per 100 miles divided by 100 times the electricity price. The median used for comparison is that of the {n(EPA.refCount)} gas, diesel and hybrid versions of model year {EPA.refYear}: {EPA.refMedian} mpg.</p>
+    <h2>5. Federal rules applied by the calculators</h2>
+    <p>Free recall remedy: 15 calendar years from the first sale to the recall notice, 5 for tires ({h.src('remedy', '49 U.S.C. 30120(g)')}). Odometer disclosure exemption: 10 years for model year 2010 and older, 20 years from model year 2011 ({h.src('odometer', '49 CFR 580.17')}). NCAP rollover stars: five below a 10 % risk, then one star less for each 10 points, one star above 40 %.</p>
+    <h2>6. Updates</h2>
+    <p>A scheduled job runs every Monday: it downloads the recall file, the EPA file and the NCAP ratings again, rebuilds the data, runs the tests and republishes the site. The example decodes shown before you type (the VIN {SAMPLES.car.vin} and the motorcycle pattern {SAMPLES.moto.vin}) are real API answers stored at build time.</p>
+    <h2>7. Tests</h2>
+    <p>The engine is covered by automated tests: check digits computed by hand on several VINs, every year code against the federal table, the seventh-character rule, the free remedy and odometer rules at their limits, rollover bands, the fuel cost formula against hand calculations, and the parsers and name matching against stored real responses from vPIC, the Recalls API, NCAP and fueleconomy.gov.</p>
+    <h2>8. Limits</h2>
+    <ul>
+      <li>A decode reflects what the maker filed for a VIN pattern. Blank fields mean "not reported", and some imports or low-volume vehicles are missing from vPIC.</li>
+      <li>Recall lists cover a model and year. Whether one vehicle is affected or repaired comes from the maker, through {h.src('nhtsarecalls', 'NHTSA’s VIN search')}.</li>
+      <li>Model names differ between agencies; matching can miss an unusual name. The recall check lets you pick the name NHTSA uses.</li>
+      <li>NCAP does not test every version every year, and does not rate motorcycles or heavy trucks; the EPA does not rate vehicles above 8,500 lb GVWR except medium-duty passenger vehicles.</li>
+      <li>Title brands, accidents, odometer history and theft are not in these sources; see {h.src('nmvtis', 'NMVTIS')}.</li>
+    </ul>
+    <p>Corrections: <a href={route('contact', lang)}>contact page</a>; policy: <a href={route('editorial', lang)}>editorial policy</a>.</p>
+  </div>
+</PageLayout>

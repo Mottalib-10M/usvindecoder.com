@@ -1,0 +1,37 @@
+import { definePage } from '../../lib/page-types';
+
+export default definePage({
+  id: 'free-vin-check-vs-history-report', slug: 'free-vin-check-vs-history-report', kind: 'guide', group: 'guides', order: 34,
+  nav: 'Free VIN check vs paid report', card: 'What free checks cover, and what only NMVTIS and reports add',
+  title: 'Free VIN Check 2026: What It Covers, What Needs NMVTIS',
+  description: 'Free VIN check or paid history report: specs, recalls, ratings and thefts are free; title brands and odometer history come from NMVTIS. What each one covers.',
+  h1: 'Free VIN check or paid history report: what each one tells you',
+  intro: 'Factory specs, recalls, crash ratings, mpg and reported thefts are free from public sources. Title brands and odometer readings are not: they come from NMVTIS, through approved providers.',
+  resume: `Sites that promise a "free VIN check" usually give away what is public and sell what is not. The public part is large: NHTSA's vPIC returns the factory description, NHTSA's recall database every campaign, NCAP the crash ratings, fueleconomy.gov the EPA ratings, and NICB VINCheck the thefts and insurance total losses its member insurers reported. All of that costs nothing, and this site shows it on one page. The part that costs money is the vehicle's history on titles: the National Motor Vehicle Title Information System, run by the Department of Justice, collects title brands such as salvage, junk, flood and rebuilt from state DMVs, the latest odometer reading at each title transfer, and junk and salvage reports from insurers, auto recyclers and salvage yards. Consumers reach it only through approved data providers, who set their own price. Commercial history reports add records from repair shops and police, when someone reported them.`,
+  body: (h) => `
+<p>One of the facts a title report checks is the odometer. Federal rules exempt older vehicles from the mileage statement at sale; the calculator shows whether yours is still covered.</p>
+${h.mini('odometer')}
+<h2>What is free, and where it comes from</h2>
+${h.table(['Information', 'Free source', 'On this site'], [['Factory specs, engine, plant, equipment', 'NHTSA vPIC', 'Yes'], ['Recall campaigns for the model and year', 'NHTSA Recalls API', 'Yes'], ['Open recalls on one VIN', 'nhtsa.gov/recalls, maker sites', 'Link'], ['Crash test ratings', 'NHTSA NCAP', 'Yes'], ['Fuel economy and fuel cost', 'EPA, fueleconomy.gov', 'Yes'], ['Reported theft, insurance total loss', 'NICB VINCheck (member insurers)', 'Link'], ['Title brands, odometer history', 'NMVTIS, approved providers (paid)', 'No'], ['Accidents, service records', 'Commercial reports, when reported (paid)', 'No']])}
+<h2>NMVTIS: the federal title database</h2>
+<p>Congress created ${h.src('nmvtis', 'NMVTIS')} in 1992 to stop title washing, the trick of moving a salvage or flood car to another state to get a clean title. States report their title data, and insurers, junk yards and salvage auctions must report vehicles they handle as junk or salvage. A report shows the current state of title, the brand history, the last reported odometer and those junk and salvage events. It does not show accidents that did not total the car, maintenance, or the number of owners in detail. Approved providers are listed on the official consumer site, and each one sets its own price for a report.</p>
+<h2>NICB VINCheck</h2>
+<p>The National Insurance Crime Bureau, a nonprofit funded by insurers, offers a free search of thefts and total losses reported by its member insurers. It covers neither every insurer nor title brands from states, and it limits the number of searches per day. Use it as a quick screen before a paid NMVTIS report.</p>
+<h2>What paid commercial reports add</h2>
+<p>Commercial history reports combine NMVTIS data with records they buy or collect: service visits at shops that share data, accident reports from some police departments and insurers, auction listings, and registration events. Their coverage depends on who reported. A clean commercial report means no one reported anything to that company, not that nothing happened. Be cautious with sites that call a report "free" and then ask for a card number or an email: some start a recurring subscription.</p>
+<h2>Odometer rules that matter</h2>
+<p>Under ${h.src('odometer', '49 CFR 580.17')}, a model year 2011 or newer vehicle needs an odometer disclosure on transfer until it is 20 years old; model year 2010 and older vehicles are exempt after 10 years. An exempt vehicle's title may show "exempt" instead of mileage, which is where a rolled-back odometer can hide. The NMVTIS report keeps past readings for comparison.</p>
+<h2>Signs that a free check is a sales funnel</h2>
+<p>A page that shows a progress bar of "records found" before asking for an email, a report preview with blurred lines, or a one-dollar trial that renews monthly is selling, not checking. Federal agencies never charge for recall or rating data, and no legitimate source gives title history away. If a site asks for payment details to show recalls, use NHTSA's own lookup instead.</p>
+<h2>A sensible order of checks</h2>
+<p>Start free: decode the VIN on the ${h.a('home', 'decoder')} and compare it with the car; check recalls; screen it on NICB. If the car is still a candidate, buy one NMVTIS report. Then have an independent mechanic inspect it. The ${h.a('where-is-the-vin-number', 'VIN location guide')} explains how to make sure every copy of the VIN matches before you pay for anything.</p>
+`,
+  faqs: [
+    { q: 'Is there a completely free vehicle history report?', a: 'Not for title history. Federal title data from NMVTIS is sold through approved providers, and commercial reports buy their records. What is free is the factory record, recalls, crash ratings and fuel economy from federal agencies, and NICB VINCheck for thefts and total losses reported by member insurers. Be wary of free reports that ask for a card.' },
+    { q: 'What is NMVTIS and who can use it?', a: 'The National Motor Vehicle Title Information System is a federal database run by the Department of Justice, fed by state title agencies, insurers, junk yards and salvage auctions. Anyone can buy a report through one of the approved providers listed on the official consumer access site. It shows title brands, the last odometer reading and junk or salvage events.' },
+    { q: 'Can a free VIN decoder tell me if a car was flooded?', a: 'No. Flood damage appears only when a state brands the title or an insurer reports a total loss. Check the title for a flood or salvage brand, run an NMVTIS report and NICB VINCheck, and look for silt, rust under the seats and corrosion in the wiring. Many flooded cars were never insured.' },
+    { q: 'Why does an older car say exempt instead of mileage?', a: 'Federal odometer rules exempt model year 2010 and older vehicles from mileage disclosure once they are 10 years old, and model year 2011 and newer vehicles once they are 20. The seller may then write exempt on the title, and mileage is not certified. Compare service records and NMVTIS readings instead.' },
+  ],
+  related: ['home', 'where-is-the-vin-number', 'how-to-check-car-recalls', 'what-does-my-vin-mean', 'vin-check-digit'],
+  sources: ['nmvtis', 'odometer', 'vpic', 'recalls'],
+});

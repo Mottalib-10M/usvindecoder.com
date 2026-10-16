@@ -1,0 +1,105 @@
+{
+  "_lisezmoi": "Règles fédérales et sources du site (RECETTE §4). Les jeux de données qui changent (rappels, notes, consommation, WMI) vivent dans src/data/gen/, produits par scripts/data/*.py et rafraîchis chaque semaine par .github/workflows/data.yml. Ici : les règles fixes, chacune avec son texte.",
+  "year": 2026,
+  "retrieved_at": "2026-10-15",
+  "valid_from": "2026-01-01",
+  "valid_to": "2026-12-31",
+  "vin": {
+    "regions": {
+      "ABCDEFGH": "Africa",
+      "JKLMNPR": "Asia",
+      "STUVWXYZ": "Europe",
+      "145": "United States",
+      "2": "Canada",
+      "3": "Mexico or Central America",
+      "67": "Oceania",
+      "89": "South America"
+    },
+    "lightVehicleGvwrLb": 10000
+  },
+  "remedy": {
+    "_doc": "49 U.S.C. 30120(g)(1) : la réparation gratuite n'est pas due si le véhicule a été acheté par son premier acquéreur plus de 15 années civiles (pneu : 5 ans) avant l'avis de défaut prévu à la section 30118(c) ou l'ordre de la section 30118(b), la date la plus ancienne étant retenue.",
+    "freeYears": 15,
+    "tireYears": 5
+  },
+  "odometer": {
+    "_doc": "49 CFR 580.17 (règle finale NHTSA du 4 novembre 2019, en vigueur le 1er janvier 2021) : à partir de l'année-modèle 2011, déclaration du kilométrage obligatoire jusqu'à 20 ans ; jusqu'à l'année-modèle 2010, exemption après 10 ans.",
+    "firstModelYearNewRule": 2011,
+    "yearsNewRule": 20,
+    "yearsOldRule": 10
+  },
+  "ncap": {
+    "_doc": "NHTSA NCAP : étoiles de renversement selon le risque calculé (5 étoiles < 10 %, 4 de 10 à 20 %, 3 de 20 à 30 %, 2 de 30 à 40 %, 1 au-delà).",
+    "rolloverBands": [
+      0.1,
+      0.2,
+      0.3,
+      0.4
+    ]
+  },
+  "lookup": {
+    "nhtsaVinYears": 15
+  },
+  "sources": {
+    "vpic": {
+      "url": "https://vpic.nhtsa.dot.gov/api/",
+      "label": {
+        "en": "NHTSA Product Information Catalog and Vehicle Listing (vPIC) API: VIN decoding from manufacturer submissions"
+      }
+    },
+    "part565": {
+      "url": "https://www.law.cornell.edu/cfr/text/49/part-565",
+      "label": {
+        "en": "49 CFR Part 565, Vehicle Identification Number requirements (check digit, model year code, WMI)"
+      }
+    },
+    "recalls": {
+      "url": "https://www.nhtsa.gov/nhtsa-datasets-and-apis",
+      "label": {
+        "en": "NHTSA datasets and APIs: Recalls API, Safety Ratings API and the recall flat file"
+      }
+    },
+    "recallfile": {
+      "url": "https://static.nhtsa.gov/odi/ffdd/rcl/RCL.txt",
+      "label": {
+        "en": "NHTSA recall flat file, field definitions (FLAT_RCL_POST_2010)"
+      }
+    },
+    "nhtsarecalls": {
+      "url": "https://www.nhtsa.gov/recalls",
+      "label": {
+        "en": "NHTSA recall lookup by VIN (unrepaired recalls on one vehicle, past 15 years)"
+      }
+    },
+    "ncap": {
+      "url": "https://www.nhtsa.gov/ratings",
+      "label": {
+        "en": "NHTSA New Car Assessment Program: 5-Star Safety Ratings"
+      }
+    },
+    "epa": {
+      "url": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+      "label": {
+        "en": "U.S. Department of Energy and EPA, fueleconomy.gov web services and vehicles.csv"
+      }
+    },
+    "nmvtis": {
+      "url": "https://vehiclehistory.bja.ojp.gov/",
+      "label": {
+        "en": "U.S. Department of Justice, National Motor Vehicle Title Information System (NMVTIS), consumer access"
+      }
+    },
+    "remedy": {
+      "url": "https://www.law.cornell.edu/uscode/text/49/30120",
+      "label": {
+        "en": "49 U.S.C. 30120, remedies for defects and noncompliance (15-year free remedy limit)"
+      }
+    },
+    "odometer": {
+      "url": "https://www.law.cornell.edu/cfr/text/49/580.17",
+      "label": {
+        "en": "49 CFR 580.17, exemptions from odometer disclosure (10 years up to model year 2010, 20 years from model year 2011)"
+      }
+    }
+  }
+}

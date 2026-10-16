@@ -1,0 +1,6 @@
+---
+import ContentPage from '../../components/ContentPage.astro';
+import { pageById } from '../../lib/pages';
+const page = pageById('home')!;
+---
+<ContentPage page={page} />

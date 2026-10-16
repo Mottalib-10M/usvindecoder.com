@@ -1,0 +1,3401 @@
+{
+"retrieved_at": "2026-10-16",
+"source": "https://vpic.nhtsa.dot.gov/api/",
+"wmi": {
+"19U": {
+"country": "United States",
+"make": "Honda",
+"type": "car"
+},
+"19V": {
+"country": "United States",
+"make": "Honda",
+"type": "car"
+},
+"19X": {
+"country": "United States",
+"make": "Honda",
+"type": "car"
+},
+"1A4": {
+"country": "United States",
+"make": "Chrysler",
+"type": "mpv"
+},
+"1A8": {
+"country": "United States",
+"make": "Chrysler",
+"type": "mpv"
+},
+"1B3": {
+"country": "",
+"make": "Chrysler",
+"type": "car"
+},
+"1B4": {
+"country": "United States",
+"make": "Chrysler",
+"type": "mpv"
+},
+"1B5": {
+"country": "United States",
+"make": "Chrysler",
+"type": "bus"
+},
+"1B6": {
+"country": "United States",
+"make": "Chrysler",
+"type": "incomplete"
+},
+"1B7": {
+"country": "United States",
+"make": "Chrysler",
+"type": "truck"
+},
+"1B8": {
+"country": "United States",
+"make": "Chrysler",
+"type": "mpv"
+},
+"1C3": {
+"country": "United States",
+"make": "Chrysler",
+"type": "car"
+},
+"1C4": {
+"country": "United States",
+"make": "Chrysler",
+"type": "mpv"
+},
+"1C6": {
+"country": "United States",
+"make": "Chrysler",
+"type": "truck"
+},
+"1C7": {
+"country": "United States",
+"make": "Chrysler",
+"type": "incomplete"
+},
+"1C8": {
+"country": "United States",
+"make": "Chrysler",
+"type": "mpv"
+},
+"1D2": {
+"country": "United States",
+"make": "Chrysler",
+"type": "incomplete"
+},
+"1D3": {
+"country": "United States",
+"make": "Chrysler",
+"type": "truck"
+},
+"1D4": {
+"country": "United States",
+"make": "Chrysler",
+"type": "mpv"
+},
+"1D5": {
+"country": "United States",
+"make": "Chrysler",
+"type": "bus"
+},
+"1D6": {
+"country": "United States",
+"make": "Chrysler",
+"type": "incomplete"
+},
+"1D7": {
+"country": "United States",
+"make": "Chrysler",
+"type": "truck"
+},
+"1D8": {
+"country": "United States",
+"make": "Chrysler",
+"type": "mpv"
+},
+"1E3": {
+"country": "United States",
+"make": "Chrysler",
+"type": "car"
+},
+"1F1": {
+"country": "United States",
+"make": "Ford",
+"type": "mpv"
+},
+"1F7": {
+"country": "United States",
+"make": "Ford",
+"type": "car"
+},
+"1FA": {
+"country": "United States",
+"make": "Ford",
+"type": "car"
+},
+"1FB": {
+"country": "United States",
+"make": "Ford",
+"type": "bus"
+},
+"1FC": {
+"country": "United States",
+"make": "Ford",
+"type": "incomplete"
+},
+"1FD": {
+"country": "United States",
+"make": "Ford",
+"type": "incomplete"
+},
+"1FL": {
+"country": "Norway",
+"make": "Ford",
+"type": "car"
+},
+"1FM": {
+"country": "United States",
+"make": "Ford",
+"type": "mpv"
+},
+"1FT": {
+"country": "United States",
+"make": "Ford",
+"type": "truck"
+},
+"1FU": {
+"country": "United States",
+"make": "Dtna",
+"type": "truck"
+},
+"1FV": {
+"country": "United States",
+"make": "Dtna",
+"type": "incomplete"
+},
+"1G0": {
+"country": "United States",
+"make": "General Motors",
+"type": "car"
+},
+"1G1": {
+"country": "United States",
+"make": "General Motors",
+"type": "car"
+},
+"1G2": {
+"country": "United States",
+"make": "General Motors",
+"type": "car"
+},
+"1G3": {
+"country": "United States",
+"make": "General Motors",
+"type": "car"
+},
+"1G4": {
+"country": "United States",
+"make": "General Motors",
+"type": "car"
+},
+"1G5": {
+"country": "United States",
+"make": "General Motors",
+"type": "mpv"
+},
+"1G6": {
+"country": "United States",
+"make": "General Motors",
+"type": "car"
+},
+"1G7": {
+"country": "United States",
+"make": "General Motors",
+"type": "car"
+},
+"1G8": {
+"country": "United States",
+"make": "General Motors",
+"type": "car"
+},
+"1GA": {
+"country": "United States",
+"make": "General Motors",
+"type": "bus"
+},
+"1GB": {
+"country": "United States",
+"make": "General Motors",
+"type": "incomplete"
+},
+"1GC": {
+"country": "United States",
+"make": "General Motors",
+"type": "truck"
+},
+"1GD": {
+"country": "United States",
+"make": "General Motors",
+"type": "incomplete"
+},
+"1GE": {
+"country": "United States",
+"make": "General Motors",
+"type": "incomplete"
+},
+"1GG": {
+"country": "United States",
+"make": "General Motors",
+"type": "truck"
+},
+"1GH": {
+"country": "United States",
+"make": "General Motors",
+"type": "mpv"
+},
+"1GJ": {
+"country": "United States",
+"make": "General Motors",
+"type": "bus"
+},
+"1GK": {
+"country": "United States",
+"make": "General Motors",
+"type": "mpv"
+},
+"1GM": {
+"country": "United States",
+"make": "General Motors",
+"type": "mpv"
+},
+"1GN": {
+"country": "United States",
+"make": "General Motors",
+"type": "mpv"
+},
+"1GT": {
+"country": "United States",
+"make": "General Motors",
+"type": "truck"
+},
+"1GY": {
+"country": "United States",
+"make": "General Motors",
+"type": "mpv"
+},
+"1HD": {
+"country": "United States",
+"make": "Harley-Davidson",
+"type": "motorcycle"
+},
+"1HF": {
+"country": "United States",
+"make": "Honda",
+"type": "motorcycle"
+},
+"1HG": {
+"country": "United States",
+"make": "Honda",
+"type": "car"
+},
+"1J2": {
+"country": "United States",
+"make": "Chrysler",
+"type": "incomplete"
+},
+"1J3": {
+"country": "United States",
+"make": "Chrysler",
+"type": "truck"
+},
+"1J4": {
+"country": "United States",
+"make": "Chrysler",
+"type": "mpv"
+},
+"1J5": {
+"country": "United States",
+"make": "Chrysler",
+"type": "bus"
+},
+"1J6": {
+"country": "United States",
+"make": "Chrysler",
+"type": "incomplete"
+},
+"1J7": {
+"country": "United States",
+"make": "Chrysler",
+"type": "truck"
+},
+"1J8": {
+"country": "United States",
+"make": "Chrysler",
+"type": "mpv"
+},
+"1JC": {
+"country": "United States",
+"make": "Chrysler",
+"type": "mpv"
+},
+"1JD": {
+"country": "United States",
+"make": "Chrysler",
+"type": "incomplete"
+},
+"1JT": {
+"country": "United States",
+"make": "Chrysler",
+"type": "truck"
+},
+"1L1": {
+"country": "United States",
+"make": "Ford",
+"type": "car"
+},
+"1LJ": {
+"country": "United States",
+"make": "Ford",
+"type": "incomplete"
+},
+"1LN": {
+"country": "United States",
+"make": "Ford",
+"type": "car"
+},
+"1M1": {
+"country": "United States",
+"make": "Mack Trucks",
+"type": "truck"
+},
+"1M2": {
+"country": "United States",
+"make": "Mack Trucks",
+"type": "incomplete"
+},
+"1M3": {
+"country": "United States",
+"make": "Mack Trucks",
+"type": "incomplete"
+},
+"1MB": {
+"country": "United States",
+"make": "Mercedes-Benz",
+"type": "truck"
+},
+"1ME": {
+"country": "United States",
+"make": "Ford",
+"type": "car"
+},
+"1MH": {
+"country": "United States",
+"make": "Ford",
+"type": "incomplete"
+},
+"1MR": {
+"country": "United States",
+"make": "Ford",
+"type": "car"
+},
+"1N4": {
+"country": "United States",
+"make": "Nissan",
+"type": "car"
+},
+"1N6": {
+"country": "United States",
+"make": "Nissan",
+"type": "truck"
+},
+"1P3": {
+"country": "United States",
+"make": "Chrysler",
+"type": "car"
+},
+"1P4": {
+"country": "United States",
+"make": "Chrysler",
+"type": "mpv"
+},
+"1P5": {
+"country": "United States",
+"make": "Chrysler",
+"type": "bus"
+},
+"1P6": {
+"country": "United States",
+"make": "Chrysler",
+"type": "incomplete"
+},
+"1P7": {
+"country": "United States",
+"make": "Chrysler",
+"type": "truck"
+},
+"1V1": {
+"country": "United States",
+"make": "Volkswagen",
+"type": "truck"
+},
+"1V2": {
+"country": "United States",
+"make": "Volkswagen",
+"type": "mpv"
+},
+"1VH": {
+"country": "United States",
+"make": "Daimlerchrysler",
+"type": "bus"
+},
+"1VW": {
+"country": "United States",
+"make": "Volkswagen",
+"type": "car"
+},
+"1WA": {
+"country": "United States",
+"make": "Volvo",
+"type": "truck"
+},
+"1WB": {
+"country": "United States",
+"make": "Volvo",
+"type": "incomplete"
+},
+"1WD": {
+"country": "United States",
+"make": "Volvo",
+"type": "incomplete"
+},
+"1WU": {
+"country": "United States",
+"make": "Volvo",
+"type": "truck"
+},
+"1WX": {
+"country": "United States",
+"make": "Volvo",
+"type": "incomplete"
+},
+"1WY": {
+"country": "United States",
+"make": "Volvo",
+"type": "incomplete"
+},
+"1XM": {
+"country": "United States",
+"make": "Chrysler",
+"type": "car"
+},
+"1Z2": {
+"country": "United States",
+"make": "Chrysler",
+"type": "incomplete"
+},
+"1Z3": {
+"country": "United States",
+"make": "Chrysler",
+"type": "truck"
+},
+"1Z4": {
+"country": "United States",
+"make": "Chrysler",
+"type": "mpv"
+},
+"1Z6": {
+"country": "United States",
+"make": "Chrysler",
+"type": "mpv"
+},
+"1Z7": {
+"country": "United States",
+"make": "Chrysler",
+"type": "truck"
+},
+"1Z8": {
+"country": "United States",
+"make": "Chrysler",
+"type": "mpv"
+},
+"2B1": {
+"country": "Canada",
+"make": "Daimlerchrysler",
+"type": "bus"
+},
+"2BA": {
+"country": "Canada",
+"make": "Daimlerchrysler",
+"type": "mpv"
+},
+"2BV": {
+"country": "",
+"make": "Brp",
+"type": "motorcycle"
+},
+"2BX": {
+"country": "Canada",
+"make": "Brp",
+"type": "motorcycle"
+},
+"2C1": {
+"country": "United States",
+"make": "General Motors",
+"type": "car"
+},
+"2C2": {
+"country": "United States",
+"make": "General Motors",
+"type": "car"
+},
+"2CG": {
+"country": "United States",
+"make": "General Motors",
+"type": "mpv"
+},
+"2CK": {
+"country": "United States",
+"make": "General Motors",
+"type": "mpv"
+},
+"2CN": {
+"country": "United States",
+"make": "General Motors",
+"type": "mpv"
+},
+"2CT": {
+"country": "United States",
+"make": "General Motors",
+"type": "mpv"
+},
+"2FA": {
+"country": "Canada",
+"make": "Ford",
+"type": "car"
+},
+"2FB": {
+"country": "United States",
+"make": "Ford",
+"type": "bus"
+},
+"2FC": {
+"country": "Canada",
+"make": "Ford",
+"type": "incomplete"
+},
+"2FD": {
+"country": "Canada",
+"make": "Ford",
+"type": "incomplete"
+},
+"2FM": {
+"country": "Canada",
+"make": "Ford",
+"type": "mpv"
+},
+"2FT": {
+"country": "Canada",
+"make": "Ford",
+"type": "truck"
+},
+"2FU": {
+"country": "Canada",
+"make": "Freightliner",
+"type": "truck"
+},
+"2FV": {
+"country": "Canada",
+"make": "Freightliner",
+"type": "incomplete"
+},
+"2FW": {
+"country": "United States",
+"make": "Sterling",
+"type": "truck"
+},
+"2FZ": {
+"country": "United States",
+"make": "Sterling",
+"type": "incomplete"
+},
+"2G0": {
+"country": "Canada",
+"make": "General Motors",
+"type": "bus"
+},
+"2G1": {
+"country": "Canada",
+"make": "General Motors",
+"type": "car"
+},
+"2G2": {
+"country": "United States",
+"make": "General Motors",
+"type": "car"
+},
+"2G3": {
+"country": "United States",
+"make": "General Motors",
+"type": "car"
+},
+"2G4": {
+"country": "Canada",
+"make": "General Motors",
+"type": "car"
+},
+"2G5": {
+"country": "Canada",
+"make": "General Motors",
+"type": "truck"
+},
+"2G6": {
+"country": "Canada",
+"make": "General Motors",
+"type": "car"
+},
+"2G7": {
+"country": "Canada",
+"make": "General Motors",
+"type": "car"
+},
+"2G8": {
+"country": "Canada",
+"make": "General Motors",
+"type": "mpv"
+},
+"2GA": {
+"country": "Canada",
+"make": "General Motors",
+"type": "bus"
+},
+"2GB": {
+"country": "Canada",
+"make": "General Motors",
+"type": "incomplete"
+},
+"2GC": {
+"country": "United States",
+"make": "General Motors",
+"type": "truck"
+},
+"2GD": {
+"country": "Canada",
+"make": "General Motors",
+"type": "incomplete"
+},
+"2GE": {
+"country": "Canada",
+"make": "General Motors",
+"type": "incomplete"
+},
+"2GH": {
+"country": "Canada",
+"make": "General Motors",
+"type": "bus"
+},
+"2GJ": {
+"country": "Canada",
+"make": "General Motors",
+"type": "bus"
+},
+"2GK": {
+"country": "Canada",
+"make": "General Motors",
+"type": "mpv"
+},
+"2GN": {
+"country": "Canada",
+"make": "General Motors",
+"type": "mpv"
+},
+"2GT": {
+"country": "United States",
+"make": "General Motors",
+"type": "truck"
+},
+"2HG": {
+"country": "Canada",
+"make": "Honda",
+"type": "car"
+},
+"2HH": {
+"country": "Canada",
+"make": "Honda",
+"type": "car"
+},
+"2HJ": {
+"country": "Canada",
+"make": "Honda",
+"type": "truck"
+},
+"2HK": {
+"country": "Canada",
+"make": "Honda",
+"type": "mpv"
+},
+"2HN": {
+"country": "Canada",
+"make": "Honda",
+"type": "mpv"
+},
+"2HP": {
+"country": "Canada",
+"make": "Navistar Canada",
+"type": "truck"
+},
+"2HS": {
+"country": "Canada",
+"make": "Navistar Canada",
+"type": "truck"
+},
+"2HT": {
+"country": "Canada",
+"make": "Navistar Canada",
+"type": "incomplete"
+},
+"2HU": {
+"country": "Canada",
+"make": "Honda",
+"type": "truck"
+},
+"2HV": {
+"country": "Canada",
+"make": "Navistar Canada",
+"type": "incomplete"
+},
+"2L1": {
+"country": "Canada",
+"make": "Ford",
+"type": "incomplete"
+},
+"2LJ": {
+"country": "Canada",
+"make": "Ford",
+"type": "incomplete"
+},
+"2LM": {
+"country": "Canada",
+"make": "Ford",
+"type": "mpv"
+},
+"2LN": {
+"country": "Canada",
+"make": "Ford",
+"type": "car"
+},
+"2M1": {
+"country": "Canada",
+"make": "Mack",
+"type": "truck"
+},
+"2M2": {
+"country": "Canada",
+"make": "Mack",
+"type": "incomplete"
+},
+"2M3": {
+"country": "Canada",
+"make": "Mack",
+"type": "incomplete"
+},
+"2ME": {
+"country": "Canada",
+"make": "Ford",
+"type": "car"
+},
+"2MH": {
+"country": "Canada",
+"make": "Ford",
+"type": "incomplete"
+},
+"2MR": {
+"country": "Canada",
+"make": "Ford",
+"type": "mpv"
+},
+"2PC": {
+"country": "Canada",
+"make": "Prevost",
+"type": "bus"
+},
+"2S2": {
+"country": "Japan",
+"make": "Suzuki",
+"type": "car"
+},
+"2S3": {
+"country": "",
+"make": "Suzuki",
+"type": "mpv"
+},
+"2T1": {
+"country": "Canada",
+"make": "Toyota",
+"type": "car"
+},
+"2T2": {
+"country": "Canada",
+"make": "Toyota",
+"type": "mpv"
+},
+"2T3": {
+"country": "Canada",
+"make": "Toyota",
+"type": "mpv"
+},
+"2V8": {
+"country": "Canada",
+"make": "Chrysler",
+"type": "mpv"
+},
+"2XM": {
+"country": "Canada",
+"make": "Chrysler",
+"type": "car"
+},
+"3A2": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "incomplete"
+},
+"3A3": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "truck"
+},
+"3A4": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "mpv"
+},
+"3A6": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "incomplete"
+},
+"3A7": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "truck"
+},
+"3A8": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "mpv"
+},
+"3AK": {
+"country": "Mexico",
+"make": "Dvcm",
+"type": "truck"
+},
+"3AL": {
+"country": "Mexico",
+"make": "Dvcm",
+"type": "incomplete"
+},
+"3B2": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "incomplete"
+},
+"3B3": {
+"country": "",
+"make": "Chrysler",
+"type": "car"
+},
+"3B4": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "mpv"
+},
+"3B5": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "bus"
+},
+"3B6": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "incomplete"
+},
+"3B7": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "truck"
+},
+"3B8": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "mpv"
+},
+"3BH": {
+"country": "Mexico",
+"make": "Dvcm",
+"type": "truck"
+},
+"3BJ": {
+"country": "Mexico",
+"make": "Dvcm",
+"type": "incomplete"
+},
+"3C3": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "car"
+},
+"3C4": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "mpv"
+},
+"3C6": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "truck"
+},
+"3C7": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "incomplete"
+},
+"3C8": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "mpv"
+},
+"3CA": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "mpv"
+},
+"3CE": {
+"country": "Mexico",
+"make": "Volvo",
+"type": "bus"
+},
+"3CG": {
+"country": "United States",
+"make": "Ktmmex",
+"type": "motorcycle"
+},
+"3CZ": {
+"country": "Mexico",
+"make": "Honda",
+"type": "mpv"
+},
+"3D2": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "incomplete"
+},
+"3D3": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "truck"
+},
+"3D4": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "mpv"
+},
+"3D5": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "bus"
+},
+"3D6": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "incomplete"
+},
+"3D7": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "truck"
+},
+"3D8": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "mpv"
+},
+"3DH": {
+"country": "Mexico",
+"make": "Honda",
+"type": "mpv"
+},
+"3E3": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "car"
+},
+"3E4": {
+"country": "",
+"make": "Chrysler",
+"type": "mpv"
+},
+"3F6": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "truck"
+},
+"3FA": {
+"country": "Mexico",
+"make": "Ford",
+"type": "car"
+},
+"3FB": {
+"country": "Mexico",
+"make": "Ford",
+"type": "bus"
+},
+"3FC": {
+"country": "Mexico",
+"make": "Ford",
+"type": "incomplete"
+},
+"3FD": {
+"country": "Mexico",
+"make": "Ford",
+"type": "incomplete"
+},
+"3FE": {
+"country": "Mexico",
+"make": "Ford",
+"type": "incomplete"
+},
+"3FF": {
+"country": "Mexico",
+"make": "Freightliner",
+"type": "incomplete"
+},
+"3FM": {
+"country": "Mexico",
+"make": "Ford",
+"type": "mpv"
+},
+"3FT": {
+"country": "Mexico",
+"make": "Ford",
+"type": "truck"
+},
+"3G0": {
+"country": "Mexico",
+"make": "General Motors",
+"type": "mpv"
+},
+"3G1": {
+"country": "Mexico",
+"make": "General Motors",
+"type": "car"
+},
+"3G2": {
+"country": "United States",
+"make": "General Motors",
+"type": "car"
+},
+"3G3": {
+"country": "United States",
+"make": "General Motors",
+"type": "car"
+},
+"3G4": {
+"country": "United States",
+"make": "General Motors",
+"type": "car"
+},
+"3G5": {
+"country": "United States",
+"make": "General Motors",
+"type": "mpv"
+},
+"3G7": {
+"country": "United States",
+"make": "General Motors",
+"type": "mpv"
+},
+"3GB": {
+"country": "Mexico",
+"make": "General Motors",
+"type": "incomplete"
+},
+"3GC": {
+"country": "Mexico",
+"make": "General Motors",
+"type": "truck"
+},
+"3GD": {
+"country": "Mexico",
+"make": "General Motors",
+"type": "incomplete"
+},
+"3GG": {
+"country": "Mexico",
+"make": "General Motors",
+"type": "truck"
+},
+"3GK": {
+"country": "United States",
+"make": "General Motors",
+"type": "mpv"
+},
+"3GM": {
+"country": "United States",
+"make": "General Motors",
+"type": "mpv"
+},
+"3GN": {
+"country": "Mexico",
+"make": "General Motors",
+"type": "mpv"
+},
+"3GP": {
+"country": "Mexico",
+"make": "General Motors",
+"type": "mpv"
+},
+"3GS": {
+"country": "United States",
+"make": "General Motors",
+"type": "mpv"
+},
+"3GT": {
+"country": "Mexico",
+"make": "General Motors",
+"type": "truck"
+},
+"3GY": {
+"country": "Mexico",
+"make": "General Motors",
+"type": "mpv"
+},
+"3H1": {
+"country": "Mexico",
+"make": "Honda",
+"type": "motorcycle"
+},
+"3HD": {
+"country": "Mexico",
+"make": "Honda, Acura",
+"type": "mpv"
+},
+"3HG": {
+"country": "Mexico",
+"make": "Honda",
+"type": "car"
+},
+"3J4": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "mpv"
+},
+"3J5": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "bus"
+},
+"3J6": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "incomplete"
+},
+"3KM": {
+"country": "Mexico",
+"make": "Kia",
+"type": "mpv"
+},
+"3KP": {
+"country": "Mexico",
+"make": "Kia",
+"type": "car"
+},
+"3LN": {
+"country": "Mexico",
+"make": "Ford",
+"type": "car"
+},
+"3MA": {
+"country": "Mexico",
+"make": "Ford",
+"type": "car"
+},
+"3MD": {
+"country": "Mexico",
+"make": "Mazda",
+"type": "car"
+},
+"3ME": {
+"country": "Mexico",
+"make": "Ford",
+"type": "car"
+},
+"3MF": {
+"country": "Germany",
+"make": "BMW",
+"type": "car"
+},
+"3MV": {
+"country": "Mexico",
+"make": "Mazda",
+"type": "mpv"
+},
+"3MW": {
+"country": "Germany",
+"make": "BMW",
+"type": "car"
+},
+"3MY": {
+"country": "Mexico",
+"make": "Mazda",
+"type": "car"
+},
+"3MZ": {
+"country": "Mexico",
+"make": "Mazda",
+"type": "car"
+},
+"3N1": {
+"country": "Mexico",
+"make": "Nissan",
+"type": "car"
+},
+"3N6": {
+"country": "Mexico",
+"make": "Nissan",
+"type": "truck"
+},
+"3N8": {
+"country": "Mexico",
+"make": "Nissan",
+"type": "mpv"
+},
+"3NE": {
+"country": "Mexico",
+"make": "Polaris",
+"type": "motorcycle"
+},
+"3NS": {
+"country": "Mexico",
+"make": "Polaris",
+"type": "motorcycle"
+},
+"3P3": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "car"
+},
+"3P4": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "mpv"
+},
+"3P5": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "bus"
+},
+"3P6": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "incomplete"
+},
+"3P7": {
+"country": "Mexico",
+"make": "Chrysler",
+"type": "truck"
+},
+"3PC": {
+"country": "Mexico",
+"make": "Nissan",
+"type": "mpv"
+},
+"3SD": {
+"country": "Mexico",
+"make": "Sterling",
+"type": "truck"
+},
+"3TM": {
+"country": "Mexico",
+"make": "Toyota",
+"type": "truck"
+},
+"3TY": {
+"country": "Mexico",
+"make": "Toyota",
+"type": "truck"
+},
+"3V4": {
+"country": "Mexico",
+"make": "Volvo Truck",
+"type": "truck"
+},
+"3V6": {
+"country": "Mexico",
+"make": "Volvo Truck",
+"type": "incomplete"
+},
+"3VV": {
+"country": "Mexico",
+"make": "Volkswagen",
+"type": "mpv"
+},
+"3VW": {
+"country": "Mexico",
+"make": "Volkswagen",
+"type": "car"
+},
+"3X1": {
+"country": "Mexico",
+"make": "Mack",
+"type": "truck"
+},
+"3X2": {
+"country": "Mexico",
+"make": "Mack",
+"type": "incomplete"
+},
+"478": {
+"country": "United States",
+"make": "Honda",
+"type": "motorcycle"
+},
+"480": {
+"country": "United States",
+"make": "Sterling",
+"type": "truck"
+},
+"49H": {
+"country": "United States",
+"make": "Sterling",
+"type": "truck"
+},
+"4A3": {
+"country": "United States",
+"make": "Mitsubishi",
+"type": "car"
+},
+"4A4": {
+"country": "United States",
+"make": "Mitsubishi",
+"type": "mpv"
+},
+"4B3": {
+"country": "United States",
+"make": "Chrysler",
+"type": "car"
+},
+"4C3": {
+"country": "United States",
+"make": "Chrysler",
+"type": "car"
+},
+"4E3": {
+"country": "United States",
+"make": "Chrysler",
+"type": "car"
+},
+"4F2": {
+"country": "United States",
+"make": "Ford",
+"type": "mpv"
+},
+"4F3": {
+"country": "United States",
+"make": "Ford",
+"type": "truck"
+},
+"4F4": {
+"country": "United States",
+"make": "Ford",
+"type": "truck"
+},
+"4G1": {
+"country": "United States",
+"make": "General Motors",
+"type": "car"
+},
+"4G2": {
+"country": "United States",
+"make": "General Motors",
+"type": "car"
+},
+"4G3": {
+"country": "United States",
+"make": "General Motors",
+"type": "car"
+},
+"4G5": {
+"country": "United States",
+"make": "General Motors",
+"type": "car"
+},
+"4GD": {
+"country": "United States",
+"make": "General Motors",
+"type": "mpv"
+},
+"4GL": {
+"country": "United States",
+"make": "General Motors",
+"type": "incomplete"
+},
+"4GT": {
+"country": "United States",
+"make": "General Motors",
+"type": "truck"
+},
+"4JG": {
+"country": "United States",
+"make": "Mercedes-Benz",
+"type": "mpv"
+},
+"4KB": {
+"country": "United States",
+"make": "General Motors",
+"type": "incomplete"
+},
+"4KD": {
+"country": "United States",
+"make": "General Motors",
+"type": "incomplete"
+},
+"4KL": {
+"country": "United States",
+"make": "General Motors",
+"type": "incomplete"
+},
+"4M2": {
+"country": "United States",
+"make": "Ford",
+"type": "mpv"
+},
+"4M3": {
+"country": "United States",
+"make": "Ford",
+"type": "incomplete"
+},
+"4M4": {
+"country": "United States",
+"make": "Ford",
+"type": "truck"
+},
+"4N2": {
+"country": "United States",
+"make": "Ford",
+"type": "mpv"
+},
+"4N3": {
+"country": "United States",
+"make": "Ford",
+"type": "incomplete"
+},
+"4N4": {
+"country": "United States",
+"make": "Ford",
+"type": "truck"
+},
+"4NS": {
+"country": "United States",
+"make": "General Motors",
+"type": "incomplete"
+},
+"4NT": {
+"country": "United States",
+"make": "General Motors",
+"type": "mpv"
+},
+"4NU": {
+"country": "United States",
+"make": "General Motors",
+"type": "mpv"
+},
+"4P3": {
+"country": "United States",
+"make": "Mitsubishi",
+"type": "car"
+},
+"4S1": {
+"country": "United States",
+"make": "Isuzu",
+"type": "truck"
+},
+"4S2": {
+"country": "United States",
+"make": "Isuzu",
+"type": "mpv"
+},
+"4S3": {
+"country": "United States",
+"make": "Subaru",
+"type": "car"
+},
+"4S4": {
+"country": "United States",
+"make": "Subaru",
+"type": "mpv"
+},
+"4S5": {
+"country": "United States",
+"make": "Isuzu",
+"type": "incomplete"
+},
+"4S6": {
+"country": "United States",
+"make": "Isuzu",
+"type": "mpv"
+},
+"4T1": {
+"country": "United States",
+"make": "Toyota",
+"type": "car"
+},
+"4T3": {
+"country": "United States",
+"make": "Toyota",
+"type": "mpv"
+},
+"4T4": {
+"country": "United States",
+"make": "Toyota",
+"type": "car"
+},
+"4US": {
+"country": "United States",
+"make": "BMW",
+"type": "car"
+},
+"4UZ": {
+"country": "United States",
+"make": "Freightliner, Mitsubishi Fuso",
+"type": "incomplete"
+},
+"4V1": {
+"country": "",
+"make": "Volvo (Truck / Bus)",
+"type": "truck"
+},
+"4V2": {
+"country": "",
+"make": "Volvo (Truck / Bus)",
+"type": "incomplete"
+},
+"4V3": {
+"country": "United States",
+"make": "Volvo (Truck / Bus)",
+"type": "truck"
+},
+"4V4": {
+"country": "United States",
+"make": "Volvo (Truck / Bus)",
+"type": "truck"
+},
+"4V5": {
+"country": "United States",
+"make": "Volvo (Truck / Bus)",
+"type": "incomplete"
+},
+"4V6": {
+"country": "United States",
+"make": "Volvo (Truck / Bus)",
+"type": "truck"
+},
+"4VA": {
+"country": "",
+"make": "Volvo (Truck / Bus)",
+"type": "truck"
+},
+"4VB": {
+"country": "",
+"make": "Volvo (Truck / Bus)",
+"type": "incomplete"
+},
+"4VC": {
+"country": "",
+"make": "Volvo (Truck / Bus)",
+"type": "incomplete"
+},
+"4VD": {
+"country": "",
+"make": "Volvo (Truck / Bus)",
+"type": "truck"
+},
+"4VE": {
+"country": "",
+"make": "Volvo (Truck / Bus)",
+"type": "incomplete"
+},
+"4VG": {
+"country": "",
+"make": "Volvo (Truck / Bus)",
+"type": "truck"
+},
+"4VH": {
+"country": "",
+"make": "Volvo (Truck / Bus)",
+"type": "incomplete"
+},
+"4VJ": {
+"country": "United States",
+"make": "Volvo (Truck / Bus)",
+"type": "truck"
+},
+"4VK": {
+"country": "United States",
+"make": "Volvo (Truck / Bus)",
+"type": "incomplete"
+},
+"4VM": {
+"country": "",
+"make": "Volvo (Truck / Bus)",
+"type": "incomplete"
+},
+"4W1": {
+"country": "United States",
+"make": "General Motors",
+"type": "mpv"
+},
+"4W5": {
+"country": "United States",
+"make": "General Motors",
+"type": "mpv"
+},
+"4XA": {
+"country": "",
+"make": "Polaris",
+"type": "motorcycle"
+},
+"50E": {
+"country": "United States",
+"make": "Lucid",
+"type": "car"
+},
+"52C": {
+"country": "",
+"make": "Polaris",
+"type": "lsv"
+},
+"55S": {
+"country": "United States",
+"make": "Mercedes-Benz",
+"type": "car"
+},
+"56K": {
+"country": "United States",
+"make": "Indian",
+"type": "motorcycle"
+},
+"57X": {
+"country": "",
+"make": "Polaris",
+"type": "motorcycle"
+},
+"58A": {
+"country": "United States",
+"make": "Toyota",
+"type": "car"
+},
+"5AS": {
+"country": "",
+"make": "Polaris",
+"type": "lsv"
+},
+"5BZ": {
+"country": "United States",
+"make": "Nissan",
+"type": "bus"
+},
+"5CD": {
+"country": "United States",
+"make": "Indian",
+"type": "motorcycle"
+},
+"5FN": {
+"country": "United States",
+"make": "Honda",
+"type": "mpv"
+},
+"5FP": {
+"country": "United States",
+"make": "Honda",
+"type": "truck"
+},
+"5FR": {
+"country": "United States",
+"make": "Honda",
+"type": "mpv"
+},
+"5FS": {
+"country": "United States",
+"make": "Honda",
+"type": "truck"
+},
+"5G2": {
+"country": "United States",
+"make": "General Motors",
+"type": "car"
+},
+"5G3": {
+"country": "United States",
+"make": "General Motors",
+"type": "mpv"
+},
+"5G5": {
+"country": "United States",
+"make": "General Motors",
+"type": "truck"
+},
+"5G8": {
+"country": "United States",
+"make": "General Motors",
+"type": "car"
+},
+"5GA": {
+"country": "United States",
+"make": "General Motors",
+"type": "mpv"
+},
+"5GD": {
+"country": "United States",
+"make": "General Motors",
+"type": "car"
+},
+"5GN": {
+"country": "United States",
+"make": "General Motors",
+"type": "truck"
+},
+"5GR": {
+"country": "United States",
+"make": "General Motors",
+"type": "mpv"
+},
+"5GT": {
+"country": "United States",
+"make": "General Motors",
+"type": "mpv"
+},
+"5GZ": {
+"country": "United States",
+"make": "General Motors",
+"type": "mpv"
+},
+"5HD": {
+"country": "",
+"make": "Harley-Davidson",
+"type": "motorcycle"
+},
+"5J6": {
+"country": "United States",
+"make": "Honda",
+"type": "mpv"
+},
+"5J7": {
+"country": "United States",
+"make": "Honda",
+"type": "truck"
+},
+"5J8": {
+"country": "United States",
+"make": "Honda",
+"type": "mpv"
+},
+"5KB": {
+"country": "United States",
+"make": "Honda",
+"type": "car"
+},
+"5KC": {
+"country": "United States",
+"make": "Honda",
+"type": "car"
+},
+"5KJ": {
+"country": "United States",
+"make": "Dtna",
+"type": "truck"
+},
+"5KK": {
+"country": "United States",
+"make": "Dtna",
+"type": "incomplete"
+},
+"5L1": {
+"country": "United States",
+"make": "Ford",
+"type": "mpv"
+},
+"5LD": {
+"country": "United States",
+"make": "Ford",
+"type": "incomplete"
+},
+"5LM": {
+"country": "United States",
+"make": "Ford",
+"type": "mpv"
+},
+"5LT": {
+"country": "United States",
+"make": "Ford",
+"type": "truck"
+},
+"5N1": {
+"country": "United States",
+"make": "Nissan",
+"type": "mpv"
+},
+"5N3": {
+"country": "",
+"make": "Nissan",
+"type": "mpv"
+},
+"5NM": {
+"country": "United States",
+"make": "Hyundai",
+"type": "mpv"
+},
+"5NP": {
+"country": "United States",
+"make": "Hyundai-Kia",
+"type": "car"
+},
+"5NT": {
+"country": "United States",
+"make": "Hyundai",
+"type": "truck"
+},
+"5S3": {
+"country": "United States",
+"make": "General Motors",
+"type": "mpv"
+},
+"5SA": {
+"country": "United States",
+"make": "Suzuki",
+"type": "motorcycle"
+},
+"5TB": {
+"country": "United States",
+"make": "Toyota",
+"type": "truck"
+},
+"5TD": {
+"country": "United States",
+"make": "Toyota",
+"type": "mpv"
+},
+"5TE": {
+"country": "United States",
+"make": "Toyota",
+"type": "truck"
+},
+"5TF": {
+"country": "United States",
+"make": "Toyota",
+"type": "truck"
+},
+"5UM": {
+"country": "Germany",
+"make": "BMW",
+"type": "car"
+},
+"5UX": {
+"country": "United States",
+"make": "BMW",
+"type": "mpv"
+},
+"5VP": {
+"country": "",
+"make": "Polaris",
+"type": "motorcycle"
+},
+"5XX": {
+"country": "United States",
+"make": "Kia",
+"type": "car"
+},
+"5XY": {
+"country": "United States",
+"make": "Kia",
+"type": "mpv"
+},
+"5Y4": {
+"country": "United States",
+"make": "Yamaha",
+"type": "motorcycle"
+},
+"5YA": {
+"country": "United States",
+"make": "Indian",
+"type": "motorcycle"
+},
+"5YF": {
+"country": "United States",
+"make": "Toyota",
+"type": "car"
+},
+"5YJ": {
+"country": "United States",
+"make": "Tesla",
+"type": "car"
+},
+"5YM": {
+"country": "United States",
+"make": "BMW",
+"type": "mpv"
+},
+"5Z6": {
+"country": "United States",
+"make": "Suzuki",
+"type": "truck"
+},
+"6G1": {
+"country": "Australia",
+"make": "General Motors",
+"type": "car"
+},
+"6G2": {
+"country": "Australia",
+"make": "General Motors",
+"type": "car"
+},
+"6G3": {
+"country": "",
+"make": "General Motors",
+"type": "car"
+},
+"6MM": {
+"country": "Australia",
+"make": "Mitsubishi",
+"type": "car"
+},
+"6MP": {
+"country": "Australia",
+"make": "Ford",
+"type": "car"
+},
+"722": {
+"country": "United States",
+"make": "Isuzu",
+"type": "incomplete"
+},
+"7FA": {
+"country": "United States",
+"make": "Honda",
+"type": "mpv"
+},
+"7FC": {
+"country": "United States",
+"make": "Rivian",
+"type": "truck"
+},
+"7G2": {
+"country": "United States",
+"make": "Tesla",
+"type": "truck"
+},
+"7JD": {
+"country": "United States",
+"make": "Volvo",
+"type": "mpv"
+},
+"7JR": {
+"country": "United States",
+"make": "Volvo",
+"type": "car"
+},
+"7MM": {
+"country": "United States",
+"make": "Mazda-Toyota",
+"type": "mpv"
+},
+"7MU": {
+"country": "United States",
+"make": "Mazda-Toyota",
+"type": "mpv"
+},
+"7NA": {
+"country": "United States",
+"make": "International, Nd",
+"type": "truck"
+},
+"7PD": {
+"country": "United States",
+"make": "Rivian",
+"type": "mpv"
+},
+"7SA": {
+"country": "United States",
+"make": "Tesla",
+"type": "mpv"
+},
+"7SV": {
+"country": "United States",
+"make": "Toyota",
+"type": "mpv"
+},
+"7SY": {
+"country": "United States",
+"make": "Polestar",
+"type": "mpv"
+},
+"7UU": {
+"country": "United States",
+"make": "Lucid",
+"type": "mpv"
+},
+"7WA": {
+"country": "United States",
+"make": "Scout",
+"type": "mpv"
+},
+"7YA": {
+"country": "",
+"make": "Hyundai",
+"type": "mpv"
+},
+"8BN": {
+"country": "Argentina",
+"make": "Mercedes-Benz Sprinter",
+"type": "incomplete"
+},
+"8BR": {
+"country": "Argentina",
+"make": "Mercedes-Benz Sprinter",
+"type": "bus"
+},
+"8BT": {
+"country": "Argentina",
+"make": "Mercedes-Benz Sprinter",
+"type": "mpv"
+},
+"8BU": {
+"country": "Argentina",
+"make": "Mercedes-Benz Sprinter",
+"type": "truck"
+},
+"932": {
+"country": "Brazil",
+"make": "Harley-Davidson (Brasil)",
+"type": "motorcycle"
+},
+"97N": {
+"country": "Brazil",
+"make": "Triumph",
+"type": "motorcycle"
+},
+"9BF": {
+"country": "Brazil",
+"make": "Ford",
+"type": "truck"
+},
+"9BV": {
+"country": "Brazil",
+"make": "Volvo",
+"type": "truck"
+},
+"9BW": {
+"country": "Mexico",
+"make": "Volkswagen",
+"type": "car"
+},
+"9C2": {
+"country": "Brazil",
+"make": "Honda",
+"type": "motorcycle"
+},
+"9C6": {
+"country": "",
+"make": "Yamaha",
+"type": "motorcycle"
+},
+"9DB": {
+"country": "Brazil",
+"make": "Mercedes-Benz",
+"type": "truck"
+},
+"ADM": {
+"country": "South Africa",
+"make": "General Motors",
+"type": "mpv"
+},
+"AFV": {
+"country": "South Africa",
+"make": "Freightliner",
+"type": "truck"
+},
+"HDR": {
+"country": "",
+"make": "Harley-Davidson",
+"type": "motorcycle"
+},
+"J81": {
+"country": "Japan",
+"make": "Isuzu",
+"type": "car"
+},
+"J87": {
+"country": "Canada",
+"make": "Isuzu",
+"type": "car"
+},
+"J8B": {
+"country": "Japan",
+"make": "Isuzu",
+"type": "incomplete"
+},
+"J8C": {
+"country": "United States",
+"make": "General Motors",
+"type": "truck"
+},
+"J8D": {
+"country": "Japan",
+"make": "Isuzu",
+"type": "incomplete"
+},
+"J8T": {
+"country": "United States",
+"make": "General Motors",
+"type": "truck"
+},
+"J8Z": {
+"country": "Japan",
+"make": "Isuzu",
+"type": "truck"
+},
+"JA3": {
+"country": "Japan",
+"make": "Mitsubishi",
+"type": "car"
+},
+"JA4": {
+"country": "Japan",
+"make": "Mitsubishi",
+"type": "mpv"
+},
+"JA7": {
+"country": "Japan",
+"make": "Mitsubishi",
+"type": "truck"
+},
+"JAA": {
+"country": "Japan",
+"make": "Isuzu",
+"type": "truck"
+},
+"JAB": {
+"country": "Japan",
+"make": "Isuzu",
+"type": "car"
+},
+"JAC": {
+"country": "Japan",
+"make": "Isuzu",
+"type": "mpv"
+},
+"JAE": {
+"country": "Japan",
+"make": "Isuzu",
+"type": "mpv"
+},
+"JAL": {
+"country": "Japan",
+"make": "Isuzu",
+"type": "incomplete"
+},
+"JAM": {
+"country": "Japan",
+"make": "Isuzu",
+"type": "incomplete"
+},
+"JB3": {
+"country": "Japan",
+"make": "Chrysler",
+"type": "car"
+},
+"JB4": {
+"country": "Japan",
+"make": "Mitsubishi",
+"type": "mpv"
+},
+"JB7": {
+"country": "Japan",
+"make": "Mitsubishi",
+"type": "truck"
+},
+"JC1": {
+"country": "Japan",
+"make": "Mazda",
+"type": "car"
+},
+"JC2": {
+"country": "Japan",
+"make": "Mazda",
+"type": "truck"
+},
+"JE3": {
+"country": "Japan",
+"make": "Chrysler",
+"type": "car"
+},
+"JE4": {
+"country": "Japan",
+"make": "Mitsubishi",
+"type": "car"
+},
+"JF1": {
+"country": "Japan",
+"make": "Subaru",
+"type": "car"
+},
+"JF2": {
+"country": "Japan",
+"make": "Subaru",
+"type": "mpv"
+},
+"JF3": {
+"country": "Japan",
+"make": "Subaru",
+"type": "truck"
+},
+"JF4": {
+"country": "Japan",
+"make": "Subaru",
+"type": "car"
+},
+"JG1": {
+"country": "United States",
+"make": "General Motors",
+"type": "car"
+},
+"JG2": {
+"country": "United States",
+"make": "General Motors",
+"type": "car"
+},
+"JG7": {
+"country": "Japan",
+"make": "Suzuki",
+"type": "car"
+},
+"JGC": {
+"country": "United States",
+"make": "General Motors",
+"type": "truck"
+},
+"JGT": {
+"country": "United States",
+"make": "General Motors",
+"type": "truck"
+},
+"JH1": {
+"country": "",
+"make": "Honda",
+"type": "truck"
+},
+"JH2": {
+"country": "Japan",
+"make": "Honda",
+"type": "motorcycle"
+},
+"JH3": {
+"country": "Japan",
+"make": "Honda",
+"type": "motorcycle"
+},
+"JH4": {
+"country": "",
+"make": "Honda",
+"type": "car"
+},
+"JHL": {
+"country": "",
+"make": "Honda",
+"type": "mpv"
+},
+"JHM": {
+"country": "",
+"make": "Honda",
+"type": "car"
+},
+"JJ3": {
+"country": "Japan",
+"make": "Mitsubishi",
+"type": "car"
+},
+"JK1": {
+"country": "",
+"make": "Kawasaki",
+"type": "motorcycle"
+},
+"JK8": {
+"country": "Japan",
+"make": "Kawasaki",
+"type": "motorcycle"
+},
+"JKA": {
+"country": "United States",
+"make": "Kawasaki",
+"type": "motorcycle"
+},
+"JKB": {
+"country": "United States",
+"make": "Kawasaki",
+"type": "motorcycle"
+},
+"JKS": {
+"country": "Japan",
+"make": "Suzuki",
+"type": "motorcycle"
+},
+"JL6": {
+"country": "Japan",
+"make": "Mitsubishi Fuso",
+"type": "incomplete"
+},
+"JL7": {
+"country": "Japan",
+"make": "Mitsubishi Fuso",
+"type": "incomplete"
+},
+"JLS": {
+"country": "Japan",
+"make": "Mitsubishi Fuso",
+"type": "incomplete"
+},
+"JM1": {
+"country": "Japan",
+"make": "Mazda",
+"type": "car"
+},
+"JM2": {
+"country": "Japan",
+"make": "Mazda",
+"type": "truck"
+},
+"JM3": {
+"country": "Japan",
+"make": "Mazda",
+"type": "mpv"
+},
+"JN1": {
+"country": "Japan",
+"make": "Nissan",
+"type": "car"
+},
+"JN3": {
+"country": "Japan",
+"make": "Nissan",
+"type": "incomplete"
+},
+"JN6": {
+"country": "Japan",
+"make": "Nissan",
+"type": "truck"
+},
+"JN8": {
+"country": "Japan",
+"make": "Nissan",
+"type": "mpv"
+},
+"JNK": {
+"country": "",
+"make": "Nissan",
+"type": "car"
+},
+"JNR": {
+"country": "",
+"make": "Nissan",
+"type": "mpv"
+},
+"JNT": {
+"country": "",
+"make": "Nissan",
+"type": "truck"
+},
+"JNX": {
+"country": "Japan",
+"make": "Nissan",
+"type": "incomplete"
+},
+"JP3": {
+"country": "Japan",
+"make": "Mitsubishi",
+"type": "car"
+},
+"JP4": {
+"country": "Japan",
+"make": "Mitsubishi",
+"type": "car"
+},
+"JP7": {
+"country": "Japan",
+"make": "Mitsubishi",
+"type": "truck"
+},
+"JR2": {
+"country": "Japan",
+"make": "Honda",
+"type": "mpv"
+},
+"JS1": {
+"country": "Japan",
+"make": "Suzuki",
+"type": "motorcycle"
+},
+"JS2": {
+"country": "",
+"make": "Suzuki",
+"type": "car"
+},
+"JS3": {
+"country": "",
+"make": "Suzuki",
+"type": "mpv"
+},
+"JS4": {
+"country": "Japan",
+"make": "Suzuki",
+"type": "truck"
+},
+"JSA": {
+"country": "Japan",
+"make": "Suzuki",
+"type": "motorcycle"
+},
+"JSK": {
+"country": "Japan",
+"make": "Suzuki",
+"type": "motorcycle"
+},
+"JSL": {
+"country": "Japan",
+"make": "Suzuki",
+"type": "motorcycle"
+},
+"JT2": {
+"country": "Japan",
+"make": "Toyota",
+"type": "car"
+},
+"JT3": {
+"country": "Japan",
+"make": "Toyota",
+"type": "mpv"
+},
+"JT4": {
+"country": "Japan",
+"make": "Toyota",
+"type": "truck"
+},
+"JT5": {
+"country": "Japan",
+"make": "Toyota",
+"type": "car"
+},
+"JT6": {
+"country": "Japan",
+"make": "Toyota",
+"type": "mpv"
+},
+"JT8": {
+"country": "Japan",
+"make": "Toyota",
+"type": "car"
+},
+"JTD": {
+"country": "Japan",
+"make": "Toyota",
+"type": "car"
+},
+"JTE": {
+"country": "Japan",
+"make": "Toyota",
+"type": "mpv"
+},
+"JTH": {
+"country": "Japan",
+"make": "Toyota",
+"type": "car"
+},
+"JTJ": {
+"country": "Japan",
+"make": "Toyota",
+"type": "mpv"
+},
+"JTK": {
+"country": "Japan",
+"make": "Toyota",
+"type": "car"
+},
+"JTL": {
+"country": "Japan",
+"make": "Toyota",
+"type": "mpv"
+},
+"JTM": {
+"country": "Japan",
+"make": "Toyota",
+"type": "mpv"
+},
+"JTN": {
+"country": "Japan",
+"make": "Toyota",
+"type": "car"
+},
+"JW6": {
+"country": "Japan",
+"make": "Mitsubishi",
+"type": "incomplete"
+},
+"JW7": {
+"country": "Japan",
+"make": "Mitsubishi",
+"type": "truck"
+},
+"JY4": {
+"country": "Japan",
+"make": "Yamaha",
+"type": "motorcycle"
+},
+"JYA": {
+"country": "Japan",
+"make": "Yamaha",
+"type": "motorcycle"
+},
+"KFB": {
+"country": "Israel",
+"make": "Freightliner",
+"type": "truck"
+},
+"KL1": {
+"country": "South Korea",
+"make": "General Motors",
+"type": "car"
+},
+"KL2": {
+"country": "United States",
+"make": "General Motors",
+"type": "car"
+},
+"KL4": {
+"country": "",
+"make": "General Motors",
+"type": "mpv"
+},
+"KL5": {
+"country": "South Korea",
+"make": "Suzuki",
+"type": "car"
+},
+"KL7": {
+"country": "",
+"make": "General Motors",
+"type": "mpv"
+},
+"KL8": {
+"country": "",
+"make": "General Motors",
+"type": "car"
+},
+"KM8": {
+"country": "South Korea",
+"make": "Hyundai",
+"type": "mpv"
+},
+"KME": {
+"country": "",
+"make": "Hyundai",
+"type": "truck"
+},
+"KMF": {
+"country": "South Korea",
+"make": "Hyundai",
+"type": "truck"
+},
+"KMH": {
+"country": "South Korea",
+"make": "Hyundai",
+"type": "car"
+},
+"KMT": {
+"country": "South Korea",
+"make": "Hyundai",
+"type": "car"
+},
+"KMU": {
+"country": "South Korea",
+"make": "Hyundai",
+"type": "mpv"
+},
+"KNA": {
+"country": "South Korea",
+"make": "Kia",
+"type": "car"
+},
+"KND": {
+"country": "South Korea",
+"make": "Kia",
+"type": "mpv"
+},
+"KNJ": {
+"country": "South Korea",
+"make": "Kia-Ford",
+"type": "car"
+},
+"KPH": {
+"country": "South Korea",
+"make": "Hyundai",
+"type": "car"
+},
+"L4V": {
+"country": "",
+"make": "Ktmmex",
+"type": "motorcycle"
+},
+"LAL": {
+"country": "China",
+"make": "Honda",
+"type": "motorcycle"
+},
+"LBP": {
+"country": "",
+"make": "Yamaha",
+"type": "motorcycle"
+},
+"LC6": {
+"country": "China",
+"make": "Suzuki",
+"type": "motorcycle"
+},
+"LM1": {
+"country": "Taiwan",
+"make": "Suzuki",
+"type": "motorcycle"
+},
+"LM4": {
+"country": "Taiwan",
+"make": "Suzuki",
+"type": "motorcycle"
+},
+"LN1": {
+"country": "Japan",
+"make": "Suzuki",
+"type": "motorcycle"
+},
+"LPR": {
+"country": "Taiwan",
+"make": "Yamaha",
+"type": "motorcycle"
+},
+"LRB": {
+"country": "China",
+"make": "General Motors",
+"type": "mpv"
+},
+"LRE": {
+"country": "China",
+"make": "General Motors",
+"type": "car"
+},
+"LSG": {
+"country": "United States",
+"make": "General Motors",
+"type": "car"
+},
+"LVY": {
+"country": "China",
+"make": "Volvo",
+"type": "car"
+},
+"LWB": {
+"country": "China",
+"make": "Honda",
+"type": "motorcycle"
+},
+"LYV": {
+"country": "China",
+"make": "Volvo",
+"type": "mpv"
+},
+"MAA": {
+"country": "India",
+"make": "Kawasaki",
+"type": "motorcycle"
+},
+"MH3": {
+"country": "United States",
+"make": "Yamaha",
+"type": "motorcycle"
+},
+"MH4": {
+"country": "Indonesia",
+"make": "Kawasaki",
+"type": "motorcycle"
+},
+"ML0": {
+"country": "Thailand",
+"make": "Ducati",
+"type": "motorcycle"
+},
+"ML3": {
+"country": "Thailand",
+"make": "Mitsubishi",
+"type": "car"
+},
+"ML5": {
+"country": "Thailand",
+"make": "Kawasaki",
+"type": "motorcycle"
+},
+"MLC": {
+"country": "",
+"make": "Suzuki",
+"type": "motorcycle"
+},
+"MLH": {
+"country": "Thailand",
+"make": "Honda",
+"type": "motorcycle"
+},
+"MN3": {
+"country": "Thailand",
+"make": "Chrysler",
+"type": "car"
+},
+"MP3": {
+"country": "Thailand",
+"make": "Plymouth",
+"type": "car"
+},
+"NMT": {
+"country": "Turkey",
+"make": "Toyota",
+"type": "car"
+},
+"PFD": {
+"country": "Singapore",
+"make": "Hyundai",
+"type": "mpv"
+},
+"RFD": {
+"country": "",
+"make": "Suzuki",
+"type": "motorcycle"
+},
+"RK6": {
+"country": "Taiwan",
+"make": "Suzuki",
+"type": "motorcycle"
+},
+"RK7": {
+"country": "Taiwan",
+"make": "Suzuki",
+"type": "motorcycle"
+},
+"RKR": {
+"country": "Taiwan",
+"make": "Yamaha",
+"type": "motorcycle"
+},
+"RLH": {
+"country": "Vietnam",
+"make": "Honda",
+"type": "motorcycle"
+},
+"RLL": {
+"country": "Vietnam",
+"make": "Vinfast Jsc",
+"type": "mpv"
+},
+"RSA": {
+"country": "Saudi Arabia",
+"make": "Freightliner",
+"type": "incomplete"
+},
+"RSB": {
+"country": "Saudi Arabia",
+"make": "Freightliner",
+"type": "truck"
+},
+"SAD": {
+"country": "United Kingdom",
+"make": "Jaguar Land Rover",
+"type": "mpv"
+},
+"SAJ": {
+"country": "United Kingdom",
+"make": "Jaguar Land Rover",
+"type": "car"
+},
+"SAL": {
+"country": "United Kingdom",
+"make": "Jaguar Land Rover",
+"type": "mpv"
+},
+"SAT": {
+"country": "United Kingdom",
+"make": "Triumph",
+"type": "car"
+},
+"SB1": {
+"country": "United Kingdom",
+"make": "Toyota",
+"type": "car"
+},
+"SBM": {
+"country": "England",
+"make": "McLaren",
+"type": "car"
+},
+"SBV": {
+"country": "United Kingdom",
+"make": "Paccar",
+"type": "incomplete"
+},
+"SCB": {
+"country": "United Kingdom",
+"make": "Bentley",
+"type": "car"
+},
+"SCF": {
+"country": "United Kingdom",
+"make": "Aston Martin",
+"type": "car"
+},
+"SD7": {
+"country": "United Kingdom",
+"make": "Aston Martin",
+"type": "mpv"
+},
+"SFZ": {
+"country": "United States",
+"make": "Tesla",
+"type": "car"
+},
+"SHH": {
+"country": "United Kingdom",
+"make": "Honda",
+"type": "car"
+},
+"SHS": {
+"country": "United Kingdom",
+"make": "Honda",
+"type": "mpv"
+},
+"SJA": {
+"country": "United Kingdom",
+"make": "Bentley",
+"type": "mpv"
+},
+"SJK": {
+"country": "United Kingdom",
+"make": "Nissan",
+"type": "car"
+},
+"SMT": {
+"country": "United Kingdom",
+"make": "Triumph",
+"type": "motorcycle"
+},
+"TAP": {
+"country": "Poland",
+"make": "Polaris",
+"type": "motorcycle"
+},
+"TRU": {
+"country": "Hungary",
+"make": "Audi",
+"type": "car"
+},
+"TYB": {
+"country": "Portugal",
+"make": "Mitsubishi Fuso",
+"type": "truck"
+},
+"U5Y": {
+"country": "United States",
+"make": "Hyundai-Kia",
+"type": "car"
+},
+"VBK": {
+"country": "Austria",
+"make": "KTM",
+"type": "motorcycle"
+},
+"VG5": {
+"country": "United States",
+"make": "Yamaha",
+"type": "motorcycle"
+},
+"VNK": {
+"country": "France",
+"make": "Toyota",
+"type": "car"
+},
+"VTD": {
+"country": "Spain",
+"make": "Montesa Honda",
+"type": "motorcycle"
+},
+"VTM": {
+"country": "Spain",
+"make": "Montesa Honda",
+"type": "motorcycle"
+},
+"VTT": {
+"country": "Spain",
+"make": "Suzuki",
+"type": "motorcycle"
+},
+"W0V": {
+"country": "United States",
+"make": "General Motors",
+"type": "car"
+},
+"W1A": {
+"country": "",
+"make": "Mercedes-Benz",
+"type": "car"
+},
+"W1H": {
+"country": "Germany",
+"make": "Mercedes-Benz",
+"type": "truck"
+},
+"W1K": {
+"country": "Germany",
+"make": "Mercedes-Benz",
+"type": "car"
+},
+"W1L": {
+"country": "",
+"make": "Mercedes-Benz",
+"type": "car"
+},
+"W1M": {
+"country": "",
+"make": "Mercedes-Benz",
+"type": "car"
+},
+"W1N": {
+"country": "Germany",
+"make": "Mercedes-Benz",
+"type": "mpv"
+},
+"W1P": {
+"country": "",
+"make": "Mercedes-Benz",
+"type": "mpv"
+},
+"W1R": {
+"country": "",
+"make": "Mercedes-Benz",
+"type": "mpv"
+},
+"W1W": {
+"country": "Germany",
+"make": "Mercedes-Benz",
+"type": "mpv"
+},
+"W1X": {
+"country": "Germany",
+"make": "Mercedes-Benz",
+"type": "incomplete"
+},
+"W1Y": {
+"country": "Germany",
+"make": "Mercedes-Benz",
+"type": "truck"
+},
+"W1Z": {
+"country": "Germany",
+"make": "Mercedes-Benz",
+"type": "bus"
+},
+"W2W": {
+"country": "Germany",
+"make": "Mercedes-Benz",
+"type": "mpv"
+},
+"W2X": {
+"country": "Germany",
+"make": "Mercedes-Benz",
+"type": "incomplete"
+},
+"W2Y": {
+"country": "Germany",
+"make": "Mercedes-Benz",
+"type": "truck"
+},
+"W2Z": {
+"country": "Germany",
+"make": "Mercedes-Benz",
+"type": "bus"
+},
+"WA1": {
+"country": "Germany",
+"make": "Audi",
+"type": "mpv"
+},
+"WAP": {
+"country": "Germany",
+"make": "BMW",
+"type": "car"
+},
+"WAU": {
+"country": "Germany",
+"make": "Audi",
+"type": "car"
+},
+"WB1": {
+"country": "Germany",
+"make": "BMW Motorrad (Motorcycles)",
+"type": "motorcycle"
+},
+"WB3": {
+"country": "Germany",
+"make": "BMW Motorrad (Motorcycles)",
+"type": "motorcycle"
+},
+"WB4": {
+"country": "Germany",
+"make": "BMW Motorrad (Motorcycles)",
+"type": "motorcycle"
+},
+"WB5": {
+"country": "Germany",
+"make": "BMW",
+"type": "mpv"
+},
+"WBA": {
+"country": "Germany",
+"make": "BMW",
+"type": "car"
+},
+"WBS": {
+"country": "Germany",
+"make": "BMW",
+"type": "car"
+},
+"WBX": {
+"country": "Germany",
+"make": "BMW",
+"type": "mpv"
+},
+"WBY": {
+"country": "Germany",
+"make": "BMW",
+"type": "car"
+},
+"WCD": {
+"country": "Germany",
+"make": "Daimler Chrysler",
+"type": "bus"
+},
+"WD0": {
+"country": "United States",
+"make": "Mercedes-Benz",
+"type": "truck"
+},
+"WD1": {
+"country": "United States",
+"make": "Daimler Chrysler",
+"type": "incomplete"
+},
+"WD2": {
+"country": "United States",
+"make": "Daimler Chrysler",
+"type": "truck"
+},
+"WD3": {
+"country": "Germany",
+"make": "Mercedes-Benz",
+"type": "truck"
+},
+"WD4": {
+"country": "Germany",
+"make": "Mercedes-Benz",
+"type": "mpv"
+},
+"WD5": {
+"country": "United States",
+"make": "Daimler Chrysler",
+"type": "mpv"
+},
+"WD6": {
+"country": "Germany",
+"make": "Daimler Chrysler",
+"type": "truck"
+},
+"WD7": {
+"country": "United States",
+"make": "Daimler Chrysler",
+"type": "incomplete"
+},
+"WD8": {
+"country": "United States",
+"make": "Mercedes-Benz",
+"type": "mpv"
+},
+"WDA": {
+"country": "Germany",
+"make": "Mercedes-Benz",
+"type": "incomplete"
+},
+"WDB": {
+"country": "Germany",
+"make": "Mercedes-Benz",
+"type": "car"
+},
+"WDC": {
+"country": "Germany",
+"make": "Mercedes-Benz",
+"type": "mpv"
+},
+"WDD": {
+"country": "Germany",
+"make": "Mercedes-Benz",
+"type": "car"
+},
+"WDP": {
+"country": "Germany",
+"make": "Daimler Chrysler",
+"type": "incomplete"
+},
+"WDR": {
+"country": "Germany",
+"make": "Daimler Chrysler",
+"type": "mpv"
+},
+"WDW": {
+"country": "United States",
+"make": "Mercedes-Benz",
+"type": "bus"
+},
+"WDX": {
+"country": "United States",
+"make": "Mercedes-Benz",
+"type": "incomplete"
+},
+"WDY": {
+"country": "Germany",
+"make": "Daimler Chrysler",
+"type": "truck"
+},
+"WDZ": {
+"country": "Germany",
+"make": "Mercedes-Benz Sprinter",
+"type": "bus"
+},
+"WEB": {
+"country": "Germany",
+"make": "Daimler Coaches North America",
+"type": "bus"
+},
+"WKK": {
+"country": "United States",
+"make": "Daimler Coaches North America",
+"type": "bus"
+},
+"WME": {
+"country": "Germany",
+"make": "Mercedes-Benz",
+"type": "car"
+},
+"WMW": {
+"country": "Germany",
+"make": "BMW",
+"type": "car"
+},
+"WMZ": {
+"country": "Germany",
+"make": "BMW",
+"type": "mpv"
+},
+"WP0": {
+"country": "Germany",
+"make": "Porsche",
+"type": "car"
+},
+"WP1": {
+"country": "Germany",
+"make": "Porsche",
+"type": "mpv"
+},
+"WU1": {
+"country": "Germany",
+"make": "Audi",
+"type": "mpv"
+},
+"WUA": {
+"country": "Germany",
+"make": "Audi",
+"type": "car"
+},
+"WV1": {
+"country": "Germany",
+"make": "Volkswagen",
+"type": "truck"
+},
+"WV2": {
+"country": "Germany",
+"make": "Volkswagen",
+"type": "mpv"
+},
+"WV3": {
+"country": "Germany",
+"make": "Volkswagen",
+"type": "incomplete"
+},
+"WVG": {
+"country": "Germany",
+"make": "Volkswagen",
+"type": "mpv"
+},
+"WVW": {
+"country": "Germany",
+"make": "Volkswagen",
+"type": "car"
+},
+"WYB": {
+"country": "Germany",
+"make": "Mercedes-Benz",
+"type": "truck"
+},
+"WZ1": {
+"country": "Germany",
+"make": "BMW",
+"type": "car"
+},
+"YB1": {
+"country": "Belgium",
+"make": "Volvo Trucks",
+"type": "incomplete"
+},
+"YB3": {
+"country": "Belgium",
+"make": "Volvo Trucks",
+"type": "incomplete"
+},
+"YC1": {
+"country": "Belgium",
+"make": "Honda",
+"type": "motorcycle"
+},
+"YSM": {
+"country": "Sweden",
+"make": "Polestar",
+"type": "car"
+},
+"YSR": {
+"country": "Sweden",
+"make": "Polestar",
+"type": "mpv"
+},
+"YV1": {
+"country": "Sweden",
+"make": "Volvo",
+"type": "car"
+},
+"YV2": {
+"country": "Sweden",
+"make": "Volvo",
+"type": "incomplete"
+},
+"YV3": {
+"country": "Sweden",
+"make": "Volvo",
+"type": "bus"
+},
+"YV4": {
+"country": "Sweden",
+"make": "Volvo",
+"type": "mpv"
+},
+"YV5": {
+"country": "Sweden",
+"make": "Volvo",
+"type": "incomplete"
+},
+"ZAC": {
+"country": "United States",
+"make": "Stellantis",
+"type": "mpv"
+},
+"ZAM": {
+"country": "Italy",
+"make": "Maserati",
+"type": "car"
+},
+"ZAR": {
+"country": "Italy",
+"make": "Alfa Romeo",
+"type": "car"
+},
+"ZAS": {
+"country": "Italy",
+"make": "Alfa Romeo",
+"type": "mpv"
+},
+"ZC2": {
+"country": "Italy",
+"make": "Maserati",
+"type": "car"
+},
+"ZDC": {
+"country": "Italy",
+"make": "Honda",
+"type": "motorcycle"
+},
+"ZDM": {
+"country": "Italy",
+"make": "Ducati",
+"type": "motorcycle"
+},
+"ZFA": {
+"country": "Italy",
+"make": "Fiat",
+"type": "car"
+},
+"ZFB": {
+"country": "Italy",
+"make": "Stellantis",
+"type": "mpv"
+},
+"ZFD": {
+"country": "",
+"make": "Ferrari",
+"type": "car"
+},
+"ZFF": {
+"country": "Italy",
+"make": "Ferrari",
+"type": "car"
+},
+"ZHW": {
+"country": "Italy",
+"make": "Lamborghini",
+"type": "car"
+},
+"ZN6": {
+"country": "Italy",
+"make": "Maserati",
+"type": "mpv"
+},
+"ZPB": {
+"country": "United States",
+"make": "Lamborghini",
+"type": "mpv"
+},
+"ZSG": {
+"country": "Italy",
+"make": "Ferrari",
+"type": "mpv"
+}
+}
+}

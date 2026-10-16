@@ -1,0 +1,4 @@
+/** Marques proposées dans les listes (noms tels que les bases NHTSA les écrivent). Les autres restent accessibles par le VIN. */
+export const MAKES = ['ACURA', 'ALFA ROMEO', 'AUDI', 'BMW', 'BUICK', 'CADILLAC', 'CHEVROLET', 'CHRYSLER', 'DODGE', 'FIAT', 'FORD', 'GENESIS', 'GMC', 'HARLEY-DAVIDSON', 'HONDA', 'HYUNDAI', 'INFINITI', 'JAGUAR', 'JEEP', 'KAWASAKI', 'KIA', 'LAND ROVER', 'LEXUS', 'LINCOLN', 'LUCID', 'MAZDA', 'MERCEDES-BENZ', 'MINI', 'MITSUBISHI', 'NISSAN', 'POLESTAR', 'PORSCHE', 'RAM', 'RIVIAN', 'SUBARU', 'SUZUKI', 'TESLA', 'TOYOTA', 'VOLKSWAGEN', 'VOLVO', 'YAMAHA'];
+/** « LAND ROVER » → « Land Rover », « MERCEDES-BENZ » → « Mercedes-Benz » ; sigles gardés (BMW, GMC, MINI). */
+export const makeLabel = (m: string) => (['BMW', 'GMC', 'MINI', 'KTM'].includes(m) ? m : m.toLowerCase().replace(/(^|[-\s])([a-z])/g, (_x, a, b) => a + b.toUpperCase()));

@@ -1,0 +1,17 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { LAST_UPDATED, CLARITY_ID, LANG_TAGS } from '../../data/site-config';
+import { displayDate } from '../../lib/format';
+import { route } from '../../i18n/routes';
+const lang = 'en';
+---
+<PageLayout title="Cookies on US VIN Decoder: None Set, How to Check It" description="Cookies on US VIN Decoder: the site sets none and stores nothing on your device. The government APIs your browser queries may set their own load-balancing cookies." lang={lang} noindex={true} breadcrumbs={[{ label: 'Cookies' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none prose-headings:font-serif">
+    <h1>Cookies</h1>
+    <p>This site sets no cookie and writes nothing to your browser's storage: no consent banner is needed because there is nothing to consent to. You can verify it in your browser's developer tools, under Application or Storage, after decoding a VIN.</p>
+    <h2>Requests to government services</h2>
+    <p>When you decode a VIN, your browser calls NHTSA and fueleconomy.gov directly. Their servers may answer with technical cookies, such as load-balancing cookies on api.nhtsa.gov, which belong to those agencies and follow their policies. Blocking third-party cookies in your browser does not stop the decoder from working.</p>
+    {CLARITY_ID ? <><h2>Stability monitoring</h2><p>Microsoft Clarity is loaded in cookie-free mode to detect errors and broken pages. It sets no cookie and masks everything you type.</p></> : <><h2>Measurement</h2><p>No measurement tool is loaded today.</p></>}
+    <p>More in the <a href={route('privacy', lang)}>privacy policy</a>. Updated on <time datetime={LAST_UPDATED}>{displayDate(LAST_UPDATED, LANG_TAGS[lang])}</time>.</p>
+  </div>
+</PageLayout>

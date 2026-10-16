@@ -1,0 +1,7717 @@
+{
+"source": "https://www.fueleconomy.gov/feg/epadata/vehicles.csv.zip",
+"prices_source": "https://www.fueleconomy.gov/ws/rest/fuelprices",
+"retrieved_at": "2026-10-16",
+"prices": {
+"cng": 3.08,
+"diesel": 6.18,
+"e85": 3.31,
+"electric": 0.15,
+"lpg": 3.59,
+"midgrade": 4.96,
+"premium": 5.37,
+"regular": 4.33
+},
+"latestYear": 2027,
+"refYear": 2026,
+"refMedian": 22.0,
+"refCount": 816,
+"epaAssumptions": {
+"milesPerYear": 15000,
+"cityShare": 0.55
+},
+"models": {
+"f-150": {
+"years": {
+"2015": {
+"n": 8,
+"kinds": [
+"gas"
+],
+"gasMin": 17.0,
+"gasMax": 22.0,
+"combMin": 17.0,
+"combMax": 22.0,
+"best": {
+"model": "F150 Pickup 2WD",
+"trany": "Automatic (S6)",
+"comb": 22.0,
+"city": 19.0,
+"hwy": 26.0,
+"fuel": "Regular Gasoline",
+"cost": 3050.0,
+"kind": "gas"
+},
+"worst": {
+"model": "F150 Pickup 4WD FFV",
+"trany": "Automatic (S6)",
+"comb": 17.0,
+"city": 15.0,
+"hwy": 21.0,
+"fuel": "Regular Gasoline",
+"cost": 3950.0,
+"kind": "gas"
+},
+"costMin": 3050.0,
+"costMax": 3950.0
+},
+"2016": {
+"n": 14,
+"kinds": [
+"gas"
+],
+"gasMin": 16.0,
+"gasMax": 21.0,
+"combMin": 16.0,
+"combMax": 21.0,
+"best": {
+"model": "F150 Pickup 2WD",
+"trany": "Automatic (S6)",
+"comb": 21.0,
+"city": 19.0,
+"hwy": 25.0,
+"fuel": "Regular Gasoline",
+"cost": 3200.0,
+"kind": "gas"
+},
+"worst": {
+"model": "F150 5.0L 2WD FFV GVWR>7599 LBS PAYLOAD PACKAGE",
+"trany": "Automatic (S6)",
+"comb": 16.0,
+"city": 14.0,
+"hwy": 20.0,
+"fuel": "Regular Gasoline",
+"cost": 4200.0,
+"kind": "gas"
+},
+"costMin": 3200.0,
+"costMax": 4200.0
+},
+"2017": {
+"n": 20,
+"kinds": [
+"gas"
+],
+"gasMin": 16.0,
+"gasMax": 22.0,
+"combMin": 16.0,
+"combMax": 22.0,
+"best": {
+"model": "F150 Pickup 2WD",
+"trany": "Automatic (S6)",
+"comb": 22.0,
+"city": 19.0,
+"hwy": 26.0,
+"fuel": "Regular Gasoline",
+"cost": 3050.0,
+"kind": "gas"
+},
+"worst": {
+"model": "F150 5.0L 2WD FFV GVWR>7599 LBS",
+"trany": "Automatic (S6)",
+"comb": 16.0,
+"city": 14.0,
+"hwy": 20.0,
+"fuel": "Regular Gasoline",
+"cost": 4200.0,
+"kind": "gas"
+},
+"costMin": 3050.0,
+"costMax": 4200.0
+},
+"2018": {
+"n": 38,
+"kinds": [
+"diesel",
+"gas"
+],
+"gasMin": 16.0,
+"gasMax": 25.0,
+"combMin": 16.0,
+"combMax": 25.0,
+"best": {
+"model": "F150 Pickup 2WD",
+"trany": "Automatic (S10)",
+"comb": 25.0,
+"city": 22.0,
+"hwy": 30.0,
+"fuel": "Diesel",
+"cost": 3850.0,
+"kind": "diesel"
+},
+"worst": {
+"model": "F150 RAPTOR 4WD",
+"trany": "Automatic (S10)",
+"comb": 16.0,
+"city": 15.0,
+"hwy": 18.0,
+"fuel": "Regular Gasoline",
+"cost": 4200.0,
+"kind": "gas"
+},
+"costMin": 3050.0,
+"costMax": 4350.0
+},
+"2019": {
+"n": 30,
+"kinds": [
+"diesel",
+"gas"
+],
+"gasMin": 16.0,
+"gasMax": 25.0,
+"combMin": 16.0,
+"combMax": 25.0,
+"best": {
+"model": "F150 Pickup 2WD",
+"trany": "Automatic (S10)",
+"comb": 25.0,
+"city": 22.0,
+"hwy": 30.0,
+"fuel": "Diesel",
+"cost": 3850.0,
+"kind": "diesel"
+},
+"worst": {
+"model": "F150 5.0L 4WD FFV GVWR>7599 LBS",
+"trany": "Automatic (S10)",
+"comb": 16.0,
+"city": 14.0,
+"hwy": 19.0,
+"fuel": "Regular Gasoline",
+"cost": 4200.0,
+"kind": "gas"
+},
+"costMin": 3050.0,
+"costMax": 4350.0
+},
+"2020": {
+"n": 17,
+"kinds": [
+"diesel",
+"gas"
+],
+"gasMin": 16.0,
+"gasMax": 24.0,
+"combMin": 16.0,
+"combMax": 24.0,
+"best": {
+"model": "F150 Pickup 2WD",
+"trany": "Automatic (S10)",
+"comb": 24.0,
+"city": 21.0,
+"hwy": 29.0,
+"fuel": "Diesel",
+"cost": 4000.0,
+"kind": "diesel"
+},
+"worst": {
+"model": "F150 RAPTOR 4WD",
+"trany": "Automatic (S10)",
+"comb": 16.0,
+"city": 15.0,
+"hwy": 18.0,
+"fuel": "Regular Gasoline",
+"cost": 4200.0,
+"kind": "gas"
+},
+"costMin": 3050.0,
+"costMax": 4350.0
+},
+"2021": {
+"n": 22,
+"kinds": [
+"diesel",
+"gas",
+"hybrid"
+],
+"gasMin": 15.0,
+"gasMax": 25.0,
+"combMin": 15.0,
+"combMax": 25.0,
+"best": {
+"model": "F150 Pickup 2WD HEV",
+"trany": "Automatic (S10)",
+"comb": 25.0,
+"city": 25.0,
+"hwy": 26.0,
+"fuel": "Regular Gasoline",
+"cost": 2700.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "F150 RAPTOR 37 4WD",
+"trany": "Automatic (S10)",
+"comb": 15.0,
+"city": 15.0,
+"hwy": 16.0,
+"fuel": "Regular Gasoline",
+"cost": 4450.0,
+"kind": "gas"
+},
+"costMin": 2700.0,
+"costMax": 4450.0
+},
+"2022": {
+"n": 24,
+"kinds": [
+"ev",
+"gas",
+"hybrid"
+],
+"gasMin": 15.0,
+"gasMax": 25.0,
+"combMin": 15.0,
+"combMax": 70.0,
+"best": {
+"model": "F-150 Lightning 4WD Extended Range",
+"trany": "Automatic (A1)",
+"comb": 70.0,
+"city": 78.0,
+"hwy": 63.0,
+"fuel": "Electricity",
+"cost": 1100.0,
+"kind": "ev"
+},
+"worst": {
+"model": "F150 RAPTOR 37 4WD",
+"trany": "Automatic (S10)",
+"comb": 15.0,
+"city": 15.0,
+"hwy": 16.0,
+"fuel": "Regular Gasoline",
+"cost": 4450.0,
+"kind": "gas"
+},
+"costMin": 1100.0,
+"costMax": 4450.0
+},
+"2023": {
+"n": 28,
+"kinds": [
+"ev",
+"gas",
+"hybrid"
+],
+"gasMin": 12.0,
+"gasMax": 25.0,
+"combMin": 12.0,
+"combMax": 70.0,
+"best": {
+"model": "F-150 Lightning 4WD Extended Range",
+"trany": "Automatic (A1)",
+"comb": 70.0,
+"city": 78.0,
+"hwy": 63.0,
+"fuel": "Electricity",
+"cost": 1100.0,
+"kind": "ev"
+},
+"worst": {
+"model": "F150 RAPTOR R 4WD",
+"trany": "Automatic (S10)",
+"comb": 12.0,
+"city": 10.0,
+"hwy": 15.0,
+"fuel": "Regular Gasoline",
+"cost": 5600.0,
+"kind": "gas"
+},
+"costMin": 1100.0,
+"costMax": 5600.0
+},
+"2024": {
+"n": 15,
+"kinds": [
+"ev",
+"gas",
+"hybrid"
+],
+"gasMin": 12.0,
+"gasMax": 23.0,
+"combMin": 12.0,
+"combMax": 70.0,
+"best": {
+"model": "F-150 Lightning 4WD Extended Range",
+"trany": "Automatic (A1)",
+"comb": 70.0,
+"city": 78.0,
+"hwy": 63.0,
+"fuel": "Electricity",
+"cost": 1100.0,
+"kind": "ev"
+},
+"worst": {
+"model": "F150 RAPTOR R 4WD",
+"trany": "Automatic (S10)",
+"comb": 12.0,
+"city": 10.0,
+"hwy": 15.0,
+"fuel": "Regular Gasoline",
+"cost": 5600.0,
+"kind": "gas"
+},
+"costMin": 1100.0,
+"costMax": 5600.0
+},
+"2025": {
+"n": 16,
+"kinds": [
+"ev",
+"gas",
+"hybrid"
+],
+"gasMin": 12.0,
+"gasMax": 23.0,
+"combMin": 12.0,
+"combMax": 72.0,
+"best": {
+"model": "F-150 Lightning 4WD ER2",
+"trany": "Automatic (A1)",
+"comb": 72.0,
+"city": 79.0,
+"hwy": 65.0,
+"fuel": "Electricity",
+"cost": 1050.0,
+"kind": "ev"
+},
+"worst": {
+"model": "F150 RAPTOR R 4WD",
+"trany": "Automatic (S10)",
+"comb": 12.0,
+"city": 10.0,
+"hwy": 15.0,
+"fuel": "Premium Gasoline",
+"cost": 6850.0,
+"kind": "gas"
+},
+"costMin": 1050.0,
+"costMax": 6850.0
+},
+"2026": {
+"n": 12,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 12.0,
+"gasMax": 24.0,
+"combMin": 12.0,
+"combMax": 24.0,
+"best": {
+"model": "F150 Pickup 2WD HEV",
+"trany": "Automatic (S10)",
+"comb": 24.0,
+"city": 23.0,
+"hwy": 25.0,
+"fuel": "Regular Gasoline",
+"cost": 2800.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "F150 RAPTOR R 4WD",
+"trany": "Automatic (S10)",
+"comb": 12.0,
+"city": 10.0,
+"hwy": 15.0,
+"fuel": "Premium Gasoline",
+"cost": 6850.0,
+"kind": "gas"
+},
+"costMin": 2800.0,
+"costMax": 6850.0
+}
+}
+},
+"explorer": {
+"years": {
+"2015": {
+"n": 6,
+"kinds": [
+"gas"
+],
+"gasMin": 18.0,
+"gasMax": 23.0,
+"combMin": 18.0,
+"combMax": 23.0,
+"best": {
+"model": "Explorer FWD",
+"trany": "Automatic 6-spd",
+"comb": 23.0,
+"city": 20.0,
+"hwy": 27.0,
+"fuel": "Regular Gasoline",
+"cost": 2900.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Explorer AWD",
+"trany": "Automatic (S6)",
+"comb": 18.0,
+"city": 16.0,
+"hwy": 22.0,
+"fuel": "Regular Gasoline",
+"cost": 3700.0,
+"kind": "gas"
+},
+"costMin": 2900.0,
+"costMax": 3700.0
+},
+"2016": {
+"n": 7,
+"kinds": [
+"gas"
+],
+"gasMin": 18.0,
+"gasMax": 22.0,
+"combMin": 18.0,
+"combMax": 22.0,
+"best": {
+"model": "Explorer FWD",
+"trany": "Automatic (S6)",
+"comb": 22.0,
+"city": 19.0,
+"hwy": 27.0,
+"fuel": "Regular Gasoline",
+"cost": 3050.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Explorer AWD",
+"trany": "Automatic (S6)",
+"comb": 18.0,
+"city": 16.0,
+"hwy": 22.0,
+"fuel": "Regular Gasoline",
+"cost": 3700.0,
+"kind": "gas"
+},
+"costMin": 3050.0,
+"costMax": 3700.0
+},
+"2017": {
+"n": 7,
+"kinds": [
+"gas"
+],
+"gasMin": 18.0,
+"gasMax": 22.0,
+"combMin": 18.0,
+"combMax": 22.0,
+"best": {
+"model": "Explorer FWD",
+"trany": "Automatic (S6)",
+"comb": 22.0,
+"city": 19.0,
+"hwy": 27.0,
+"fuel": "Regular Gasoline",
+"cost": 3050.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Explorer AWD",
+"trany": "Automatic (S6)",
+"comb": 18.0,
+"city": 16.0,
+"hwy": 22.0,
+"fuel": "Regular Gasoline",
+"cost": 3700.0,
+"kind": "gas"
+},
+"costMin": 3050.0,
+"costMax": 3700.0
+},
+"2018": {
+"n": 7,
+"kinds": [
+"gas"
+],
+"gasMin": 18.0,
+"gasMax": 22.0,
+"combMin": 18.0,
+"combMax": 22.0,
+"best": {
+"model": "Explorer FWD",
+"trany": "Automatic (S6)",
+"comb": 22.0,
+"city": 19.0,
+"hwy": 27.0,
+"fuel": "Regular Gasoline",
+"cost": 3050.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Explorer AWD FFV",
+"trany": "Automatic (S6)",
+"comb": 18.0,
+"city": 16.0,
+"hwy": 22.0,
+"fuel": "Regular Gasoline",
+"cost": 3700.0,
+"kind": "gas"
+},
+"costMin": 3050.0,
+"costMax": 3700.0
+},
+"2019": {
+"n": 7,
+"kinds": [
+"gas"
+],
+"gasMin": 18.0,
+"gasMax": 22.0,
+"combMin": 18.0,
+"combMax": 22.0,
+"best": {
+"model": "Explorer FWD",
+"trany": "Automatic (S6)",
+"comb": 22.0,
+"city": 19.0,
+"hwy": 27.0,
+"fuel": "Regular Gasoline",
+"cost": 3050.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Explorer AWD FFV",
+"trany": "Automatic (S6)",
+"comb": 18.0,
+"city": 16.0,
+"hwy": 22.0,
+"fuel": "Regular Gasoline",
+"cost": 3700.0,
+"kind": "gas"
+},
+"costMin": 3050.0,
+"costMax": 3700.0
+},
+"2020": {
+"n": 6,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 19.0,
+"gasMax": 28.0,
+"combMin": 19.0,
+"combMax": 28.0,
+"best": {
+"model": "Explorer HEV RWD",
+"trany": "Automatic (S10)",
+"comb": 28.0,
+"city": 27.0,
+"hwy": 29.0,
+"fuel": "Regular Gasoline",
+"cost": 2400.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Explorer FFV AWD",
+"trany": "Automatic (S10)",
+"comb": 19.0,
+"city": 16.0,
+"hwy": 23.0,
+"fuel": "Regular Gasoline",
+"cost": 3550.0,
+"kind": "gas"
+},
+"costMin": 2400.0,
+"costMax": 3550.0
+},
+"2021": {
+"n": 10,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 19.0,
+"gasMax": 27.0,
+"combMin": 19.0,
+"combMax": 27.0,
+"best": {
+"model": "Explorer HEV RWD",
+"trany": "Automatic (S10)",
+"comb": 27.0,
+"city": 27.0,
+"hwy": 28.0,
+"fuel": "Regular Gasoline",
+"cost": 2500.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Explorer FFV AWD",
+"trany": "Automatic (S10)",
+"comb": 19.0,
+"city": 16.0,
+"hwy": 23.0,
+"fuel": "Regular Gasoline",
+"cost": 3550.0,
+"kind": "gas"
+},
+"costMin": 2500.0,
+"costMax": 3550.0
+},
+"2022": {
+"n": 15,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 19.0,
+"gasMax": 27.0,
+"combMin": 19.0,
+"combMax": 27.0,
+"best": {
+"model": "Explorer HEV RWD",
+"trany": "Automatic (S10)",
+"comb": 27.0,
+"city": 27.0,
+"hwy": 28.0,
+"fuel": "Regular Gasoline",
+"cost": 2500.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Explorer FFV AWD",
+"trany": "Automatic 10-spd",
+"comb": 19.0,
+"city": 16.0,
+"hwy": 24.0,
+"fuel": "Regular Gasoline",
+"cost": 3550.0,
+"kind": "gas"
+},
+"costMin": 2500.0,
+"costMax": 3550.0
+},
+"2023": {
+"n": 17,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 20.0,
+"gasMax": 27.0,
+"combMin": 20.0,
+"combMax": 27.0,
+"best": {
+"model": "Explorer HEV RWD",
+"trany": "Automatic 10-spd",
+"comb": 27.0,
+"city": 27.0,
+"hwy": 28.0,
+"fuel": "Regular Gasoline",
+"cost": 2500.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Explorer RWD",
+"trany": "Automatic (S10)",
+"comb": 20.0,
+"city": 18.0,
+"hwy": 25.0,
+"fuel": "Regular Gasoline",
+"cost": 3350.0,
+"kind": "gas"
+},
+"costMin": 2500.0,
+"costMax": 3350.0
+},
+"2024": {
+"n": 8,
+"kinds": [
+"gas"
+],
+"gasMin": 20.0,
+"gasMax": 24.0,
+"combMin": 20.0,
+"combMax": 24.0,
+"best": {
+"model": "Explorer RWD",
+"trany": "Automatic 10-spd",
+"comb": 24.0,
+"city": 21.0,
+"hwy": 28.0,
+"fuel": "Regular Gasoline",
+"cost": 2800.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Explorer RWD",
+"trany": "Automatic (S10)",
+"comb": 20.0,
+"city": 18.0,
+"hwy": 25.0,
+"fuel": "Regular Gasoline",
+"cost": 3350.0,
+"kind": "gas"
+},
+"costMin": 2800.0,
+"costMax": 3350.0
+},
+"2025": {
+"n": 6,
+"kinds": [
+"gas"
+],
+"gasMin": 20.0,
+"gasMax": 24.0,
+"combMin": 20.0,
+"combMax": 24.0,
+"best": {
+"model": "Explorer RWD",
+"trany": "Automatic 10-spd",
+"comb": 24.0,
+"city": 20.0,
+"hwy": 29.0,
+"fuel": "Regular Gasoline",
+"cost": 2800.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Explorer AWD",
+"trany": "Automatic (S10)",
+"comb": 20.0,
+"city": 18.0,
+"hwy": 25.0,
+"fuel": "Regular Gasoline",
+"cost": 3350.0,
+"kind": "gas"
+},
+"costMin": 2800.0,
+"costMax": 3350.0
+},
+"2026": {
+"n": 6,
+"kinds": [
+"gas"
+],
+"gasMin": 19.0,
+"gasMax": 24.0,
+"combMin": 19.0,
+"combMax": 24.0,
+"best": {
+"model": "Explorer RWD",
+"trany": "Automatic 10-spd",
+"comb": 24.0,
+"city": 20.0,
+"hwy": 29.0,
+"fuel": "Regular Gasoline",
+"cost": 2800.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Explorer Tremor AWD",
+"trany": "Automatic (S10)",
+"comb": 19.0,
+"city": 17.0,
+"hwy": 22.0,
+"fuel": "Regular Gasoline",
+"cost": 3550.0,
+"kind": "gas"
+},
+"costMin": 2800.0,
+"costMax": 3550.0
+},
+"2027": {
+"n": 8,
+"kinds": [
+"gas"
+],
+"gasMin": 19.0,
+"gasMax": 23.0,
+"combMin": 19.0,
+"combMax": 23.0,
+"best": {
+"model": "Explorer RWD",
+"trany": "Automatic 10-spd",
+"comb": 23.0,
+"city": 20.0,
+"hwy": 28.0,
+"fuel": "Regular Gasoline",
+"cost": 2900.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Explorer Tremor AWD",
+"trany": "Automatic 10-spd",
+"comb": 19.0,
+"city": 17.0,
+"hwy": 22.0,
+"fuel": "Regular Gasoline",
+"cost": 3550.0,
+"kind": "gas"
+},
+"costMin": 2900.0,
+"costMax": 3550.0
+}
+}
+},
+"escape": {
+"years": {
+"2015": {
+"n": 5,
+"kinds": [
+"gas"
+],
+"gasMin": 23.0,
+"gasMax": 26.0,
+"combMin": 23.0,
+"combMax": 26.0,
+"best": {
+"model": "Escape FWD",
+"trany": "Automatic (S6)",
+"comb": 26.0,
+"city": 23.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Escape AWD",
+"trany": "Automatic (S6)",
+"comb": 23.0,
+"city": 21.0,
+"hwy": 28.0,
+"fuel": "Regular Gasoline",
+"cost": 2900.0,
+"kind": "gas"
+},
+"costMin": 2600.0,
+"costMax": 2900.0
+},
+"2016": {
+"n": 5,
+"kinds": [
+"gas"
+],
+"gasMin": 23.0,
+"gasMax": 26.0,
+"combMin": 23.0,
+"combMax": 26.0,
+"best": {
+"model": "Escape FWD",
+"trany": "Automatic (S6)",
+"comb": 26.0,
+"city": 23.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Escape AWD",
+"trany": "Automatic (S6)",
+"comb": 23.0,
+"city": 21.0,
+"hwy": 28.0,
+"fuel": "Regular Gasoline",
+"cost": 2900.0,
+"kind": "gas"
+},
+"costMin": 2600.0,
+"costMax": 2900.0
+},
+"2017": {
+"n": 6,
+"kinds": [
+"gas"
+],
+"gasMin": 23.0,
+"gasMax": 26.0,
+"combMin": 23.0,
+"combMax": 26.0,
+"best": {
+"model": "Escape FWD",
+"trany": "Automatic (S6)",
+"comb": 26.0,
+"city": 23.0,
+"hwy": 30.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Escape AWD",
+"trany": "Automatic (S6)",
+"comb": 23.0,
+"city": 20.0,
+"hwy": 27.0,
+"fuel": "Regular Gasoline",
+"cost": 2900.0,
+"kind": "gas"
+},
+"costMin": 2600.0,
+"costMax": 2900.0
+},
+"2018": {
+"n": 6,
+"kinds": [
+"gas"
+],
+"gasMin": 23.0,
+"gasMax": 26.0,
+"combMin": 23.0,
+"combMax": 26.0,
+"best": {
+"model": "Escape FWD",
+"trany": "Automatic (S6)",
+"comb": 26.0,
+"city": 23.0,
+"hwy": 30.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Escape AWD",
+"trany": "Automatic (S6)",
+"comb": 23.0,
+"city": 20.0,
+"hwy": 27.0,
+"fuel": "Regular Gasoline",
+"cost": 2900.0,
+"kind": "gas"
+},
+"costMin": 2600.0,
+"costMax": 2900.0
+},
+"2019": {
+"n": 6,
+"kinds": [
+"gas"
+],
+"gasMin": 23.0,
+"gasMax": 26.0,
+"combMin": 23.0,
+"combMax": 26.0,
+"best": {
+"model": "Escape FWD",
+"trany": "Automatic (S6)",
+"comb": 26.0,
+"city": 23.0,
+"hwy": 30.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Escape AWD",
+"trany": "Automatic (S6)",
+"comb": 23.0,
+"city": 21.0,
+"hwy": 27.0,
+"fuel": "Regular Gasoline",
+"cost": 2900.0,
+"kind": "gas"
+},
+"costMin": 2600.0,
+"costMax": 2900.0
+},
+"2020": {
+"n": 6,
+"kinds": [
+"gas",
+"hybrid",
+"phev"
+],
+"gasMin": 26.0,
+"gasMax": 41.0,
+"combMin": 26.0,
+"combMax": 41.0,
+"best": {
+"model": "Escape FWD HEV",
+"trany": "Automatic (variable gear ratios)",
+"comb": 41.0,
+"city": 44.0,
+"hwy": 37.0,
+"fuel": "Regular Gasoline",
+"cost": 1650.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Escape AWD",
+"trany": "Automatic (S8)",
+"comb": 26.0,
+"city": 23.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"costMin": 1650.0,
+"costMax": 2600.0
+},
+"2021": {
+"n": 6,
+"kinds": [
+"gas",
+"hybrid",
+"phev"
+],
+"gasMin": 26.0,
+"gasMax": 41.0,
+"combMin": 26.0,
+"combMax": 41.0,
+"best": {
+"model": "Escape FWD HEV",
+"trany": "Automatic (variable gear ratios)",
+"comb": 41.0,
+"city": 44.0,
+"hwy": 37.0,
+"fuel": "Regular Gasoline",
+"cost": 1650.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Escape AWD",
+"trany": "Automatic 8-spd",
+"comb": 26.0,
+"city": 23.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"costMin": 1650.0,
+"costMax": 2600.0
+},
+"2022": {
+"n": 6,
+"kinds": [
+"gas",
+"hybrid",
+"phev"
+],
+"gasMin": 26.0,
+"gasMax": 41.0,
+"combMin": 26.0,
+"combMax": 41.0,
+"best": {
+"model": "Escape FWD HEV",
+"trany": "Automatic (variable gear ratios)",
+"comb": 41.0,
+"city": 44.0,
+"hwy": 37.0,
+"fuel": "Regular Gasoline",
+"cost": 1650.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Escape AWD",
+"trany": "Automatic 8-spd",
+"comb": 26.0,
+"city": 22.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"costMin": 1650.0,
+"costMax": 2600.0
+},
+"2023": {
+"n": 6,
+"kinds": [
+"gas",
+"hybrid",
+"phev"
+],
+"gasMin": 26.0,
+"gasMax": 39.0,
+"combMin": 26.0,
+"combMax": 40.0,
+"best": {
+"model": "Escape FWD PHEV",
+"trany": "Automatic (variable gear ratios)",
+"comb": 40.0,
+"city": 42.0,
+"hwy": 37.0,
+"fuel": "Regular Gasoline",
+"cost": 1700.0,
+"kind": "phev"
+},
+"worst": {
+"model": "Escape AWD",
+"trany": "Automatic 8-spd",
+"comb": 26.0,
+"city": 23.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"costMin": 1700.0,
+"costMax": 2600.0
+},
+"2024": {
+"n": 5,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 26.0,
+"gasMax": 39.0,
+"combMin": 26.0,
+"combMax": 39.0,
+"best": {
+"model": "Escape FWD HEV",
+"trany": "Automatic (variable gear ratios)",
+"comb": 39.0,
+"city": 42.0,
+"hwy": 36.0,
+"fuel": "Regular Gasoline",
+"cost": 1700.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Escape AWD",
+"trany": "Automatic 8-spd",
+"comb": 26.0,
+"city": 23.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"costMin": 1700.0,
+"costMax": 2600.0
+},
+"2025": {
+"n": 6,
+"kinds": [
+"gas",
+"hybrid",
+"phev"
+],
+"gasMin": 26.0,
+"gasMax": 39.0,
+"combMin": 26.0,
+"combMax": 40.0,
+"best": {
+"model": "Escape FWD PHEV",
+"trany": "Automatic (variable gear ratios)",
+"comb": 40.0,
+"city": 42.0,
+"hwy": 37.0,
+"fuel": "Regular Gasoline",
+"cost": 1700.0,
+"kind": "phev"
+},
+"worst": {
+"model": "Escape AWD",
+"trany": "Automatic 8-spd",
+"comb": 26.0,
+"city": 23.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"costMin": 1700.0,
+"costMax": 2600.0
+},
+"2026": {
+"n": 5,
+"kinds": [
+"gas",
+"hybrid",
+"phev"
+],
+"gasMin": 26.0,
+"gasMax": 39.0,
+"combMin": 26.0,
+"combMax": 40.0,
+"best": {
+"model": "Escape FWD PHEV",
+"trany": "Automatic (variable gear ratios)",
+"comb": 40.0,
+"city": 42.0,
+"hwy": 37.0,
+"fuel": "Regular Gasoline",
+"cost": 1700.0,
+"kind": "phev"
+},
+"worst": {
+"model": "Escape AWD",
+"trany": "Automatic 8-spd",
+"comb": 26.0,
+"city": 23.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"costMin": 1700.0,
+"costMax": 2600.0
+}
+}
+},
+"silverado-1500": {
+"years": {
+"2015": {
+"n": 14,
+"kinds": [
+"gas"
+],
+"gasMin": 17.0,
+"gasMax": 20.0,
+"combMin": 17.0,
+"combMax": 20.0,
+"best": {
+"model": "Silverado C15 2WD",
+"trany": "Automatic 6-spd",
+"comb": 20.0,
+"city": 18.0,
+"hwy": 24.0,
+"fuel": "Regular Gasoline",
+"cost": 3350.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Silverado C15 Cab Chassis 2WD",
+"trany": "Automatic 6-spd",
+"comb": 17.0,
+"city": 15.0,
+"hwy": 20.0,
+"fuel": "Regular Gasoline",
+"cost": 3950.0,
+"kind": "gas"
+},
+"costMin": 3350.0,
+"costMax": 3950.0
+},
+"2016": {
+"n": 14,
+"kinds": [
+"gas"
+],
+"gasMin": 17.0,
+"gasMax": 20.0,
+"combMin": 17.0,
+"combMax": 20.0,
+"best": {
+"model": "Silverado C15 2WD",
+"trany": "Automatic 6-spd",
+"comb": 20.0,
+"city": 18.0,
+"hwy": 23.0,
+"fuel": "Regular Gasoline",
+"cost": 3350.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Silverado C15 Cab Chassis 2WD",
+"trany": "Automatic 6-spd",
+"comb": 17.0,
+"city": 15.0,
+"hwy": 20.0,
+"fuel": "Regular Gasoline",
+"cost": 3950.0,
+"kind": "gas"
+},
+"costMin": 3350.0,
+"costMax": 3950.0
+},
+"2017": {
+"n": 14,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 17.0,
+"gasMax": 20.0,
+"combMin": 17.0,
+"combMax": 20.0,
+"best": {
+"model": "Silverado 15 Hybrid 2WD",
+"trany": "Automatic 8-spd",
+"comb": 20.0,
+"city": 18.0,
+"hwy": 24.0,
+"fuel": "Regular Gasoline",
+"cost": 3350.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Silverado C15 2WD",
+"trany": "Automatic 8-spd",
+"comb": 17.0,
+"city": 15.0,
+"hwy": 21.0,
+"fuel": "Regular Gasoline",
+"cost": 3950.0,
+"kind": "gas"
+},
+"costMin": 3350.0,
+"costMax": 3950.0
+},
+"2018": {
+"n": 14,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 17.0,
+"gasMax": 20.0,
+"combMin": 17.0,
+"combMax": 20.0,
+"best": {
+"model": "Silverado 15 Hybrid 2WD",
+"trany": "Automatic 8-spd",
+"comb": 20.0,
+"city": 18.0,
+"hwy": 24.0,
+"fuel": "Regular Gasoline",
+"cost": 3350.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Silverado C15 2WD",
+"trany": "Automatic 8-spd",
+"comb": 17.0,
+"city": 15.0,
+"hwy": 21.0,
+"fuel": "Premium Gasoline",
+"cost": 4850.0,
+"kind": "gas"
+},
+"costMin": 3350.0,
+"costMax": 4850.0
+},
+"2019": {
+"n": 23,
+"kinds": [
+"gas"
+],
+"gasMin": 15.0,
+"gasMax": 21.0,
+"combMin": 15.0,
+"combMax": 21.0,
+"best": {
+"model": "Silverado C10 2WD",
+"trany": "Automatic 8-spd",
+"comb": 21.0,
+"city": 20.0,
+"hwy": 23.0,
+"fuel": "Regular Gasoline",
+"cost": 3200.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Silverado K10 Cab Chassis 4WD",
+"trany": "Automatic 6-spd",
+"comb": 15.0,
+"city": 14.0,
+"hwy": 17.0,
+"fuel": "Regular Gasoline",
+"cost": 4450.0,
+"kind": "gas"
+},
+"costMin": 3200.0,
+"costMax": 4850.0
+},
+"2020": {
+"n": 27,
+"kinds": [
+"diesel",
+"gas"
+],
+"gasMin": 15.0,
+"gasMax": 27.0,
+"combMin": 15.0,
+"combMax": 27.0,
+"best": {
+"model": "Silverado 2WD",
+"trany": "Automatic 10-spd",
+"comb": 27.0,
+"city": 23.0,
+"hwy": 33.0,
+"fuel": "Diesel",
+"cost": 3550.0,
+"kind": "diesel"
+},
+"worst": {
+"model": "Silverado Cab Chassis 4WD",
+"trany": "Automatic 6-spd",
+"comb": 15.0,
+"city": 14.0,
+"hwy": 17.0,
+"fuel": "Regular Gasoline",
+"cost": 4450.0,
+"kind": "gas"
+},
+"costMin": 3200.0,
+"costMax": 5500.0
+},
+"2021": {
+"n": 36,
+"kinds": [
+"diesel",
+"gas"
+],
+"gasMin": 14.0,
+"gasMax": 27.0,
+"combMin": 14.0,
+"combMax": 27.0,
+"best": {
+"model": "Silverado 2WD",
+"trany": "Automatic 10-spd",
+"comb": 27.0,
+"city": 23.0,
+"hwy": 33.0,
+"fuel": "Diesel",
+"cost": 3550.0,
+"kind": "diesel"
+},
+"worst": {
+"model": "Silverado Cab Chassis 4WD",
+"trany": "Automatic 6-spd",
+"comb": 14.0,
+"city": 13.0,
+"hwy": 17.0,
+"fuel": "Regular Gasoline",
+"cost": 4800.0,
+"kind": "gas"
+},
+"costMin": 3200.0,
+"costMax": 5150.0
+},
+"2022": {
+"n": 38,
+"kinds": [
+"diesel",
+"gas"
+],
+"gasMin": 14.0,
+"gasMax": 26.0,
+"combMin": 14.0,
+"combMax": 26.0,
+"best": {
+"model": "Silverado 2WD",
+"trany": "Automatic 10-spd",
+"comb": 26.0,
+"city": 23.0,
+"hwy": 31.0,
+"fuel": "Diesel",
+"cost": 3700.0,
+"kind": "diesel"
+},
+"worst": {
+"model": "Silverado Mud Terrain Tires 4WD",
+"trany": "Automatic 10-spd",
+"comb": 14.0,
+"city": 13.0,
+"hwy": 17.0,
+"fuel": "Premium Gasoline",
+"cost": 5850.0,
+"kind": "gas"
+},
+"costMin": 3350.0,
+"costMax": 5850.0
+},
+"2023": {
+"n": 25,
+"kinds": [
+"diesel",
+"gas"
+],
+"gasMin": 15.0,
+"gasMax": 26.0,
+"combMin": 15.0,
+"combMax": 26.0,
+"best": {
+"model": "Silverado 2WD",
+"trany": "Automatic 10-spd",
+"comb": 26.0,
+"city": 24.0,
+"hwy": 29.0,
+"fuel": "Diesel",
+"cost": 3700.0,
+"kind": "diesel"
+},
+"worst": {
+"model": "Silverado 4WD ZR2",
+"trany": "Automatic 10-spd",
+"comb": 15.0,
+"city": 14.0,
+"hwy": 17.0,
+"fuel": "Premium Gasoline",
+"cost": 5500.0,
+"kind": "gas"
+},
+"costMin": 3350.0,
+"costMax": 5500.0
+},
+"2024": {
+"n": 31,
+"kinds": [
+"diesel",
+"ev",
+"gas"
+],
+"gasMin": 15.0,
+"gasMax": 26.0,
+"combMin": 15.0,
+"combMax": 67.0,
+"best": {
+"model": "Silverado EV",
+"trany": "Automatic (A1)",
+"comb": 67.0,
+"city": 72.0,
+"hwy": 62.0,
+"fuel": "Electricity",
+"cost": 1150.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Silverado Mud Terrain Tires 4WD",
+"trany": "Automatic 10-spd",
+"comb": 15.0,
+"city": 14.0,
+"hwy": 17.0,
+"fuel": "Premium Gasoline",
+"cost": 5500.0,
+"kind": "gas"
+},
+"costMin": 1150.0,
+"costMax": 5500.0
+},
+"2025": {
+"n": 33,
+"kinds": [
+"diesel",
+"ev",
+"gas"
+],
+"gasMin": 15.0,
+"gasMax": 26.0,
+"combMin": 15.0,
+"combMax": 70.0,
+"best": {
+"model": "Silverado EV 5WT (11 kW Charger)",
+"trany": "Automatic (A1)",
+"comb": 70.0,
+"city": 77.0,
+"hwy": 63.0,
+"fuel": "Electricity",
+"cost": 1100.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Silverado Mud Terrain Tires 4WD",
+"trany": "Automatic 10-spd",
+"comb": 15.0,
+"city": 14.0,
+"hwy": 17.0,
+"fuel": "Premium Gasoline",
+"cost": 5500.0,
+"kind": "gas"
+},
+"costMin": 1100.0,
+"costMax": 5500.0
+},
+"2026": {
+"n": 31,
+"kinds": [
+"diesel",
+"ev",
+"gas"
+],
+"gasMin": 15.0,
+"gasMax": 25.0,
+"combMin": 15.0,
+"combMax": 70.0,
+"best": {
+"model": "Silverado EV Ext Range WT",
+"trany": "Automatic (A1)",
+"comb": 70.0,
+"city": 78.0,
+"hwy": 63.0,
+"fuel": "Electricity",
+"cost": 1100.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Silverado Mud Terrain Tires 4WD",
+"trany": "Automatic 10-spd",
+"comb": 15.0,
+"city": 14.0,
+"hwy": 17.0,
+"fuel": "Premium Gasoline",
+"cost": 5500.0,
+"kind": "gas"
+},
+"costMin": 1100.0,
+"costMax": 5500.0
+}
+}
+},
+"equinox": {
+"years": {
+"2015": {
+"n": 6,
+"kinds": [
+"gas"
+],
+"gasMin": 19.0,
+"gasMax": 26.0,
+"combMin": 19.0,
+"combMax": 26.0,
+"best": {
+"model": "Equinox FWD",
+"trany": "Automatic 6-spd",
+"comb": 26.0,
+"city": 22.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Equinox FWD",
+"trany": "Automatic 6-spd",
+"comb": 19.0,
+"city": 17.0,
+"hwy": 24.0,
+"fuel": "Regular Gasoline",
+"cost": 3550.0,
+"kind": "gas"
+},
+"costMin": 2600.0,
+"costMax": 3550.0
+},
+"2016": {
+"n": 6,
+"kinds": [
+"gas"
+],
+"gasMin": 18.0,
+"gasMax": 26.0,
+"combMin": 18.0,
+"combMax": 26.0,
+"best": {
+"model": "Equinox FWD",
+"trany": "Automatic 6-spd",
+"comb": 26.0,
+"city": 22.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Equinox AWD",
+"trany": "Automatic 6-spd",
+"comb": 18.0,
+"city": 16.0,
+"hwy": 23.0,
+"fuel": "Regular Gasoline",
+"cost": 3700.0,
+"kind": "gas"
+},
+"costMin": 2600.0,
+"costMax": 3700.0
+},
+"2017": {
+"n": 6,
+"kinds": [
+"gas"
+],
+"gasMin": 18.0,
+"gasMax": 25.0,
+"combMin": 18.0,
+"combMax": 25.0,
+"best": {
+"model": "Equinox FWD",
+"trany": "Automatic 6-spd",
+"comb": 25.0,
+"city": 21.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2700.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Equinox AWD",
+"trany": "Automatic 6-spd",
+"comb": 18.0,
+"city": 16.0,
+"hwy": 23.0,
+"fuel": "Regular Gasoline",
+"cost": 3700.0,
+"kind": "gas"
+},
+"costMin": 2700.0,
+"costMax": 3700.0
+},
+"2018": {
+"n": 6,
+"kinds": [
+"diesel",
+"gas"
+],
+"gasMin": 24.0,
+"gasMax": 32.0,
+"combMin": 24.0,
+"combMax": 32.0,
+"best": {
+"model": "Equinox FWD",
+"trany": "Automatic 6-spd",
+"comb": 32.0,
+"city": 28.0,
+"hwy": 39.0,
+"fuel": "Diesel",
+"cost": 3000.0,
+"kind": "diesel"
+},
+"worst": {
+"model": "Equinox AWD",
+"trany": "Automatic 9-spd",
+"comb": 24.0,
+"city": 22.0,
+"hwy": 28.0,
+"fuel": "Premium Gasoline",
+"cost": 3400.0,
+"kind": "gas"
+},
+"costMin": 2400.0,
+"costMax": 3400.0
+},
+"2019": {
+"n": 6,
+"kinds": [
+"diesel",
+"gas"
+],
+"gasMin": 24.0,
+"gasMax": 32.0,
+"combMin": 24.0,
+"combMax": 32.0,
+"best": {
+"model": "Equinox AWD",
+"trany": "Automatic 6-spd",
+"comb": 32.0,
+"city": 28.0,
+"hwy": 38.0,
+"fuel": "Diesel",
+"cost": 3000.0,
+"kind": "diesel"
+},
+"worst": {
+"model": "Equinox AWD",
+"trany": "Automatic 9-spd",
+"comb": 24.0,
+"city": 22.0,
+"hwy": 28.0,
+"fuel": "Premium Gasoline",
+"cost": 3400.0,
+"kind": "gas"
+},
+"costMin": 2400.0,
+"costMax": 3400.0
+},
+"2020": {
+"n": 4,
+"kinds": [
+"gas"
+],
+"gasMin": 24.0,
+"gasMax": 28.0,
+"combMin": 24.0,
+"combMax": 28.0,
+"best": {
+"model": "Equinox FWD",
+"trany": "Automatic 6-spd",
+"comb": 28.0,
+"city": 26.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2400.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Equinox AWD",
+"trany": "Automatic 9-spd",
+"comb": 24.0,
+"city": 22.0,
+"hwy": 28.0,
+"fuel": "Premium Gasoline",
+"cost": 3400.0,
+"kind": "gas"
+},
+"costMin": 2400.0,
+"costMax": 3400.0
+},
+"2021": {
+"n": 2,
+"kinds": [
+"gas"
+],
+"gasMin": 27.0,
+"gasMax": 28.0,
+"combMin": 27.0,
+"combMax": 28.0,
+"best": {
+"model": "Equinox FWD",
+"trany": "Automatic 6-spd",
+"comb": 28.0,
+"city": 26.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2400.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Equinox AWD",
+"trany": "Automatic 6-spd",
+"comb": 27.0,
+"city": 25.0,
+"hwy": 30.0,
+"fuel": "Regular Gasoline",
+"cost": 2500.0,
+"kind": "gas"
+},
+"costMin": 2400.0,
+"costMax": 2500.0
+},
+"2022": {
+"n": 2,
+"kinds": [
+"gas"
+],
+"gasMin": 27.0,
+"gasMax": 28.0,
+"combMin": 27.0,
+"combMax": 28.0,
+"best": {
+"model": "Equinox FWD",
+"trany": "Automatic 6-spd",
+"comb": 28.0,
+"city": 26.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2400.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Equinox AWD",
+"trany": "Automatic 6-spd",
+"comb": 27.0,
+"city": 25.0,
+"hwy": 30.0,
+"fuel": "Regular Gasoline",
+"cost": 2500.0,
+"kind": "gas"
+},
+"costMin": 2400.0,
+"costMax": 2500.0
+},
+"2023": {
+"n": 2,
+"kinds": [
+"gas"
+],
+"gasMin": 26.0,
+"gasMax": 28.0,
+"combMin": 26.0,
+"combMax": 28.0,
+"best": {
+"model": "Equinox FWD",
+"trany": "Automatic 6-spd",
+"comb": 28.0,
+"city": 26.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2400.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Equinox AWD",
+"trany": "Automatic 6-spd",
+"comb": 26.0,
+"city": 24.0,
+"hwy": 30.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"costMin": 2400.0,
+"costMax": 2600.0
+},
+"2024": {
+"n": 4,
+"kinds": [
+"ev",
+"gas"
+],
+"gasMin": 26.0,
+"gasMax": 28.0,
+"combMin": 26.0,
+"combMax": 108.0,
+"best": {
+"model": "Equinox EV FWD",
+"trany": "Automatic (A1)",
+"comb": 108.0,
+"city": 117.0,
+"hwy": 99.0,
+"fuel": "Electricity",
+"cost": 700.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Equinox AWD",
+"trany": "Automatic 6-spd",
+"comb": 26.0,
+"city": 24.0,
+"hwy": 30.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"costMin": 700.0,
+"costMax": 2600.0
+},
+"2025": {
+"n": 5,
+"kinds": [
+"ev",
+"gas"
+],
+"gasMin": 26.0,
+"gasMax": 27.0,
+"combMin": 26.0,
+"combMax": 109.0,
+"best": {
+"model": "Equinox EV FWD",
+"trany": "Automatic (A1)",
+"comb": 109.0,
+"city": 117.0,
+"hwy": 100.0,
+"fuel": "Electricity",
+"cost": 700.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Equinox AWD",
+"trany": "Automatic 8-spd",
+"comb": 26.0,
+"city": 24.0,
+"hwy": 29.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"costMin": 700.0,
+"costMax": 2600.0
+},
+"2026": {
+"n": 5,
+"kinds": [
+"ev",
+"gas"
+],
+"gasMin": 26.0,
+"gasMax": 27.0,
+"combMin": 26.0,
+"combMax": 108.0,
+"best": {
+"model": "Equinox EV FWD",
+"trany": "Automatic (A1)",
+"comb": 108.0,
+"city": 117.0,
+"hwy": 100.0,
+"fuel": "Electricity",
+"cost": 700.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Equinox AWD",
+"trany": "Automatic 8-spd",
+"comb": 26.0,
+"city": 25.0,
+"hwy": 29.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"costMin": 700.0,
+"costMax": 2600.0
+},
+"2027": {
+"n": 4,
+"kinds": [
+"ev",
+"gas"
+],
+"gasMin": 26.0,
+"gasMax": 27.0,
+"combMin": 26.0,
+"combMax": 108.0,
+"best": {
+"model": "Equinox EV FWD",
+"trany": "Automatic (A1)",
+"comb": 108.0,
+"city": 117.0,
+"hwy": 100.0,
+"fuel": "Electricity",
+"cost": 700.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Equinox AWD",
+"trany": "Automatic 8-spd",
+"comb": 26.0,
+"city": 25.0,
+"hwy": 29.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"costMin": 700.0,
+"costMax": 2600.0
+}
+}
+},
+"rav4": {
+"years": {
+"2015": {
+"n": 4,
+"kinds": [
+"gas"
+],
+"gasMin": 24.0,
+"gasMax": 26.0,
+"combMin": 24.0,
+"combMax": 26.0,
+"best": {
+"model": "RAV4",
+"trany": "Automatic (S6)",
+"comb": 26.0,
+"city": 23.0,
+"hwy": 30.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"worst": {
+"model": "RAV4 Limited AWD",
+"trany": "Automatic (S6)",
+"comb": 24.0,
+"city": 22.0,
+"hwy": 28.0,
+"fuel": "Regular Gasoline",
+"cost": 2800.0,
+"kind": "gas"
+},
+"costMin": 2600.0,
+"costMax": 2800.0
+},
+"2016": {
+"n": 5,
+"kinds": [
+"gas"
+],
+"gasMin": 24.0,
+"gasMax": 32.0,
+"combMin": 24.0,
+"combMax": 32.0,
+"best": {
+"model": "RAV4 Hybrid AWD",
+"trany": "Automatic (AV-S6)",
+"comb": 32.0,
+"city": 34.0,
+"hwy": 30.0,
+"fuel": "Regular Gasoline",
+"cost": 2100.0,
+"kind": "gas"
+},
+"worst": {
+"model": "RAV4 Limited AWD/SE AWD",
+"trany": "Automatic (S6)",
+"comb": 24.0,
+"city": 22.0,
+"hwy": 28.0,
+"fuel": "Regular Gasoline",
+"cost": 2800.0,
+"kind": "gas"
+},
+"costMin": 2100.0,
+"costMax": 2800.0
+},
+"2017": {
+"n": 5,
+"kinds": [
+"gas"
+],
+"gasMin": 24.0,
+"gasMax": 32.0,
+"combMin": 24.0,
+"combMax": 32.0,
+"best": {
+"model": "RAV4 Hybrid AWD",
+"trany": "Automatic (AV-S6)",
+"comb": 32.0,
+"city": 34.0,
+"hwy": 30.0,
+"fuel": "Regular Gasoline",
+"cost": 2100.0,
+"kind": "gas"
+},
+"worst": {
+"model": "RAV4 Limited AWD/SE AWD",
+"trany": "Automatic (S6)",
+"comb": 24.0,
+"city": 22.0,
+"hwy": 28.0,
+"fuel": "Regular Gasoline",
+"cost": 2800.0,
+"kind": "gas"
+},
+"costMin": 2100.0,
+"costMax": 2800.0
+},
+"2018": {
+"n": 5,
+"kinds": [
+"gas"
+],
+"gasMin": 24.0,
+"gasMax": 32.0,
+"combMin": 24.0,
+"combMax": 32.0,
+"best": {
+"model": "RAV4 Hybrid AWD",
+"trany": "Automatic (AV-S6)",
+"comb": 32.0,
+"city": 34.0,
+"hwy": 30.0,
+"fuel": "Regular Gasoline",
+"cost": 2100.0,
+"kind": "gas"
+},
+"worst": {
+"model": "RAV4 Limited AWD/SE AWD",
+"trany": "Automatic (S6)",
+"comb": 24.0,
+"city": 22.0,
+"hwy": 28.0,
+"fuel": "Regular Gasoline",
+"cost": 2800.0,
+"kind": "gas"
+},
+"costMin": 2100.0,
+"costMax": 2800.0
+},
+"2019": {
+"n": 4,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 28.0,
+"gasMax": 40.0,
+"combMin": 28.0,
+"combMax": 40.0,
+"best": {
+"model": "RAV4 Hybrid AWD",
+"trany": "Automatic (AV-S6)",
+"comb": 40.0,
+"city": 41.0,
+"hwy": 38.0,
+"fuel": "Regular Gasoline",
+"cost": 1700.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "RAV4 AWD",
+"trany": "Automatic (S8)",
+"comb": 28.0,
+"city": 25.0,
+"hwy": 33.0,
+"fuel": "Regular Gasoline",
+"cost": 2400.0,
+"kind": "gas"
+},
+"costMin": 1700.0,
+"costMax": 2400.0
+},
+"2020": {
+"n": 7,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 27.0,
+"gasMax": 40.0,
+"combMin": 27.0,
+"combMax": 40.0,
+"best": {
+"model": "RAV4 Hybrid AWD",
+"trany": "Automatic (AV-S6)",
+"comb": 40.0,
+"city": 41.0,
+"hwy": 38.0,
+"fuel": "Regular Gasoline",
+"cost": 1700.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "RAV4 AWD TRD OFFROAD",
+"trany": "Automatic (S8)",
+"comb": 27.0,
+"city": 25.0,
+"hwy": 32.0,
+"fuel": "Regular Gasoline",
+"cost": 2500.0,
+"kind": "gas"
+},
+"costMin": 1700.0,
+"costMax": 2500.0
+},
+"2021": {
+"n": 8,
+"kinds": [
+"gas",
+"hybrid",
+"phev"
+],
+"gasMin": 28.0,
+"gasMax": 40.0,
+"combMin": 28.0,
+"combMax": 40.0,
+"best": {
+"model": "RAV4 Hybrid  AWD",
+"trany": "Automatic (AV-S6)",
+"comb": 40.0,
+"city": 41.0,
+"hwy": 38.0,
+"fuel": "Regular Gasoline",
+"cost": 1700.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "RAV4 AWD",
+"trany": "Automatic (S8)",
+"comb": 28.0,
+"city": 25.0,
+"hwy": 33.0,
+"fuel": "Regular Gasoline",
+"cost": 2400.0,
+"kind": "gas"
+},
+"costMin": 1700.0,
+"costMax": 2400.0
+},
+"2022": {
+"n": 8,
+"kinds": [
+"gas",
+"hybrid",
+"phev"
+],
+"gasMin": 28.0,
+"gasMax": 40.0,
+"combMin": 28.0,
+"combMax": 40.0,
+"best": {
+"model": "RAV4 Hybrid AWD",
+"trany": "Automatic (AV-S6)",
+"comb": 40.0,
+"city": 41.0,
+"hwy": 38.0,
+"fuel": "Regular Gasoline",
+"cost": 1700.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "RAV4 AWD",
+"trany": "Automatic (S8)",
+"comb": 28.0,
+"city": 25.0,
+"hwy": 33.0,
+"fuel": "Regular Gasoline",
+"cost": 2400.0,
+"kind": "gas"
+},
+"costMin": 1700.0,
+"costMax": 2400.0
+},
+"2023": {
+"n": 9,
+"kinds": [
+"gas",
+"hybrid",
+"phev"
+],
+"gasMin": 28.0,
+"gasMax": 40.0,
+"combMin": 28.0,
+"combMax": 40.0,
+"best": {
+"model": "RAV4 Hybrid AWD",
+"trany": "Automatic (AV-S6)",
+"comb": 40.0,
+"city": 41.0,
+"hwy": 38.0,
+"fuel": "Regular Gasoline",
+"cost": 1700.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "RAV4 AWD",
+"trany": "Automatic (S8)",
+"comb": 28.0,
+"city": 25.0,
+"hwy": 33.0,
+"fuel": "Regular Gasoline",
+"cost": 2400.0,
+"kind": "gas"
+},
+"costMin": 1700.0,
+"costMax": 2400.0
+},
+"2024": {
+"n": 8,
+"kinds": [
+"gas",
+"hybrid",
+"phev"
+],
+"gasMin": 28.0,
+"gasMax": 39.0,
+"combMin": 28.0,
+"combMax": 39.0,
+"best": {
+"model": "RAV4 Hybrid AWD",
+"trany": "Automatic (AV-S6)",
+"comb": 39.0,
+"city": 41.0,
+"hwy": 38.0,
+"fuel": "Regular Gasoline",
+"cost": 1700.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "RAV4 AWD",
+"trany": "Automatic (S8)",
+"comb": 28.0,
+"city": 25.0,
+"hwy": 33.0,
+"fuel": "Regular Gasoline",
+"cost": 2400.0,
+"kind": "gas"
+},
+"costMin": 1700.0,
+"costMax": 2400.0
+},
+"2025": {
+"n": 7,
+"kinds": [
+"gas",
+"hybrid",
+"phev"
+],
+"gasMin": 28.0,
+"gasMax": 39.0,
+"combMin": 28.0,
+"combMax": 39.0,
+"best": {
+"model": "RAV4 Hybrid AWD",
+"trany": "Automatic (AV-S6)",
+"comb": 39.0,
+"city": 41.0,
+"hwy": 38.0,
+"fuel": "Regular Gasoline",
+"cost": 1700.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "RAV4 AWD",
+"trany": "Automatic (S8)",
+"comb": 28.0,
+"city": 25.0,
+"hwy": 33.0,
+"fuel": "Regular Gasoline",
+"cost": 2400.0,
+"kind": "gas"
+},
+"costMin": 1700.0,
+"costMax": 2400.0
+},
+"2026": {
+"n": 6,
+"kinds": [
+"hybrid"
+],
+"gasMin": 38.0,
+"gasMax": 43.0,
+"combMin": 38.0,
+"combMax": 43.0,
+"best": {
+"model": "RAV4",
+"trany": "Automatic (AV-S6)",
+"comb": 43.0,
+"city": 47.0,
+"hwy": 40.0,
+"fuel": "Regular Gasoline",
+"cost": 1550.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "RAV4 Hybrid AWD Woodland Edition",
+"trany": "Automatic (AV-S6)",
+"comb": 38.0,
+"city": 41.0,
+"hwy": 35.0,
+"fuel": "Regular Gasoline",
+"cost": 1750.0,
+"kind": "hybrid"
+},
+"costMin": 1550.0,
+"costMax": 1750.0
+}
+}
+},
+"camry": {
+"years": {
+"2015": {
+"n": 4,
+"kinds": [
+"gas"
+],
+"gasMin": 25.0,
+"gasMax": 40.0,
+"combMin": 25.0,
+"combMax": 40.0,
+"best": {
+"model": "Camry Hybrid LE",
+"trany": "Automatic (variable gear ratios)",
+"comb": 40.0,
+"city": 42.0,
+"hwy": 38.0,
+"fuel": "Regular Gasoline",
+"cost": 1700.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Camry",
+"trany": "Automatic (S6)",
+"comb": 25.0,
+"city": 21.0,
+"hwy": 30.0,
+"fuel": "Regular Gasoline",
+"cost": 2700.0,
+"kind": "gas"
+},
+"costMin": 1700.0,
+"costMax": 2700.0
+},
+"2016": {
+"n": 4,
+"kinds": [
+"gas"
+],
+"gasMin": 25.0,
+"gasMax": 40.0,
+"combMin": 25.0,
+"combMax": 40.0,
+"best": {
+"model": "Camry Hybrid LE",
+"trany": "Automatic (variable gear ratios)",
+"comb": 40.0,
+"city": 42.0,
+"hwy": 38.0,
+"fuel": "Regular Gasoline",
+"cost": 1700.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Camry",
+"trany": "Automatic (S6)",
+"comb": 25.0,
+"city": 21.0,
+"hwy": 30.0,
+"fuel": "Regular Gasoline",
+"cost": 2700.0,
+"kind": "gas"
+},
+"costMin": 1700.0,
+"costMax": 2700.0
+},
+"2017": {
+"n": 4,
+"kinds": [
+"gas"
+],
+"gasMin": 24.0,
+"gasMax": 40.0,
+"combMin": 24.0,
+"combMax": 40.0,
+"best": {
+"model": "Camry Hybrid LE",
+"trany": "Automatic (variable gear ratios)",
+"comb": 40.0,
+"city": 42.0,
+"hwy": 38.0,
+"fuel": "Regular Gasoline",
+"cost": 1700.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Camry",
+"trany": "Automatic (S6)",
+"comb": 24.0,
+"city": 21.0,
+"hwy": 30.0,
+"fuel": "Regular Gasoline",
+"cost": 2800.0,
+"kind": "gas"
+},
+"costMin": 1700.0,
+"costMax": 2800.0
+},
+"2018": {
+"n": 7,
+"kinds": [
+"gas"
+],
+"gasMin": 26.0,
+"gasMax": 52.0,
+"combMin": 26.0,
+"combMax": 52.0,
+"best": {
+"model": "Camry Hybrid LE",
+"trany": "Automatic (AV-S6)",
+"comb": 52.0,
+"city": 51.0,
+"hwy": 53.0,
+"fuel": "Regular Gasoline",
+"cost": 1300.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Camry",
+"trany": "Automatic (S8)",
+"comb": 26.0,
+"city": 22.0,
+"hwy": 33.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"costMin": 1300.0,
+"costMax": 2600.0
+},
+"2019": {
+"n": 7,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 26.0,
+"gasMax": 52.0,
+"combMin": 26.0,
+"combMax": 52.0,
+"best": {
+"model": "Camry Hybrid LE",
+"trany": "Automatic (AV-S6)",
+"comb": 52.0,
+"city": 51.0,
+"hwy": 53.0,
+"fuel": "Regular Gasoline",
+"cost": 1300.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Camry",
+"trany": "Automatic (S8)",
+"comb": 26.0,
+"city": 22.0,
+"hwy": 33.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"costMin": 1300.0,
+"costMax": 2600.0
+},
+"2020": {
+"n": 10,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 25.0,
+"gasMax": 52.0,
+"combMin": 25.0,
+"combMax": 52.0,
+"best": {
+"model": "Camry Hybrid LE",
+"trany": "Automatic (AV-S6)",
+"comb": 52.0,
+"city": 51.0,
+"hwy": 53.0,
+"fuel": "Regular Gasoline",
+"cost": 1300.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Camry TRD",
+"trany": "Automatic (S8)",
+"comb": 25.0,
+"city": 22.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2700.0,
+"kind": "gas"
+},
+"costMin": 1300.0,
+"costMax": 2700.0
+},
+"2021": {
+"n": 9,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 25.0,
+"gasMax": 52.0,
+"combMin": 25.0,
+"combMax": 52.0,
+"best": {
+"model": "Camry Hybrid LE",
+"trany": "Automatic (AV-S6)",
+"comb": 52.0,
+"city": 51.0,
+"hwy": 53.0,
+"fuel": "Regular Gasoline",
+"cost": 1300.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Camry TRD",
+"trany": "Automatic (S8)",
+"comb": 25.0,
+"city": 22.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2700.0,
+"kind": "gas"
+},
+"costMin": 1300.0,
+"costMax": 2700.0
+},
+"2022": {
+"n": 9,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 25.0,
+"gasMax": 52.0,
+"combMin": 25.0,
+"combMax": 52.0,
+"best": {
+"model": "Camry Hybrid LE",
+"trany": "Automatic (AV-S6)",
+"comb": 52.0,
+"city": 51.0,
+"hwy": 53.0,
+"fuel": "Regular Gasoline",
+"cost": 1300.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Camry TRD",
+"trany": "Automatic (S8)",
+"comb": 25.0,
+"city": 22.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2700.0,
+"kind": "gas"
+},
+"costMin": 1300.0,
+"costMax": 2700.0
+},
+"2023": {
+"n": 10,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 25.0,
+"gasMax": 52.0,
+"combMin": 25.0,
+"combMax": 52.0,
+"best": {
+"model": "Camry Hybrid LE",
+"trany": "Automatic (AV-S6)",
+"comb": 52.0,
+"city": 51.0,
+"hwy": 53.0,
+"fuel": "Regular Gasoline",
+"cost": 1300.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Camry TRD",
+"trany": "Automatic (S8)",
+"comb": 25.0,
+"city": 22.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2700.0,
+"kind": "gas"
+},
+"costMin": 1300.0,
+"costMax": 2700.0
+},
+"2024": {
+"n": 9,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 25.0,
+"gasMax": 52.0,
+"combMin": 25.0,
+"combMax": 52.0,
+"best": {
+"model": "Camry Hybrid LE",
+"trany": "Automatic (AV-S6)",
+"comb": 52.0,
+"city": 51.0,
+"hwy": 53.0,
+"fuel": "Regular Gasoline",
+"cost": 1300.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Camry TRD",
+"trany": "Automatic (S8)",
+"comb": 25.0,
+"city": 22.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2700.0,
+"kind": "gas"
+},
+"costMin": 1300.0,
+"costMax": 2700.0
+},
+"2025": {
+"n": 5,
+"kinds": [
+"hybrid"
+],
+"gasMin": 44.0,
+"gasMax": 51.0,
+"combMin": 44.0,
+"combMax": 51.0,
+"best": {
+"model": "Camry HEV FF LE",
+"trany": "Automatic (AV-S6)",
+"comb": 51.0,
+"city": 53.0,
+"hwy": 50.0,
+"fuel": "Regular Gasoline",
+"cost": 1300.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Camry HEV AWD XSE",
+"trany": "Automatic (AV-S6)",
+"comb": 44.0,
+"city": 44.0,
+"hwy": 43.0,
+"fuel": "Regular Gasoline",
+"cost": 1500.0,
+"kind": "hybrid"
+},
+"costMin": 1300.0,
+"costMax": 1500.0
+},
+"2026": {
+"n": 5,
+"kinds": [
+"hybrid"
+],
+"gasMin": 43.0,
+"gasMax": 51.0,
+"combMin": 43.0,
+"combMax": 51.0,
+"best": {
+"model": "Camry HEV FF LE",
+"trany": "Automatic (AV-S6)",
+"comb": 51.0,
+"city": 52.0,
+"hwy": 49.0,
+"fuel": "Regular Gasoline",
+"cost": 1300.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Camry HEV AWD XSE",
+"trany": "Automatic (AV-S6)",
+"comb": 43.0,
+"city": 43.0,
+"hwy": 43.0,
+"fuel": "Regular Gasoline",
+"cost": 1550.0,
+"kind": "hybrid"
+},
+"costMin": 1300.0,
+"costMax": 1550.0
+}
+}
+},
+"tacoma": {
+"years": {
+"2015": {
+"n": 8,
+"kinds": [
+"gas"
+],
+"gasMin": 17.0,
+"gasMax": 22.0,
+"combMin": 17.0,
+"combMax": 22.0,
+"best": {
+"model": "Tacoma 2WD",
+"trany": "Manual 5-spd",
+"comb": 22.0,
+"city": 21.0,
+"hwy": 25.0,
+"fuel": "Regular Gasoline",
+"cost": 3050.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Tacoma 4WD",
+"trany": "Manual 6-spd",
+"comb": 17.0,
+"city": 15.0,
+"hwy": 19.0,
+"fuel": "Regular Gasoline",
+"cost": 3950.0,
+"kind": "gas"
+},
+"costMin": 3050.0,
+"costMax": 3950.0
+},
+"2016": {
+"n": 7,
+"kinds": [
+"gas"
+],
+"gasMin": 18.0,
+"gasMax": 21.0,
+"combMin": 18.0,
+"combMax": 21.0,
+"best": {
+"model": "Tacoma 2WD",
+"trany": "Automatic (S6)",
+"comb": 21.0,
+"city": 19.0,
+"hwy": 23.0,
+"fuel": "Regular Gasoline",
+"cost": 3200.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Tacoma 4WD Double Cab",
+"trany": "Manual 6-spd",
+"comb": 18.0,
+"city": 17.0,
+"hwy": 20.0,
+"fuel": "Regular Gasoline",
+"cost": 3700.0,
+"kind": "gas"
+},
+"costMin": 3200.0,
+"costMax": 3700.0
+},
+"2017": {
+"n": 7,
+"kinds": [
+"gas"
+],
+"gasMin": 18.0,
+"gasMax": 21.0,
+"combMin": 18.0,
+"combMax": 21.0,
+"best": {
+"model": "Tacoma 2WD",
+"trany": "Automatic (S6)",
+"comb": 21.0,
+"city": 19.0,
+"hwy": 24.0,
+"fuel": "Regular Gasoline",
+"cost": 3200.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Tacoma 4WD",
+"trany": "Manual 6-spd",
+"comb": 18.0,
+"city": 17.0,
+"hwy": 21.0,
+"fuel": "Regular Gasoline",
+"cost": 3700.0,
+"kind": "gas"
+},
+"costMin": 3200.0,
+"costMax": 3700.0
+},
+"2018": {
+"n": 6,
+"kinds": [
+"gas"
+],
+"gasMin": 18.0,
+"gasMax": 21.0,
+"combMin": 18.0,
+"combMax": 21.0,
+"best": {
+"model": "Tacoma 2WD",
+"trany": "Automatic (S6)",
+"comb": 21.0,
+"city": 19.0,
+"hwy": 24.0,
+"fuel": "Regular Gasoline",
+"cost": 3200.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Tacoma 4WD",
+"trany": "Manual 6-spd",
+"comb": 18.0,
+"city": 17.0,
+"hwy": 21.0,
+"fuel": "Regular Gasoline",
+"cost": 3700.0,
+"kind": "gas"
+},
+"costMin": 3200.0,
+"costMax": 3700.0
+},
+"2019": {
+"n": 8,
+"kinds": [
+"gas"
+],
+"gasMin": 18.0,
+"gasMax": 21.0,
+"combMin": 18.0,
+"combMax": 21.0,
+"best": {
+"model": "Tacoma 2WD",
+"trany": "Automatic (S6)",
+"comb": 21.0,
+"city": 19.0,
+"hwy": 24.0,
+"fuel": "Regular Gasoline",
+"cost": 3200.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Tacoma 4WD",
+"trany": "Manual 6-spd",
+"comb": 18.0,
+"city": 17.0,
+"hwy": 21.0,
+"fuel": "Regular Gasoline",
+"cost": 3700.0,
+"kind": "gas"
+},
+"costMin": 3200.0,
+"costMax": 3700.0
+},
+"2020": {
+"n": 6,
+"kinds": [
+"gas"
+],
+"gasMin": 18.0,
+"gasMax": 21.0,
+"combMin": 18.0,
+"combMax": 21.0,
+"best": {
+"model": "Tacoma 2WD",
+"trany": "Automatic (S6)",
+"comb": 21.0,
+"city": 19.0,
+"hwy": 24.0,
+"fuel": "Regular Gasoline",
+"cost": 3200.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Tacoma 4WD",
+"trany": "Manual 6-spd",
+"comb": 18.0,
+"city": 17.0,
+"hwy": 21.0,
+"fuel": "Regular Gasoline",
+"cost": 3700.0,
+"kind": "gas"
+},
+"costMin": 3200.0,
+"costMax": 3700.0
+},
+"2021": {
+"n": 6,
+"kinds": [
+"gas"
+],
+"gasMin": 18.0,
+"gasMax": 21.0,
+"combMin": 18.0,
+"combMax": 21.0,
+"best": {
+"model": "Tacoma 2WD",
+"trany": "Automatic (S6)",
+"comb": 21.0,
+"city": 19.0,
+"hwy": 24.0,
+"fuel": "Regular Gasoline",
+"cost": 3200.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Tacoma 4WD",
+"trany": "Manual 6-spd",
+"comb": 18.0,
+"city": 17.0,
+"hwy": 21.0,
+"fuel": "Regular Gasoline",
+"cost": 3700.0,
+"kind": "gas"
+},
+"costMin": 3200.0,
+"costMax": 3700.0
+},
+"2022": {
+"n": 6,
+"kinds": [
+"gas"
+],
+"gasMin": 18.0,
+"gasMax": 21.0,
+"combMin": 18.0,
+"combMax": 21.0,
+"best": {
+"model": "Tacoma 2WD",
+"trany": "Automatic (S6)",
+"comb": 21.0,
+"city": 19.0,
+"hwy": 24.0,
+"fuel": "Regular Gasoline",
+"cost": 3200.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Tacoma 4WD",
+"trany": "Manual 6-spd",
+"comb": 18.0,
+"city": 17.0,
+"hwy": 21.0,
+"fuel": "Regular Gasoline",
+"cost": 3700.0,
+"kind": "gas"
+},
+"costMin": 3200.0,
+"costMax": 3700.0
+},
+"2023": {
+"n": 6,
+"kinds": [
+"gas"
+],
+"gasMin": 18.0,
+"gasMax": 21.0,
+"combMin": 18.0,
+"combMax": 21.0,
+"best": {
+"model": "Tacoma 2WD",
+"trany": "Automatic (S6)",
+"comb": 21.0,
+"city": 19.0,
+"hwy": 24.0,
+"fuel": "Regular Gasoline",
+"cost": 3200.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Tacoma 4WD",
+"trany": "Manual 6-spd",
+"comb": 18.0,
+"city": 17.0,
+"hwy": 21.0,
+"fuel": "Regular Gasoline",
+"cost": 3700.0,
+"kind": "gas"
+},
+"costMin": 3200.0,
+"costMax": 3700.0
+},
+"2024": {
+"n": 10,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 20.0,
+"gasMax": 24.0,
+"combMin": 20.0,
+"combMax": 24.0,
+"best": {
+"model": "Tacoma Hybrid 4WD",
+"trany": "Automatic (S8)",
+"comb": 24.0,
+"city": 23.0,
+"hwy": 24.0,
+"fuel": "Regular Gasoline",
+"cost": 2800.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Tacoma 4WD MT",
+"trany": "Manual 6-spd",
+"comb": 20.0,
+"city": 18.0,
+"hwy": 23.0,
+"fuel": "Regular Gasoline",
+"cost": 3350.0,
+"kind": "gas"
+},
+"costMin": 2800.0,
+"costMax": 3350.0
+},
+"2025": {
+"n": 10,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 20.0,
+"gasMax": 23.0,
+"combMin": 20.0,
+"combMax": 23.0,
+"best": {
+"model": "Tacoma SR5/Sport/PreRunner 2WD",
+"trany": "Automatic (S8)",
+"comb": 23.0,
+"city": 21.0,
+"hwy": 26.0,
+"fuel": "Regular Gasoline",
+"cost": 2900.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Tacoma 4WD MT",
+"trany": "Manual 6-spd",
+"comb": 20.0,
+"city": 18.0,
+"hwy": 23.0,
+"fuel": "Regular Gasoline",
+"cost": 3350.0,
+"kind": "gas"
+},
+"costMin": 2900.0,
+"costMax": 3350.0
+},
+"2026": {
+"n": 10,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 20.0,
+"gasMax": 23.0,
+"combMin": 20.0,
+"combMax": 23.0,
+"best": {
+"model": "Tacoma SR5/Sport/PreRunner 2WD",
+"trany": "Automatic (S8)",
+"comb": 23.0,
+"city": 21.0,
+"hwy": 26.0,
+"fuel": "Regular Gasoline",
+"cost": 2900.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Tacoma 4WD MT",
+"trany": "Manual 6-spd",
+"comb": 20.0,
+"city": 18.0,
+"hwy": 23.0,
+"fuel": "Regular Gasoline",
+"cost": 3350.0,
+"kind": "gas"
+},
+"costMin": 2900.0,
+"costMax": 3350.0
+}
+}
+},
+"cr-v": {
+"years": {
+"2015": {
+"n": 2,
+"kinds": [
+"gas"
+],
+"gasMin": 28.0,
+"gasMax": 29.0,
+"combMin": 28.0,
+"combMax": 29.0,
+"best": {
+"model": "CR-V 2WD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 29.0,
+"city": 27.0,
+"hwy": 33.0,
+"fuel": "Regular Gasoline",
+"cost": 2300.0,
+"kind": "gas"
+},
+"worst": {
+"model": "CR-V 4WD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 28.0,
+"city": 26.0,
+"hwy": 32.0,
+"fuel": "Regular Gasoline",
+"cost": 2400.0,
+"kind": "gas"
+},
+"costMin": 2300.0,
+"costMax": 2400.0
+},
+"2016": {
+"n": 2,
+"kinds": [
+"gas"
+],
+"gasMin": 27.0,
+"gasMax": 29.0,
+"combMin": 27.0,
+"combMax": 29.0,
+"best": {
+"model": "CR-V 2WD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 29.0,
+"city": 26.0,
+"hwy": 32.0,
+"fuel": "Regular Gasoline",
+"cost": 2300.0,
+"kind": "gas"
+},
+"worst": {
+"model": "CR-V 4WD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 27.0,
+"city": 25.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2500.0,
+"kind": "gas"
+},
+"costMin": 2300.0,
+"costMax": 2500.0
+},
+"2017": {
+"n": 4,
+"kinds": [
+"gas"
+],
+"gasMin": 27.0,
+"gasMax": 30.0,
+"combMin": 27.0,
+"combMax": 30.0,
+"best": {
+"model": "CR-V FWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 30.0,
+"city": 28.0,
+"hwy": 34.0,
+"fuel": "Regular Gasoline",
+"cost": 2250.0,
+"kind": "gas"
+},
+"worst": {
+"model": "CR-V AWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 27.0,
+"city": 25.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2500.0,
+"kind": "gas"
+},
+"costMin": 2250.0,
+"costMax": 2500.0
+},
+"2018": {
+"n": 4,
+"kinds": [
+"gas"
+],
+"gasMin": 27.0,
+"gasMax": 30.0,
+"combMin": 27.0,
+"combMax": 30.0,
+"best": {
+"model": "CR-V FWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 30.0,
+"city": 28.0,
+"hwy": 34.0,
+"fuel": "Regular Gasoline",
+"cost": 2250.0,
+"kind": "gas"
+},
+"worst": {
+"model": "CR-V AWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 27.0,
+"city": 25.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2500.0,
+"kind": "gas"
+},
+"costMin": 2250.0,
+"costMax": 2500.0
+},
+"2019": {
+"n": 4,
+"kinds": [
+"gas"
+],
+"gasMin": 27.0,
+"gasMax": 30.0,
+"combMin": 27.0,
+"combMax": 30.0,
+"best": {
+"model": "CR-V FWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 30.0,
+"city": 28.0,
+"hwy": 34.0,
+"fuel": "Regular Gasoline",
+"cost": 2250.0,
+"kind": "gas"
+},
+"worst": {
+"model": "CR-V AWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 27.0,
+"city": 25.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2500.0,
+"kind": "gas"
+},
+"costMin": 2250.0,
+"costMax": 2500.0
+},
+"2020": {
+"n": 3,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 29.0,
+"gasMax": 38.0,
+"combMin": 29.0,
+"combMax": 38.0,
+"best": {
+"model": "CR-V Hybrid AWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 38.0,
+"city": 40.0,
+"hwy": 35.0,
+"fuel": "Regular Gasoline",
+"cost": 1750.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "CR-V AWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 29.0,
+"city": 27.0,
+"hwy": 32.0,
+"fuel": "Regular Gasoline",
+"cost": 2300.0,
+"kind": "gas"
+},
+"costMin": 1750.0,
+"costMax": 2300.0
+},
+"2021": {
+"n": 3,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 29.0,
+"gasMax": 38.0,
+"combMin": 29.0,
+"combMax": 38.0,
+"best": {
+"model": "CR-V Hybrid AWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 38.0,
+"city": 40.0,
+"hwy": 35.0,
+"fuel": "Regular Gasoline",
+"cost": 1750.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "CR-V AWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 29.0,
+"city": 27.0,
+"hwy": 32.0,
+"fuel": "Regular Gasoline",
+"cost": 2300.0,
+"kind": "gas"
+},
+"costMin": 1750.0,
+"costMax": 2300.0
+},
+"2022": {
+"n": 3,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 29.0,
+"gasMax": 38.0,
+"combMin": 29.0,
+"combMax": 38.0,
+"best": {
+"model": "CR-V Hybrid AWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 38.0,
+"city": 40.0,
+"hwy": 35.0,
+"fuel": "Regular Gasoline",
+"cost": 1750.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "CR-V AWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 29.0,
+"city": 27.0,
+"hwy": 32.0,
+"fuel": "Regular Gasoline",
+"cost": 2300.0,
+"kind": "gas"
+},
+"costMin": 1750.0,
+"costMax": 2300.0
+},
+"2023": {
+"n": 4,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 29.0,
+"gasMax": 40.0,
+"combMin": 29.0,
+"combMax": 40.0,
+"best": {
+"model": "CR-V Hybrid FWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 40.0,
+"city": 43.0,
+"hwy": 36.0,
+"fuel": "Regular Gasoline",
+"cost": 1700.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "CR-V AWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 29.0,
+"city": 27.0,
+"hwy": 32.0,
+"fuel": "Regular Gasoline",
+"cost": 2300.0,
+"kind": "gas"
+},
+"costMin": 1700.0,
+"costMax": 2300.0
+},
+"2024": {
+"n": 4,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 29.0,
+"gasMax": 40.0,
+"combMin": 29.0,
+"combMax": 40.0,
+"best": {
+"model": "CR-V FWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 40.0,
+"city": 43.0,
+"hwy": 36.0,
+"fuel": "Regular Gasoline",
+"cost": 1700.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "CR-V AWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 29.0,
+"city": 27.0,
+"hwy": 32.0,
+"fuel": "Regular Gasoline",
+"cost": 2300.0,
+"kind": "gas"
+},
+"costMin": 1700.0,
+"costMax": 2300.0
+},
+"2025": {
+"n": 5,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 28.0,
+"gasMax": 40.0,
+"combMin": 28.0,
+"combMax": 40.0,
+"best": {
+"model": "CR-V FWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 40.0,
+"city": 43.0,
+"hwy": 36.0,
+"fuel": "Regular Gasoline",
+"cost": 1700.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "CR-V AWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 28.0,
+"city": 26.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2400.0,
+"kind": "gas"
+},
+"costMin": 1700.0,
+"costMax": 2400.0
+},
+"2026": {
+"n": 6,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 29.0,
+"gasMax": 40.0,
+"combMin": 29.0,
+"combMax": 40.0,
+"best": {
+"model": "CR-V FWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 40.0,
+"city": 43.0,
+"hwy": 36.0,
+"fuel": "Regular Gasoline",
+"cost": 1700.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "CR-V AWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 29.0,
+"city": 27.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2300.0,
+"kind": "gas"
+},
+"costMin": 1700.0,
+"costMax": 2300.0
+},
+"2027": {
+"n": 5,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 29.0,
+"gasMax": 40.0,
+"combMin": 29.0,
+"combMax": 40.0,
+"best": {
+"model": "CR-V FWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 40.0,
+"city": 43.0,
+"hwy": 36.0,
+"fuel": "Regular Gasoline",
+"cost": 1700.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "CR-V AWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 29.0,
+"city": 27.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2300.0,
+"kind": "gas"
+},
+"costMin": 1700.0,
+"costMax": 2300.0
+}
+}
+},
+"civic": {
+"years": {
+"2015": {
+"n": 7,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 25.0,
+"gasMax": 44.0,
+"combMin": 25.0,
+"combMax": 44.0,
+"best": {
+"model": "Civic Hybrid",
+"trany": "Automatic (variable gear ratios)",
+"comb": 44.0,
+"city": 43.0,
+"hwy": 45.0,
+"fuel": "Regular Gasoline",
+"cost": 1500.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Civic",
+"trany": "Manual 6-spd",
+"comb": 25.0,
+"city": 22.0,
+"hwy": 31.0,
+"fuel": "Premium Gasoline",
+"cost": 3300.0,
+"kind": "gas"
+},
+"costMin": 1500.0,
+"costMax": 3300.0
+},
+"2016": {
+"n": 6,
+"kinds": [
+"gas"
+],
+"gasMin": 30.0,
+"gasMax": 35.0,
+"combMin": 30.0,
+"combMax": 35.0,
+"best": {
+"model": "Civic 4Dr",
+"trany": "Automatic (variable gear ratios)",
+"comb": 35.0,
+"city": 31.0,
+"hwy": 42.0,
+"fuel": "Regular Gasoline",
+"cost": 1900.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Civic 2Dr",
+"trany": "Manual 6-spd",
+"comb": 30.0,
+"city": 26.0,
+"hwy": 37.0,
+"fuel": "Regular Gasoline",
+"cost": 2250.0,
+"kind": "gas"
+},
+"costMin": 1900.0,
+"costMax": 2250.0
+},
+"2017": {
+"n": 15,
+"kinds": [
+"gas"
+],
+"gasMin": 25.0,
+"gasMax": 36.0,
+"combMin": 25.0,
+"combMax": 36.0,
+"best": {
+"model": "Civic 4Dr",
+"trany": "Automatic (variable gear ratios)",
+"comb": 36.0,
+"city": 32.0,
+"hwy": 42.0,
+"fuel": "Regular Gasoline",
+"cost": 1850.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Civic 5Dr - Type R",
+"trany": "Manual 6-spd",
+"comb": 25.0,
+"city": 22.0,
+"hwy": 28.0,
+"fuel": "Premium Gasoline",
+"cost": 3300.0,
+"kind": "gas"
+},
+"costMin": 1850.0,
+"costMax": 3300.0
+},
+"2018": {
+"n": 15,
+"kinds": [
+"gas"
+],
+"gasMin": 25.0,
+"gasMax": 36.0,
+"combMin": 25.0,
+"combMax": 36.0,
+"best": {
+"model": "Civic 4Dr",
+"trany": "Automatic (variable gear ratios)",
+"comb": 36.0,
+"city": 32.0,
+"hwy": 42.0,
+"fuel": "Regular Gasoline",
+"cost": 1850.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Civic 5Dr - Type R",
+"trany": "Manual 6-spd",
+"comb": 25.0,
+"city": 22.0,
+"hwy": 28.0,
+"fuel": "Premium Gasoline",
+"cost": 3300.0,
+"kind": "gas"
+},
+"costMin": 1850.0,
+"costMax": 3300.0
+},
+"2019": {
+"n": 16,
+"kinds": [
+"gas"
+],
+"gasMin": 25.0,
+"gasMax": 36.0,
+"combMin": 25.0,
+"combMax": 36.0,
+"best": {
+"model": "Civic 4Dr",
+"trany": "Automatic (variable gear ratios)",
+"comb": 36.0,
+"city": 32.0,
+"hwy": 42.0,
+"fuel": "Regular Gasoline",
+"cost": 1850.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Civic 5Dr",
+"trany": "Manual 6-spd",
+"comb": 25.0,
+"city": 22.0,
+"hwy": 28.0,
+"fuel": "Premium Gasoline",
+"cost": 3300.0,
+"kind": "gas"
+},
+"costMin": 1850.0,
+"costMax": 3300.0
+},
+"2020": {
+"n": 16,
+"kinds": [
+"gas"
+],
+"gasMin": 25.0,
+"gasMax": 36.0,
+"combMin": 25.0,
+"combMax": 36.0,
+"best": {
+"model": "Civic 4Dr",
+"trany": "Automatic (variable gear ratios)",
+"comb": 36.0,
+"city": 32.0,
+"hwy": 42.0,
+"fuel": "Regular Gasoline",
+"cost": 1850.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Civic 5Dr",
+"trany": "Manual 6-spd",
+"comb": 25.0,
+"city": 22.0,
+"hwy": 28.0,
+"fuel": "Premium Gasoline",
+"cost": 3300.0,
+"kind": "gas"
+},
+"costMin": 1850.0,
+"costMax": 3300.0
+},
+"2021": {
+"n": 8,
+"kinds": [
+"gas"
+],
+"gasMin": 25.0,
+"gasMax": 36.0,
+"combMin": 25.0,
+"combMax": 36.0,
+"best": {
+"model": "Civic 4Dr",
+"trany": "Automatic (variable gear ratios)",
+"comb": 36.0,
+"city": 32.0,
+"hwy": 42.0,
+"fuel": "Regular Gasoline",
+"cost": 1850.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Civic 5Dr",
+"trany": "Manual 6-spd",
+"comb": 25.0,
+"city": 22.0,
+"hwy": 28.0,
+"fuel": "Premium Gasoline",
+"cost": 3300.0,
+"kind": "gas"
+},
+"costMin": 1850.0,
+"costMax": 3300.0
+},
+"2022": {
+"n": 11,
+"kinds": [
+"gas"
+],
+"gasMin": 29.0,
+"gasMax": 36.0,
+"combMin": 29.0,
+"combMax": 36.0,
+"best": {
+"model": "Civic 4Dr",
+"trany": "Automatic (variable gear ratios)",
+"comb": 36.0,
+"city": 33.0,
+"hwy": 42.0,
+"fuel": "Regular Gasoline",
+"cost": 1850.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Civic 5Dr",
+"trany": "Manual 6-spd",
+"comb": 29.0,
+"city": 26.0,
+"hwy": 36.0,
+"fuel": "Regular Gasoline",
+"cost": 2300.0,
+"kind": "gas"
+},
+"costMin": 1850.0,
+"costMax": 2650.0
+},
+"2023": {
+"n": 12,
+"kinds": [
+"gas"
+],
+"gasMin": 24.0,
+"gasMax": 36.0,
+"combMin": 24.0,
+"combMax": 36.0,
+"best": {
+"model": "Civic 4Dr",
+"trany": "Automatic (variable gear ratios)",
+"comb": 36.0,
+"city": 33.0,
+"hwy": 42.0,
+"fuel": "Regular Gasoline",
+"cost": 1850.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Civic 5Dr",
+"trany": "Manual 6-spd",
+"comb": 24.0,
+"city": 22.0,
+"hwy": 28.0,
+"fuel": "Premium Gasoline",
+"cost": 3400.0,
+"kind": "gas"
+},
+"costMin": 1850.0,
+"costMax": 3400.0
+},
+"2024": {
+"n": 12,
+"kinds": [
+"gas"
+],
+"gasMin": 24.0,
+"gasMax": 36.0,
+"combMin": 24.0,
+"combMax": 36.0,
+"best": {
+"model": "Civic 4Dr",
+"trany": "Automatic (variable gear ratios)",
+"comb": 36.0,
+"city": 33.0,
+"hwy": 42.0,
+"fuel": "Regular Gasoline",
+"cost": 1850.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Civic 5Dr",
+"trany": "Manual 6-spd",
+"comb": 24.0,
+"city": 22.0,
+"hwy": 28.0,
+"fuel": "Premium Gasoline",
+"cost": 3400.0,
+"kind": "gas"
+},
+"costMin": 1850.0,
+"costMax": 3400.0
+},
+"2025": {
+"n": 7,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 24.0,
+"gasMax": 49.0,
+"combMin": 24.0,
+"combMax": 49.0,
+"best": {
+"model": "Civic 4Dr",
+"trany": "Automatic (variable gear ratios)",
+"comb": 49.0,
+"city": 50.0,
+"hwy": 47.0,
+"fuel": "Regular Gasoline",
+"cost": 1350.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Civic 5Dr",
+"trany": "Manual 6-spd",
+"comb": 24.0,
+"city": 22.0,
+"hwy": 28.0,
+"fuel": "Premium Gasoline",
+"cost": 3400.0,
+"kind": "gas"
+},
+"costMin": 1350.0,
+"costMax": 3400.0
+},
+"2026": {
+"n": 7,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 24.0,
+"gasMax": 49.0,
+"combMin": 24.0,
+"combMax": 49.0,
+"best": {
+"model": "Civic 4Dr",
+"trany": "Automatic (variable gear ratios)",
+"comb": 49.0,
+"city": 50.0,
+"hwy": 47.0,
+"fuel": "Regular Gasoline",
+"cost": 1350.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Civic 5Dr",
+"trany": "Manual 6-spd",
+"comb": 24.0,
+"city": 22.0,
+"hwy": 28.0,
+"fuel": "Premium Gasoline",
+"cost": 3400.0,
+"kind": "gas"
+},
+"costMin": 1350.0,
+"costMax": 3400.0
+}
+}
+},
+"accord": {
+"years": {
+"2015": {
+"n": 7,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 21.0,
+"gasMax": 47.0,
+"combMin": 21.0,
+"combMax": 47.0,
+"best": {
+"model": "Accord Hybrid",
+"trany": "Automatic (variable gear ratios)",
+"comb": 47.0,
+"city": 49.0,
+"hwy": 45.0,
+"fuel": "Regular Gasoline",
+"cost": 1450.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Accord",
+"trany": "Manual 6-spd",
+"comb": 21.0,
+"city": 18.0,
+"hwy": 28.0,
+"fuel": "Regular Gasoline",
+"cost": 3200.0,
+"kind": "gas"
+},
+"costMin": 1450.0,
+"costMax": 3200.0
+},
+"2016": {
+"n": 6,
+"kinds": [
+"gas"
+],
+"gasMin": 21.0,
+"gasMax": 30.0,
+"combMin": 21.0,
+"combMax": 30.0,
+"best": {
+"model": "Accord",
+"trany": "Automatic (variable gear ratios)",
+"comb": 30.0,
+"city": 27.0,
+"hwy": 36.0,
+"fuel": "Regular Gasoline",
+"cost": 2250.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Accord",
+"trany": "Manual 6-spd",
+"comb": 21.0,
+"city": 18.0,
+"hwy": 28.0,
+"fuel": "Regular Gasoline",
+"cost": 3200.0,
+"kind": "gas"
+},
+"costMin": 2250.0,
+"costMax": 3200.0
+},
+"2017": {
+"n": 7,
+"kinds": [
+"gas"
+],
+"gasMin": 21.0,
+"gasMax": 48.0,
+"combMin": 21.0,
+"combMax": 48.0,
+"best": {
+"model": "Accord Hybrid",
+"trany": "Automatic (variable gear ratios)",
+"comb": 48.0,
+"city": 49.0,
+"hwy": 47.0,
+"fuel": "Regular Gasoline",
+"cost": 1400.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Accord",
+"trany": "Manual 6-spd",
+"comb": 21.0,
+"city": 18.0,
+"hwy": 28.0,
+"fuel": "Regular Gasoline",
+"cost": 3200.0,
+"kind": "gas"
+},
+"costMin": 1400.0,
+"costMax": 3200.0
+},
+"2018": {
+"n": 7,
+"kinds": [
+"gas"
+],
+"gasMin": 26.0,
+"gasMax": 47.0,
+"combMin": 26.0,
+"combMax": 47.0,
+"best": {
+"model": "Accord Hybrid",
+"trany": "Automatic (variable gear ratios)",
+"comb": 47.0,
+"city": 47.0,
+"hwy": 47.0,
+"fuel": "Regular Gasoline",
+"cost": 1450.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Accord 2.0T Sport/Touring",
+"trany": "Automatic 10-spd",
+"comb": 26.0,
+"city": 22.0,
+"hwy": 32.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"costMin": 1450.0,
+"costMax": 2600.0
+},
+"2019": {
+"n": 7,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 26.0,
+"gasMax": 48.0,
+"combMin": 26.0,
+"combMax": 48.0,
+"best": {
+"model": "Accord Hybrid",
+"trany": "Automatic (variable gear ratios)",
+"comb": 48.0,
+"city": 48.0,
+"hwy": 48.0,
+"fuel": "Regular Gasoline",
+"cost": 1400.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Accord 2.0T Sport/Touring",
+"trany": "Automatic 10-spd",
+"comb": 26.0,
+"city": 22.0,
+"hwy": 32.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"costMin": 1400.0,
+"costMax": 2600.0
+},
+"2020": {
+"n": 7,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 26.0,
+"gasMax": 48.0,
+"combMin": 26.0,
+"combMax": 48.0,
+"best": {
+"model": "Accord Hybrid",
+"trany": "Automatic (variable gear ratios)",
+"comb": 48.0,
+"city": 48.0,
+"hwy": 47.0,
+"fuel": "Regular Gasoline",
+"cost": 1400.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Accord 2.0T Sport/Touring",
+"trany": "Automatic (S10)",
+"comb": 26.0,
+"city": 22.0,
+"hwy": 32.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"costMin": 1400.0,
+"costMax": 2600.0
+},
+"2021": {
+"n": 5,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 26.0,
+"gasMax": 48.0,
+"combMin": 26.0,
+"combMax": 48.0,
+"best": {
+"model": "Accord Hybrid",
+"trany": "Automatic (variable gear ratios)",
+"comb": 48.0,
+"city": 48.0,
+"hwy": 48.0,
+"fuel": "Regular Gasoline",
+"cost": 1400.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Accord Sport/Touring",
+"trany": "Automatic (S10)",
+"comb": 26.0,
+"city": 22.0,
+"hwy": 32.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"costMin": 1400.0,
+"costMax": 2600.0
+},
+"2022": {
+"n": 5,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 26.0,
+"gasMax": 47.0,
+"combMin": 26.0,
+"combMax": 47.0,
+"best": {
+"model": "Accord Hybrid",
+"trany": "Automatic (variable gear ratios)",
+"comb": 47.0,
+"city": 48.0,
+"hwy": 47.0,
+"fuel": "Regular Gasoline",
+"cost": 1450.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Accord Sport/Touring",
+"trany": "Automatic (S10)",
+"comb": 26.0,
+"city": 22.0,
+"hwy": 32.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"costMin": 1450.0,
+"costMax": 2600.0
+},
+"2023": {
+"n": 3,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 32.0,
+"gasMax": 48.0,
+"combMin": 32.0,
+"combMax": 48.0,
+"best": {
+"model": "Accord Hybrid",
+"trany": "Automatic (variable gear ratios)",
+"comb": 48.0,
+"city": 51.0,
+"hwy": 44.0,
+"fuel": "Regular Gasoline",
+"cost": 1400.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Accord",
+"trany": "Automatic (variable gear ratios)",
+"comb": 32.0,
+"city": 29.0,
+"hwy": 37.0,
+"fuel": "Regular Gasoline",
+"cost": 2100.0,
+"kind": "gas"
+},
+"costMin": 1400.0,
+"costMax": 2100.0
+},
+"2024": {
+"n": 3,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 32.0,
+"gasMax": 48.0,
+"combMin": 32.0,
+"combMax": 48.0,
+"best": {
+"model": "Accord Hybrid",
+"trany": "Automatic (variable gear ratios)",
+"comb": 48.0,
+"city": 51.0,
+"hwy": 44.0,
+"fuel": "Regular Gasoline",
+"cost": 1400.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Accord",
+"trany": "Automatic (variable gear ratios)",
+"comb": 32.0,
+"city": 29.0,
+"hwy": 37.0,
+"fuel": "Regular Gasoline",
+"cost": 2100.0,
+"kind": "gas"
+},
+"costMin": 1400.0,
+"costMax": 2100.0
+},
+"2025": {
+"n": 3,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 32.0,
+"gasMax": 48.0,
+"combMin": 32.0,
+"combMax": 48.0,
+"best": {
+"model": "Accord Hybrid",
+"trany": "Automatic (variable gear ratios)",
+"comb": 48.0,
+"city": 51.0,
+"hwy": 44.0,
+"fuel": "Regular Gasoline",
+"cost": 1400.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Accord",
+"trany": "Automatic (variable gear ratios)",
+"comb": 32.0,
+"city": 29.0,
+"hwy": 37.0,
+"fuel": "Regular Gasoline",
+"cost": 2100.0,
+"kind": "gas"
+},
+"costMin": 1400.0,
+"costMax": 2100.0
+},
+"2026": {
+"n": 4,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 31.0,
+"gasMax": 48.0,
+"combMin": 31.0,
+"combMax": 48.0,
+"best": {
+"model": "Accord Hybrid",
+"trany": "Automatic (variable gear ratios)",
+"comb": 48.0,
+"city": 51.0,
+"hwy": 44.0,
+"fuel": "Regular Gasoline",
+"cost": 1400.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Accord SE",
+"trany": "Automatic (variable gear ratios)",
+"comb": 31.0,
+"city": 28.0,
+"hwy": 36.0,
+"fuel": "Regular Gasoline",
+"cost": 2150.0,
+"kind": "gas"
+},
+"costMin": 1400.0,
+"costMax": 2150.0
+}
+}
+},
+"1500": {
+"years": {
+"2015": {
+"n": 12,
+"kinds": [
+"diesel",
+"gas"
+],
+"gasMin": 15.0,
+"gasMax": 24.0,
+"combMin": 15.0,
+"combMax": 24.0,
+"best": {
+"model": "1500 HFE 2WD",
+"trany": "Automatic 8-spd",
+"comb": 24.0,
+"city": 21.0,
+"hwy": 29.0,
+"fuel": "Diesel",
+"cost": 4000.0,
+"kind": "diesel"
+},
+"worst": {
+"model": "1500 4WD",
+"trany": "Automatic 6-spd",
+"comb": 15.0,
+"city": 13.0,
+"hwy": 19.0,
+"fuel": "Midgrade Gasoline",
+"cost": 5050.0,
+"kind": "gas"
+},
+"costMin": 3200.0,
+"costMax": 5050.0
+},
+"2016": {
+"n": 10,
+"kinds": [
+"diesel",
+"gas"
+],
+"gasMin": 15.0,
+"gasMax": 24.0,
+"combMin": 15.0,
+"combMax": 24.0,
+"best": {
+"model": "1500 HFE 2WD",
+"trany": "Automatic 8-spd",
+"comb": 24.0,
+"city": 21.0,
+"hwy": 29.0,
+"fuel": "Diesel",
+"cost": 4000.0,
+"kind": "diesel"
+},
+"worst": {
+"model": "1500 4WD",
+"trany": "Automatic 6-spd",
+"comb": 15.0,
+"city": 13.0,
+"hwy": 19.0,
+"fuel": "Midgrade Gasoline",
+"cost": 5050.0,
+"kind": "gas"
+},
+"costMin": 3200.0,
+"costMax": 5050.0
+},
+"2017": {
+"n": 7,
+"kinds": [
+"diesel",
+"gas"
+],
+"gasMin": 15.0,
+"gasMax": 23.0,
+"combMin": 15.0,
+"combMax": 23.0,
+"best": {
+"model": "1500 2WD",
+"trany": "Automatic 8-spd",
+"comb": 23.0,
+"city": 20.0,
+"hwy": 27.0,
+"fuel": "Diesel",
+"cost": 4150.0,
+"kind": "diesel"
+},
+"worst": {
+"model": "1500 4WD",
+"trany": "Automatic 6-spd",
+"comb": 15.0,
+"city": 13.0,
+"hwy": 19.0,
+"fuel": "Midgrade Gasoline",
+"cost": 5050.0,
+"kind": "gas"
+},
+"costMin": 3350.0,
+"costMax": 5050.0
+},
+"2018": {
+"n": 7,
+"kinds": [
+"diesel",
+"gas"
+],
+"gasMin": 14.0,
+"gasMax": 23.0,
+"combMin": 14.0,
+"combMax": 23.0,
+"best": {
+"model": "1500 2WD",
+"trany": "Automatic 8-spd",
+"comb": 23.0,
+"city": 20.0,
+"hwy": 27.0,
+"fuel": "Diesel",
+"cost": 4150.0,
+"kind": "diesel"
+},
+"worst": {
+"model": "1500 4WD",
+"trany": "Automatic 6-spd",
+"comb": 14.0,
+"city": 13.0,
+"hwy": 18.0,
+"fuel": "Midgrade Gasoline",
+"cost": 5450.0,
+"kind": "gas"
+},
+"costMin": 3350.0,
+"costMax": 5450.0
+},
+"2019": {
+"n": 13,
+"kinds": [
+"diesel",
+"gas",
+"hybrid"
+],
+"gasMin": 17.0,
+"gasMax": 23.0,
+"combMin": 17.0,
+"combMax": 23.0,
+"best": {
+"model": "1500 HFE 2WD",
+"trany": "Automatic 8-spd",
+"comb": 23.0,
+"city": 20.0,
+"hwy": 26.0,
+"fuel": "Regular Gasoline",
+"cost": 2900.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "1500 2WD",
+"trany": "Automatic 8-spd",
+"comb": 17.0,
+"city": 15.0,
+"hwy": 22.0,
+"fuel": "Midgrade Gasoline",
+"cost": 4450.0,
+"kind": "gas"
+},
+"costMin": 2900.0,
+"costMax": 4450.0
+},
+"2020": {
+"n": 13,
+"kinds": [
+"diesel",
+"gas",
+"hybrid"
+],
+"gasMin": 17.0,
+"gasMax": 26.0,
+"combMin": 17.0,
+"combMax": 26.0,
+"best": {
+"model": "1500 2WD",
+"trany": "Automatic 8-spd",
+"comb": 26.0,
+"city": 22.0,
+"hwy": 32.0,
+"fuel": "Diesel",
+"cost": 3700.0,
+"kind": "diesel"
+},
+"worst": {
+"model": "1500 2WD",
+"trany": "Automatic 8-spd",
+"comb": 17.0,
+"city": 15.0,
+"hwy": 22.0,
+"fuel": "Midgrade Gasoline",
+"cost": 4450.0,
+"kind": "gas"
+},
+"costMin": 2900.0,
+"costMax": 4450.0
+},
+"2021": {
+"n": 15,
+"kinds": [
+"diesel",
+"gas",
+"hybrid"
+],
+"gasMin": 12.0,
+"gasMax": 26.0,
+"combMin": 12.0,
+"combMax": 26.0,
+"best": {
+"model": "1500 2WD",
+"trany": "Automatic 8-spd",
+"comb": 26.0,
+"city": 22.0,
+"hwy": 32.0,
+"fuel": "Diesel",
+"cost": 3700.0,
+"kind": "diesel"
+},
+"worst": {
+"model": "1500 TRX 4WD",
+"trany": "Automatic 8-spd",
+"comb": 12.0,
+"city": 10.0,
+"hwy": 14.0,
+"fuel": "Premium Gasoline",
+"cost": 6850.0,
+"kind": "gas"
+},
+"costMin": 2900.0,
+"costMax": 6850.0
+},
+"2022": {
+"n": 15,
+"kinds": [
+"diesel",
+"gas",
+"hybrid"
+],
+"gasMin": 12.0,
+"gasMax": 26.0,
+"combMin": 12.0,
+"combMax": 26.0,
+"best": {
+"model": "1500 2WD",
+"trany": "Automatic 8-spd",
+"comb": 26.0,
+"city": 22.0,
+"hwy": 32.0,
+"fuel": "Diesel",
+"cost": 3700.0,
+"kind": "diesel"
+},
+"worst": {
+"model": "1500 TRX 4WD",
+"trany": "Automatic 8-spd",
+"comb": 12.0,
+"city": 10.0,
+"hwy": 14.0,
+"fuel": "Premium Gasoline",
+"cost": 6850.0,
+"kind": "gas"
+},
+"costMin": 2900.0,
+"costMax": 6850.0
+},
+"2023": {
+"n": 13,
+"kinds": [
+"diesel",
+"gas",
+"hybrid"
+],
+"gasMin": 12.0,
+"gasMax": 24.0,
+"combMin": 12.0,
+"combMax": 24.0,
+"best": {
+"model": "1500 4WD",
+"trany": "Automatic 8-spd",
+"comb": 24.0,
+"city": 21.0,
+"hwy": 29.0,
+"fuel": "Diesel",
+"cost": 4000.0,
+"kind": "diesel"
+},
+"worst": {
+"model": "1500 TRX 4WD",
+"trany": "Automatic 8-spd",
+"comb": 12.0,
+"city": 10.0,
+"hwy": 14.0,
+"fuel": "Premium Gasoline",
+"cost": 6850.0,
+"kind": "gas"
+},
+"costMin": 2900.0,
+"costMax": 6850.0
+},
+"2024": {
+"n": 10,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 12.0,
+"gasMax": 23.0,
+"combMin": 12.0,
+"combMax": 23.0,
+"best": {
+"model": "1500 HFE 2WD",
+"trany": "Automatic 8-spd",
+"comb": 23.0,
+"city": 20.0,
+"hwy": 26.0,
+"fuel": "Regular Gasoline",
+"cost": 2900.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "1500 TRX 4WD",
+"trany": "Automatic 8-spd",
+"comb": 12.0,
+"city": 10.0,
+"hwy": 14.0,
+"fuel": "Premium Gasoline",
+"cost": 6850.0,
+"kind": "gas"
+},
+"costMin": 2900.0,
+"costMax": 6850.0
+},
+"2025": {
+"n": 7,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 15.0,
+"gasMax": 23.0,
+"combMin": 15.0,
+"combMax": 23.0,
+"best": {
+"model": "1500 HFE 2WD",
+"trany": "Automatic 8-spd",
+"comb": 23.0,
+"city": 20.0,
+"hwy": 26.0,
+"fuel": "Regular Gasoline",
+"cost": 2900.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "1500 RHO 4WD",
+"trany": "Automatic 8-spd",
+"comb": 15.0,
+"city": 14.0,
+"hwy": 16.0,
+"fuel": "Premium Gasoline",
+"cost": 5500.0,
+"kind": "gas"
+},
+"costMin": 2900.0,
+"costMax": 5500.0
+},
+"2026": {
+"n": 10,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 12.0,
+"gasMax": 22.0,
+"combMin": 12.0,
+"combMax": 22.0,
+"best": {
+"model": "1500 2WD",
+"trany": "Automatic 8-spd",
+"comb": 22.0,
+"city": 20.0,
+"hwy": 25.0,
+"fuel": "Regular Gasoline",
+"cost": 3050.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "1500 4WD",
+"trany": "Automatic 8-spd",
+"comb": 12.0,
+"city": 10.0,
+"hwy": 14.0,
+"fuel": "Premium Gasoline",
+"cost": 6850.0,
+"kind": "gas"
+},
+"costMin": 3050.0,
+"costMax": 6850.0
+},
+"2027": {
+"n": 12,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 12.0,
+"gasMax": 22.0,
+"combMin": 12.0,
+"combMax": 22.0,
+"best": {
+"model": "1500 2WD",
+"trany": "Automatic 8-spd",
+"comb": 22.0,
+"city": 20.0,
+"hwy": 25.0,
+"fuel": "Regular Gasoline",
+"cost": 3050.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "1500 4WD",
+"trany": "Automatic 8-spd",
+"comb": 12.0,
+"city": 10.0,
+"hwy": 14.0,
+"fuel": "Premium Gasoline",
+"cost": 6850.0,
+"kind": "gas"
+},
+"costMin": 3050.0,
+"costMax": 6850.0
+}
+}
+},
+"grand-cherokee": {
+"years": {
+"2015": {
+"n": 7,
+"kinds": [
+"diesel",
+"gas"
+],
+"gasMin": 15.0,
+"gasMax": 25.0,
+"combMin": 15.0,
+"combMax": 25.0,
+"best": {
+"model": "Grand Cherokee 2WD",
+"trany": "Automatic 8-spd",
+"comb": 25.0,
+"city": 22.0,
+"hwy": 30.0,
+"fuel": "Diesel",
+"cost": 3850.0,
+"kind": "diesel"
+},
+"worst": {
+"model": "Grand Cherokee SRT8 4WD",
+"trany": "Automatic 8-spd",
+"comb": 15.0,
+"city": 13.0,
+"hwy": 19.0,
+"fuel": "Premium Gasoline",
+"cost": 5500.0,
+"kind": "gas"
+},
+"costMin": 3350.0,
+"costMax": 5500.0
+},
+"2016": {
+"n": 6,
+"kinds": [
+"diesel",
+"gas"
+],
+"gasMin": 15.0,
+"gasMax": 25.0,
+"combMin": 15.0,
+"combMax": 25.0,
+"best": {
+"model": "Grand Cherokee 2WD",
+"trany": "Automatic 8-spd",
+"comb": 25.0,
+"city": 22.0,
+"hwy": 30.0,
+"fuel": "Diesel",
+"cost": 3850.0,
+"kind": "diesel"
+},
+"worst": {
+"model": "Grand Cherokee SRT8 4WD",
+"trany": "Automatic 8-spd",
+"comb": 15.0,
+"city": 13.0,
+"hwy": 19.0,
+"fuel": "Premium Gasoline",
+"cost": 5500.0,
+"kind": "gas"
+},
+"costMin": 3200.0,
+"costMax": 5500.0
+},
+"2017": {
+"n": 4,
+"kinds": [
+"gas"
+],
+"gasMin": 15.0,
+"gasMax": 21.0,
+"combMin": 15.0,
+"combMax": 21.0,
+"best": {
+"model": "Grand Cherokee 2WD",
+"trany": "Automatic 8-spd",
+"comb": 21.0,
+"city": 19.0,
+"hwy": 26.0,
+"fuel": "Regular Gasoline",
+"cost": 3200.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Grand Cherokee SRT 4WD",
+"trany": "Automatic 8-spd",
+"comb": 15.0,
+"city": 13.0,
+"hwy": 19.0,
+"fuel": "Premium Gasoline",
+"cost": 5500.0,
+"kind": "gas"
+},
+"costMin": 3200.0,
+"costMax": 5500.0
+},
+"2018": {
+"n": 7,
+"kinds": [
+"diesel",
+"gas"
+],
+"gasMin": 13.0,
+"gasMax": 25.0,
+"combMin": 13.0,
+"combMax": 25.0,
+"best": {
+"model": "Grand Cherokee 2WD",
+"trany": "Automatic 8-spd",
+"comb": 25.0,
+"city": 22.0,
+"hwy": 30.0,
+"fuel": "Diesel",
+"cost": 3850.0,
+"kind": "diesel"
+},
+"worst": {
+"model": "Grand Cherokee TrackHawk 4WD",
+"trany": "Automatic 8-spd",
+"comb": 13.0,
+"city": 11.0,
+"hwy": 17.0,
+"fuel": "Premium Gasoline",
+"cost": 6300.0,
+"kind": "gas"
+},
+"costMin": 3200.0,
+"costMax": 6300.0
+},
+"2019": {
+"n": 6,
+"kinds": [
+"diesel",
+"gas"
+],
+"gasMin": 13.0,
+"gasMax": 24.0,
+"combMin": 13.0,
+"combMax": 24.0,
+"best": {
+"model": "Grand Cherokee 4WD",
+"trany": "Automatic 8-spd",
+"comb": 24.0,
+"city": 21.0,
+"hwy": 28.0,
+"fuel": "Diesel",
+"cost": 4000.0,
+"kind": "diesel"
+},
+"worst": {
+"model": "Grand Cherokee Trackhawk 4WD",
+"trany": "Automatic 8-spd",
+"comb": 13.0,
+"city": 11.0,
+"hwy": 17.0,
+"fuel": "Premium Gasoline",
+"cost": 6300.0,
+"kind": "gas"
+},
+"costMin": 3200.0,
+"costMax": 6300.0
+},
+"2020": {
+"n": 5,
+"kinds": [
+"gas"
+],
+"gasMin": 13.0,
+"gasMax": 21.0,
+"combMin": 13.0,
+"combMax": 21.0,
+"best": {
+"model": "Grand Cherokee 2WD",
+"trany": "Automatic 8-spd",
+"comb": 21.0,
+"city": 19.0,
+"hwy": 26.0,
+"fuel": "Regular Gasoline",
+"cost": 3200.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Grand Cherokee Trackhawk 4WD",
+"trany": "Automatic 8-spd",
+"comb": 13.0,
+"city": 11.0,
+"hwy": 17.0,
+"fuel": "Premium Gasoline",
+"cost": 6300.0,
+"kind": "gas"
+},
+"costMin": 3200.0,
+"costMax": 6300.0
+},
+"2021": {
+"n": 8,
+"kinds": [
+"gas"
+],
+"gasMin": 13.0,
+"gasMax": 21.0,
+"combMin": 13.0,
+"combMax": 21.0,
+"best": {
+"model": "Grand Cherokee 2WD",
+"trany": "Automatic 8-spd",
+"comb": 21.0,
+"city": 19.0,
+"hwy": 26.0,
+"fuel": "Regular Gasoline",
+"cost": 3200.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Grand Cherokee Trackhawk 4WD",
+"trany": "Automatic 8-spd",
+"comb": 13.0,
+"city": 11.0,
+"hwy": 17.0,
+"fuel": "Premium Gasoline",
+"cost": 6300.0,
+"kind": "gas"
+},
+"costMin": 3200.0,
+"costMax": 6300.0
+},
+"2022": {
+"n": 9,
+"kinds": [
+"gas",
+"phev"
+],
+"gasMin": 17.0,
+"gasMax": 22.0,
+"combMin": 17.0,
+"combMax": 23.0,
+"best": {
+"model": "Grand Cherokee 4xe",
+"trany": "Automatic 8-spd",
+"comb": 23.0,
+"city": 23.0,
+"hwy": 24.0,
+"fuel": "Regular Gasoline",
+"cost": 2900.0,
+"kind": "phev"
+},
+"worst": {
+"model": "Grand Cherokee 4WD",
+"trany": "Automatic 8-spd",
+"comb": 17.0,
+"city": 14.0,
+"hwy": 22.0,
+"fuel": "Midgrade Gasoline",
+"cost": 4450.0,
+"kind": "gas"
+},
+"costMin": 2900.0,
+"costMax": 4450.0
+},
+"2023": {
+"n": 7,
+"kinds": [
+"gas",
+"phev"
+],
+"gasMin": 17.0,
+"gasMax": 22.0,
+"combMin": 17.0,
+"combMax": 23.0,
+"best": {
+"model": "Grand Cherokee 4xe",
+"trany": "Automatic 8-spd",
+"comb": 23.0,
+"city": 23.0,
+"hwy": 24.0,
+"fuel": "Regular Gasoline",
+"cost": 2900.0,
+"kind": "phev"
+},
+"worst": {
+"model": "Grand Cherokee 4WD",
+"trany": "Automatic 8-spd",
+"comb": 17.0,
+"city": 14.0,
+"hwy": 22.0,
+"fuel": "Midgrade Gasoline",
+"cost": 4450.0,
+"kind": "gas"
+},
+"costMin": 2900.0,
+"costMax": 4450.0
+},
+"2024": {
+"n": 6,
+"kinds": [
+"gas",
+"phev"
+],
+"gasMin": 17.0,
+"gasMax": 22.0,
+"combMin": 17.0,
+"combMax": 23.0,
+"best": {
+"model": "Grand Cherokee 4xe",
+"trany": "Automatic 8-spd",
+"comb": 23.0,
+"city": 23.0,
+"hwy": 24.0,
+"fuel": "Regular Gasoline",
+"cost": 2900.0,
+"kind": "phev"
+},
+"worst": {
+"model": "Grand Cherokee L 4WD",
+"trany": "Automatic 8-spd",
+"comb": 17.0,
+"city": 14.0,
+"hwy": 22.0,
+"fuel": "Midgrade Gasoline",
+"cost": 4450.0,
+"kind": "gas"
+},
+"costMin": 2900.0,
+"costMax": 4450.0
+},
+"2025": {
+"n": 5,
+"kinds": [
+"gas",
+"phev"
+],
+"gasMin": 21.0,
+"gasMax": 22.0,
+"combMin": 21.0,
+"combMax": 23.0,
+"best": {
+"model": "Grand Cherokee 4xe",
+"trany": "Automatic 8-spd",
+"comb": 23.0,
+"city": 23.0,
+"hwy": 24.0,
+"fuel": "Regular Gasoline",
+"cost": 2900.0,
+"kind": "phev"
+},
+"worst": {
+"model": "Grand Cherokee L 2WD",
+"trany": "Automatic 8-spd",
+"comb": 21.0,
+"city": 19.0,
+"hwy": 26.0,
+"fuel": "Regular Gasoline",
+"cost": 3200.0,
+"kind": "gas"
+},
+"costMin": 2900.0,
+"costMax": 3200.0
+},
+"2026": {
+"n": 9,
+"kinds": [
+"gas",
+"phev"
+],
+"gasMin": 21.0,
+"gasMax": 23.0,
+"combMin": 21.0,
+"combMax": 23.0,
+"best": {
+"model": "Grand Cherokee L 2WD",
+"trany": "Automatic 8-spd",
+"comb": 23.0,
+"city": 21.0,
+"hwy": 26.0,
+"fuel": "Regular Gasoline",
+"cost": 2900.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Grand Cherokee L 2WD",
+"trany": "Automatic 8-spd",
+"comb": 21.0,
+"city": 19.0,
+"hwy": 26.0,
+"fuel": "Regular Gasoline",
+"cost": 3200.0,
+"kind": "gas"
+},
+"costMin": 2900.0,
+"costMax": 3200.0
+},
+"2027": {
+"n": 8,
+"kinds": [
+"gas"
+],
+"gasMin": 21.0,
+"gasMax": 23.0,
+"combMin": 21.0,
+"combMax": 23.0,
+"best": {
+"model": "Grand Cherokee L 2WD",
+"trany": "Automatic 8-spd",
+"comb": 23.0,
+"city": 21.0,
+"hwy": 26.0,
+"fuel": "Regular Gasoline",
+"cost": 2900.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Grand Cherokee L 2WD",
+"trany": "Automatic 8-spd",
+"comb": 21.0,
+"city": 19.0,
+"hwy": 26.0,
+"fuel": "Regular Gasoline",
+"cost": 3200.0,
+"kind": "gas"
+},
+"costMin": 2900.0,
+"costMax": 3200.0
+}
+}
+},
+"rogue": {
+"years": {
+"2015": {
+"n": 4,
+"kinds": [
+"gas"
+],
+"gasMin": 24.0,
+"gasMax": 28.0,
+"combMin": 24.0,
+"combMax": 28.0,
+"best": {
+"model": "Rogue FWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 28.0,
+"city": 26.0,
+"hwy": 32.0,
+"fuel": "Regular Gasoline",
+"cost": 2400.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Rogue Select AWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 24.0,
+"city": 22.0,
+"hwy": 26.0,
+"fuel": "Regular Gasoline",
+"cost": 2800.0,
+"kind": "gas"
+},
+"costMin": 2400.0,
+"costMax": 2800.0
+},
+"2016": {
+"n": 2,
+"kinds": [
+"gas"
+],
+"gasMin": 27.0,
+"gasMax": 28.0,
+"combMin": 27.0,
+"combMax": 28.0,
+"best": {
+"model": "Rogue FWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 28.0,
+"city": 26.0,
+"hwy": 32.0,
+"fuel": "Regular Gasoline",
+"cost": 2400.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Rogue AWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 27.0,
+"city": 25.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2500.0,
+"kind": "gas"
+},
+"costMin": 2400.0,
+"costMax": 2500.0
+},
+"2017": {
+"n": 6,
+"kinds": [
+"gas"
+],
+"gasMin": 27.0,
+"gasMax": 34.0,
+"combMin": 27.0,
+"combMax": 34.0,
+"best": {
+"model": "Rogue Hybrid  FWD",
+"trany": "Automatic (AV-S7)",
+"comb": 34.0,
+"city": 33.0,
+"hwy": 35.0,
+"fuel": "Regular Gasoline",
+"cost": 1950.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Rogue AWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 27.0,
+"city": 25.0,
+"hwy": 32.0,
+"fuel": "Regular Gasoline",
+"cost": 2500.0,
+"kind": "gas"
+},
+"costMin": 1950.0,
+"costMax": 2500.0
+},
+"2018": {
+"n": 6,
+"kinds": [
+"gas"
+],
+"gasMin": 27.0,
+"gasMax": 34.0,
+"combMin": 27.0,
+"combMax": 34.0,
+"best": {
+"model": "Rogue Hybrid  FWD",
+"trany": "Automatic (AV-S7)",
+"comb": 34.0,
+"city": 33.0,
+"hwy": 35.0,
+"fuel": "Regular Gasoline",
+"cost": 1950.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Rogue AWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 27.0,
+"city": 25.0,
+"hwy": 32.0,
+"fuel": "Regular Gasoline",
+"cost": 2500.0,
+"kind": "gas"
+},
+"costMin": 1950.0,
+"costMax": 2500.0
+},
+"2019": {
+"n": 4,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 27.0,
+"gasMax": 34.0,
+"combMin": 27.0,
+"combMax": 34.0,
+"best": {
+"model": "Rogue Hybrid  FWD",
+"trany": "Automatic (AV-S7)",
+"comb": 34.0,
+"city": 33.0,
+"hwy": 35.0,
+"fuel": "Regular Gasoline",
+"cost": 1950.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Rogue AWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 27.0,
+"city": 25.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2500.0,
+"kind": "gas"
+},
+"costMin": 1950.0,
+"costMax": 2500.0
+},
+"2020": {
+"n": 2,
+"kinds": [
+"gas"
+],
+"gasMin": 27.0,
+"gasMax": 29.0,
+"combMin": 27.0,
+"combMax": 29.0,
+"best": {
+"model": "Rogue FWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 29.0,
+"city": 26.0,
+"hwy": 33.0,
+"fuel": "Regular Gasoline",
+"cost": 2300.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Rogue AWD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 27.0,
+"city": 25.0,
+"hwy": 31.0,
+"fuel": "Regular Gasoline",
+"cost": 2500.0,
+"kind": "gas"
+},
+"costMin": 2300.0,
+"costMax": 2500.0
+},
+"2021": {
+"n": 8,
+"kinds": [
+"gas"
+],
+"gasMin": 28.0,
+"gasMax": 33.0,
+"combMin": 28.0,
+"combMax": 33.0,
+"best": {
+"model": "Rogue FWD",
+"trany": "Automatic (AV-S8)",
+"comb": 33.0,
+"city": 30.0,
+"hwy": 37.0,
+"fuel": "Regular Gasoline",
+"cost": 2050.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Rogue AWD  SV/SL/Platinum",
+"trany": "Automatic (AV-S8)",
+"comb": 28.0,
+"city": 25.0,
+"hwy": 32.0,
+"fuel": "Regular Gasoline",
+"cost": 2400.0,
+"kind": "gas"
+},
+"costMin": 2050.0,
+"costMax": 2400.0
+},
+"2022": {
+"n": 4,
+"kinds": [
+"gas"
+],
+"gasMin": 31.0,
+"gasMax": 33.0,
+"combMin": 31.0,
+"combMax": 33.0,
+"best": {
+"model": "Rogue FWD",
+"trany": "Automatic (AV-S8)",
+"comb": 33.0,
+"city": 30.0,
+"hwy": 37.0,
+"fuel": "Regular Gasoline",
+"cost": 2050.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Rogue AWD",
+"trany": "Automatic (AV-S8)",
+"comb": 31.0,
+"city": 28.0,
+"hwy": 35.0,
+"fuel": "Regular Gasoline",
+"cost": 2150.0,
+"kind": "gas"
+},
+"costMin": 2050.0,
+"costMax": 2150.0
+},
+"2023": {
+"n": 8,
+"kinds": [
+"gas"
+],
+"gasMin": 31.0,
+"gasMax": 33.0,
+"combMin": 31.0,
+"combMax": 33.0,
+"best": {
+"model": "Rogue FWD",
+"trany": "Automatic (AV-S8)",
+"comb": 33.0,
+"city": 30.0,
+"hwy": 37.0,
+"fuel": "Regular Gasoline",
+"cost": 2050.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Rogue AWD",
+"trany": "Automatic (AV-S8)",
+"comb": 31.0,
+"city": 28.0,
+"hwy": 35.0,
+"fuel": "Regular Gasoline",
+"cost": 2150.0,
+"kind": "gas"
+},
+"costMin": 2050.0,
+"costMax": 2150.0
+},
+"2024": {
+"n": 4,
+"kinds": [
+"gas"
+],
+"gasMin": 31.0,
+"gasMax": 33.0,
+"combMin": 31.0,
+"combMax": 33.0,
+"best": {
+"model": "Rogue FWD",
+"trany": "Automatic (AV-S8)",
+"comb": 33.0,
+"city": 30.0,
+"hwy": 37.0,
+"fuel": "Regular Gasoline",
+"cost": 2050.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Rogue AWD",
+"trany": "Automatic (AV-S8)",
+"comb": 31.0,
+"city": 28.0,
+"hwy": 35.0,
+"fuel": "Regular Gasoline",
+"cost": 2150.0,
+"kind": "gas"
+},
+"costMin": 2050.0,
+"costMax": 2150.0
+},
+"2025": {
+"n": 5,
+"kinds": [
+"gas"
+],
+"gasMin": 29.0,
+"gasMax": 33.0,
+"combMin": 29.0,
+"combMax": 33.0,
+"best": {
+"model": "Rogue FWD",
+"trany": "Automatic (AV-S8)",
+"comb": 33.0,
+"city": 30.0,
+"hwy": 37.0,
+"fuel": "Regular Gasoline",
+"cost": 2050.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Rogue AWD Rock Creek",
+"trany": "Automatic (AV-S8)",
+"comb": 29.0,
+"city": 27.0,
+"hwy": 32.0,
+"fuel": "Regular Gasoline",
+"cost": 2300.0,
+"kind": "gas"
+},
+"costMin": 2050.0,
+"costMax": 2300.0
+},
+"2026": {
+"n": 3,
+"kinds": [
+"gas"
+],
+"gasMin": 29.0,
+"gasMax": 32.0,
+"combMin": 29.0,
+"combMax": 32.0,
+"best": {
+"model": "Rogue FWD",
+"trany": "Automatic (AV-S8)",
+"comb": 32.0,
+"city": 29.0,
+"hwy": 36.0,
+"fuel": "Regular Gasoline",
+"cost": 2100.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Rogue AWD Rock Creek",
+"trany": "Automatic (AV-S8)",
+"comb": 29.0,
+"city": 27.0,
+"hwy": 32.0,
+"fuel": "Regular Gasoline",
+"cost": 2300.0,
+"kind": "gas"
+},
+"costMin": 2100.0,
+"costMax": 2300.0
+}
+}
+},
+"model-y": {
+"years": {
+"2020": {
+"n": 3,
+"kinds": [
+"ev"
+],
+"gasMin": null,
+"gasMax": null,
+"combMin": 111.0,
+"combMax": 121.0,
+"best": {
+"model": "Model Y Performance AWD",
+"trany": "Automatic (A1)",
+"comb": 121.0,
+"city": 129.0,
+"hwy": 112.0,
+"fuel": "Electricity",
+"cost": 650.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Model Y Performance AWD (21in Wheels)",
+"trany": "Automatic (A1)",
+"comb": 111.0,
+"city": 116.0,
+"hwy": 106.0,
+"fuel": "Electricity",
+"cost": 700.0,
+"kind": "ev"
+},
+"costMin": 650.0,
+"costMax": 700.0
+},
+"2021": {
+"n": 3,
+"kinds": [
+"ev"
+],
+"gasMin": null,
+"gasMax": null,
+"combMin": 111.0,
+"combMax": 129.0,
+"best": {
+"model": "Model Y Standard Range RWD",
+"trany": "Automatic (A1)",
+"comb": 129.0,
+"city": 140.0,
+"hwy": 119.0,
+"fuel": "Electricity",
+"cost": 600.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Model Y Performance AWD",
+"trany": "Automatic (A1)",
+"comb": 111.0,
+"city": 115.0,
+"hwy": 106.0,
+"fuel": "Electricity",
+"cost": 700.0,
+"kind": "ev"
+},
+"costMin": 600.0,
+"costMax": 700.0
+},
+"2022": {
+"n": 4,
+"kinds": [
+"ev"
+],
+"gasMin": null,
+"gasMax": null,
+"combMin": 111.0,
+"combMax": 129.0,
+"best": {
+"model": "Model Y RWD",
+"trany": "Automatic (A1)",
+"comb": 129.0,
+"city": 140.0,
+"hwy": 119.0,
+"fuel": "Electricity",
+"cost": 600.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Model Y Performance AWD",
+"trany": "Automatic (A1)",
+"comb": 111.0,
+"city": 115.0,
+"hwy": 106.0,
+"fuel": "Electricity",
+"cost": 700.0,
+"kind": "ev"
+},
+"costMin": 600.0,
+"costMax": 700.0
+},
+"2023": {
+"n": 3,
+"kinds": [
+"ev"
+],
+"gasMin": null,
+"gasMax": null,
+"combMin": 111.0,
+"combMax": 123.0,
+"best": {
+"model": "Model Y AWD",
+"trany": "Automatic (A1)",
+"comb": 123.0,
+"city": 129.0,
+"hwy": 116.0,
+"fuel": "Electricity",
+"cost": 600.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Model Y Performance AWD",
+"trany": "Automatic (A1)",
+"comb": 111.0,
+"city": 115.0,
+"hwy": 106.0,
+"fuel": "Electricity",
+"cost": 700.0,
+"kind": "ev"
+},
+"costMin": 600.0,
+"costMax": 700.0
+},
+"2024": {
+"n": 5,
+"kinds": [
+"ev"
+],
+"gasMin": null,
+"gasMax": null,
+"combMin": 105.0,
+"combMax": 120.0,
+"best": {
+"model": "Model Y Long Range RWD",
+"trany": "Automatic (A1)",
+"comb": 120.0,
+"city": 128.0,
+"hwy": 112.0,
+"fuel": "Electricity",
+"cost": 650.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Model Y Performance AWD",
+"trany": "Automatic (A1)",
+"comb": 105.0,
+"city": 111.0,
+"hwy": 98.0,
+"fuel": "Electricity",
+"cost": 700.0,
+"kind": "ev"
+},
+"costMin": 650.0,
+"costMax": 700.0
+},
+"2025": {
+"n": 3,
+"kinds": [
+"ev"
+],
+"gasMin": null,
+"gasMax": null,
+"combMin": 104.0,
+"combMax": 125.0,
+"best": {
+"model": "Model Y Long Range RWD",
+"trany": "Automatic (A1)",
+"comb": 125.0,
+"city": 134.0,
+"hwy": 117.0,
+"fuel": "Electricity",
+"cost": 600.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Model Y Performance AWD",
+"trany": "Automatic (A1)",
+"comb": 104.0,
+"city": 110.0,
+"hwy": 97.0,
+"fuel": "Electricity",
+"cost": 750.0,
+"kind": "ev"
+},
+"costMin": 600.0,
+"costMax": 750.0
+},
+"2026": {
+"n": 6,
+"kinds": [
+"ev"
+],
+"gasMin": null,
+"gasMax": null,
+"combMin": 105.0,
+"combMax": 138.0,
+"best": {
+"model": "Model Y Standard RWD (18in Wheels)",
+"trany": "Automatic (A1)",
+"comb": 138.0,
+"city": 148.0,
+"hwy": 129.0,
+"fuel": "Electricity",
+"cost": 550.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Model Y Performance AWD",
+"trany": "Automatic (A1)",
+"comb": 105.0,
+"city": 111.0,
+"hwy": 100.0,
+"fuel": "Electricity",
+"cost": 700.0,
+"kind": "ev"
+},
+"costMin": 550.0,
+"costMax": 700.0
+},
+"2027": {
+"n": 1,
+"kinds": [
+"ev"
+],
+"gasMin": null,
+"gasMax": null,
+"combMin": 114.0,
+"combMax": 114.0,
+"best": {
+"model": "Model Y L (20in Wheels)",
+"trany": "Automatic (A1)",
+"comb": 114.0,
+"city": 119.0,
+"hwy": 108.0,
+"fuel": "Electricity",
+"cost": 700.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Model Y L (20in Wheels)",
+"trany": "Automatic (A1)",
+"comb": 114.0,
+"city": 119.0,
+"hwy": 108.0,
+"fuel": "Electricity",
+"cost": 700.0,
+"kind": "ev"
+},
+"costMin": 700.0,
+"costMax": 700.0
+}
+}
+},
+"tucson": {
+"years": {
+"2015": {
+"n": 5,
+"kinds": [
+"fcv",
+"gas"
+],
+"gasMin": 22.0,
+"gasMax": 25.0,
+"combMin": 22.0,
+"combMax": 50.0,
+"best": {
+"model": "Tucson Fuel Cell",
+"trany": "Automatic (A1)",
+"comb": 50.0,
+"city": 49.0,
+"hwy": 51.0,
+"fuel": "Hydrogen",
+"cost": 0.0,
+"kind": "fcv"
+},
+"worst": {
+"model": "Tucson AWD",
+"trany": "Automatic 6-spd",
+"comb": 22.0,
+"city": 20.0,
+"hwy": 25.0,
+"fuel": "Regular Gasoline",
+"cost": 3050.0,
+"kind": "gas"
+},
+"costMin": 2700.0,
+"costMax": 3050.0
+},
+"2016": {
+"n": 7,
+"kinds": [
+"fcv",
+"gas"
+],
+"gasMin": 23.0,
+"gasMax": 28.0,
+"combMin": 23.0,
+"combMax": 50.0,
+"best": {
+"model": "Tucson Fuel Cell",
+"trany": "Automatic (A1)",
+"comb": 50.0,
+"city": 49.0,
+"hwy": 51.0,
+"fuel": "Hydrogen",
+"cost": 0.0,
+"kind": "fcv"
+},
+"worst": {
+"model": "Tucson AWD",
+"trany": "Automatic (S6)",
+"comb": 23.0,
+"city": 21.0,
+"hwy": 26.0,
+"fuel": "Regular Gasoline",
+"cost": 2900.0,
+"kind": "gas"
+},
+"costMin": 2400.0,
+"costMax": 2900.0
+},
+"2017": {
+"n": 7,
+"kinds": [
+"fcv",
+"gas"
+],
+"gasMin": 23.0,
+"gasMax": 28.0,
+"combMin": 23.0,
+"combMax": 50.0,
+"best": {
+"model": "Tucson Fuel Cell",
+"trany": "Automatic (A1)",
+"comb": 50.0,
+"city": 49.0,
+"hwy": 51.0,
+"fuel": "Hydrogen",
+"cost": 0.0,
+"kind": "fcv"
+},
+"worst": {
+"model": "Tucson AWD",
+"trany": "Automatic (S6)",
+"comb": 23.0,
+"city": 21.0,
+"hwy": 26.0,
+"fuel": "Regular Gasoline",
+"cost": 2900.0,
+"kind": "gas"
+},
+"costMin": 2400.0,
+"costMax": 2900.0
+},
+"2018": {
+"n": 6,
+"kinds": [
+"gas"
+],
+"gasMin": 22.0,
+"gasMax": 27.0,
+"combMin": 22.0,
+"combMax": 27.0,
+"best": {
+"model": "Tucson FWD",
+"trany": "Automatic (AM7)",
+"comb": 27.0,
+"city": 25.0,
+"hwy": 30.0,
+"fuel": "Regular Gasoline",
+"cost": 2500.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Tucson AWD",
+"trany": "Automatic (S6)",
+"comb": 22.0,
+"city": 21.0,
+"hwy": 25.0,
+"fuel": "Regular Gasoline",
+"cost": 3050.0,
+"kind": "gas"
+},
+"costMin": 2500.0,
+"costMax": 3050.0
+},
+"2019": {
+"n": 4,
+"kinds": [
+"gas"
+],
+"gasMin": 23.0,
+"gasMax": 26.0,
+"combMin": 23.0,
+"combMax": 26.0,
+"best": {
+"model": "Tucson FWD",
+"trany": "Automatic (S6)",
+"comb": 26.0,
+"city": 23.0,
+"hwy": 30.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Tucson AWD",
+"trany": "Automatic (S6)",
+"comb": 23.0,
+"city": 22.0,
+"hwy": 25.0,
+"fuel": "Regular Gasoline",
+"cost": 2900.0,
+"kind": "gas"
+},
+"costMin": 2600.0,
+"costMax": 2900.0
+},
+"2020": {
+"n": 4,
+"kinds": [
+"gas"
+],
+"gasMin": 23.0,
+"gasMax": 25.0,
+"combMin": 23.0,
+"combMax": 25.0,
+"best": {
+"model": "Tucson FWD",
+"trany": "Automatic (S6)",
+"comb": 25.0,
+"city": 23.0,
+"hwy": 28.0,
+"fuel": "Regular Gasoline",
+"cost": 2700.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Tucson AWD",
+"trany": "Automatic (S6)",
+"comb": 23.0,
+"city": 22.0,
+"hwy": 25.0,
+"fuel": "Regular Gasoline",
+"cost": 2900.0,
+"kind": "gas"
+},
+"costMin": 2700.0,
+"costMax": 2900.0
+},
+"2021": {
+"n": 4,
+"kinds": [
+"gas"
+],
+"gasMin": 23.0,
+"gasMax": 25.0,
+"combMin": 23.0,
+"combMax": 25.0,
+"best": {
+"model": "Tucson FWD",
+"trany": "Automatic (S6)",
+"comb": 25.0,
+"city": 23.0,
+"hwy": 28.0,
+"fuel": "Regular Gasoline",
+"cost": 2700.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Tucson AWD",
+"trany": "Automatic (S6)",
+"comb": 23.0,
+"city": 22.0,
+"hwy": 25.0,
+"fuel": "Regular Gasoline",
+"cost": 2900.0,
+"kind": "gas"
+},
+"costMin": 2700.0,
+"costMax": 2900.0
+},
+"2022": {
+"n": 5,
+"kinds": [
+"gas",
+"hybrid",
+"phev"
+],
+"gasMin": 26.0,
+"gasMax": 38.0,
+"combMin": 26.0,
+"combMax": 38.0,
+"best": {
+"model": "Tucson Hybrid Blue",
+"trany": "Automatic (AM-S6)",
+"comb": 38.0,
+"city": 38.0,
+"hwy": 38.0,
+"fuel": "Regular Gasoline",
+"cost": 1750.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Tucson AWD",
+"trany": "Automatic (S8)",
+"comb": 26.0,
+"city": 24.0,
+"hwy": 29.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"costMin": 1750.0,
+"costMax": 2600.0
+},
+"2023": {
+"n": 5,
+"kinds": [
+"gas",
+"hybrid",
+"phev"
+],
+"gasMin": 25.0,
+"gasMax": 38.0,
+"combMin": 25.0,
+"combMax": 38.0,
+"best": {
+"model": "Tucson Hybrid Blue",
+"trany": "Automatic (AM-S6)",
+"comb": 38.0,
+"city": 38.0,
+"hwy": 38.0,
+"fuel": "Regular Gasoline",
+"cost": 1750.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Tucson AWD",
+"trany": "Automatic (S8)",
+"comb": 25.0,
+"city": 23.0,
+"hwy": 28.0,
+"fuel": "Regular Gasoline",
+"cost": 2700.0,
+"kind": "gas"
+},
+"costMin": 1750.0,
+"costMax": 2700.0
+},
+"2024": {
+"n": 5,
+"kinds": [
+"gas",
+"hybrid",
+"phev"
+],
+"gasMin": 25.0,
+"gasMax": 38.0,
+"combMin": 25.0,
+"combMax": 38.0,
+"best": {
+"model": "Tucson Hybrid Blue",
+"trany": "Automatic (AM-S6)",
+"comb": 38.0,
+"city": 38.0,
+"hwy": 38.0,
+"fuel": "Regular Gasoline",
+"cost": 1750.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Tucson AWD",
+"trany": "Automatic (S8)",
+"comb": 25.0,
+"city": 23.0,
+"hwy": 29.0,
+"fuel": "Regular Gasoline",
+"cost": 2700.0,
+"kind": "gas"
+},
+"costMin": 1750.0,
+"costMax": 2700.0
+},
+"2025": {
+"n": 5,
+"kinds": [
+"gas",
+"hybrid",
+"phev"
+],
+"gasMin": 26.0,
+"gasMax": 38.0,
+"combMin": 26.0,
+"combMax": 38.0,
+"best": {
+"model": "Tucson Hybrid Blue",
+"trany": "Automatic (AM-S6)",
+"comb": 38.0,
+"city": 38.0,
+"hwy": 38.0,
+"fuel": "Regular Gasoline",
+"cost": 1750.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Tucson AWD",
+"trany": "Automatic (S8)",
+"comb": 26.0,
+"city": 24.0,
+"hwy": 30.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"costMin": 1750.0,
+"costMax": 2600.0
+},
+"2026": {
+"n": 5,
+"kinds": [
+"gas",
+"hybrid",
+"phev"
+],
+"gasMin": 26.0,
+"gasMax": 38.0,
+"combMin": 26.0,
+"combMax": 38.0,
+"best": {
+"model": "Tucson Hybrid Blue",
+"trany": "Automatic (AM-S6)",
+"comb": 38.0,
+"city": 38.0,
+"hwy": 38.0,
+"fuel": "Regular Gasoline",
+"cost": 1750.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Tucson AWD",
+"trany": "Automatic (S8)",
+"comb": 26.0,
+"city": 24.0,
+"hwy": 30.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"costMin": 1750.0,
+"costMax": 2600.0
+}
+}
+}
+},
+"brands": {
+"ford": {
+"2026": {
+"n": 60,
+"kinds": [
+"ev",
+"gas",
+"hybrid",
+"phev"
+],
+"gasMin": 12.0,
+"gasMax": 39.0,
+"combMin": 12.0,
+"combMax": 110.0,
+"best": {
+"model": "Mustang Mach-E RWD Extended",
+"trany": "Automatic (A1)",
+"comb": 110.0,
+"city": 115.0,
+"hwy": 104.0,
+"fuel": "Electricity",
+"cost": 700.0,
+"kind": "ev"
+},
+"worst": {
+"model": "F150 RAPTOR R 4WD",
+"trany": "Automatic (S10)",
+"comb": 12.0,
+"city": 10.0,
+"hwy": 15.0,
+"fuel": "Premium Gasoline",
+"cost": 6850.0,
+"kind": "gas"
+},
+"costMin": 700.0,
+"costMax": 6850.0,
+"gasMedian": 20.0,
+"evShare": 0.1,
+"models": 10
+},
+"2027": {
+"n": 10,
+"kinds": [
+"gas"
+],
+"gasMin": 18.0,
+"gasMax": 23.0,
+"combMin": 18.0,
+"combMax": 23.0,
+"best": {
+"model": "Explorer RWD",
+"trany": "Automatic 10-spd",
+"comb": 23.0,
+"city": 20.0,
+"hwy": 28.0,
+"fuel": "Regular Gasoline",
+"cost": 2900.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Expedition 2WD",
+"trany": "Automatic (S10)",
+"comb": 18.0,
+"city": 16.0,
+"hwy": 23.0,
+"fuel": "Regular Gasoline",
+"cost": 3700.0,
+"kind": "gas"
+},
+"costMin": 2900.0,
+"costMax": 3700.0,
+"gasMedian": 20.0,
+"evShare": 0.0,
+"models": 2
+}
+},
+"chevrolet": {
+"2026": {
+"n": 74,
+"kinds": [
+"diesel",
+"ev",
+"gas",
+"hybrid"
+],
+"gasMin": 14.0,
+"gasMax": 31.0,
+"combMin": 14.0,
+"combMax": 108.0,
+"best": {
+"model": "Equinox EV FWD",
+"trany": "Automatic (A1)",
+"comb": 108.0,
+"city": 117.0,
+"hwy": 100.0,
+"fuel": "Electricity",
+"cost": 700.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Corvette ZR1",
+"trany": "Automatic (S8)",
+"comb": 14.0,
+"city": 12.0,
+"hwy": 18.0,
+"fuel": "Premium Gasoline",
+"cost": 5850.0,
+"kind": "gas"
+},
+"costMin": 700.0,
+"costMax": 5850.0,
+"gasMedian": 18.0,
+"evShare": 0.176,
+"models": 10
+},
+"2027": {
+"n": 30,
+"kinds": [
+"diesel",
+"ev",
+"gas",
+"hybrid"
+],
+"gasMin": 14.0,
+"gasMax": 27.0,
+"combMin": 14.0,
+"combMax": 120.0,
+"best": {
+"model": "BOLT",
+"trany": "Automatic (A1)",
+"comb": 120.0,
+"city": 134.0,
+"hwy": 106.0,
+"fuel": "Electricity",
+"cost": 650.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Corvette ZR1",
+"trany": "Automatic (S8)",
+"comb": 14.0,
+"city": 12.0,
+"hwy": 18.0,
+"fuel": "Premium Gasoline",
+"cost": 5850.0,
+"kind": "gas"
+},
+"costMin": 650.0,
+"costMax": 5850.0,
+"gasMedian": 17.0,
+"evShare": 0.233,
+"models": 7
+}
+},
+"toyota": {
+"2026": {
+"n": 92,
+"kinds": [
+"ev",
+"fcv",
+"gas",
+"hybrid"
+],
+"gasMin": 19.0,
+"gasMax": 57.0,
+"combMin": 19.0,
+"combMax": 131.0,
+"best": {
+"model": "bZ (energy capacity 191 Ah)",
+"trany": "Automatic (A1)",
+"comb": 131.0,
+"city": 143.0,
+"hwy": 119.0,
+"fuel": "Electricity",
+"cost": 550.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Tundra 4WD",
+"trany": "Automatic (S10)",
+"comb": 19.0,
+"city": 17.0,
+"hwy": 22.0,
+"fuel": "Regular Gasoline",
+"cost": 3550.0,
+"kind": "gas"
+},
+"costMin": 550.0,
+"costMax": 4350.0,
+"gasMedian": 24.0,
+"evShare": 0.109,
+"models": 19
+},
+"2027": {
+"n": 24,
+"kinds": [
+"ev",
+"gas",
+"hybrid"
+],
+"gasMin": 22.0,
+"gasMax": 55.0,
+"combMin": 22.0,
+"combMax": 131.0,
+"best": {
+"model": "bZ (energy capacity 191 Ah)",
+"trany": "Automatic (A1)",
+"comb": 131.0,
+"city": 143.0,
+"hwy": 119.0,
+"fuel": "Electricity",
+"cost": 550.0,
+"kind": "ev"
+},
+"worst": {
+"model": "GR 86",
+"trany": "Manual 6-spd",
+"comb": 22.0,
+"city": 20.0,
+"hwy": 26.0,
+"fuel": "Premium Gasoline",
+"cost": 3750.0,
+"kind": "gas"
+},
+"costMin": 550.0,
+"costMax": 3750.0,
+"gasMedian": 39.5,
+"evShare": 0.333,
+"models": 6
+}
+},
+"honda": {
+"2026": {
+"n": 32,
+"kinds": [
+"ev",
+"gas",
+"hybrid"
+],
+"gasMin": 20.0,
+"gasMax": 49.0,
+"combMin": 20.0,
+"combMax": 104.0,
+"best": {
+"model": "Prologue FWD",
+"trany": "Automatic (A1)",
+"comb": 104.0,
+"city": 113.0,
+"hwy": 94.0,
+"fuel": "Electricity",
+"cost": 750.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Passport AWD Trailsport",
+"trany": "Automatic (S10)",
+"comb": 20.0,
+"city": 18.0,
+"hwy": 23.0,
+"fuel": "Regular Gasoline",
+"cost": 3350.0,
+"kind": "gas"
+},
+"costMin": 750.0,
+"costMax": 3400.0,
+"gasMedian": 31.0,
+"evShare": 0.094,
+"models": 10
+},
+"2027": {
+"n": 9,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 22.0,
+"gasMax": 44.0,
+"combMin": 22.0,
+"combMax": 44.0,
+"best": {
+"model": "Prelude",
+"trany": "Automatic (variable gear ratios)",
+"comb": 44.0,
+"city": 46.0,
+"hwy": 41.0,
+"fuel": "Regular Gasoline",
+"cost": 1500.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "Odyssey",
+"trany": "Automatic (S10)",
+"comb": 22.0,
+"city": 19.0,
+"hwy": 28.0,
+"fuel": "Regular Gasoline",
+"cost": 3050.0,
+"kind": "gas"
+},
+"costMin": 1500.0,
+"costMax": 3050.0,
+"gasMedian": 30.0,
+"evShare": 0.0,
+"models": 4
+}
+},
+"nissan": {
+"2026": {
+"n": 32,
+"kinds": [
+"ev",
+"gas"
+],
+"gasMin": 16.0,
+"gasMax": 33.0,
+"combMin": 16.0,
+"combMax": 121.0,
+"best": {
+"model": "LEAF 75kWh (18 inch steel Wheels)",
+"trany": "Automatic (A1)",
+"comb": 121.0,
+"city": 131.0,
+"hwy": 111.0,
+"fuel": "Electricity",
+"cost": 650.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Armada 4WD PRO-4X",
+"trany": "Automatic (S9)",
+"comb": 16.0,
+"city": 15.0,
+"hwy": 18.0,
+"fuel": "Premium Gasoline",
+"cost": 5150.0,
+"kind": "gas"
+},
+"costMin": 650.0,
+"costMax": 5150.0,
+"gasMedian": 23.0,
+"evShare": 0.25,
+"models": 11
+},
+"2027": {
+"n": 13,
+"kinds": [
+"gas"
+],
+"gasMin": 18.0,
+"gasMax": 33.0,
+"combMin": 18.0,
+"combMax": 33.0,
+"best": {
+"model": "Sentra with Sport/Normal/Eco Modes",
+"trany": "Automatic (variable gear ratios)",
+"comb": 33.0,
+"city": 30.0,
+"hwy": 38.0,
+"fuel": "Regular Gasoline",
+"cost": 2050.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Z NISMO",
+"trany": "Manual 6-spd",
+"comb": 18.0,
+"city": 16.0,
+"hwy": 21.0,
+"fuel": "Premium Gasoline",
+"cost": 4550.0,
+"kind": "gas"
+},
+"costMin": 2050.0,
+"costMax": 4550.0,
+"gasMedian": 22.0,
+"evShare": 0.0,
+"models": 5
+}
+},
+"jeep": {
+"2026": {
+"n": 26,
+"kinds": [
+"ev",
+"gas",
+"hybrid",
+"phev"
+],
+"gasMin": 14.0,
+"gasMax": 37.0,
+"combMin": 14.0,
+"combMax": 93.0,
+"best": {
+"model": "Wagoneer S AWD (Falken tire)",
+"trany": "Automatic (A1)",
+"comb": 93.0,
+"city": 100.0,
+"hwy": 85.0,
+"fuel": "Electricity",
+"cost": 800.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Wrangler 4dr 4WD",
+"trany": "Automatic 8-spd",
+"comb": 14.0,
+"city": 13.0,
+"hwy": 16.0,
+"fuel": "Premium Gasoline",
+"cost": 5850.0,
+"kind": "gas"
+},
+"costMin": 800.0,
+"costMax": 5850.0,
+"gasMedian": 21.0,
+"evShare": 0.115,
+"models": 8
+},
+"2027": {
+"n": 19,
+"kinds": [
+"gas"
+],
+"gasMin": 14.0,
+"gasMax": 23.0,
+"combMin": 14.0,
+"combMax": 23.0,
+"best": {
+"model": "Grand Cherokee L 2WD",
+"trany": "Automatic 8-spd",
+"comb": 23.0,
+"city": 21.0,
+"hwy": 26.0,
+"fuel": "Regular Gasoline",
+"cost": 2900.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Wrangler 4dr 4WD",
+"trany": "Automatic 8-spd",
+"comb": 14.0,
+"city": 13.0,
+"hwy": 16.0,
+"fuel": "Premium Gasoline",
+"cost": 5850.0,
+"kind": "gas"
+},
+"costMin": 2900.0,
+"costMax": 5850.0,
+"gasMedian": 21.0,
+"evShare": 0.0,
+"models": 4
+}
+},
+"ram": {
+"2026": {
+"n": 10,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 12.0,
+"gasMax": 22.0,
+"combMin": 12.0,
+"combMax": 22.0,
+"best": {
+"model": "1500 2WD",
+"trany": "Automatic 8-spd",
+"comb": 22.0,
+"city": 20.0,
+"hwy": 25.0,
+"fuel": "Regular Gasoline",
+"cost": 3050.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "1500 4WD",
+"trany": "Automatic 8-spd",
+"comb": 12.0,
+"city": 10.0,
+"hwy": 14.0,
+"fuel": "Premium Gasoline",
+"cost": 6850.0,
+"kind": "gas"
+},
+"costMin": 3050.0,
+"costMax": 6850.0,
+"gasMedian": 18.5,
+"evShare": 0.0,
+"models": 1
+},
+"2027": {
+"n": 12,
+"kinds": [
+"gas",
+"hybrid"
+],
+"gasMin": 12.0,
+"gasMax": 22.0,
+"combMin": 12.0,
+"combMax": 22.0,
+"best": {
+"model": "1500 2WD",
+"trany": "Automatic 8-spd",
+"comb": 22.0,
+"city": 20.0,
+"hwy": 25.0,
+"fuel": "Regular Gasoline",
+"cost": 3050.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "1500 4WD",
+"trany": "Automatic 8-spd",
+"comb": 12.0,
+"city": 10.0,
+"hwy": 14.0,
+"fuel": "Premium Gasoline",
+"cost": 6850.0,
+"kind": "gas"
+},
+"costMin": 3050.0,
+"costMax": 6850.0,
+"gasMedian": 17.5,
+"evShare": 0.0,
+"models": 1
+}
+},
+"gmc": {
+"2026": {
+"n": 47,
+"kinds": [
+"diesel",
+"ev",
+"gas"
+],
+"gasMin": 15.0,
+"gasMax": 27.0,
+"combMin": 15.0,
+"combMax": 68.0,
+"best": {
+"model": "SIERRA EV Ext Range (11kW Charger)",
+"trany": "Automatic (A1)",
+"comb": 68.0,
+"city": 75.0,
+"hwy": 61.0,
+"fuel": "Electricity",
+"cost": 1100.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Sierra Mud Terrain Tires 4WD",
+"trany": "Automatic 10-spd",
+"comb": 15.0,
+"city": 14.0,
+"hwy": 17.0,
+"fuel": "Premium Gasoline",
+"cost": 5500.0,
+"kind": "gas"
+},
+"costMin": 1100.0,
+"costMax": 5500.0,
+"gasMedian": 17.0,
+"evShare": 0.064,
+"models": 5
+},
+"2027": {
+"n": 17,
+"kinds": [
+"diesel",
+"gas"
+],
+"gasMin": 16.0,
+"gasMax": 26.0,
+"combMin": 16.0,
+"combMax": 26.0,
+"best": {
+"model": "Terrain FWD",
+"trany": "Automatic 8-spd",
+"comb": 26.0,
+"city": 25.0,
+"hwy": 28.0,
+"fuel": "Regular Gasoline",
+"cost": 2600.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Yukon XL 2WD",
+"trany": "Automatic 10-spd",
+"comb": 16.0,
+"city": 15.0,
+"hwy": 19.0,
+"fuel": "Premium Gasoline",
+"cost": 5150.0,
+"kind": "gas"
+},
+"costMin": 2600.0,
+"costMax": 5150.0,
+"gasMedian": 21.0,
+"evShare": 0.0,
+"models": 3
+}
+},
+"hyundai": {
+"2026": {
+"n": 52,
+"kinds": [
+"ev",
+"fcv",
+"gas",
+"hybrid",
+"phev"
+],
+"gasMin": 19.0,
+"gasMax": 54.0,
+"combMin": 19.0,
+"combMax": 115.0,
+"best": {
+"model": "Ioniq 5 Standard range",
+"trany": "Automatic (A1)",
+"comb": 115.0,
+"city": 131.0,
+"hwy": 100.0,
+"fuel": "Electricity",
+"cost": 650.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Palisade XRT Pro",
+"trany": "Automatic (S8)",
+"comb": 19.0,
+"city": 16.0,
+"hwy": 22.0,
+"fuel": "Regular Gasoline",
+"cost": 3550.0,
+"kind": "gas"
+},
+"costMin": 650.0,
+"costMax": 3550.0,
+"gasMedian": 28.0,
+"evShare": 0.192,
+"models": 11
+},
+"2027": {
+"n": 34,
+"kinds": [
+"ev",
+"gas",
+"hybrid"
+],
+"gasMin": 19.0,
+"gasMax": 51.0,
+"combMin": 19.0,
+"combMax": 115.0,
+"best": {
+"model": "Ioniq 5 Standard range",
+"trany": "Automatic (A1)",
+"comb": 115.0,
+"city": 131.0,
+"hwy": 100.0,
+"fuel": "Electricity",
+"cost": 650.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Palisade XRT Pro",
+"trany": "Automatic (S8)",
+"comb": 19.0,
+"city": 16.0,
+"hwy": 22.0,
+"fuel": "Regular Gasoline",
+"cost": 3550.0,
+"kind": "gas"
+},
+"costMin": 650.0,
+"costMax": 3550.0,
+"gasMedian": 27.0,
+"evShare": 0.265,
+"models": 9
+}
+},
+"kia": {
+"2026": {
+"n": 40,
+"kinds": [
+"ev",
+"gas",
+"hybrid",
+"phev"
+],
+"gasMin": 21.0,
+"gasMax": 53.0,
+"combMin": 21.0,
+"combMax": 115.0,
+"best": {
+"model": "EV6 Standard Range RWD",
+"trany": "Automatic (A1)",
+"comb": 115.0,
+"city": 128.0,
+"hwy": 103.0,
+"fuel": "Electricity",
+"cost": 650.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Carnival",
+"trany": "Automatic (S8)",
+"comb": 21.0,
+"city": 18.0,
+"hwy": 25.0,
+"fuel": "Regular Gasoline",
+"cost": 3200.0,
+"kind": "gas"
+},
+"costMin": 650.0,
+"costMax": 3200.0,
+"gasMedian": 28.5,
+"evShare": 0.275,
+"models": 9
+},
+"2027": {
+"n": 37,
+"kinds": [
+"ev",
+"gas",
+"hybrid",
+"phev"
+],
+"gasMin": 19.0,
+"gasMax": 50.0,
+"combMin": 19.0,
+"combMax": 117.0,
+"best": {
+"model": "EV3 Long Range FWD",
+"trany": "Automatic (A1)",
+"comb": 117.0,
+"city": 131.0,
+"hwy": 104.0,
+"fuel": "Electricity",
+"cost": 650.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Telluride X-Pro",
+"trany": "Automatic (S8)",
+"comb": 19.0,
+"city": 17.0,
+"hwy": 22.0,
+"fuel": "Regular Gasoline",
+"cost": 3550.0,
+"kind": "gas"
+},
+"costMin": 650.0,
+"costMax": 3550.0,
+"gasMedian": 28.0,
+"evShare": 0.108,
+"models": 9
+}
+},
+"subaru": {
+"2026": {
+"n": 25,
+"kinds": [
+"ev",
+"gas",
+"hybrid"
+],
+"gasMin": 21.0,
+"gasMax": 36.0,
+"combMin": 21.0,
+"combMax": 129.0,
+"best": {
+"model": "Uncharted",
+"trany": "Automatic (A1)",
+"comb": 129.0,
+"city": 140.0,
+"hwy": 118.0,
+"fuel": "Electricity",
+"cost": 600.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Ascent Limited/Touring/Onyx AWD",
+"trany": "Automatic (AV-S8)",
+"comb": 21.0,
+"city": 19.0,
+"hwy": 25.0,
+"fuel": "Regular Gasoline",
+"cost": 3200.0,
+"kind": "gas"
+},
+"costMin": 600.0,
+"costMax": 3900.0,
+"gasMedian": 26.0,
+"evShare": 0.28,
+"models": 10
+},
+"2027": {
+"n": 17,
+"kinds": [
+"ev",
+"gas"
+],
+"gasMin": 21.0,
+"gasMax": 29.0,
+"combMin": 21.0,
+"combMax": 129.0,
+"best": {
+"model": "Uncharted",
+"trany": "Automatic (A1)",
+"comb": 129.0,
+"city": 140.0,
+"hwy": 118.0,
+"fuel": "Electricity",
+"cost": 600.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Ascent Limited/Touring/Onyx AWD",
+"trany": "Automatic (AV-S8)",
+"comb": 21.0,
+"city": 19.0,
+"hwy": 25.0,
+"fuel": "Regular Gasoline",
+"cost": 3200.0,
+"kind": "gas"
+},
+"costMin": 600.0,
+"costMax": 3750.0,
+"gasMedian": 24.5,
+"evShare": 0.412,
+"models": 8
+}
+},
+"tesla": {
+"2026": {
+"n": 19,
+"kinds": [
+"ev"
+],
+"gasMin": null,
+"gasMax": null,
+"combMin": 78.0,
+"combMax": 139.0,
+"best": {
+"model": "Model 3 Standard RWD",
+"trany": "Automatic (A1)",
+"comb": 139.0,
+"city": 147.0,
+"hwy": 130.0,
+"fuel": "Electricity",
+"cost": 550.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Cybertruck Long Range (20in Cyber wheels)",
+"trany": "Automatic (A1)",
+"comb": 78.0,
+"city": 89.0,
+"hwy": 67.0,
+"fuel": "Electricity",
+"cost": 1000.0,
+"kind": "ev"
+},
+"costMin": 550.0,
+"costMax": 1000.0,
+"gasMedian": null,
+"evShare": 1.0,
+"models": 5
+},
+"2027": {
+"n": 2,
+"kinds": [
+"ev"
+],
+"gasMin": null,
+"gasMax": null,
+"combMin": 111.0,
+"combMax": 114.0,
+"best": {
+"model": "Model Y L (20in Wheels)",
+"trany": "Automatic (A1)",
+"comb": 114.0,
+"city": 119.0,
+"hwy": 108.0,
+"fuel": "Electricity",
+"cost": 700.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Model 3 Performance AWD",
+"trany": "Automatic (A1)",
+"comb": 111.0,
+"city": 117.0,
+"hwy": 106.0,
+"fuel": "Electricity",
+"cost": 700.0,
+"kind": "ev"
+},
+"costMin": 700.0,
+"costMax": 700.0,
+"gasMedian": null,
+"evShare": 1.0,
+"models": 2
+}
+},
+"dodge": {
+"2026": {
+"n": 14,
+"kinds": [
+"ev",
+"gas"
+],
+"gasMin": 13.0,
+"gasMax": 20.0,
+"combMin": 13.0,
+"combMax": 95.0,
+"best": {
+"model": "Charger Daytona R/T AWD 255/45R20",
+"trany": "Automatic (A1)",
+"comb": 95.0,
+"city": 100.0,
+"hwy": 89.0,
+"fuel": "Electricity",
+"cost": 800.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Durango AWD",
+"trany": "Automatic 8-spd",
+"comb": 13.0,
+"city": 12.0,
+"hwy": 17.0,
+"fuel": "Premium Gasoline",
+"cost": 6300.0,
+"kind": "gas"
+},
+"costMin": 800.0,
+"costMax": 6300.0,
+"gasMedian": 19.0,
+"evShare": 0.5,
+"models": 2
+},
+"2027": {
+"n": 8,
+"kinds": [
+"ev",
+"gas"
+],
+"gasMin": 13.0,
+"gasMax": 20.0,
+"combMin": 13.0,
+"combMax": 86.0,
+"best": {
+"model": "Charger Daytona Scat Pack AWD 305/35ZR20",
+"trany": "Automatic (A1)",
+"comb": 86.0,
+"city": 93.0,
+"hwy": 79.0,
+"fuel": "Electricity",
+"cost": 900.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Durango AWD",
+"trany": "Automatic 8-spd",
+"comb": 13.0,
+"city": 12.0,
+"hwy": 17.0,
+"fuel": "Premium Gasoline",
+"cost": 6300.0,
+"kind": "gas"
+},
+"costMin": 900.0,
+"costMax": 6300.0,
+"gasMedian": 17.0,
+"evShare": 0.375,
+"models": 2
+}
+},
+"bmw": {
+"2026": {
+"n": 108,
+"kinds": [
+"ev",
+"gas",
+"hybrid",
+"phev"
+],
+"gasMin": 15.0,
+"gasMax": 31.0,
+"combMin": 13.0,
+"combMax": 118.0,
+"best": {
+"model": "i4 eDrive40 Gran Coupe (18 inch wheels)",
+"trany": "Automatic (A1)",
+"comb": 118.0,
+"city": 121.0,
+"hwy": 115.0,
+"fuel": "Electricity",
+"cost": 650.0,
+"kind": "ev"
+},
+"worst": {
+"model": "M5 Touring",
+"trany": "Automatic (S8)",
+"comb": 13.0,
+"city": 11.0,
+"hwy": 17.0,
+"fuel": "Premium Gasoline",
+"cost": 6300.0,
+"kind": "phev"
+},
+"costMin": 650.0,
+"costMax": 6300.0,
+"gasMedian": 26.0,
+"evShare": 0.324,
+"models": 19
+},
+"2027": {
+"n": 67,
+"kinds": [
+"ev",
+"gas",
+"hybrid",
+"phev"
+],
+"gasMin": 15.0,
+"gasMax": 31.0,
+"combMin": 13.0,
+"combMax": 118.0,
+"best": {
+"model": "iX3 50 xDrive (20 inch Summer Tires)",
+"trany": "Automatic (A1)",
+"comb": 118.0,
+"city": 125.0,
+"hwy": 110.0,
+"fuel": "Electricity",
+"cost": 650.0,
+"kind": "ev"
+},
+"worst": {
+"model": "M5 Touring",
+"trany": "Automatic (S8)",
+"comb": 13.0,
+"city": 11.0,
+"hwy": 17.0,
+"fuel": "Premium Gasoline",
+"cost": 6300.0,
+"kind": "phev"
+},
+"costMin": 650.0,
+"costMax": 6300.0,
+"gasMedian": 27.0,
+"evShare": 0.328,
+"models": 13
+}
+},
+"mercedes-benz": {
+"2026": {
+"n": 76,
+"kinds": [
+"ev",
+"gas",
+"hybrid",
+"phev"
+],
+"gasMin": 15.0,
+"gasMax": 30.0,
+"combMin": 15.0,
+"combMax": 126.0,
+"best": {
+"model": "CLA250 Plus with EQ Tech (R22)",
+"trany": "Automatic (A1)",
+"comb": 126.0,
+"city": 127.0,
+"hwy": 124.0,
+"fuel": "Electricity",
+"cost": 600.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Maybach S680 4matic",
+"trany": "Automatic 9-spd",
+"comb": 15.0,
+"city": 12.0,
+"hwy": 20.0,
+"fuel": "Premium Gasoline",
+"cost": 5500.0,
+"kind": "gas"
+},
+"costMin": 600.0,
+"costMax": 5500.0,
+"gasMedian": 22.0,
+"evShare": 0.211,
+"models": 15
+},
+"2027": {
+"n": 47,
+"kinds": [
+"ev",
+"gas",
+"hybrid"
+],
+"gasMin": 14.0,
+"gasMax": 33.0,
+"combMin": 14.0,
+"combMax": 126.0,
+"best": {
+"model": "CLA250 Plus with EQ Tech (R22)",
+"trany": "Automatic (A1)",
+"comb": 126.0,
+"city": 127.0,
+"hwy": 124.0,
+"fuel": "Electricity",
+"cost": 600.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Maybach S680 4matic",
+"trany": "Automatic 9-spd",
+"comb": 14.0,
+"city": 12.0,
+"hwy": 20.0,
+"fuel": "Premium Gasoline",
+"cost": 5850.0,
+"kind": "gas"
+},
+"costMin": 600.0,
+"costMax": 5850.0,
+"gasMedian": 23.0,
+"evShare": 0.255,
+"models": 13
+}
+},
+"volkswagen": {
+"2026": {
+"n": 20,
+"kinds": [
+"ev",
+"gas"
+],
+"gasMin": 21.0,
+"gasMax": 34.0,
+"combMin": 21.0,
+"combMax": 113.0,
+"best": {
+"model": "ID.4",
+"trany": "Automatic (A1)",
+"comb": 113.0,
+"city": 122.0,
+"hwy": 104.0,
+"fuel": "Electricity",
+"cost": 650.0,
+"kind": "ev"
+},
+"worst": {
+"model": "Atlas SEL 4motion",
+"trany": "Automatic (S8)",
+"comb": 21.0,
+"city": 19.0,
+"hwy": 25.0,
+"fuel": "Regular Gasoline",
+"cost": 3200.0,
+"kind": "gas"
+},
+"costMin": 650.0,
+"costMax": 3300.0,
+"gasMedian": 26.0,
+"evShare": 0.1,
+"models": 7
+},
+"2027": {
+"n": 15,
+"kinds": [
+"gas"
+],
+"gasMin": 23.0,
+"gasMax": 34.0,
+"combMin": 23.0,
+"combMax": 34.0,
+"best": {
+"model": "Jetta",
+"trany": "Automatic (S8)",
+"comb": 34.0,
+"city": 29.0,
+"hwy": 40.0,
+"fuel": "Regular Gasoline",
+"cost": 1950.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Atlas 4motion",
+"trany": "Automatic (S8)",
+"comb": 23.0,
+"city": 20.0,
+"hwy": 27.0,
+"fuel": "Regular Gasoline",
+"cost": 2900.0,
+"kind": "gas"
+},
+"costMin": 1950.0,
+"costMax": 3150.0,
+"gasMedian": 28.0,
+"evShare": 0.0,
+"models": 6
+}
+},
+"mazda": {
+"2026": {
+"n": 21,
+"kinds": [
+"gas",
+"hybrid",
+"phev"
+],
+"gasMin": 25.0,
+"gasMax": 38.0,
+"combMin": 25.0,
+"combMax": 38.0,
+"best": {
+"model": "CX-50 4WD",
+"trany": "Automatic (variable gear ratios)",
+"comb": 38.0,
+"city": 39.0,
+"hwy": 37.0,
+"fuel": "Regular Gasoline",
+"cost": 1750.0,
+"kind": "hybrid"
+},
+"worst": {
+"model": "CX-30 4WD",
+"trany": "Automatic (S6)",
+"comb": 25.0,
+"city": 22.0,
+"hwy": 30.0,
+"fuel": "Regular Gasoline",
+"cost": 2700.0,
+"kind": "gas"
+},
+"costMin": 1750.0,
+"costMax": 3300.0,
+"gasMedian": 27.0,
+"evShare": 0.0,
+"models": 7
+}
+},
+"chrysler": {
+"2026": {
+"n": 3,
+"kinds": [
+"gas",
+"phev"
+],
+"gasMin": 22.0,
+"gasMax": 22.0,
+"combMin": 22.0,
+"combMax": 30.0,
+"best": {
+"model": "Pacifica Hybrid",
+"trany": "Automatic (variable gear ratios)",
+"comb": 30.0,
+"city": 29.0,
+"hwy": 30.0,
+"fuel": "Regular Gasoline",
+"cost": 2250.0,
+"kind": "phev"
+},
+"worst": {
+"model": "Pacifica",
+"trany": "Automatic 9-spd",
+"comb": 22.0,
+"city": 19.0,
+"hwy": 28.0,
+"fuel": "Regular Gasoline",
+"cost": 3050.0,
+"kind": "gas"
+},
+"costMin": 2250.0,
+"costMax": 3050.0,
+"gasMedian": 22.0,
+"evShare": 0.0,
+"models": 2
+},
+"2027": {
+"n": 2,
+"kinds": [
+"gas"
+],
+"gasMin": 20.0,
+"gasMax": 22.0,
+"combMin": 20.0,
+"combMax": 22.0,
+"best": {
+"model": "Pacifica",
+"trany": "Automatic 9-spd",
+"comb": 22.0,
+"city": 19.0,
+"hwy": 28.0,
+"fuel": "Regular Gasoline",
+"cost": 3050.0,
+"kind": "gas"
+},
+"worst": {
+"model": "Pacifica AWD",
+"trany": "Automatic 9-spd",
+"comb": 20.0,
+"city": 17.0,
+"hwy": 25.0,
+"fuel": "Regular Gasoline",
+"cost": 3350.0,
+"kind": "gas"
+},
+"costMin": 3050.0,
+"costMax": 3350.0,
+"gasMedian": 21.0,
+"evShare": 0.0,
+"models": 1
+}
+}
+}
+}

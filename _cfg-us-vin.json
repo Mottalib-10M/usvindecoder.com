@@ -1,0 +1,63 @@
+{
+ "legalCountry": "France",
+ "registerLabel": "SIREN",
+ "vatLabel": "VAT",
+ "jurisdiction": "France",
+ "supervisoryAuthority": "Commission nationale de l'informatique et des libertés (CNIL)",
+ "supervisoryAuthorityUrl": "https://www.cnil.fr",
+ "consentMode": "none",
+ "year": 2026,
+ "founded": "2026",
+ "volumes": "/Users/mottalib/Documents/GitHub/a-publier/Mottalib-10M/_cfg-vin/us-vin-volumes.txt",
+ "volumesNote": "1 011 929 recherches/mois sur 5 requêtes consignées (bornes basses 320 000) ; ~1,74 M sur les 27 requêtes de la liste fermée A10, relevé objetech du 2026-10-15.",
+ "folder": "vin-decoder",
+ "outDir": "a-publier/Mottalib-10M",
+ "url": "https://usvindecoder.com",
+ "locales": [
+  "en"
+ ],
+ "names": {
+  "en": "US VIN Decoder"
+ },
+ "langTags": {
+  "en": "en-US"
+ },
+ "ogLocales": {
+  "en": "en_US"
+ },
+ "localeTag": "en-US",
+ "currency": "USD",
+ "flag": "us",
+ "symbol": "VIN",
+ "accent": "#3C3B6E",
+ "authorRole": {
+  "en": "Publisher of a free VIN decoder that reads NHTSA and EPA records without a paid report"
+ },
+ "authorDesc": {
+  "en": "Radif Partners runs this decoder on four federal sources you can query yourself: the NHTSA vPIC database that carmakers fill under 49 CFR Part 565, the NHTSA recall campaigns filed under Part 573, the NCAP crash-test ratings, and the EPA fuel economy records on fueleconomy.gov. Your VIN goes from your browser to those agencies and to nobody else; there is no account, no email and no history report to buy."
+ },
+ "email": "contact@usvindecoder.com",
+ "indexnow": "7c4e2a91b0d34f6e8a5c1d7f3b9e0a62",
+ "shortName": "US VIN Decoder",
+ "description": "Free VIN decoder for US vehicles: factory specs from NHTSA vPIC, recall campaigns, NCAP crash ratings and EPA mpg in one page, with no paid report.",
+ "port": 5505,
+ "og": [
+  {
+   "file": "og-en.png",
+   "title": "Free VIN decoder,\nno paid report",
+   "subtitle": "Specs · recalls · crash ratings · mpg",
+   "badge": "NHTSA vPIC · Recalls · NCAP · EPA",
+   "brand": "US VIN Decoder"
+  }
+ ],
+ "lastUpdated": "2026-10-15",
+ "knowsAbout": {
+  "en": [
+   "Vehicle identification number (VIN) structure under 49 CFR Part 565",
+   "NHTSA safety recall campaigns",
+   "NHTSA NCAP crash test ratings",
+   "EPA fuel economy ratings and annual fuel cost",
+   "Used car buying checks"
+  ]
+ }
+}

@@ -1,0 +1,24 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { LAST_UPDATED, LEGAL, LANG_TAGS } from '../../data/site-config';
+import { displayDate } from '../../lib/format';
+import { route } from '../../i18n/routes';
+const lang = 'en';
+---
+<PageLayout title="Terms of Use and Legal Notice of US VIN Decoder, 2026" description="Terms of use and legal notice of US VIN Decoder: publisher Radif Partners, host GitHub Pages, federal data sources, the limits of a VIN decode and how to report an error." lang={lang} noindex={true} breadcrumbs={[{ label: 'Terms of use' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none prose-headings:font-serif">
+    <h1>Terms of use and legal notice</h1>
+    <h2>Publisher</h2>
+    <LegalIdentity lang={lang} />
+    <p>Host: {LEGAL.hosting.name}, {LEGAL.hosting.address} ({LEGAL.hosting.url}).</p>
+    <h2>What the site is</h2>
+    <p>US VIN Decoder is an independent site. It is not affiliated with the National Highway Traffic Safety Administration, the Environmental Protection Agency, the Department of Energy, the Department of Justice, NMVTIS, NICB, any state DMV or any vehicle manufacturer, and it is not a vehicle history report. It displays public federal data: VIN decoding from NHTSA vPIC, recall campaigns and crash ratings from NHTSA, fuel economy from fueleconomy.gov.</p>
+    <h2>Limits</h2>
+    <p>Decoded data is what manufacturers reported to NHTSA for a VIN pattern; it can be incomplete or, rarely, wrong. Recall lists cover a model and year; whether a given vehicle is affected or repaired is answered by the manufacturer and by NHTSA's VIN search. Fuel costs are estimates from EPA ratings and the inputs you choose. Nothing on the site is legal, mechanical or financial advice, nor a statement about the condition, title or history of a particular vehicle. Before buying a vehicle, check its title history through NMVTIS and have it inspected.</p>
+    <h2>Reuse</h2>
+    <p>The underlying federal data is public. The texts, tables and code of the site are protected; you may quote short passages with a link, and embed the decoder with the code on the <a href={route('widget', lang)}>widget page</a>.</p>
+    <h2>Errors</h2>
+    <p>If a figure looks wrong, write through the <a href={route('contact', lang)}>contact page</a> with the page and the campaign or model concerned; corrections are described in the <a href={route('editorial', lang)}>editorial policy</a>. Law: French law, without prejudice to the protective rules of your country of residence. Updated on <time datetime={LAST_UPDATED}>{displayDate(LAST_UPDATED, LANG_TAGS[lang])}</time>.</p>
+  </div>
+</PageLayout>

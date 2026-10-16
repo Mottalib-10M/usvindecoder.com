@@ -1,0 +1,40 @@
+---
+/** L'outil d'une page, en île hydratée, avec les données du premier rendu calculées au build. */
+import VinDecoder from './calc/VinDecoder';
+import RecallCheck from './calc/RecallCheck';
+import CrashRatings from './calc/CrashRatings';
+import FuelEconomy from './calc/FuelEconomy';
+import CheckDigit from './calc/CheckDigit';
+import BrandExplorer, { type BrandRow } from './calc/BrandExplorer';
+import { route } from '../i18n/routes';
+import { carInitial, motoInitial, PRICES, SAMPLE_VIN } from '../lib/initial';
+import { EPA, RECALLS, SAMPLES, CATALOG, units } from '../lib/data';
+import { parseRecalls, parseRating, parseEpaVehicle, parseMenu } from '../lib/nhtsa';
+import { brandId } from '../lib/pages';
+import type { ToolKind } from '../lib/page-types';
+interface Props { kind: ToolKind; embed?: boolean }
+const { kind, embed = false } = Astro.props;
+const methodHref = route('method', 'en');
+const lastYear = 2027;
+const common = { prices: PRICES, refMedian: EPA.refMedian, refYear: EPA.refYear, methodHref, embed };
+let fe: any = null;
+if (kind === 'mpg') {
+  const e = SAMPLES.epa; const m = e.picked.includes('RAV4 Hybrid AWD') ? 'RAV4 Hybrid AWD' : e.picked[0];
+  const options = parseMenu({ menuItem: e.options[m] }); const option = options[0]?.value;
+  fe = { year: e.year, make: e.make, model: m, models: (e.models as string[]), option, options, vehicle: parseEpaVehicle(e.vehicles[option]) };
+}
+const rc = SAMPLES.recall;
+const nc = SAMPLES.ncap;
+const brands: BrandRow[] = CATALOG.brands.map((b) => { const d = RECALLS.brands[b.slug]; return { slug: b.slug, name: b.name, href: route(brandId(b.slug), 'en'), byYear: Object.entries(d.byYear).map(([y, v]) => [Number(y), v.campaigns] as [number, number]), campaigns10: d.campaigns10, units10: units(d.units10), y2026: d.byYear['2026'].campaigns, top: d.components.slice(0, 3), dnd: d.dnd }; });
+const EPA_MAKES = ['Acura', 'Audi', 'BMW', 'Buick', 'Cadillac', 'Chevrolet', 'Chrysler', 'Dodge', 'Ford', 'Genesis', 'GMC', 'Honda', 'Hyundai', 'Infiniti', 'Jeep', 'Kia', 'Lexus', 'Lincoln', 'Mazda', 'Mercedes-Benz', 'MINI', 'Mitsubishi', 'Nissan', 'Porsche', 'Ram', 'Rivian', 'Subaru', 'Tesla', 'Toyota', 'Volkswagen', 'Volvo'];
+---
+<div data-outil data-chrome>
+{kind === 'decoder' && <VinDecoder client:load mode="car" initialVin={SAMPLE_VIN.car} initial={carInitial()} idPrefix="vd" {...common} />}
+{kind === 'sticker' && <VinDecoder client:load mode="sticker" initialVin={SAMPLE_VIN.car} initial={carInitial()} idPrefix="ws" {...common} />}
+{kind === 'moto' && <VinDecoder client:load mode="moto" initialVin={SAMPLE_VIN.moto} initial={motoInitial()} idPrefix="mc" {...common} />}
+{kind === 'checkdigit' && <CheckDigit client:load initialVin={SAMPLE_VIN.car} />}
+{kind === 'recall' && <RecallCheck client:load year={rc.year} make={rc.make} model={rc.json._model ?? rc.model} rows={parseRecalls(rc.json)} lastYear={lastYear} />}
+{kind === 'ncap' && <CrashRatings client:load year={nc.year} make={nc.make} model={nc.models[0]} models={nc.models} rows={((nc.byName[nc.models[0]] ?? []) as unknown[]).map(parseRating).filter(Boolean) as any} lastYear={lastYear} />}
+{kind === 'mpg' && fe && <FuelEconomy client:load {...fe} prices={PRICES} refMedian={EPA.refMedian} refYear={EPA.refYear} makes={EPA_MAKES} lastYear={EPA.latestYear} />}
+{kind === 'hub' && <BrandExplorer client:load brands={brands} initial="ford" />}
+</div>
