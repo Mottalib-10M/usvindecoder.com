@@ -30,7 +30,7 @@ const years = Object.entries(b.byYear);
 const yearRows = years.map(([y, v]) => [y === '2026' ? '2026 (to date)' : y, n(v.campaigns), units(v.units)]);
 const compRows = b.components.map(([c, k]) => [c, n(k), `${Math.round((k / (b.campaigns10 + b.byYear['2026'].campaigns)) * 100)} %`]);
 const modelRows = b.topModels.map(([m, k]) => [linkModel(m), n(k)]);
-const recent = b.recent.map((c) => [`<span class="font-mono">${c.id}</span>`, day(c.date), c.models.slice(0, 2).join('; ') + (c.models.length > 2 || c.more ? ' and more' : ''), c.component, units(c.units)]);
+const recent = b.recent.map((c) => [`<span class="font-mono whitespace-nowrap">${c.id}</span>`, day(c.date), c.models.slice(0, 2).join('; ') + (c.models.length > 2 || c.more ? ' and more' : ''), c.component, units(c.units)]);
 const related = [HUB, 'recall-check', ...modelPages.map((m) => modelId(m.slug)), 'do-not-drive-recalls', ...def.related].filter((x, i, a) => a.indexOf(x) === i).slice(0, 6).map((r) => ({ href: route(r, lang), name: label(r), description: r.startsWith('model:') ? 'Every campaign by model year' : r === HUB ? 'All 18 brands compared' : 'Free lookup, no account' }));
 const rank = brandRank(def.slug);
 ---

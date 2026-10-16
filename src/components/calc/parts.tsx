@@ -17,8 +17,10 @@ export function VinRibbon({ vin, years }: { vin: string; years: number[] }) {
         {chars.map((c, i) => { const seg = SEG.find((s) => i >= s.from && i < s.to)!; return <span key={i} className={`flex h-8 items-center justify-center rounded-sm font-mono text-sm font-semibold ${c.trim() ? seg.cls : 'bg-navy-50 text-navy-300'}`}>{c.trim() || '·'}</span>; })}
       </div>
       <div className="mt-1 grid grid-cols-[repeat(17,minmax(0,1fr))] gap-0.5 text-[10px] leading-tight text-navy-600">
-        {SEG.map((s) => <span key={s.label} style={{ gridColumn: `${s.from + 1} / ${s.to + 1}` }} className="truncate text-center">{s.label === 'Year' && years.length ? years.join('/') : s.label}</span>)}
+        {SEG.map((s) => <span key={s.label} style={{ gridColumn: `${s.from + 1} / ${s.to + 1}` }} className={`truncate text-center ${s.to - s.from === 1 ? 'hidden sm:block' : ''}`}>{s.label === 'Year' && years.length ? years.join('/') : s.label === 'Maker (WMI)' ? <><span className="sm:hidden">WMI</span><span className="hidden sm:inline">Maker (WMI)</span></> : s.label}</span>)}
       </div>
+      {/* Sur téléphone, une colonne fait 20 px : les trois repères d'un caractère passent en clair sous le ruban. */}
+      <p className="mt-0.5 text-[11px] leading-tight text-navy-600 sm:hidden">9th: check digit · 10th: year{years.length ? ` ${years.join('/')}` : ''} · 11th: plant</p>
     </div>
   );
 }
@@ -46,11 +48,12 @@ export function RecallList({ rows, max = 8 }: { rows: RecallRow[]; max?: number 
 }
 export function RatingTable({ rows }: { rows: Rating[] }) {
   if (!rows.length) return <p className="mt-2 text-sm text-navy-700">NHTSA has not crash-tested this model and year. NCAP tests a selection of new models each year, chosen by sales and new designs; an untested model is not an unsafe one.</p>;
-  const cell = (n: number | null) => (n ? <Stars n={n} /> : <span className="text-navy-500">not rated</span>);
+  // Sur téléphone, cinq colonnes de cinq étoiles écrasaient la version en un mot par ligne : chiffre + une étoile sous 640 px.
+  const cell = (n: number | null) => (n ? <><span className="whitespace-nowrap font-semibold tabular-nums text-amber-800 sm:hidden" aria-label={`${n} out of 5 stars`}>{n}★</span><span className="hidden sm:inline"><Stars n={n} /></span></> : <span className="text-navy-500">not rated</span>);
   return (
     <div className="mt-2 overflow-x-auto"><table className="journal w-full text-sm">
-      <thead><tr><th scope="col" className="text-left">Version</th><th scope="col">Overall</th><th scope="col">Front</th><th scope="col">Side</th><th scope="col">Rollover</th></tr></thead>
-      <tbody className="divide-y divide-navy-100">{rows.map((r) => <tr key={r.id}><td className="py-1.5 pr-2 text-navy-800">{r.desc}{r.rollRisk ? <span className="block text-xs text-navy-600">rollover risk {Math.round(r.rollRisk * 1000) / 10} %</span> : null}</td><td className="text-center">{cell(r.overall)}</td><td className="text-center">{cell(r.front)}</td><td className="text-center">{cell(r.side)}</td><td className="text-center">{cell(r.rollover)}</td></tr>)}</tbody>
+      <thead><tr><th scope="col" className="text-left">Version</th>{[['Overall', 'All'], ['Front', 'Front'], ['Side', 'Side'], ['Rollover', 'Roll']].map(([l, sh]) => <th key={l} scope="col" className="px-1"><span className="hidden sm:inline">{l}</span><span className="sm:hidden" aria-hidden="true">{sh}</span></th>)}</tr></thead>
+      <tbody className="divide-y divide-navy-100">{rows.map((r) => <tr key={r.id}><td className="min-w-[9rem] py-1.5 pr-2 text-navy-800">{r.desc}{r.rollRisk ? <span className="block text-xs text-navy-600">rollover risk {Math.round(r.rollRisk * 1000) / 10} %</span> : null}</td><td className="text-center">{cell(r.overall)}</td><td className="text-center">{cell(r.front)}</td><td className="text-center">{cell(r.side)}</td><td className="text-center">{cell(r.rollover)}</td></tr>)}</tbody>
     </table></div>
   );
 }

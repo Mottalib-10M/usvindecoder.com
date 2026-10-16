@@ -45,23 +45,75 @@ export function driveWords(drive: string): string[] {
   return [];
 }
 
+/** Ce que vPIC dit du véhicule, pour départager les versions EPA d'un même modèle. */
+export interface BuildHints { trim?: string; series?: string; doors?: string; body?: string; electrification?: string; fuel2?: string; displacementL?: string }
+
+const DRIVE_TOKENS: Record<string, string> = { '2WD': '2WD', '4WD': '4WD', AWD: 'AWD', FWD: 'FWD', RWD: 'RWD', '4X4': '4WD', '4MATIC': 'AWD', QUATTRO: 'AWD' };
+const BODY_TOKENS: Record<string, RegExp> = { COUPE: /coupe/i, CONVERTIBLE: /convertible|cabriolet/i, CABRIOLET: /convertible|cabriolet/i, ROADSTER: /roadster|convertible/i, WAGON: /wagon/i, HATCHBACK: /hatchback/i, SEDAN: /sedan/i, VAN: /van/i };
+const HYBRID_TOKENS = /^(HYBRID|HEV|PHEV|PLUG-?IN|ENERGI|PRIME)$/;
+const NEUTRAL = new Set(['PICKUP', 'FFV', 'CAB', 'STATION', 'PLUS']);
+
+/** Transmission déduite de la finition quand vPIC laisse le champ vide (« GLE350-4M », « xDrive40i », « quattro »). */
+function driveFrom(drive: string, trim: string): string[] {
+  const w = driveWords(drive);
+  if (w.length) return w;
+  if (/-4M\b|4MATIC|XDRIVE|QUATTRO|\bAWD\b|SH-AWD/i.test(trim)) return ['AWD', '4WD'];
+  if (/SDRIVE/i.test(trim)) return ['RWD', '2WD'];
+  return [];
+}
+
+/**
+ * Note d'un nom EPA pour un véhicule vPIC : les mots qui suivent le nom du modèle (« AWD LE/SE »,
+ * « 4Dr », « Sport ») sont confrontés à la transmission, aux portes, à la carrosserie, à
+ * l'électrification et à la finition vPIC. Un mot contraire (« AWD » pour un 4x2, « 2Dr » pour une
+ * berline 4 portes, « Hybrid » pour un thermique) coûte cher ; un mot inconnu (« Sport », « SRT », « L »)
+ * coûte un peu, une seule fois ; un mot de la finition (« SE », « xDrive40i », « 350 ») rapporte.
+ */
+export function scoreEpaName(name: string, base: string, drive: string, h: BuildHints = {}): number {
+  const target = norm(base);
+  const tokens = name.split(/[\s/,()]+/).filter(Boolean);
+  let acc = ''; let i = 0;
+  while (i < tokens.length && acc.length < target.length && target.startsWith(acc + norm(tokens[i]))) { acc += norm(tokens[i]); i++; }
+  const extras = (acc === target ? tokens.slice(i) : tokens.filter((t) => !target.includes(norm(t)))).map((t) => t.toUpperCase());
+  const trimWords = new Set(`${h.trim ?? ''} ${h.series ?? ''}`.toUpperCase().split(/[\s/,()-]+/).filter(Boolean));
+  const okDrive = driveFrom(drive, h.trim ?? '');
+  const electric = /HEV|PHEV|HYBRID/i.test(h.electrification ?? '');
+  let score = 0; let unknown = false;
+  for (const t of extras) {
+    if (trimWords.has(t)) { score += 3; continue; }
+    const d = DRIVE_TOKENS[t];
+    if (d) { if (okDrive.length) score += okDrive.includes(d) ? 2 : -5; continue; }
+    const litres = t.match(/^(\d\.\d)T?$/);
+    if (litres) { const dl = Number(h.displacementL); if (dl > 0) score += Math.abs(Number(litres[1]) - Math.round(dl * 10) / 10) < 0.051 ? 2 : -5; continue; }
+    const doors = t.match(/^(\d)DR$/);
+    if (doors) { if (h.doors) score += doors[1] === h.doors ? 2 : -4; continue; }
+    if (BODY_TOKENS[t]) { if (h.body) score += BODY_TOKENS[t].test(h.body) ? 2 : -4; else score -= 1; continue; }
+    if (HYBRID_TOKENS.test(t)) { score += electric ? 2 : -4; continue; }
+    if (t === 'FFV' && /E85|ethanol/i.test(h.fuel2 ?? '')) { score += 1; continue; }
+    if (NEUTRAL.has(t) || /^(DRIVE|II|SPD|LWB)$/.test(t)) continue;
+    unknown = true;
+  }
+  return score - (unknown ? 2 : 0);
+}
+
 /**
  * Modèles EPA d'une année et d'une marque qui correspondent au modèle vPIC : même nom à la
- * ponctuation près (« F-150 » = « F150 Pickup 2WD »), puis même transmission quand elle est connue.
+ * ponctuation près (« F-150 » = « F150 Pickup 2WD »), sinon le code de version de la finition
+ * (« C-Class » + « C300 » = « C300 »). Parmi eux, les noms les mieux notés par scoreEpaName.
  */
-export function matchEpaModels(epaModels: string[], vpicModel: string, vpicDrive = ''): string[] {
+export function rankEpaModels(epaModels: string[], vpicModel: string, vpicDrive = '', hints: BuildHints = {}, codes: string[] = []): Array<{ m: string; s: number }> {
   const target = norm(vpicModel);
   if (!target) return [];
+  let base = vpicModel;
   let hits = epaModels.filter((m) => norm(m).startsWith(target));
+  if (!hits.length) for (const c of codes) { const byCode = epaModels.filter((m) => norm(m).startsWith(norm(c))); if (byCode.length) { hits = byCode; base = c; break; } }
   if (!hits.length) hits = epaModels.filter((m) => norm(m).includes(target));
-  const words = driveWords(vpicDrive);
-  if (words.length && hits.length > 1) {
-    for (const w of words) {
-      const byDrive = hits.filter((m) => new RegExp(`\\b${w}\\b`, 'i').test(m));
-      if (byDrive.length) { hits = byDrive; break; }
-    }
-  }
-  return hits;
+  return hits.map((m, i) => ({ m, s: scoreEpaName(m, base, vpicDrive, hints), i })).sort((a, b) => b.s - a.s || a.i - b.i).map(({ m, s }) => ({ m, s }));
+}
+/** Les noms EPA les mieux notés (à égalité, tous). */
+export function matchEpaModels(epaModels: string[], vpicModel: string, vpicDrive = '', hints: BuildHints = {}, codes: string[] = []): string[] {
+  const r = rankEpaModels(epaModels, vpicModel, vpicDrive, hints, codes);
+  return r.filter((x) => x.s === r[0]?.s).map((x) => x.m);
 }
 
 /** Options EPA (« Auto (S6), 6 cyl, 3.5 L, Turbo ») compatibles avec la cylindrée et les cylindres vPIC. */

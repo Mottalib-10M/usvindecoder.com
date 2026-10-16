@@ -15,7 +15,7 @@ describe('vPIC', () => {
   it('motif moto partiel : Yamaha YZF-R1 2009, VIN incomplet (code 6)', () => { const f = parseVpic(s.moto.vpic)!; expect([f.make, f.model, f.year, f.partial]).toEqual(['Yamaha', 'YZF-R1', '2009', true]); });
 });
 describe('rappels', () => {
-  it('dates américaines', () => { expect(usDate('06/03/2019')).toBe('2019-06-03'); });
+  it('dates de l’API au format jour/mois/année (16V345000 : 24/05/2016 = RCDATE 20160524)', () => { expect(usDate('24/05/2016')).toBe('2016-05-24'); expect(usDate('11/02/2019')).toBe('2019-02-11'); });
   it('2020 Honda CR-V : campagnes uniques, triées de la plus récente', () => {
     const r = parseRecalls(s.recall.json);
     expect(r.length).toBe(new Set(r.map((x) => x.id)).size); expect(r.length).toBeGreaterThan(0);

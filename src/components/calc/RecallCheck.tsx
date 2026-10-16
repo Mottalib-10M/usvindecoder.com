@@ -5,6 +5,7 @@
 import { useEffect, useRef, useState } from 'react';
 import SelectField from '../ui/SelectField';
 import { fetchRecalls, fetchRecallList, fetchVpic, type RecallRow } from '../../lib/nhtsa';
+import { lookupRecalls } from '../../lib/lookup';
 import { matchNames } from '../../lib/engine/match';
 import { normalizeVin, validateVin } from '../../lib/engine/vin';
 import { readParams, updateURL } from '../../lib/url-state';
@@ -66,9 +67,13 @@ export default function RecallCheck({ year: y0, make: m0, model: d0, modelLabel,
       if (!f || !f.make) { setVinMsg('vPIC has no record for this VIN.'); return; }
       const mk = f.make.toUpperCase(); setYear(f.year); setMake(mk);
       const list = await loadModels(f.year, mk, f.model);
-      const md = matchNames(list, f.model)[0] ?? f.model.toUpperCase();
-      setModel(md); setVinMsg(`${f.year} ${f.make} ${f.model}`); updateURL({ year: f.year, make: mk, model: md });
-      loadRecalls(f.year, mk, md);
+      // Même recherche que le décodeur : modèle vPIC + noms de version (« C-Class » + « C 300 », « C300 »).
+      const id = ++run.current; setState('loading');
+      const r = await lookupRecalls(f);
+      const md = matchNames(list, r.model.split(' / ')[0])[0] ?? r.model.split(' / ')[0].toUpperCase();
+      if (id !== run.current) return;
+      setModel(md); setVinMsg(`${f.year} ${f.make} ${f.model}${f.trim ? ` ${f.trim}` : ''} · searched as ${r.model}`); updateURL({ year: f.year, make: mk, model: md });
+      setRows(r.rows); setState('done');
     } catch { setVinMsg('NHTSA did not answer; try again in a minute.'); }
   };
 
@@ -99,6 +104,7 @@ export default function RecallCheck({ year: y0, make: m0, model: d0, modelLabel,
           <p className="text-xs font-semibold uppercase tracking-wide text-accent-700">{state === 'loading' ? 'Asking NHTSA…' : state === 'error' ? 'NHTSA did not answer' : 'NHTSA safety recall campaigns'}</p>
           <p className="mt-1 font-serif text-3xl font-bold text-navy-900"><span className={`tabular-nums ${rows.length ? 'text-red-800' : ''}`}>{rows.length}</span> campaign{rows.length === 1 ? '' : 's'}</p>
           <p className="text-sm text-navy-700">{year} {makeOpts.find((m) => m.value === make)?.label ?? make} {shownModel}{parked ? ` · ${parked} with a do-not-drive or park-outside warning` : ''}</p>
+          {state === 'done' && rows.length === 0 && /-CLASS$|\bSERIES$/i.test(model) && <p className="mt-2 text-sm text-navy-700">NHTSA files many recalls for this family under the version name (C 300, GLE 350, 330i). Enter the VIN below the form to search every name at once.</p>}
           <RecallList rows={rows} max={max} />
           <p className="mt-3 text-xs text-navy-600">A campaign covers every vehicle of the model and year built in the affected window. To see whether one car still has it open, enter its VIN on <a className="text-accent-700 underline" href="https://www.nhtsa.gov/recalls" target="_blank" rel="nofollow noopener noreferrer">nhtsa.gov/recalls</a> or the maker's site.</p>
         </section>

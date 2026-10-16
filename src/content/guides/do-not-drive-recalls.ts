@@ -3,7 +3,7 @@ import { RECALLS as R, n, day, units } from '../../lib/data';
 
 const A = R.advisories;
 const years = Object.keys(A.byYear);
-const rows = A.recent.slice(0, 12).map((c) => [`<span class="font-mono">${c.id}</span>`, day(c.date), c.dnd ? 'Do not drive' : 'Park outside', c.models.slice(0, 2).join('; ') + (c.models.length > 2 || c.more ? ' and more' : ''), units(c.units)]);
+const rows = A.recent.slice(0, 12).map((c) => [`<span class="font-mono whitespace-nowrap">${c.id}</span>`, day(c.date), c.dnd ? 'Do not drive' : 'Park outside', c.models.slice(0, 2).join('; ') + (c.models.length > 2 || c.more ? ' and more' : ''), units(c.units)]);
 const po25 = A.byYear['2025'].po; const po16 = A.byYear['2016'].po;
 
 export default definePage({

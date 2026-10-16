@@ -53,10 +53,14 @@ export function parseVpic(json: unknown): VehicleFacts | null {
 }
 
 export interface RecallRow { id: string; date: string; component: string; summary: string; consequence: string; remedy: string; parkIt: boolean; parkOutside: boolean; ota: boolean }
-/** « 06/03/2019 » (mois/jour/année) -> « 2019-06-03 ». */
+/**
+ * Date de réception de l'API Recalls -> ISO. L'API écrit JOUR/MOIS/ANNÉE malgré son public
+ * américain : « 24/05/2016 » pour 16V345000, reçu le 20160524 dans le fichier officiel (RCDATE).
+ * Vérifié sur 10 campagnes le 2026-10-16 ; l'ancienne lecture mois/jour décalait toutes les dates.
+ */
 export function usDate(d: string): string {
   const m = (d || '').match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
-  return m ? `${m[3]}-${m[1]}-${m[2]}` : d || '';
+  return m ? `${m[3]}-${m[2]}-${m[1]}` : d || '';
 }
 export function parseRecalls(json: unknown): RecallRow[] {
   const rs = ((json as Raw)?.results as Raw[] | undefined) ?? [];
@@ -107,7 +111,9 @@ export function parseMenu(j: unknown): Array<{ text: string; value: string }> {
 async function getJson(url: string, epa = false): Promise<unknown> {
   // Requêtes « simples » (GET sans en-tête personnalisé) : aucune pré-vérification CORS, aucune
   // donnée envoyée hors de l'adresse. L'EPA demande Accept: application/json, accepté sans préflight.
-  const res = await fetch(url, epa ? { headers: { Accept: 'application/json' } } : undefined);
+  // Délai de 20 s : une API fédérale qui ne répond pas affiche « n'a pas répondu » au lieu d'un chargement sans fin.
+  const signal = typeof AbortSignal !== 'undefined' && 'timeout' in AbortSignal ? AbortSignal.timeout(20000) : undefined;
+  const res = await fetch(url, epa ? { headers: { Accept: 'application/json' }, signal } : { signal });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   return res.json();
 }

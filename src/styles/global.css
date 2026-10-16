@@ -49,5 +49,5 @@ h1 { font-weight: 700; } h2 { font-weight: 650; } h3 { font-weight: 600; }
 
 /* Codes et identifiants longs (noms d'API, numéros de campagne) : jamais de débordement à 320 px. */
 .prose code { overflow-wrap: anywhere; }
-.prose td, table.journal td { overflow-wrap: anywhere; }
+.prose td, table.journal td { overflow-wrap: break-word; }
 .prose p, .prose li { overflow-wrap: break-word; }

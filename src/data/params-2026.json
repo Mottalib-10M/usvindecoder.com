@@ -18,12 +18,12 @@
     "lightVehicleGvwrLb": 10000
   },
   "remedy": {
-    "_doc": "49 U.S.C. 30120(g)(1) : la réparation gratuite n'est pas due si le véhicule a été acheté par son premier acquéreur plus de 15 années civiles (pneu : 5 ans) avant l'avis de défaut prévu à la section 30118(c) ou l'ordre de la section 30118(b), la date la plus ancienne étant retenue.",
+    "_doc": "49 U.S.C. 30120(g)(1) : la réparation gratuite n'est pas due si le véhicule a été acheté par son premier acquéreur plus de 15 années civiles (pneu : 5 ans) avant l'avis de défaut prévu à la section 30118(c) ou l'ordre de la section 30118(b), la date la plus ancienne étant retenue. Texte relu sur law.cornell.edu le 2026-10-16.",
     "freeYears": 15,
     "tireYears": 5
   },
   "odometer": {
-    "_doc": "49 CFR 580.17 (règle finale NHTSA du 4 novembre 2019, en vigueur le 1er janvier 2021) : à partir de l'année-modèle 2011, déclaration du kilométrage obligatoire jusqu'à 20 ans ; jusqu'à l'année-modèle 2010, exemption après 10 ans.",
+    "_doc": "49 CFR 580.17 (règle finale NHTSA 84 FR 52704 du 2 octobre 2019, en vigueur le 1er janvier 2021 ; texte relu sur eCFR le 2026-10-16) : à partir de l'année-modèle 2011, déclaration du kilométrage obligatoire jusqu'à 20 ans ; jusqu'à l'année-modèle 2010, exemption après 10 ans.",
     "firstModelYearNewRule": 2011,
     "yearsNewRule": 20,
     "yearsOldRule": 10
@@ -99,6 +99,18 @@
       "url": "https://www.law.cornell.edu/cfr/text/49/580.17",
       "label": {
         "en": "49 CFR 580.17, exemptions from odometer disclosure (10 years up to model year 2010, 20 years from model year 2011)"
+      }
+    },
+    "takata": {
+      "url": "https://www.nhtsa.gov/equipment/takata-recall-spotlight",
+      "label": {
+        "en": "NHTSA Takata Recall Spotlight: 67 million air bags, 19 manufacturers, 28 US deaths, do-not-drive vehicles (read 2026-10-16 from the web.archive.org copy of 2026-09-18)"
+      }
+    },
+    "nicb": {
+      "url": "https://www.nicb.org/vincheck",
+      "label": {
+        "en": "NICB VINCheck: vehicles reported stolen and not recovered, salvage or flood-damaged by member insurers, five searches per IP address in 24 hours (read 2026-10-16)"
       }
     }
   }

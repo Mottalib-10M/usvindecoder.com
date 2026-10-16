@@ -6,9 +6,9 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import WMI from '../../data/gen/wmi.json';
 import { decodeOffline, normalizeVin, type WmiEntry } from '../../lib/engine/vin';
-import { annualFuel, annualElectric, matchEpaModels, matchEpaOptions } from '../../lib/engine/fuel';
-import { matchNames } from '../../lib/engine/match';
-import { fetchVpic, fetchRecalls, fetchRecallList, fetchNcapList, fetchRating, fetchEpaMenu, fetchEpaVehicle, type VehicleFacts, type RecallRow, type Rating, type EpaVehicle } from '../../lib/nhtsa';
+import { annualFuel, annualElectric } from '../../lib/engine/fuel';
+import { fetchVpic, type VehicleFacts, type RecallRow, type Rating, type EpaVehicle } from '../../lib/nhtsa';
+import { lookupRecalls, lookupRatings, lookupEpa } from '../../lib/lookup';
 import { readParams, updateURL } from '../../lib/url-state';
 import NumberField from '../ui/NumberField';
 import { VinRibbon, Stars, RecallList, RatingTable, SourceNote } from './parts';
@@ -19,39 +19,6 @@ interface Props { mode?: 'car' | 'moto' | 'sticker'; initialVin: string; initial
 type Status = 'idle' | 'loading' | 'done' | 'error';
 const usd = (x: number) => new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(x);
 const int = (x: number) => new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 }).format(x);
-
-async function lookupRecalls(f: VehicleFacts): Promise<{ rows: RecallRow[]; model: string }> {
-  if (!f.make || !f.model || !f.year) return { rows: [], model: '' };
-  let rows: RecallRow[] = [];
-  try { rows = await fetchRecalls(f.make, f.model, f.year); } catch { rows = []; }
-  if (rows.length) return { rows, model: f.model };
-  const names = matchNames(await fetchRecallList('models', f.year, f.make).catch(() => [] as string[]), f.model);
-  for (const n of names.slice(0, 3)) {
-    const r = await fetchRecalls(f.make, n, f.year).catch(() => [] as RecallRow[]);
-    if (r.length) return { rows: r, model: n };
-  }
-  return { rows: [], model: f.model };
-}
-async function lookupRatings(f: VehicleFacts): Promise<Rating[]> {
-  if (!f.make || !f.model || !f.year) return [];
-  const mk = f.make.toUpperCase();
-  const names = matchNames((await fetchNcapList(f.year, mk)).map((x) => x.label), f.model);
-  const ids: number[] = [];
-  for (const n of names.slice(0, 4)) for (const v of await fetchNcapList(f.year, mk, n)) if (v.id && ids.length < 6) ids.push(v.id);
-  const out = await Promise.all(ids.map((id) => fetchRating(id).catch(() => null)));
-  return out.filter((x): x is Rating => !!x);
-}
-async function lookupEpa(f: VehicleFacts): Promise<EpaVehicle[]> {
-  if (!f.make || !f.model || !f.year) return [];
-  const models = (await fetchEpaMenu('model', f.year, f.make)).map((m) => m.value);
-  const picked = matchEpaModels(models, f.model, f.drive).slice(0, 2);
-  const out: EpaVehicle[] = [];
-  for (const m of picked) {
-    const opts = matchEpaOptions(await fetchEpaMenu('options', f.year, f.make, m), Number(f.displacementL) || undefined, Number(f.cylinders) || undefined);
-    for (const o of opts.slice(0, 3)) { const v = await fetchEpaVehicle(o.value).catch(() => null); if (v) out.push(v); }
-  }
-  return out.slice(0, 4);
-}
 
 export default function VinDecoder({ mode = 'car', initialVin, initial, prices, refMedian, refYear, idPrefix = 'vd', methodHref, embed = false }: Props) {
   const [text, setText] = useState(initialVin);
@@ -155,8 +122,8 @@ export default function VinDecoder({ mode = 'car', initialVin, initial, prices, 
               </div>
               {mode !== 'moto' && <div className="rounded-lg border border-navy-200 bg-white p-3">
                 <p className="text-xs text-navy-600">NCAP overall</p>
-                <p className="text-2xl font-bold text-navy-900">{status.ratings === 'loading' ? '…' : best ? <Stars n={best} /> : 'n/a'}</p>
-                <p className="text-xs text-navy-600">{best ? `${rated.length} rated version${rated.length > 1 ? 's' : ''}` : 'not rated by NHTSA'}</p>
+                <p className="text-2xl font-bold text-navy-900">{status.ratings === 'loading' ? '…' : best ? <><span className="tabular-nums sm:hidden" aria-label={`${best} out of 5 stars`}>{best}<span className="text-amber-800">★</span></span><span className="hidden sm:inline"><Stars n={best} /></span></> : 'n/a'}</p>
+                <p className="text-xs text-navy-600">{best ? `${rated.length} rated version${rated.length > 1 ? 's' : ''}` : shown.ratings.some((r) => r.front || r.side || r.rollover) ? 'no overall score; partial stars below' : 'not rated by NHTSA'}</p>
               </div>}
               <div className="rounded-lg border border-navy-200 bg-white p-3">
                 {mode === 'moto' ? (<><p className="text-xs text-navy-600">Engine</p><p className="tabular-nums text-2xl font-bold text-navy-900">{f.displacementL ? `${int(Number(f.displacementL) * 1000)} cc` : 'n/a'}</p><p className="text-xs text-navy-600">{f.motorcycle || f.body || 'motorcycle'}</p></>)

@@ -1,11 +1,13 @@
 /** Premier rendu des outils : les réponses réelles mises en cache au build (samples.json), lues par les mêmes fonctions que le navigateur. */
 import { SAMPLES, EPA as EPAD } from './data';
-import { parseVpic, parseRecalls, parseRating, parseEpaVehicle, type EpaVehicle, type Rating } from './nhtsa';
+import { parseVpic, parseRecalls, parseRating, parseEpaVehicle, type EpaVehicle, type Rating, type VehicleFacts } from './nhtsa';
+import { hintsOf } from './lookup';
+import { versionCodes } from './engine/match';
 import { matchEpaModels, matchEpaOptions } from './engine/fuel';
 import type { Initial } from '../components/calc/VinDecoder';
 
-function epaFor(e: any, facts: { model: string; drive: string; displacementL: string; cylinders: string }): EpaVehicle[] {
-  const models = matchEpaModels(e.models as string[], facts.model, facts.drive).slice(0, 2);
+function epaFor(e: any, facts: VehicleFacts): EpaVehicle[] {
+  const models = matchEpaModels(e.models as string[], facts.model, facts.drive, hintsOf(facts), versionCodes(facts.model, facts.trim, facts.series)).slice(0, 2);
   const out: EpaVehicle[] = [];
   for (const m of models) {
     const opts = matchEpaOptions(e.options[m] ?? [], Number(facts.displacementL) || undefined, Number(facts.cylinders) || undefined);
