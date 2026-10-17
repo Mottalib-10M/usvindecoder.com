@@ -1,7 +1,7 @@
 ---
 import PageLayout from '../../layouts/PageLayout.astro';
 import LegalIdentity from '../../components/LegalIdentity.astro';
-import { LAST_UPDATED, LEGAL, LANG_TAGS } from '../../data/site-config';
+import { CLARITY_ID, CONTACT_EMAIL, GA4_ID, LANG_TAGS, LAST_UPDATED, LEGAL } from '../../data/site-config';
 import { displayDate } from '../../lib/format';
 import { route } from '../../i18n/routes';
 const lang = 'en';
@@ -18,6 +18,10 @@ const lang = 'en';
     <p>Decoded data is what manufacturers reported to NHTSA for a VIN pattern; it can be incomplete or, rarely, wrong. Recall lists cover a model and year; whether a given vehicle is affected or repaired is answered by the manufacturer and by NHTSA's VIN search. Fuel costs are estimates from EPA ratings and the inputs you choose. Nothing on the site is legal, mechanical or financial advice, nor a statement about the condition, title or history of a particular vehicle. Before buying a vehicle, check its title history through NMVTIS and have it inspected.</p>
     <h2>Reuse</h2>
     <p>The underlying federal data is public. The texts, tables and code of the site are protected; you may quote short passages with a link, and embed the decoder with the code on the <a href={route('widget', lang)}>widget page</a>.</p>
+    {/* gen-legal-pages:terms */}
+    <h2>Personal data and cookies</h2>
+    {GA4_ID ? (<p>What you type in the calculators stays in your browser. The site sets Google Analytics audience measurement cookies (<code>_ga</code>, <code>_ga_{GA4_ID.replace('G-', '')}</code>, 13 months at most), with no advertising{CLARITY_ID && '; page stability is monitored with Microsoft Clarity, cookie-free'}. Details, legal basis and how to object: <a href={route('privacy', lang)}>privacy policy</a> and <a href={route('cookies', lang)}>cookies</a> page.</p>) : (<p>What you type in the calculators stays in your browser and the site sets no cookies{CLARITY_ID && '; page stability is monitored anonymously with Microsoft Clarity, cookie-free'}. See the <a href={route('privacy', lang)}>privacy policy</a> and the <a href={route('cookies', lang)}>cookies</a> page.</p>)}
+    {/* /gen-legal-pages:terms */}
     <h2>Errors</h2>
     <p>If a figure looks wrong, write through the <a href={route('contact', lang)}>contact page</a> with the page and the campaign or model concerned; corrections are described in the <a href={route('editorial', lang)}>editorial policy</a>. Law: French law, without prejudice to the protective rules of your country of residence. Updated on <time datetime={LAST_UPDATED}>{displayDate(LAST_UPDATED, LANG_TAGS[lang])}</time>.</p>
   </div>
