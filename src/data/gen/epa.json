@@ -1,7 +1,7 @@
 {
 "source": "https://www.fueleconomy.gov/feg/epadata/vehicles.csv.zip",
 "prices_source": "https://www.fueleconomy.gov/ws/rest/fuelprices",
-"retrieved_at": "2026-10-16",
+"retrieved_at": "2026-10-19",
 "prices": {
 "cng": 3.08,
 "diesel": 6.18,

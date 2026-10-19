@@ -1,6 +1,6 @@
 {
 "source": "https://www.nhtsa.gov/nhtsa-datasets-and-apis",
-"retrieved_at": "2026-10-16",
+"retrieved_at": "2026-10-19",
 "models": {
 "f-150": {
 "2015": [
@@ -596,7 +596,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 1028,
+"complaints": 1029,
 "investigations": 1,
 "fcw": "Standard",
 "ldw": "Optional"
@@ -609,7 +609,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.164,
-"complaints": 1028,
+"complaints": 1029,
 "investigations": 1,
 "fcw": "Standard",
 "ldw": "Optional"
@@ -622,7 +622,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 1028,
+"complaints": 1029,
 "investigations": 1,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -635,7 +635,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.164,
-"complaints": 1028,
+"complaints": 1029,
 "investigations": 1,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -648,7 +648,7 @@
 "side": null,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 1028,
+"complaints": 1029,
 "investigations": 1,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -661,7 +661,7 @@
 "side": null,
 "rollover": 4,
 "rollRisk": 0.164,
-"complaints": 1028,
+"complaints": 1029,
 "investigations": 1,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -674,7 +674,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 1028,
+"complaints": 1029,
 "investigations": 1,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -687,7 +687,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.164,
-"complaints": 1028,
+"complaints": 1029,
 "investigations": 1,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -700,7 +700,7 @@
 "side": null,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 1028,
+"complaints": 1029,
 "investigations": 1,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -713,7 +713,7 @@
 "side": null,
 "rollover": 4,
 "rollRisk": 0.164,
-"complaints": 1028,
+"complaints": 1029,
 "investigations": 1,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -925,7 +925,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 414,
+"complaints": 415,
 "investigations": 0,
 "fcw": "Standard & Optional",
 "ldw": "Standard"
@@ -938,7 +938,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.164,
-"complaints": 414,
+"complaints": 415,
 "investigations": 0,
 "fcw": "Standard & Optional",
 "ldw": "Standard"
@@ -951,7 +951,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 414,
+"complaints": 415,
 "investigations": 0,
 "fcw": "Standard & Optional",
 "ldw": "Standard"
@@ -964,7 +964,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.164,
-"complaints": 414,
+"complaints": 415,
 "investigations": 0,
 "fcw": "Standard & Optional",
 "ldw": "Standard"
@@ -977,7 +977,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 414,
+"complaints": 415,
 "investigations": 0,
 "fcw": "Standard & Optional",
 "ldw": "Standard"
@@ -990,7 +990,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.164,
-"complaints": 414,
+"complaints": 415,
 "investigations": 0,
 "fcw": "Standard & Optional",
 "ldw": "Standard"
@@ -1163,7 +1163,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 107,
+"complaints": 108,
 "investigations": 0,
 "fcw": "Standard & Optional",
 "ldw": "Standard"
@@ -1176,7 +1176,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.164,
-"complaints": 107,
+"complaints": 108,
 "investigations": 0,
 "fcw": "Standard & Optional",
 "ldw": "Standard"
@@ -1189,7 +1189,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 107,
+"complaints": 108,
 "investigations": 0,
 "fcw": "Standard & Optional",
 "ldw": "Standard"
@@ -1202,7 +1202,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.164,
-"complaints": 107,
+"complaints": 108,
 "investigations": 0,
 "fcw": "Standard & Optional",
 "ldw": "Standard"
@@ -1215,7 +1215,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 107,
+"complaints": 108,
 "investigations": 0,
 "fcw": "Standard & Optional",
 "ldw": "Standard"
@@ -1228,7 +1228,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.164,
-"complaints": 107,
+"complaints": 108,
 "investigations": 0,
 "fcw": "Standard & Optional",
 "ldw": "Standard"
@@ -1377,7 +1377,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.174,
-"complaints": 1806,
+"complaints": 1808,
 "investigations": 5,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -1390,7 +1390,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.169,
-"complaints": 1806,
+"complaints": 1808,
 "investigations": 5,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -1433,7 +1433,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.174,
-"complaints": 1708,
+"complaints": 1710,
 "investigations": 2,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -1446,7 +1446,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.164,
-"complaints": 1708,
+"complaints": 1710,
 "investigations": 2,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -1517,7 +1517,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.151,
-"complaints": 1230,
+"complaints": 1233,
 "investigations": 3,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -1530,7 +1530,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.147,
-"complaints": 1230,
+"complaints": 1233,
 "investigations": 3,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -1597,7 +1597,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.151,
-"complaints": 442,
+"complaints": 445,
 "investigations": 2,
 "fcw": "Optional",
 "ldw": "Standard"
@@ -1610,7 +1610,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.147,
-"complaints": 442,
+"complaints": 445,
 "investigations": 2,
 "fcw": "Optional",
 "ldw": "Standard"
@@ -1705,7 +1705,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.151,
-"complaints": 110,
+"complaints": 111,
 "investigations": 0,
 "fcw": "Standard & Optional",
 "ldw": "Standard"
@@ -1718,7 +1718,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.147,
-"complaints": 110,
+"complaints": 111,
 "investigations": 0,
 "fcw": "Standard & Optional",
 "ldw": "Standard"
@@ -1813,7 +1813,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.151,
-"complaints": 103,
+"complaints": 104,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -1826,7 +1826,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.147,
-"complaints": 103,
+"complaints": 104,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -1951,7 +1951,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 1112,
+"complaints": 1115,
 "investigations": 2,
 "fcw": "No",
 "ldw": "No"
@@ -1964,7 +1964,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.185,
-"complaints": 1112,
+"complaints": 1115,
 "investigations": 2,
 "fcw": "No",
 "ldw": "No"
@@ -1979,7 +1979,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.185,
-"complaints": 1152,
+"complaints": 1156,
 "investigations": 0,
 "fcw": "No",
 "ldw": "No"
@@ -1992,7 +1992,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 1152,
+"complaints": 1156,
 "investigations": 0,
 "fcw": "No",
 "ldw": "No"
@@ -2007,7 +2007,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 2693,
+"complaints": 2695,
 "investigations": 0,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -2020,7 +2020,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.185,
-"complaints": 2693,
+"complaints": 2695,
 "investigations": 0,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -2035,7 +2035,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.185,
-"complaints": 1812,
+"complaints": 1813,
 "investigations": 0,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -2048,7 +2048,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 1812,
+"complaints": 1813,
 "investigations": 0,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -2063,7 +2063,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.185,
-"complaints": 595,
+"complaints": 596,
 "investigations": 0,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -2076,7 +2076,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 595,
+"complaints": 596,
 "investigations": 0,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -2091,7 +2091,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.174,
-"complaints": 1537,
+"complaints": 1539,
 "investigations": 2,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -2104,7 +2104,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.169,
-"complaints": 1537,
+"complaints": 1539,
 "investigations": 2,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -2828,7 +2828,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.179,
-"complaints": 519,
+"complaints": 520,
 "investigations": 0,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -2841,7 +2841,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.174,
-"complaints": 519,
+"complaints": 520,
 "investigations": 0,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -2854,7 +2854,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.179,
-"complaints": 519,
+"complaints": 520,
 "investigations": 0,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -2867,7 +2867,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.174,
-"complaints": 519,
+"complaints": 520,
 "investigations": 0,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -2880,7 +2880,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.179,
-"complaints": 519,
+"complaints": 520,
 "investigations": 0,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -2893,7 +2893,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.179,
-"complaints": 519,
+"complaints": 520,
 "investigations": 0,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -2906,7 +2906,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.174,
-"complaints": 519,
+"complaints": 520,
 "investigations": 0,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -2921,7 +2921,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 1091,
+"complaints": 1093,
 "investigations": 2,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -2934,7 +2934,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 1091,
+"complaints": 1093,
 "investigations": 2,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -2947,7 +2947,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 1091,
+"complaints": 1093,
 "investigations": 2,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -2960,7 +2960,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 1091,
+"complaints": 1093,
 "investigations": 2,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -2973,7 +2973,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 1091,
+"complaints": 1093,
 "investigations": 2,
 "fcw": "No",
 "ldw": "No"
@@ -2986,7 +2986,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 1091,
+"complaints": 1093,
 "investigations": 2,
 "fcw": "No",
 "ldw": "No"
@@ -3001,7 +3001,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 740,
+"complaints": 741,
 "investigations": 3,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -3014,7 +3014,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 740,
+"complaints": 741,
 "investigations": 3,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -3027,7 +3027,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 740,
+"complaints": 741,
 "investigations": 3,
 "fcw": "No",
 "ldw": "No"
@@ -3040,7 +3040,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 740,
+"complaints": 741,
 "investigations": 3,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -3053,7 +3053,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 740,
+"complaints": 741,
 "investigations": 3,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -3066,7 +3066,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 740,
+"complaints": 741,
 "investigations": 3,
 "fcw": "No",
 "ldw": "No"
@@ -3081,7 +3081,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 842,
+"complaints": 844,
 "investigations": 5,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -3094,7 +3094,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 842,
+"complaints": 844,
 "investigations": 5,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -3107,7 +3107,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 842,
+"complaints": 844,
 "investigations": 5,
 "fcw": "Optional",
 "ldw": "No"
@@ -3120,7 +3120,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 842,
+"complaints": 844,
 "investigations": 5,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -3133,7 +3133,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 842,
+"complaints": 844,
 "investigations": 5,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -3146,7 +3146,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 842,
+"complaints": 844,
 "investigations": 5,
 "fcw": "Optional",
 "ldw": "No"
@@ -3161,7 +3161,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 644,
+"complaints": 647,
 "investigations": 4,
 "fcw": "No",
 "ldw": "No"
@@ -3174,7 +3174,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 644,
+"complaints": 647,
 "investigations": 4,
 "fcw": "No",
 "ldw": "No"
@@ -3187,7 +3187,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 644,
+"complaints": 647,
 "investigations": 4,
 "fcw": "No",
 "ldw": "No"
@@ -3200,7 +3200,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 644,
+"complaints": 647,
 "investigations": 4,
 "fcw": "No",
 "ldw": "No"
@@ -3213,7 +3213,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 644,
+"complaints": 647,
 "investigations": 4,
 "fcw": "No",
 "ldw": "No"
@@ -3226,7 +3226,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 644,
+"complaints": 647,
 "investigations": 4,
 "fcw": "No",
 "ldw": "No"
@@ -3239,7 +3239,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 644,
+"complaints": 647,
 "investigations": 4,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -3252,7 +3252,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 644,
+"complaints": 647,
 "investigations": 4,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -3265,7 +3265,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 644,
+"complaints": 647,
 "investigations": 4,
 "fcw": "Optional",
 "ldw": "No"
@@ -3278,7 +3278,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 644,
+"complaints": 647,
 "investigations": 4,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -3291,7 +3291,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 644,
+"complaints": 647,
 "investigations": 4,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -3304,7 +3304,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 644,
+"complaints": 647,
 "investigations": 4,
 "fcw": "Optional",
 "ldw": "No"
@@ -3319,7 +3319,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 386,
+"complaints": 387,
 "investigations": 4,
 "fcw": "Standard & Optional",
 "ldw": "Standard & Optional"
@@ -3332,7 +3332,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 386,
+"complaints": 387,
 "investigations": 4,
 "fcw": "Standard & Optional",
 "ldw": "Standard & Optional"
@@ -3345,7 +3345,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 386,
+"complaints": 387,
 "investigations": 4,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -3358,7 +3358,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 386,
+"complaints": 387,
 "investigations": 4,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -3371,7 +3371,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 386,
+"complaints": 387,
 "investigations": 4,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -3384,7 +3384,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 386,
+"complaints": 387,
 "investigations": 4,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -3559,7 +3559,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 110,
+"complaints": 117,
 "investigations": 1,
 "fcw": "Standard & Optional",
 "ldw": "Standard"
@@ -3572,7 +3572,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 110,
+"complaints": 117,
 "investigations": 1,
 "fcw": "Standard & Optional",
 "ldw": "Standard"
@@ -3585,7 +3585,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 113,
+"complaints": 117,
 "investigations": 1,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -3598,7 +3598,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 109,
+"complaints": 117,
 "investigations": 1,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -3611,7 +3611,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 114,
+"complaints": 117,
 "investigations": 1,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -3624,7 +3624,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 114,
+"complaints": 117,
 "investigations": 1,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -3807,7 +3807,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.185,
-"complaints": 313,
+"complaints": 314,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -3820,7 +3820,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.164,
-"complaints": 313,
+"complaints": 314,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -3863,7 +3863,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.185,
-"complaints": 178,
+"complaints": 179,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -3876,7 +3876,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.164,
-"complaints": 178,
+"complaints": 179,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -3945,7 +3945,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.099,
-"complaints": 107,
+"complaints": 108,
 "investigations": 1,
 "fcw": "Standard & Optional",
 "ldw": "Standard & Optional"
@@ -3958,7 +3958,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.097,
-"complaints": 107,
+"complaints": 108,
 "investigations": 1,
 "fcw": "Standard & Optional",
 "ldw": "Standard & Optional"
@@ -3973,7 +3973,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.174,
-"complaints": 233,
+"complaints": 235,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -3986,7 +3986,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.185,
-"complaints": 233,
+"complaints": 235,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -4053,7 +4053,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.174,
-"complaints": 72,
+"complaints": 73,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -4066,7 +4066,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.185,
-"complaints": 72,
+"complaints": 73,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -4206,7 +4206,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.174,
-"complaints": 332,
+"complaints": 333,
 "investigations": 1,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -4219,7 +4219,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.169,
-"complaints": 332,
+"complaints": 333,
 "investigations": 1,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -4437,7 +4437,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.155,
-"complaints": 158,
+"complaints": 159,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -4450,7 +4450,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.159,
-"complaints": 158,
+"complaints": 159,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -4545,7 +4545,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.155,
-"complaints": 89,
+"complaints": 90,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -4558,7 +4558,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.155,
-"complaints": 89,
+"complaints": 90,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -4795,7 +4795,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.099,
-"complaints": 397,
+"complaints": 398,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -4946,7 +4946,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.099,
-"complaints": 5,
+"complaints": 6,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -4959,7 +4959,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.099,
-"complaints": 5,
+"complaints": 6,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -4972,7 +4972,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.099,
-"complaints": 64,
+"complaints": 65,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -4985,7 +4985,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.099,
-"complaints": 64,
+"complaints": 65,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -5067,7 +5067,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.097,
-"complaints": 168,
+"complaints": 169,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -5080,7 +5080,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.097,
-"complaints": 168,
+"complaints": 169,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -5369,7 +5369,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 218,
+"complaints": 219,
 "investigations": 1,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -5382,7 +5382,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.147,
-"complaints": 218,
+"complaints": 219,
 "investigations": 1,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -5395,7 +5395,7 @@
 "side": null,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 218,
+"complaints": 219,
 "investigations": 1,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -5408,7 +5408,7 @@
 "side": null,
 "rollover": 4,
 "rollRisk": 0.147,
-"complaints": 218,
+"complaints": 219,
 "investigations": 1,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -5423,7 +5423,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.147,
-"complaints": 89,
+"complaints": 90,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -5436,7 +5436,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.147,
-"complaints": 89,
+"complaints": 90,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -5449,7 +5449,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 89,
+"complaints": 90,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -5462,7 +5462,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.191,
-"complaints": 89,
+"complaints": 90,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -5706,7 +5706,7 @@
 "side": null,
 "rollover": 4,
 "rollRisk": 0.185,
-"complaints": 103,
+"complaints": 106,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -5719,7 +5719,7 @@
 "side": null,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 103,
+"complaints": 106,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -5732,7 +5732,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.185,
-"complaints": 103,
+"complaints": 106,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -5745,7 +5745,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 103,
+"complaints": 106,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -5965,7 +5965,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.162,
-"complaints": 1774,
+"complaints": 1775,
 "investigations": 2,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -5978,7 +5978,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.163,
-"complaints": 1774,
+"complaints": 1775,
 "investigations": 2,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -6021,7 +6021,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.164,
-"complaints": 1105,
+"complaints": 1106,
 "investigations": 3,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -6034,7 +6034,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.164,
-"complaints": 1105,
+"complaints": 1106,
 "investigations": 3,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -6226,7 +6226,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.155,
-"complaints": 391,
+"complaints": 392,
 "investigations": 1,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -6239,7 +6239,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.155,
-"complaints": 391,
+"complaints": 392,
 "investigations": 1,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -6280,7 +6280,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.155,
-"complaints": 257,
+"complaints": 258,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -6293,7 +6293,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.155,
-"complaints": 257,
+"complaints": 258,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -6360,7 +6360,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.155,
-"complaints": 3,
+"complaints": 4,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -6373,7 +6373,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.155,
-"complaints": 3,
+"complaints": 4,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -6386,7 +6386,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.155,
-"complaints": 154,
+"complaints": 156,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -6399,7 +6399,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.155,
-"complaints": 154,
+"complaints": 156,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -6470,7 +6470,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.105,
-"complaints": 380,
+"complaints": 381,
 "investigations": 2,
 "fcw": "No",
 "ldw": "No"
@@ -6483,7 +6483,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.118,
-"complaints": 380,
+"complaints": 381,
 "investigations": 2,
 "fcw": "No",
 "ldw": "No"
@@ -6524,7 +6524,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.093,
-"complaints": 1081,
+"complaints": 1082,
 "investigations": 0,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -6537,7 +6537,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.095,
-"complaints": 1081,
+"complaints": 1082,
 "investigations": 0,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -6738,7 +6738,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.095,
-"complaints": 439,
+"complaints": 440,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -6751,7 +6751,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.095,
-"complaints": 445,
+"complaints": 446,
 "investigations": 0,
 "fcw": "No",
 "ldw": "No"
@@ -6792,7 +6792,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.093,
-"complaints": 228,
+"complaints": 229,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -6805,7 +6805,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.095,
-"complaints": 228,
+"complaints": 229,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -6818,7 +6818,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.095,
-"complaints": 228,
+"complaints": 229,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -6831,7 +6831,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.095,
-"complaints": 229,
+"complaints": 230,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -6844,7 +6844,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.095,
-"complaints": 231,
+"complaints": 232,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "No"
@@ -6857,7 +6857,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.093,
-"complaints": 231,
+"complaints": 232,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "No"
@@ -6913,7 +6913,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.095,
-"complaints": 883,
+"complaints": 885,
 "investigations": 2,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -6926,7 +6926,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.095,
-"complaints": 886,
+"complaints": 888,
 "investigations": 2,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -6954,7 +6954,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.095,
-"complaints": 260,
+"complaints": 262,
 "investigations": 2,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -6980,7 +6980,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.095,
-"complaints": 256,
+"complaints": 258,
 "investigations": 2,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -7101,7 +7101,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.095,
-"complaints": 75,
+"complaints": 76,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -7127,7 +7127,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.095,
-"complaints": 5,
+"complaints": 6,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -7373,7 +7373,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.099,
-"complaints": 538,
+"complaints": 539,
 "investigations": 0,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -7386,7 +7386,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.099,
-"complaints": 538,
+"complaints": 539,
 "investigations": 0,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -7414,7 +7414,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.093,
-"complaints": 1890,
+"complaints": 1891,
 "investigations": 2,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -7526,7 +7526,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.093,
-"complaints": 256,
+"complaints": 257,
 "investigations": 1,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -7595,7 +7595,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.095,
-"complaints": 149,
+"complaints": 151,
 "investigations": 1,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -7610,7 +7610,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.095,
-"complaints": 23,
+"complaints": 24,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -7651,7 +7651,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.095,
-"complaints": 10,
+"complaints": 11,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -7696,7 +7696,7 @@
 "side": 5,
 "rollover": 3,
 "rollRisk": 0.219,
-"complaints": 1457,
+"complaints": 1459,
 "investigations": 5,
 "fcw": "No",
 "ldw": "No"
@@ -7709,7 +7709,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 1457,
+"complaints": 1459,
 "investigations": 5,
 "fcw": "No",
 "ldw": "No"
@@ -7722,7 +7722,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 1457,
+"complaints": 1459,
 "investigations": 5,
 "fcw": "No",
 "ldw": "No"
@@ -7735,7 +7735,7 @@
 "side": 5,
 "rollover": 3,
 "rollRisk": 0.219,
-"complaints": 1457,
+"complaints": 1459,
 "investigations": 5,
 "fcw": "No",
 "ldw": "No"
@@ -7748,7 +7748,7 @@
 "side": 5,
 "rollover": 3,
 "rollRisk": 0.219,
-"complaints": 1457,
+"complaints": 1459,
 "investigations": 5,
 "fcw": "No",
 "ldw": "No"
@@ -7761,7 +7761,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 1457,
+"complaints": 1459,
 "investigations": 5,
 "fcw": "No",
 "ldw": "No"
@@ -7776,7 +7776,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 1548,
+"complaints": 1549,
 "investigations": 4,
 "fcw": "No",
 "ldw": "No"
@@ -7789,7 +7789,7 @@
 "side": 5,
 "rollover": 3,
 "rollRisk": 0.219,
-"complaints": 1548,
+"complaints": 1549,
 "investigations": 4,
 "fcw": "No",
 "ldw": "No"
@@ -7802,7 +7802,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 1548,
+"complaints": 1549,
 "investigations": 4,
 "fcw": "No",
 "ldw": "No"
@@ -7815,7 +7815,7 @@
 "side": 5,
 "rollover": 3,
 "rollRisk": 0.219,
-"complaints": 1548,
+"complaints": 1549,
 "investigations": 4,
 "fcw": "No",
 "ldw": "No"
@@ -7828,7 +7828,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 1548,
+"complaints": 1549,
 "investigations": 4,
 "fcw": "No",
 "ldw": "No"
@@ -7841,7 +7841,7 @@
 "side": 5,
 "rollover": 3,
 "rollRisk": 0.219,
-"complaints": 1548,
+"complaints": 1549,
 "investigations": 4,
 "fcw": "No",
 "ldw": "No"
@@ -8280,7 +8280,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 683,
+"complaints": 682,
 "investigations": 1,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -8293,7 +8293,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 683,
+"complaints": 682,
 "investigations": 1,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -8306,7 +8306,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 683,
+"complaints": 682,
 "investigations": 1,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -8319,7 +8319,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 683,
+"complaints": 682,
 "investigations": 1,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -8332,7 +8332,7 @@
 "side": 5,
 "rollover": 3,
 "rollRisk": 0.219,
-"complaints": 683,
+"complaints": 682,
 "investigations": 1,
 "fcw": "No",
 "ldw": "No"
@@ -8345,7 +8345,7 @@
 "side": 5,
 "rollover": 3,
 "rollRisk": 0.219,
-"complaints": 683,
+"complaints": 682,
 "investigations": 1,
 "fcw": "No",
 "ldw": "No"
@@ -8358,7 +8358,7 @@
 "side": 5,
 "rollover": 3,
 "rollRisk": 0.219,
-"complaints": 683,
+"complaints": 682,
 "investigations": 1,
 "fcw": "No",
 "ldw": "No"
@@ -8371,7 +8371,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 683,
+"complaints": 682,
 "investigations": 1,
 "fcw": "No",
 "ldw": "No"
@@ -8384,7 +8384,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 683,
+"complaints": 682,
 "investigations": 1,
 "fcw": "No",
 "ldw": "No"
@@ -8397,7 +8397,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 683,
+"complaints": 682,
 "investigations": 1,
 "fcw": "No",
 "ldw": "No"
@@ -8410,7 +8410,7 @@
 "side": null,
 "rollover": null,
 "rollRisk": 0.0,
-"complaints": 683,
+"complaints": 682,
 "investigations": 1,
 "fcw": "No",
 "ldw": "No"
@@ -8425,7 +8425,7 @@
 "side": 5,
 "rollover": 3,
 "rollRisk": 0.219,
-"complaints": 623,
+"complaints": 624,
 "investigations": 2,
 "fcw": "No",
 "ldw": "No"
@@ -8438,7 +8438,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 623,
+"complaints": 624,
 "investigations": 2,
 "fcw": "No",
 "ldw": "No"
@@ -8451,7 +8451,7 @@
 "side": 5,
 "rollover": 3,
 "rollRisk": 0.219,
-"complaints": 623,
+"complaints": 624,
 "investigations": 2,
 "fcw": "No",
 "ldw": "No"
@@ -8464,7 +8464,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 623,
+"complaints": 624,
 "investigations": 2,
 "fcw": "No",
 "ldw": "No"
@@ -8477,7 +8477,7 @@
 "side": 5,
 "rollover": 3,
 "rollRisk": 0.219,
-"complaints": 623,
+"complaints": 624,
 "investigations": 2,
 "fcw": "No",
 "ldw": "No"
@@ -8490,7 +8490,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 623,
+"complaints": 624,
 "investigations": 2,
 "fcw": "No",
 "ldw": "No"
@@ -8503,7 +8503,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 623,
+"complaints": 624,
 "investigations": 2,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -8516,7 +8516,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 623,
+"complaints": 624,
 "investigations": 2,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -8529,7 +8529,7 @@
 "side": null,
 "rollover": null,
 "rollRisk": 0.0,
-"complaints": 623,
+"complaints": 624,
 "investigations": 2,
 "fcw": "No",
 "ldw": "No"
@@ -8542,7 +8542,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 623,
+"complaints": 624,
 "investigations": 2,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -8555,7 +8555,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 623,
+"complaints": 624,
 "investigations": 2,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -8570,7 +8570,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 202,
+"complaints": 203,
 "investigations": 0,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -8583,7 +8583,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 202,
+"complaints": 203,
 "investigations": 0,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -8596,7 +8596,7 @@
 "side": null,
 "rollover": null,
 "rollRisk": 0.0,
-"complaints": 202,
+"complaints": 203,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Optional"
@@ -8609,7 +8609,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 202,
+"complaints": 203,
 "investigations": 0,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -8622,7 +8622,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.198,
-"complaints": 202,
+"complaints": 203,
 "investigations": 0,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -8639,7 +8639,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.169,
-"complaints": 1364,
+"complaints": 1366,
 "investigations": 8,
 "fcw": "Optional",
 "ldw": "No"
@@ -8652,7 +8652,7 @@
 "side": 5,
 "rollover": 3,
 "rollRisk": 0.204,
-"complaints": 1364,
+"complaints": 1366,
 "investigations": 8,
 "fcw": "Optional",
 "ldw": "No"
@@ -8911,7 +8911,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.169,
-"complaints": 408,
+"complaints": 409,
 "investigations": 0,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -8924,7 +8924,7 @@
 "side": 5,
 "rollover": 3,
 "rollRisk": 0.204,
-"complaints": 408,
+"complaints": 409,
 "investigations": 0,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -8937,7 +8937,7 @@
 "side": null,
 "rollover": null,
 "rollRisk": 0.0,
-"complaints": 90,
+"complaints": 91,
 "investigations": 1,
 "fcw": "No",
 "ldw": "No"
@@ -8950,7 +8950,7 @@
 "side": null,
 "rollover": null,
 "rollRisk": 0.0,
-"complaints": 90,
+"complaints": 91,
 "investigations": 1,
 "fcw": "No",
 "ldw": "No"
@@ -8963,7 +8963,7 @@
 "side": null,
 "rollover": null,
 "rollRisk": 0.0,
-"complaints": 10,
+"complaints": 11,
 "investigations": 0,
 "fcw": "Optional",
 "ldw": "Standard"
@@ -8976,7 +8976,7 @@
 "side": null,
 "rollover": null,
 "rollRisk": 0.0,
-"complaints": 10,
+"complaints": 11,
 "investigations": 0,
 "fcw": "Optional",
 "ldw": "Standard"
@@ -8991,7 +8991,7 @@
 "side": null,
 "rollover": null,
 "rollRisk": 0.0,
-"complaints": 371,
+"complaints": 373,
 "investigations": 2,
 "fcw": "No",
 "ldw": "No"
@@ -9004,7 +9004,7 @@
 "side": null,
 "rollover": null,
 "rollRisk": 0.0,
-"complaints": 371,
+"complaints": 373,
 "investigations": 2,
 "fcw": "No",
 "ldw": "No"
@@ -9056,7 +9056,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.169,
-"complaints": 11,
+"complaints": 13,
 "investigations": 1,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -9069,7 +9069,7 @@
 "side": 5,
 "rollover": 3,
 "rollRisk": 0.204,
-"complaints": 11,
+"complaints": 13,
 "investigations": 1,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -9084,7 +9084,7 @@
 "side": 5,
 "rollover": null,
 "rollRisk": 0.0,
-"complaints": 394,
+"complaints": 397,
 "investigations": 1,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -9097,7 +9097,7 @@
 "side": 5,
 "rollover": null,
 "rollRisk": 0.0,
-"complaints": 394,
+"complaints": 397,
 "investigations": 1,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -9901,7 +9901,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.179,
-"complaints": 227,
+"complaints": 228,
 "investigations": 2,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -9914,7 +9914,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.179,
-"complaints": 227,
+"complaints": 228,
 "investigations": 2,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -9927,7 +9927,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.179,
-"complaints": 290,
+"complaints": 291,
 "investigations": 2,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -9940,7 +9940,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.179,
-"complaints": 290,
+"complaints": 291,
 "investigations": 2,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -10061,7 +10061,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.179,
-"complaints": 736,
+"complaints": 737,
 "investigations": 2,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -10074,7 +10074,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.179,
-"complaints": 736,
+"complaints": 737,
 "investigations": 2,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -10117,7 +10117,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.179,
-"complaints": 191,
+"complaints": 192,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -10130,7 +10130,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.179,
-"complaints": 191,
+"complaints": 192,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -10145,7 +10145,7 @@
 "side": null,
 "rollover": 4,
 "rollRisk": 0.179,
-"complaints": 52,
+"complaints": 53,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -10158,7 +10158,7 @@
 "side": null,
 "rollover": 4,
 "rollRisk": 0.179,
-"complaints": 52,
+"complaints": 53,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -10171,7 +10171,7 @@
 "side": null,
 "rollover": 4,
 "rollRisk": 0.179,
-"complaints": 23,
+"complaints": 24,
 "investigations": 0,
 "fcw": "No",
 "ldw": "No"
@@ -10184,7 +10184,7 @@
 "side": null,
 "rollover": 4,
 "rollRisk": 0.179,
-"complaints": 23,
+"complaints": 24,
 "investigations": 0,
 "fcw": "No",
 "ldw": "No"
@@ -10363,7 +10363,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.079,
-"complaints": 868,
+"complaints": 870,
 "investigations": 14,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -10376,7 +10376,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.079,
-"complaints": 868,
+"complaints": 870,
 "investigations": 14,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -10391,7 +10391,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.079,
-"complaints": 1179,
+"complaints": 1181,
 "investigations": 14,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -10404,7 +10404,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.079,
-"complaints": 76,
+"complaints": 78,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -10417,7 +10417,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.097,
-"complaints": 76,
+"complaints": 78,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -10430,7 +10430,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.097,
-"complaints": 76,
+"complaints": 78,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -10445,7 +10445,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.079,
-"complaints": 326,
+"complaints": 328,
 "investigations": 7,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -10458,7 +10458,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.097,
-"complaints": 32,
+"complaints": 34,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -10473,7 +10473,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.079,
-"complaints": 105,
+"complaints": 106,
 "investigations": 4,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -10486,7 +10486,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.097,
-"complaints": 105,
+"complaints": 106,
 "investigations": 4,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -10501,7 +10501,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.089,
-"complaints": 403,
+"complaints": 406,
 "investigations": 4,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -10514,7 +10514,7 @@
 "side": 5,
 "rollover": 5,
 "rollRisk": 0.086,
-"complaints": 403,
+"complaints": 406,
 "investigations": 4,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -10598,7 +10598,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.176,
-"complaints": 228,
+"complaints": 229,
 "investigations": 2,
 "fcw": "No",
 "ldw": "No"
@@ -10611,7 +10611,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.18,
-"complaints": 228,
+"complaints": 229,
 "investigations": 2,
 "fcw": "No",
 "ldw": "No"
@@ -10639,7 +10639,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.162,
-"complaints": 1622,
+"complaints": 1624,
 "investigations": 1,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -10652,7 +10652,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.155,
-"complaints": 1622,
+"complaints": 1624,
 "investigations": 1,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -10680,7 +10680,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.162,
-"complaints": 1090,
+"complaints": 1092,
 "investigations": 2,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -10693,7 +10693,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.155,
-"complaints": 1090,
+"complaints": 1092,
 "investigations": 2,
 "fcw": "Optional",
 "ldw": "Optional"
@@ -10749,7 +10749,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.155,
-"complaints": 383,
+"complaints": 384,
 "investigations": 2,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -10762,7 +10762,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.162,
-"complaints": 383,
+"complaints": 384,
 "investigations": 2,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -11019,7 +11019,7 @@
 "side": null,
 "rollover": 4,
 "rollRisk": 0.174,
-"complaints": 11,
+"complaints": 12,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -11032,7 +11032,7 @@
 "side": null,
 "rollover": 4,
 "rollRisk": 0.159,
-"complaints": 11,
+"complaints": 12,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -11045,7 +11045,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.174,
-"complaints": 98,
+"complaints": 99,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -11058,7 +11058,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.159,
-"complaints": 98,
+"complaints": 99,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -11125,7 +11125,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.174,
-"complaints": 288,
+"complaints": 289,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"
@@ -11138,7 +11138,7 @@
 "side": 5,
 "rollover": 4,
 "rollRisk": 0.159,
-"complaints": 288,
+"complaints": 289,
 "investigations": 0,
 "fcw": "Standard",
 "ldw": "Standard"

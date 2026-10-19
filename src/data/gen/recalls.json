@@ -1,8 +1,8 @@
 {
 "source": "https://static.nhtsa.gov/odi/ffdd/rcl/FLAT_RCL_POST_2010.zip",
 "fields": "https://static.nhtsa.gov/odi/ffdd/rcl/RCL.txt",
-"retrieved_at": "2026-10-15",
-"file_date": "2026-10-15",
+"retrieved_at": "2026-10-19",
+"file_date": "2026-10-19",
 "latestCampaignDate": "20261009",
 "byYear": {
 "2016": 919,
@@ -15,7 +15,7 @@
 "2023": 893,
 "2024": 949,
 "2025": 891,
-"2026": 634
+"2026": 643
 },
 "unitsByYear": {
 "2016": 50196715,
@@ -28,16 +28,16 @@
 "2023": 34798990,
 "2024": 29366359,
 "2025": 29303936,
-"2026": 33234413
+"2026": 33249481
 },
 "componentsAll": [
 [
 "Equipment",
-1654
+1657
 ],
 [
 "Electrical System",
-1559
+1562
 ],
 [
 "Structure",
@@ -49,7 +49,7 @@
 ],
 [
 "Exterior Lighting",
-539
+541
 ],
 [
 "Power Train",
@@ -73,7 +73,7 @@
 ],
 [
 "Seats",
-348
+350
 ],
 [
 "Engine And Engine Cooling",
@@ -126,8 +126,8 @@
 "units": 12632844
 },
 "2026": {
-"campaigns": 75,
-"units": 14085820
+"campaigns": 76,
+"units": 14088096
 }
 },
 "campaigns10": 572,
@@ -170,13 +170,13 @@
 "dnd": 18,
 "po": 3,
 "initiatedBy": {
-"manufacturer": 558,
+"manufacturer": 559,
 "nhtsa": 89
 },
 "topModels": [
 [
 "F-150",
-71
+72
 ],
 [
 "EXPLORER",
@@ -208,6 +208,25 @@
 ]
 ],
 "recent": [
+{
+"id": "26V655000",
+"date": "2026-10-06",
+"units": 2276,
+"component": "Seats",
+"components": [
+"Seats"
+],
+"models": [
+"2025-2027 Ford F-150"
+],
+"more": 0,
+"summary": "Ford Motor Company (Ford) is recalling certain 2025-2027 F-150 vehicles. The front seats may have been improperly secured to the vehicle.",
+"consequence": "An improperly secured seat may not adequately restrain the seat occupant, increasing the risk of injury during a crash.",
+"fix": "Dealers will inspect and tighten, or replace the front seat bolts as necessary, free of charge. Owner notification letters are expected to be mailed October 26, 2026. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is…",
+"dnd": false,
+"po": false,
+"by": "MFR"
+},
 {
 "id": "26V650000",
 "date": "2026-10-06",
@@ -380,25 +399,6 @@
 "summary": "Ford Motor Company (Ford) is recalling certain 2026 F-150 vehicles.The stabilizer rod fasteners may not have been tightened properly during manufacturing, which can allow the rod to shift out of position.",
 "consequence": "A misaligned stabilizer rod can cause a loss of vehicle handling and control, which can increase the risk of a crash.",
 "fix": "Dealers will replace the stabilizer rod fasteners, free of charge. Owner notification letters were mailed September 18, 2026. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is 26S66. Vehicle Identification Numbers…",
-"dnd": false,
-"po": false,
-"by": "MFR"
-},
-{
-"id": "26V576000",
-"date": "2026-09-09",
-"units": 37,
-"component": "Power Train",
-"components": [
-"Power Train"
-],
-"models": [
-"2026 Ford F-150"
-],
-"more": 0,
-"summary": "Ford Motor Company (Ford) is recalling certain 2026 F-150 vehicles. Incorrect rear axle tail bearings may have been installed, which can result in rear wheel lock-up or driveshaft separation.",
-"consequence": "Rear wheel lock-up can result in a loss of vehicle control. Driveshaft separation can result in a loss of drive power, or a vehicle rollaway if the vehicle is parked without the parking brake applied. Either of these…",
-"fix": "Dealers will replace the rear axle tail bearing, free of charge. Owner notification letters were mailed September 21, 2026. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is 26S63. Vehicle Identification Numbers…",
 "dnd": false,
 "po": false,
 "by": "MFR"
@@ -1232,11 +1232,11 @@
 },
 "topModels": [
 [
-"SILVERADO 1500",
+"TAHOE",
 27
 ],
 [
-"TAHOE",
+"SILVERADO 1500",
 27
 ],
 [
@@ -1733,11 +1733,11 @@
 24
 ],
 [
-"Seat Belts",
+"Power Train",
 12
 ],
 [
-"Power Train",
+"Seat Belts",
 12
 ],
 [
@@ -2194,11 +2194,11 @@
 32
 ],
 [
-"Electrical System",
+"Fuel System, Gasoline",
 24
 ],
 [
-"Fuel System, Gasoline",
+"Electrical System",
 24
 ],
 [
@@ -2225,8 +2225,8 @@
 "dnd": 0,
 "po": 0,
 "initiatedBy": {
-"nhtsa": 31,
-"manufacturer": 146
+"manufacturer": 146,
+"nhtsa": 31
 },
 "topModels": [
 [
@@ -2242,11 +2242,11 @@
 14
 ],
 [
-"ACCORD HYBRID",
+"CR-V HYBRID",
 13
 ],
 [
-"CR-V HYBRID",
+"ACCORD HYBRID",
 13
 ],
 [
@@ -2254,11 +2254,11 @@
 13
 ],
 [
-"CR-V",
+"ACCORD",
 12
 ],
 [
-"ACCORD",
+"CR-V",
 12
 ]
 ],
@@ -2299,7 +2299,7 @@
 "more": 0,
 "summary": "Honda (American Honda Motor Co.) is recalling certain 2023-2025 VT1300CX and 2024-2025 VT750 motorcycles. The fuel pump may malfunction due to a manufacturing defect.",
 "consequence": "Fuel pump failure can cause an engine stall, increasing the risk of a crash.",
-"fix": "Dealers will replace the fuel pump, free of charge. Owner notification letters will be mailed beginning November 27, 2026. Owners may contact Honda's customer service at 1-866-784-1870. Honda's number for this recall is KU9. Vehicle Identification Numbers…",
+"fix": "Dealers will replace the fuel pump, free of charge. Owner notification letters will be mailed beginning November 27, 2026. Owners may contact Honda's customer service at 1-866-784-1870. Honda's numbers for this recall are KU9, KV0, and KV1. Vehicle…",
 "dnd": false,
 "po": false,
 "by": "MFR"
@@ -2772,8 +2772,8 @@
 "dnd": 1,
 "po": 3,
 "initiatedBy": {
-"nhtsa": 25,
-"manufacturer": 120
+"manufacturer": 120,
+"nhtsa": 25
 },
 "topModels": [
 [
@@ -3191,8 +3191,8 @@
 "dnd": 3,
 "po": 4,
 "initiatedBy": {
-"nhtsa": 20,
-"manufacturer": 161
+"manufacturer": 161,
+"nhtsa": 20
 },
 "topModels": [
 [
@@ -3208,11 +3208,11 @@
 16
 ],
 [
-"WAGONEER",
+"GLADIATOR",
 14
 ],
 [
-"GLADIATOR",
+"WAGONEER",
 14
 ],
 [
@@ -4046,8 +4046,8 @@
 "units": 905973
 },
 "2026": {
-"campaigns": 14,
-"units": 3189966
+"campaigns": 15,
+"units": 3198295
 }
 },
 "campaigns10": 147,
@@ -4083,14 +4083,14 @@
 11
 ],
 [
-"Engine And Engine Cooling",
+"Electronic Stability Control (Esc)",
 9
 ]
 ],
 "dnd": 2,
 "po": 2,
 "initiatedBy": {
-"manufacturer": 150,
+"manufacturer": 151,
 "nhtsa": 11
 },
 "topModels": [
@@ -4100,7 +4100,7 @@
 ],
 [
 "2500",
-34
+35
 ],
 [
 "3500",
@@ -4128,6 +4128,25 @@
 ]
 ],
 "recent": [
+{
+"id": "26V651000",
+"date": "2026-10-06",
+"units": 8329,
+"component": "Electronic Stability Control (Esc)",
+"components": [
+"Electronic Stability Control (Esc)"
+],
+"models": [
+"2026 Ram 2500"
+],
+"more": 0,
+"summary": "Chrysler (FCA US, LLC) is recalling certain 2026 Ram 2500 Pickup trucks. The trucks may be equipped with steering column control modules that can cause a loss of electronic stability control. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard number 126, \"Electronic…",
+"consequence": "A loss of electronic stability control increases the risk of a crash.",
+"fix": "Dealers will replace the steering column control module, free of charge. Owner notification letters are expected to be mailed November 24, 2026. Owners may contact FCA customer service at 1-800-853-1403. FCA's number for this recall is 90D. Vehicle…",
+"dnd": false,
+"po": false,
+"by": "MFR"
+},
 {
 "id": "26V623000",
 "date": "2026-09-29",
@@ -4300,25 +4319,6 @@
 "summary": "Chrysler (FCA US, LLC) is recalling certain 2019 and 2023 Chrysler Pacifica, 2024 Ram 1500, Ram 2500, and 2024-2025 Jeep Wrangler vehicles. Contamination in the central vision processing module or improper programming may cause the rearview camera image not to display. As such, these vehicles fail to comply with the…",
 "consequence": "A rearview image that does not display reduces the driver's view behind the vehicle, increasing the risk of a crash.",
 "fix": "Dealers will update the central vision processing module software or replace the module, as necessary, free of charge. Owner notification letters are expected to be mailed beginning July 16, 2026. Owners may contact Chrysler customer service at 800-853-1403.…",
-"dnd": false,
-"po": false,
-"by": "MFR"
-},
-{
-"id": "26V288000",
-"date": "2026-05-07",
-"units": 12736,
-"component": "Power Train",
-"components": [
-"Power Train"
-],
-"models": [
-"2023-2026 Ram 2500"
-],
-"more": 0,
-"summary": "Chrysler (FCA US LLC) is recalling certain 2023-2026 Ram 2500 Pick up trucks. A software error in the powertrain control module may improperly allow the vehicle speed to exceed the tire speed rating, which can result in a loss of vehicle control.",
-"consequence": "Loss of vehicle control increases the risk of a crash.",
-"fix": "Dealers will update the powertrain control module software, free of charge. Owner notification letters were mailed May 21, 2026. Owners may contact FCA customer service at 1-800-853-1403. FCA's number for this recall is 43D. Vehicle Identification Numbers…",
 "dnd": false,
 "po": false,
 "by": "MFR"
@@ -4794,11 +4794,11 @@
 13
 ],
 [
-"Tires",
+"Power Train",
 12
 ],
 [
-"Power Train",
+"Tires",
 12
 ],
 [
@@ -5807,11 +5807,11 @@
 10
 ],
 [
-"K5",
+"FORTE",
 9
 ],
 [
-"FORTE",
+"K5",
 9
 ],
 [
@@ -6797,7 +6797,7 @@
 "more": 0,
 "summary": "Tesla, Inc. (Tesla) is recalling certain 2017-2023 Model 3 and 2020-2023 Model Y vehicles. The headlight low beams may be too bright and exceed the maximum light output. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard (FMVSS) number 108, \"Lamps, Reflective Devices…",
 "consequence": "Headlight low beams that are too bright can reduce visibility for oncoming drivers, increasing the risk of a crash.",
-"fix": "Tesla Service will replace the headlights, free of charge. Owner notification letters are expected to be mailed October 3, 2026. Owners may contact Tesla customer service at 1-877-798-3752. Tesla's number for this recall is SB-24-17-003.",
+"fix": "Tesla Service will replace the headlights, free of charge. Interim owner notification letters explaining the safety risk were be mailed October 3, 2026. Another notice will be sent once the repair becomes available. Owners may contact Tesla customer service…",
 "dnd": false,
 "po": false,
 "by": "OVSC"
@@ -7056,7 +7056,7 @@
 "more": 0,
 "summary": "Tesla, Inc. (Tesla) is recalling certain 2017-2023 Model 3 and 2020-2023 Model Y vehicles. The headlight low beams may be too bright and exceed the maximum light output. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard (FMVSS) number 108, \"Lamps, Reflective Devices…",
 "consequence": "Headlight low beams that are too bright can reduce visibility for oncoming drivers, increasing the risk of a crash.",
-"fix": "Tesla Service will replace the headlights, free of charge. Owner notification letters are expected to be mailed October 3, 2026. Owners may contact Tesla customer service at 1-877-798-3752. Tesla's number for this recall is SB-24-17-003.",
+"fix": "Tesla Service will replace the headlights, free of charge. Interim owner notification letters explaining the safety risk were be mailed October 3, 2026. Another notice will be sent once the repair becomes available. Owners may contact Tesla customer service…",
 "dnd": false,
 "po": false,
 "by": "OVSC"
@@ -7568,8 +7568,8 @@
 "dnd": 4,
 "po": 1,
 "initiatedBy": {
-"nhtsa": 16,
-"manufacturer": 80
+"manufacturer": 80,
+"nhtsa": 16
 },
 "topModels": [
 [
@@ -8063,7 +8063,7 @@
 },
 "2026": {
 "campaigns": 11,
-"units": 229602
+"units": 206512
 }
 },
 "campaigns10": 264,
@@ -8131,11 +8131,11 @@
 16
 ],
 [
-"330I",
+"530I",
 13
 ],
 [
-"530I",
+"330I",
 13
 ],
 [
@@ -8145,25 +8145,20 @@
 ],
 "recent": [
 {
-"id": "26V525000",
-"date": "2026-08-12",
-"units": 27720,
+"id": "26V658000",
+"date": "2026-10-07",
+"units": 4630,
 "component": "Power Train",
 "components": [
 "Power Train"
 ],
 "models": [
-"2021-2023 BMW 540I",
-"2021-2023 BMW 540I XDRIVE",
-"2024-2026 BMW 750E XDRIVE",
-"2022-2026 BMW 840I",
-"2022-2026 BMW 840I XDRIVE",
-"2021-2023 BMW M550I"
+"2021-2024 BMW R 18"
 ],
 "more": 0,
-"summary": "BMW of North America, LLC (BMW) is recalling certain 2022-2026 840i, 840i xDrive, 2021-2023 540i, 540i xDrive, M550i xDrive, and 2024-2026 750e xDrive vehicles. The connection between the driveshaft and the rear differential may become damaged, possibly resulting in a loss of power to the rear wheels or a vehicle…",
-"consequence": "An unexpected loss of drive power can increase the risk of a crash. In addition, a damaged driveshaft can result in a vehicle rollaway if the parking brake is not applied, increasing the risk of a crash or injury.",
-"fix": "Dealers will inspect the connection between the driveshaft and rear axle differential, and apply adhesive or replace the driveshaft and rear axle differential, as necessary, free of charge. Owner notification letters are expected to be mailed October 2, 2026.…",
+"summary": "BMW of North America, LLC (BMW) is recalling certain 2021-2024 R 18 motorcycles equipped with the optional reverse gear. The seal for the reverse gear control unit may deteriorate and allow moisture inside the control unit, which can result in the unit overheating.",
+"consequence": "An overheated reverse gear control unit increases the risk of a fire.",
+"fix": "Dealers will replace the reverse gear control unit, free of charge. Owner notification letters are expected to be mailed November 27, 2026. Owners may contact BMW customer service at 1-800-525-7417. Motorcycles in this recall were previously recalled under…",
 "dnd": false,
 "po": false,
 "by": "MFR"
@@ -9122,11 +9117,11 @@
 11
 ],
 [
-"Equipment",
+"Engine And Engine Cooling",
 9
 ],
 [
-"Engine And Engine Cooling",
+"Equipment",
 9
 ],
 [
@@ -9716,7 +9711,7 @@
 3
 ],
 [
-"CX-9",
+"CX-3",
 2
 ]
 ],
@@ -10311,8 +10306,8 @@
 "dnd": 4,
 "po": 5,
 "initiatedBy": {
-"nhtsa": 15,
-"manufacturer": 59
+"manufacturer": 58,
+"nhtsa": 16
 },
 "topModels": [
 [
@@ -10474,7 +10469,7 @@
 "fix": "Dealers will replace the side curtain air bags, as necessary, free of charge. Owner notification letters were mailed May 14, 2026. Owners may contact Chrysler customer service at 800-853-1403. Chrysler's numbers for this recall are 06D, 10D, and 11D. Vehicle…",
 "dnd": false,
 "po": false,
-"by": "MFR"
+"by": "OVSC"
 },
 {
 "id": "25V877000",
@@ -10646,7 +10641,7 @@
 "fix": "Dealers will replace the side curtain air bags, as necessary, free of charge. Owner notification letters were mailed May 14, 2026. Owners may contact Chrysler customer service at 800-853-1403. Chrysler's numbers for this recall are 06D, 10D, and 11D. Vehicle…",
 "dnd": false,
 "po": false,
-"by": "MFR"
+"by": "OVSC"
 },
 {
 "id": "25V877000",
@@ -10835,11 +10830,11 @@
 "2022": 32,
 "2023": 24,
 "2024": 15,
-"2025": 18,
-"2026": 6
+"2025": 19,
+"2026": 7
 },
-"campaigns": 131,
-"units": 22843194,
+"campaigns": 132,
+"units": 22845470,
 "dnd": 2,
 "worstYear": 2022,
 "cleanYears": [],
@@ -10865,11 +10860,36 @@
 8
 ],
 [
-"Visibility",
+"Seats",
 8
 ]
 ],
 "list": [
+{
+"id": "26V655000",
+"date": "2026-10-06",
+"units": 2276,
+"component": "Seats",
+"components": [
+"Seats"
+],
+"models": [
+"2025-2027 Ford F-150"
+],
+"more": 0,
+"summary": "Ford Motor Company (Ford) is recalling certain 2025-2027 F-150 vehicles. The front seats may have been improperly secured to the vehicle.",
+"consequence": "An improperly secured seat may not adequately restrain the seat occupant, increasing the risk of injury during a crash.",
+"fix": "Dealers will inspect and tighten, or replace the front seat bolts as necessary, free of charge. Owner notification letters are expected to be mailed October 26, 2026. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is…",
+"dnd": false,
+"po": false,
+"by": "MFR",
+"years": "2025-2027",
+"ys": [
+2025,
+2026,
+2027
+]
+},
 {
 "id": "26V578000",
 "date": "2026-09-09",
@@ -22839,11 +22859,11 @@
 3
 ],
 [
-"Tires",
+"Engine",
 2
 ],
 [
-"Engine",
+"Tires",
 2
 ]
 ],
@@ -24633,11 +24653,11 @@
 ],
 "components": [
 [
-"Power Train",
+"Steering",
 4
 ],
 [
-"Steering",
+"Power Train",
 4
 ],
 [
@@ -25381,7 +25401,7 @@
 3
 ],
 [
-"Back Over Prevention",
+"Visibility",
 2
 ]
 ],
@@ -32007,7 +32027,7 @@
 "more": 0,
 "summary": "Tesla, Inc. (Tesla) is recalling certain 2017-2023 Model 3 and 2020-2023 Model Y vehicles. The headlight low beams may be too bright and exceed the maximum light output. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard (FMVSS) number 108, \"Lamps, Reflective Devices…",
 "consequence": "Headlight low beams that are too bright can reduce visibility for oncoming drivers, increasing the risk of a crash.",
-"fix": "Tesla Service will replace the headlights, free of charge. Owner notification letters are expected to be mailed October 3, 2026. Owners may contact Tesla customer service at 1-877-798-3752. Tesla's number for this recall is SB-24-17-003.",
+"fix": "Tesla Service will replace the headlights, free of charge. Interim owner notification letters explaining the safety risk were be mailed October 3, 2026. Another notice will be sent once the repair becomes available. Owners may contact Tesla customer service…",
 "dnd": false,
 "po": false,
 "by": "OVSC",
@@ -33143,15 +33163,15 @@
 3
 ],
 [
-"Power Train",
-2
-],
-[
 "Exterior Lighting",
 2
 ],
 [
 "Trailer Hitches",
+2
+],
+[
+"Power Train",
 2
 ]
 ],
@@ -33811,7 +33831,7 @@
 },
 "2026": {
 "dnd": 13,
-"po": 20
+"po": 21
 }
 },
 "recent": [
@@ -33831,6 +33851,25 @@
 "summary": "Hyundai Motor America (Genesis) is recalling certain 2015-2016 Hyundai Genesis, and 2017-2020 Genesis G80 vehicles. The front power seat motors may overheat due to a stuck power seat control switch, which can result in a fire while parked or driving.",
 "consequence": "A fire increases the risk of injury.",
 "fix": "Owners are advised to park their vehicles outdoors and away from other vehicles or structures until the repair has been performed. The remedy is currently under development. Owner notification letters are expected to be mailed December 7, 2026. Owners of…",
+"dnd": false,
+"po": true,
+"by": "MFR"
+},
+{
+"id": "26V648000",
+"date": "2026-10-05",
+"units": 16127,
+"component": "Electrical System",
+"components": [
+"Electrical System"
+],
+"models": [
+"2014-2026 Kalmar OTTAWA T2"
+],
+"more": 0,
+"summary": "Kalmar Solutions, LLC (Kalmar) is recalling certain 2014-2026 Ottawa T2 4X2 and 2016-2026 T2 6X4 DOT/EPA terminal tractors. The printed circuit board (PCB) insulation may become damaged, resulting in a short circuit.",
+"consequence": "A short circuit increases the risk of a fire even when the vehicle is parked and the ignition is in the 'Off' position.",
+"fix": "Owners are advised to park outside and away from structures until their vehicle is repaired. Kalmar will rewire the cabin power and add a 5A fuse to the PCB circuit, free of charge. Owner notification letters are expected to be mailed by December 4, 2026.…",
 "dnd": false,
 "po": true,
 "by": "MFR"
@@ -34090,29 +34129,6 @@
 "dnd": false,
 "po": true,
 "by": "ODI"
-},
-{
-"id": "26V351000",
-"date": "2026-05-28",
-"units": 644,
-"component": "Wheels",
-"components": [
-"Wheels"
-],
-"models": [
-"2026 Mack ANTHEM (AN)",
-"2027 Mack ANTHEM AN (4)",
-"2026-2027 Mack GRANITE (GR)",
-"2026-2027 Mack PINNACLE (PI/PN)",
-"2026-2027 Mack PIONEER PR (4)"
-],
-"more": 0,
-"summary": "Mack Trucks, Inc. (Mack) is recalling certain 2026 Anthem (AN), 2026-2027 Pioneer PR (4), Pinnacle (PI/PN), Granite (GR), and 2027 Anthem AN (4) vehicles. The wheel lug nuts may loosen and allow the wheel to detach.",
-"consequence": "Wheel detachment can cause a loss of vehicle control or create a road hazard, increasing the risk of a crash or injury.",
-"fix": "Owners are advised not to drive their vehicles until the repair has been performed. Dealers will inspect the wheel and hub mating surfaces, remove any masking material, and replace any worn components if necessary, free of charge. Owner notification letters…",
-"dnd": true,
-"po": false,
-"by": "MFR"
 }
 ],
 "dnd10": 164,
