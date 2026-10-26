@@ -1,47 +1,47 @@
 {
 "source": "https://static.nhtsa.gov/odi/ffdd/rcl/FLAT_RCL_POST_2010.zip",
 "fields": "https://static.nhtsa.gov/odi/ffdd/rcl/RCL.txt",
-"retrieved_at": "2026-10-19",
-"file_date": "2026-10-19",
-"latestCampaignDate": "20261009",
+"retrieved_at": "2026-10-26",
+"file_date": "2026-10-26",
+"latestCampaignDate": "20261021",
 "byYear": {
 "2016": 919,
-"2017": 810,
+"2017": 808,
 "2018": 911,
 "2019": 878,
-"2020": 780,
+"2020": 778,
 "2021": 986,
 "2022": 930,
 "2023": 893,
 "2024": 949,
 "2025": 891,
-"2026": 643
+"2026": 671
 },
 "unitsByYear": {
 "2016": 50196715,
-"2017": 30728178,
+"2017": 30699538,
 "2018": 30096804,
 "2019": 38569027,
-"2020": 31245157,
+"2020": 31242116,
 "2021": 29317252,
 "2022": 31166390,
 "2023": 34798990,
 "2024": 29366359,
 "2025": 29303936,
-"2026": 33249481
+"2026": 33683259
 },
 "componentsAll": [
 [
 "Equipment",
-1657
+1661
 ],
 [
 "Electrical System",
-1562
+1568
 ],
 [
 "Structure",
-795
+797
 ],
 [
 "Air Bags",
@@ -53,7 +53,7 @@
 ],
 [
 "Power Train",
-535
+536
 ],
 [
 "Steering",
@@ -61,15 +61,15 @@
 ],
 [
 "Suspension",
-483
+485
 ],
 [
 "Service Brakes, Hydraulic",
-422
+421
 ],
 [
 "Seat Belts",
-353
+354
 ],
 [
 "Seats",
@@ -77,7 +77,7 @@
 ],
 [
 "Engine And Engine Cooling",
-323
+324
 ]
 ],
 "brands": {
@@ -126,8 +126,8 @@
 "units": 12632844
 },
 "2026": {
-"campaigns": 76,
-"units": 14088096
+"campaigns": 77,
+"units": 14190407
 }
 },
 "campaigns10": 572,
@@ -140,7 +140,7 @@
 ],
 [
 "Electrical System",
-84
+85
 ],
 [
 "Back Over Prevention",
@@ -170,13 +170,13 @@
 "dnd": 18,
 "po": 3,
 "initiatedBy": {
-"manufacturer": 559,
-"nhtsa": 89
+"nhtsa": 89,
+"manufacturer": 560
 },
 "topModels": [
 [
 "F-150",
-72
+73
 ],
 [
 "EXPLORER",
@@ -188,11 +188,11 @@
 ],
 [
 "F-350 SD",
-48
+49
 ],
 [
 "F-250 SD",
-46
+47
 ],
 [
 "MAVERICK",
@@ -203,7 +203,7 @@
 43
 ],
 [
-"RANGER",
+"F-450 SD",
 38
 ]
 ],
@@ -222,7 +222,31 @@
 "more": 0,
 "summary": "Ford Motor Company (Ford) is recalling certain 2025-2027 F-150 vehicles. The front seats may have been improperly secured to the vehicle.",
 "consequence": "An improperly secured seat may not adequately restrain the seat occupant, increasing the risk of injury during a crash.",
-"fix": "Dealers will inspect and tighten, or replace the front seat bolts as necessary, free of charge. Owner notification letters are expected to be mailed October 26, 2026. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is…",
+"fix": "Dealers will inspect and tighten, or replace the front seat bolts as necessary, free of charge. Owner notification letters were mailed October 16, 2026. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is 26S74.…",
+"dnd": false,
+"po": false,
+"by": "MFR"
+},
+{
+"id": "26V653000",
+"date": "2026-10-06",
+"units": 102159,
+"component": "Electrical System",
+"components": [
+"Electrical System"
+],
+"models": [
+"2026 Ford F-150",
+"2025-2026 Ford F-250 SD",
+"2025-2026 Ford F-350 SD",
+"2025-2026 Ford F-450 SD",
+"2025-2026 Ford F-550 SD",
+"2025-2026 Ford F-600 SD"
+],
+"more": 1,
+"summary": "Ford Motor Company (Ford) is recalling certain 2025-2026 F-250 SD, F-350 SD, F-450 SD, F-550 SD, F-600, 2026 F-150, and F-750 SD vehicles. The analog cluster’s tachometer and speedometer may become stuck or move erratically, providing inaccurate readings to the driver. As such, these vehicles fail to comply with the…",
+"consequence": "A speedometer that fails to display accurate vehicle speed can increase the risk of a crash.",
+"fix": "Dealers will replace the instrument cluster modules, free of charge. Interim letters, notifying owners of the safety risk, are expected to be mailed in October 26, 2026. Additional letters will be sent once the remedy is available, anticipated in December…",
 "dnd": false,
 "po": false,
 "by": "MFR"
@@ -241,7 +265,7 @@
 "more": 0,
 "summary": "Ford Motor Company (Ford) is recalling certain 2015 Transit Connect vehicles that were previously remedied under NHTSA recall number 25V572. The rearview camera may display a distorted, inverted, intermittent, or blank image when the vehicle is in reverse.",
 "consequence": "A rearview camera that displays an inverted, distorted, intermittent, or blank image can reduce the driver’s view behind the vehicle, increasing the risk of a crash.",
-"fix": "Dealers will replace the rearview camera as necessary, free of charge. Interim letters, notifying owners of the safety risk, are expected to be mailed in October 2026. Additional letters will be sent once the remedy is available, anticipated in December 2027.…",
+"fix": "Dealers will replace the rearview camera as necessary, free of charge. Interim letters, notifying owners of the safety risk, were mailed in October 14, 2026. Additional letters will be sent once the remedy is available, anticipated in December 2027. Owners…",
 "dnd": false,
 "po": false,
 "by": "MFR"
@@ -341,7 +365,7 @@
 "more": 0,
 "summary": "Ford Motor Company (Ford) is recalling certain 2026 Bronco vehicles. The mounting bracket on the right-hand-side side curtain air bag may have a metal burr that can tear the air bag during deployment.",
 "consequence": "A torn air bag may fail to properly restrain an occupant during a crash, increasing the risk of injury.",
-"fix": "Dealers will increase the space between the bracket and air bag to remove the contact condition, free of charge. Interim letters, notifying owners of the safety risk, are expected to be mailed September 15, 2026. Additional letters will be sent once the…",
+"fix": "Dealers will increase the space between the bracket and air bag to remove the contact condition, free of charge. Owner notification letters were October 16, 2026. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is…",
 "dnd": false,
 "po": false,
 "by": "MFR"
@@ -380,25 +404,6 @@
 "summary": "Ford Motor Company (Ford) is recalling certain 2023-2027 F-150 vehicles. The fuel tank may be improperly secured and leak fuel, or detach from the vehicle while driving.",
 "consequence": "A detached tank can create a road hazard, increasing the risk of a crash. In addition, a fuel leak can cause an engine stall or increase the risk of a fire.",
 "fix": "Dealers will inspect and replace the fuel tank straps, as necessary, free of charge. Owner notification letters were mailed September 21, 2026. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is 26S69. Vehicle…",
-"dnd": false,
-"po": false,
-"by": "MFR"
-},
-{
-"id": "26V577000",
-"date": "2026-09-09",
-"units": 17,
-"component": "Suspension",
-"components": [
-"Suspension"
-],
-"models": [
-"2026 Ford F-150"
-],
-"more": 0,
-"summary": "Ford Motor Company (Ford) is recalling certain 2026 F-150 vehicles.The stabilizer rod fasteners may not have been tightened properly during manufacturing, which can allow the rod to shift out of position.",
-"consequence": "A misaligned stabilizer rod can cause a loss of vehicle handling and control, which can increase the risk of a crash.",
-"fix": "Dealers will replace the stabilizer rod fasteners, free of charge. Owner notification letters were mailed September 18, 2026. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is 26S66. Vehicle Identification Numbers…",
 "dnd": false,
 "po": false,
 "by": "MFR"
@@ -1712,8 +1717,8 @@
 "units": 3424035
 },
 "2026": {
-"campaigns": 21,
-"units": 1907629
+"campaigns": 22,
+"units": 2013423
 }
 },
 "campaigns10": 178,
@@ -1733,11 +1738,11 @@
 24
 ],
 [
-"Power Train",
+"Seat Belts",
 12
 ],
 [
-"Seat Belts",
+"Power Train",
 12
 ],
 [
@@ -1750,14 +1755,14 @@
 ],
 [
 "Fuel System, Gasoline",
-10
+11
 ]
 ],
 "dnd": 2,
 "po": 1,
 "initiatedBy": {
 "manufacturer": 182,
-"nhtsa": 17
+"nhtsa": 18
 },
 "topModels": [
 [
@@ -1785,15 +1790,34 @@
 9
 ],
 [
-"SIENNA HYBRID",
+"4RUNNER",
 8
 ],
 [
-"4RUNNER",
+"SIENNA HYBRID",
 8
 ]
 ],
 "recent": [
+{
+"id": "26V673000",
+"date": "2026-10-14",
+"units": 105794,
+"component": "Fuel System, Gasoline",
+"components": [
+"Fuel System, Gasoline"
+],
+"models": [
+"2024-2027 Toyota LAND CRUISER HYBRID"
+],
+"more": 0,
+"summary": "Toyota Motor Engineering & Manufacturing (Toyota) is recalling certain 2024-2027 Toyota Land Cruiser Hybrid vehicles. The fuel tube connection near the fuel tank may disconnect and leak fuel.",
+"consequence": "A fuel leak in the presence of an ignition source can increase the risk of a fire.",
+"fix": "Dealers will inspect the connection and install a supplemental clamp or, as necessary, replace the resin fuel tube and install a supplemental clamp, free of charge. Owner notification letters are expected to be mailed November 29, 2026. Owners may contact…",
+"dnd": false,
+"po": false,
+"by": "ODI"
+},
 {
 "id": "26V659000",
 "date": "2026-10-07",
@@ -1871,7 +1895,7 @@
 "more": 0,
 "summary": "Toyota Motor Engineering & Manufacturing (Toyota) is recalling certain 2026 C-HR battery electric vehicles. A software programming error may cause the electric drive system battery to become overcharged under certain driving conditions, which can shut down the electric drive system and result in a loss of drive power.",
 "consequence": "An unexpected loss of drive power increases the risk of a crash.",
-"fix": "Dealers will update the battery electric vehicle electronic control unit (BEV ECU) software, free of charge. Owner notification letters are expected to be mailed October 18, 2026. Owners may contact Toyota's customer service at 1-800-331-4331. Toyota's number…",
+"fix": "Dealers will update the battery electric vehicle electronic control unit (BEV ECU) software, free of charge. Owner notification letters were mailed October 19, 2026. Owners may contact Toyota's customer service at 1-800-331-4331. Toyota's number for this…",
 "dnd": false,
 "po": false,
 "by": "MFR"
@@ -1971,25 +1995,6 @@
 "summary": "Southeast Toyota Distributors, LLC (SET) is recalling one 2026 Tundra truck. The current load carrying capacity modification label is incorrect. As such, this vehicle fails to comply with the requirements of Federal Motor Vehicle Safety Standard number 110, \"Tire Selection and Rims.\"",
 "consequence": "An incorrect load carrying capacity modification label may lead to improper loading of the vehicle, increasing the risk of a crash.",
 "fix": "SET will provide the owner with a new load carrying capacity modification label, free of charge. An owner notification letter was mailed August 6, 2026. The owner may contact SET's customer service at 1-866-405-4226. SET's number for this recall is SET26A.",
-"dnd": false,
-"po": false,
-"by": "MFR"
-},
-{
-"id": "26V393000",
-"date": "2026-06-18",
-"units": 20991,
-"component": "Electrical System",
-"components": [
-"Electrical System"
-],
-"models": [
-"2026 Toyota BZ"
-],
-"more": 0,
-"summary": "Toyota Motor Engineering & Manufacturing (Toyota) is recalling certain 2026 Toyota BZ, Lexus RZ, and Subaru Solterra battery electric vehicles. The electronic control unit (ECU) that controls the high voltage battery may experience a fault, resulting in a loss of drive power.",
-"consequence": "An unexpected loss of drive power increases the risk of a crash.",
-"fix": "Dealers will update the battery ECU software, free of charge. Owner notification letters were mailed August 17, 2026. Owners may contact Toyota's customer service at 1-800-331-4331. Toyota's numbers for this recall are 26LA07 and 26TA11. Subaru's number for…",
 "dnd": false,
 "po": false,
 "by": "MFR"
@@ -2242,10 +2247,6 @@
 14
 ],
 [
-"CR-V HYBRID",
-13
-],
-[
 "ACCORD HYBRID",
 13
 ],
@@ -2254,11 +2255,15 @@
 13
 ],
 [
-"ACCORD",
-12
+"CR-V HYBRID",
+13
 ],
 [
 "CR-V",
+12
+],
+[
+"ACCORD",
 12
 ]
 ],
@@ -2299,7 +2304,7 @@
 "more": 0,
 "summary": "Honda (American Honda Motor Co.) is recalling certain 2023-2025 VT1300CX and 2024-2025 VT750 motorcycles. The fuel pump may malfunction due to a manufacturing defect.",
 "consequence": "Fuel pump failure can cause an engine stall, increasing the risk of a crash.",
-"fix": "Dealers will replace the fuel pump, free of charge. Owner notification letters will be mailed beginning November 27, 2026. Owners may contact Honda's customer service at 1-866-784-1870. Honda's numbers for this recall are KU9, KV0, and KV1. Vehicle…",
+"fix": "Dealers will replace the fuel pump, free of charge. Interim letters notifying owners of the safety risk are expected to be mailed November 27, 2026. Additional letters will be sent once the final remedy is available, anticipated in January 2027. Owners may…",
 "dnd": false,
 "po": false,
 "by": "MFR"
@@ -2781,11 +2786,11 @@
 23
 ],
 [
-"SENTRA",
+"FRONTIER",
 14
 ],
 [
-"FRONTIER",
+"SENTRA",
 14
 ],
 [
@@ -3208,11 +3213,11 @@
 16
 ],
 [
-"GLADIATOR",
+"WAGONEER",
 14
 ],
 [
-"WAGONEER",
+"GLADIATOR",
 14
 ],
 [
@@ -5278,8 +5283,8 @@
 "units": 1031188
 },
 "2026": {
-"campaigns": 17,
-"units": 1745431
+"campaigns": 19,
+"units": 1745472
 }
 },
 "campaigns10": 150,
@@ -5303,11 +5308,11 @@
 17
 ],
 [
-"Power Train",
+"Steering",
 8
 ],
 [
-"Steering",
+"Power Train",
 8
 ],
 [
@@ -5322,7 +5327,7 @@
 "dnd": 0,
 "po": 21,
 "initiatedBy": {
-"manufacturer": 141,
+"manufacturer": 143,
 "nhtsa": 26
 },
 "topModels": [
@@ -5331,12 +5336,12 @@
 20
 ],
 [
-"TUCSON",
+"ELANTRA",
 17
 ],
 [
-"ELANTRA",
-15
+"TUCSON",
+17
 ],
 [
 "PALISADE",
@@ -5360,6 +5365,48 @@
 ]
 ],
 "recent": [
+{
+"id": "26V693000",
+"date": "2026-10-20",
+"units": 17,
+"component": "Wheels",
+"components": [
+"Wheels"
+],
+"models": [
+"2026 Hyundai ELANTRA",
+"2026 Hyundai ELANTRA HYBRID",
+"2026 Hyundai ELANTRA N",
+"2026 Hyundai VENUE"
+],
+"more": 0,
+"summary": "Hyundai Motor America (Hyundai) is recalling certain 2026 Venue, Elantra N, Elantra Hybrid, and Elantra vehicles. The wheel lug nuts may loosen and allow the wheel to detach.",
+"consequence": "Wheel detachment can cause a loss of vehicle control or create a road hazard, increasing the risk of a crash or injury.",
+"fix": "Dealers will inspect and tighten the wheel assembly lug nuts, and replace the hub bearing assembly, as necessary, free of charge. Owner notification letters are expected to be mailed December 19, 2026. Owners may contact Hyundai customer service at…",
+"dnd": false,
+"po": false,
+"by": "MFR"
+},
+{
+"id": "26V692000",
+"date": "2026-10-20",
+"units": 24,
+"component": "Suspension",
+"components": [
+"Suspension"
+],
+"models": [
+"2026 Hyundai ELANTRA",
+"2026 Hyundai TUCSON HYBRID"
+],
+"more": 0,
+"summary": "Hyundai Motor America (Hyundai) is recalling certain 2026 Tucson Hybrid and Elantra vehicles. The front strut assembly fasteners may not be tightened properly, which can result in a loss of vehicle steering control.",
+"consequence": "A loss of vehicle steering control increases the risk of a crash.",
+"fix": "Dealers will inspect and replace the front strut assembly fasteners and perform a wheel alignment, as necessary, free of charge. Owner notification letters are expected to be mailed December 19, 2026. Owners may contact Hyundai customer service at…",
+"dnd": false,
+"po": false,
+"by": "MFR"
+},
 {
 "id": "26V664000",
 "date": "2026-10-08",
@@ -5515,49 +5562,6 @@
 "summary": "Hyundai Motor America (Hyundai) is recalling certain 2024-2026 Elantra Hybrid vehicles. The hybrid power control unit (HPCU) assembly may overheat.",
 "consequence": "Overheating in the HPCU increases the risk of a fire.",
 "fix": "Dealers will update the HPCU software, free of charge. Owner notification letters were mailed July 3, 2026. Owners may contact Hyundai customer service at 1-855-371-9460. Hyundai's number for this recall is 301. Vehicle Identification Numbers (VINs) involved…",
-"dnd": false,
-"po": false,
-"by": "MFR"
-},
-{
-"id": "26V307000",
-"date": "2026-05-14",
-"units": 3493,
-"component": "Air Bags",
-"components": [
-"Air Bags"
-],
-"models": [
-"2015-2016 Hyundai ELANTRA",
-"2016 Hyundai ELANTRA GT"
-],
-"more": 0,
-"summary": "Hyundai Motor America (Hyundai) is recalling certain 2015-2016 Elantra and 2016 Elantra GT vehicles. The driver's air bag inflator may rupture during deployment.",
-"consequence": "An air bag inflator that ruptures may result in sharp metal fragments striking the driver or passengers, increasing the risk of injury or death.",
-"fix": "Dealers will inspect and replace the air bag inflator, as necessary, free of charge. Interim notification letters, notifying owners of the safety risk, were mailed July 3, 2026. Additional letters will be sent once the final remedy is available, anticipated…",
-"dnd": false,
-"po": false,
-"by": "ODI"
-},
-{
-"id": "26V254000",
-"date": "2026-04-20",
-"units": 2931,
-"component": "Air Bags",
-"components": [
-"Air Bags"
-],
-"models": [
-"2026 Hyundai ELANTRA",
-"2025 Hyundai ELANTRA N",
-"2026 Hyundai TUCSON",
-"2026 Hyundai TUCSON HYBRID",
-"2026 Hyundai TUCSON PLUG-IN HYBRID"
-],
-"more": 0,
-"summary": "Hyundai Motor America (Hyundai) is recalling certain 2025 Elantra N, 2026 Tucson, Tucson Hybrid, Tucson Plug-In Hybrid Electric (PHEV), and Elantra vehicles. The B-pillar impact sensors may have been misassembled, which can delay air bag deployment.",
-"consequence": "Air bags that do not deploy as intended increase the risk of injury in a crash.",
-"fix": "Dealers will inspect and replace the impact sensor(s), as necessary, free of charge. Owner notification letters were mailed June 11, 2026. Owners may contact Hyundai's customer service at 855-371-9460. Hyundai's number for this recall is 299. Vehicle…",
 "dnd": false,
 "po": false,
 "by": "MFR"
@@ -6272,8 +6276,8 @@
 "units": 1147634
 },
 "2026": {
-"campaigns": 4,
-"units": 701761
+"campaigns": 5,
+"units": 701769
 }
 },
 "campaigns10": 84,
@@ -6301,31 +6305,31 @@
 6
 ],
 [
+"Suspension",
+5
+],
+[
 "Fuel System, Gasoline",
 5
 ],
 [
 "Exterior Lighting",
 5
-],
-[
-"Structure",
-4
 ]
 ],
-"dnd": 4,
+"dnd": 5,
 "po": 2,
 "initiatedBy": {
-"manufacturer": 70,
+"manufacturer": 71,
 "nhtsa": 18
 },
 "topModels": [
 [
-"IMPREZA",
-11
+"FORESTER",
+12
 ],
 [
-"FORESTER",
+"IMPREZA",
 11
 ],
 [
@@ -6337,12 +6341,12 @@
 8
 ],
 [
-"LEGACY",
+"CROSSTREK",
 6
 ],
 [
-"CROSSTREK",
-5
+"LEGACY",
+6
 ],
 [
 "WRX",
@@ -6354,6 +6358,26 @@
 ]
 ],
 "recent": [
+{
+"id": "26V685000",
+"date": "2026-10-19",
+"units": 8,
+"component": "Suspension",
+"components": [
+"Suspension"
+],
+"models": [
+"2026 Subaru CROSSTREK",
+"2026 Subaru FORESTER"
+],
+"more": 0,
+"summary": "Subaru of America, Inc. (Subaru) is recalling certain 2026 Crosstrek and Forester vehicles. The castle nut on the left-front lower control arm ball joint may be improperly fastened, which can lead to the ball joint separating from the lower control arm.",
+"consequence": "A ball joint that separates from the lower control arm can cause a loss of vehicle control, increasing the risk of a crash.",
+"fix": "Owners are advised not to drive their vehicle until the remedy is completed. Dealers will inspect and replace the left-front lower control arm ball joint assembly, as necessary, free of charge. Owner notification letters are expected to be mailed December 16…",
+"dnd": true,
+"po": false,
+"by": "MFR"
+},
 {
 "id": "26V436000",
 "date": "2026-07-07",
@@ -6529,26 +6553,6 @@
 "dnd": false,
 "po": false,
 "by": "MFR"
-},
-{
-"id": "24V227000",
-"date": "2024-03-22",
-"units": 118723,
-"component": "Air Bags",
-"components": [
-"Air Bags"
-],
-"models": [
-"2020-2022 Subaru LEGACY",
-"2020-2022 Subaru OUTBACK"
-],
-"more": 0,
-"summary": "Subaru of America, Inc. (Subaru) is recalling certain 2020-2022 Outback and Legacy vehicles. A capacitor in the sensors for the Occupant Detection System (ODS) may crack and short circuit, which can prevent the front passenger air bag from deploying in a crash.",
-"consequence": "An air bag that does not deploy during a crash can increase the risk of injury.",
-"fix": "Dealers will replace the ODS sensors on the front passenger seat, free of charge. Owner notifications were mailed February 3, 2025. Owners may contact Subaru customer service at 1-844-373-6614. Subaru's number for this recall is WRA-24.",
-"dnd": false,
-"po": false,
-"by": "ODI"
 }
 ],
 "largest": [
@@ -6617,26 +6621,28 @@
 "airbagInflator": 16,
 "airbagInflatorUnits": 2250584,
 "default": {
-"model": "IMPREZA",
-"name": "Impreza",
+"model": "FORESTER",
+"name": "Forester",
 "year": 2022,
 "rows": [
 {
-"id": "22V712000",
-"date": "2022-09-22",
-"units": 42,
-"component": "Visibility",
+"id": "23V755000",
+"date": "2023-11-09",
+"units": 95830,
+"component": "Power Train",
 "components": [
-"Visibility"
+"Power Train"
 ],
 "models": [
-"2022 Subaru IMPREZA",
-"2022 Subaru OUTBACK"
+"2021 Subaru CROSSTREK",
+"2022 Subaru FORESTER",
+"2021-2023 Subaru LEGACY",
+"2021-2023 Subaru OUTBACK"
 ],
 "more": 0,
-"summary": "Subaru of America, Inc. (Subaru) is recalling certain 2022 Impreza and Outback vehicles. The incorrect paint clearcoat may have been applied, which can cause the windshield to be insufficiently bonded to the vehicle. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard…",
-"consequence": "An insufficiently bonded windshield can detach during a crash, increasing the risk of injury.",
-"fix": "Subaru will offer owners a vehicle exchange or repurchase, free of charge. Owner notification letters are expected to be mailed November 21, 2022. Owners may contact Subaru's customer service at 1-844-373-6614. Subaru's number for this recall is WRH-22.",
+"summary": "Subaru of America, Inc. is recalling certain model year 2021 Crosstrek, 2022 Forester, 2021-2023 Legacy, and Outback vehicles. An insufficient weld may allow water to enter the inhibitor switch, causing it to fail.",
+"consequence": "An inoperative inhibitor switch may prevent the reverse lights from illuminating and the rearview camera image from displaying, increasing the risk of a crash.",
+"fix": "Dealers will replace the inhibitor switch, free of charge. Owner notification letters were mailed January 8, 2024. Owners may contact Subaru customer service at 1-800-782-2783. Subaru's number for this recall is WRQ-23.",
 "dnd": false,
 "po": false,
 "by": "MFR"
@@ -7557,11 +7563,11 @@
 6
 ],
 [
-"Visibility",
+"Structure",
 4
 ],
 [
-"Structure",
+"Visibility",
 4
 ]
 ],
@@ -7597,11 +7603,11 @@
 2
 ],
 [
-"RAM 3500",
+"RAM 4500",
 1
 ],
 [
-"RAM 5500",
+"RAM 3500",
 1
 ]
 ],
@@ -8062,8 +8068,8 @@
 "units": 509190
 },
 "2026": {
-"campaigns": 11,
-"units": 206512
+"campaigns": 12,
+"units": 243335
 }
 },
 "campaigns10": 264,
@@ -8080,7 +8086,7 @@
 ],
 [
 "Power Train",
-19
+20
 ],
 [
 "Engine And Engine Cooling",
@@ -8107,7 +8113,7 @@
 "po": 3,
 "initiatedBy": {
 "nhtsa": 20,
-"manufacturer": 255
+"manufacturer": 256
 },
 "topModels": [
 [
@@ -8123,19 +8129,19 @@
 21
 ],
 [
-"X6",
-16
-],
-[
 "X4",
 16
 ],
 [
-"530I",
-13
+"X6",
+16
 ],
 [
 "330I",
+13
+],
+[
+"530I",
 13
 ],
 [
@@ -8164,6 +8170,30 @@
 "by": "MFR"
 },
 {
+"id": "26V525000",
+"date": "2026-08-12",
+"units": 36823,
+"component": "Power Train",
+"components": [
+"Power Train"
+],
+"models": [
+"2021-2023 BMW 540I",
+"2021-2023 BMW 540I XDRIVE",
+"2024-2026 BMW 750E XDRIVE",
+"2020-2026 BMW 840I",
+"2020-2026 BMW 840I XDRIVE",
+"2021-2023 BMW M550I"
+],
+"more": 0,
+"summary": "BMW of North America, LLC (BMW) is recalling certain 2020-2026 840i, 840i xDrive, 2021-2023 540i, 540i xDrive, M550i xDrive, and 2024-2026 750e xDrive vehicles. The connection between the driveshaft and the rear differential may become damaged, possibly resulting in a loss of power to the rear wheels or a vehicle…",
+"consequence": "An unexpected loss of drive power can increase the risk of a crash. In addition, a damaged driveshaft can result in a vehicle rollaway if the parking brake is not applied, increasing the risk of a crash or injury.",
+"fix": "Dealers will inspect the connection between the driveshaft and rear axle differential, and apply adhesive or replace the driveshaft and rear axle differential, as necessary, free of charge. Owner notification letters were mailed October 8, 2026. Owners may…",
+"dnd": false,
+"po": false,
+"by": "MFR"
+},
+{
 "id": "26V524000",
 "date": "2026-08-12",
 "units": 13,
@@ -8177,7 +8207,7 @@
 "more": 0,
 "summary": "BMW of North America, LLC (BMW) is recalling certain 2024-2026 X3 sDrive30i, X3 30 xDrive, and X3 M50 xDrive vehicles. The steering spindle may have been incorrectly attached to the steering column.",
 "consequence": "An incorrectly attached steering spindle can lead to a loss of steering control, increasing the risk of a crash.",
-"fix": "Dealers will inspect the steering connection and replace hardware or replace the spindle and column, as necessary, free of charge. Owner notification letters are expected to be mailed October 2, 2026. Owners may contact BMW customer service at 1-800-525-7417.…",
+"fix": "Dealers will inspect the steering connection and replace hardware or replace the spindle and column, as necessary, free of charge. Owner notification letters were mailed October 8, 2026. Owners may contact BMW customer service at 1-800-525-7417. Vehicle…",
 "dnd": false,
 "po": false,
 "by": "MFR"
@@ -8328,27 +8358,6 @@
 "summary": "BMW of North America, LLC (BMW) is recalling certain 2025 M5 Sportswagon, 2025-2026 M5, 2024-2025 750e xDrive, 2025-2026 550e xDrive, 2023-2025 I7, 2023-2025 7 Series, 2024-2026 i5, and 5 Series vehicles. The electrical wiring harness for the air conditioning system may become damaged during replacement of the cabin…",
 "consequence": "A damaged wiring harness can short-circuit, increasing the risk of a fire.",
 "fix": "Dealers will inspect and replace the air conditioning system’s electrical wiring harness and add a retaining strap/bracket to the harness, as necessary, free of charge. Owner notification letters were mailed April 16, 2026. Owners may contact BMW customer…",
-"dnd": false,
-"po": false,
-"by": "MFR"
-},
-{
-"id": "26V064000",
-"date": "2026-02-04",
-"units": 202,
-"component": "Exterior Lighting",
-"components": [
-"Exterior Lighting"
-],
-"models": [
-"2026 BMW 228I GRAN COUPE",
-"2026 BMW 228I XDRIVE GRAN COUPE",
-"2026 BMW M235I XDRIVE GRAN COUPE"
-],
-"more": 0,
-"summary": "BMW of North America, LLC (BMW) is recalling certain 2026 228i Gran Coupe, 228i xDrive Gran Coupe, and M235i xDrive Gran Coupe vehicles. These vehicles are equipped with rear lights that may not function properly. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard…",
-"consequence": "A rear taillight, brake light, or rear turn signal light that functions improperly, increases the risk of a crash.",
-"fix": "Dealers will replace the rear lights, free of charge. Owner notification letters were mailed April 2, 2026. Owners may contact BMW customer service at 1-800-525-7417. Vehicle Identification Numbers (VINs) involved in this recall will be searchable on…",
 "dnd": false,
 "po": false,
 "by": "MFR"
@@ -8543,7 +8552,7 @@
 26
 ],
 [
-"Seats",
+"Equipment",
 24
 ]
 ],
@@ -9117,11 +9126,11 @@
 11
 ],
 [
-"Engine And Engine Cooling",
+"Equipment",
 9
 ],
 [
-"Equipment",
+"Engine And Engine Cooling",
 9
 ],
 [
@@ -9655,11 +9664,11 @@
 8
 ],
 [
-"Suspension",
+"Structure",
 6
 ],
 [
-"Structure",
+"Suspension",
 6
 ],
 [
@@ -9711,7 +9720,7 @@
 3
 ],
 [
-"CX-3",
+"CX-9",
 2
 ]
 ],
@@ -10831,10 +10840,10 @@
 "2023": 24,
 "2024": 15,
 "2025": 19,
-"2026": 7
+"2026": 8
 },
-"campaigns": 132,
-"units": 22845470,
+"campaigns": 133,
+"units": 22947629,
 "dnd": 2,
 "worstYear": 2022,
 "cleanYears": [],
@@ -10845,7 +10854,7 @@
 ],
 [
 "Electrical System",
-15
+16
 ],
 [
 "Exterior Lighting",
@@ -10879,7 +10888,7 @@
 "more": 0,
 "summary": "Ford Motor Company (Ford) is recalling certain 2025-2027 F-150 vehicles. The front seats may have been improperly secured to the vehicle.",
 "consequence": "An improperly secured seat may not adequately restrain the seat occupant, increasing the risk of injury during a crash.",
-"fix": "Dealers will inspect and tighten, or replace the front seat bolts as necessary, free of charge. Owner notification letters are expected to be mailed October 26, 2026. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is…",
+"fix": "Dealers will inspect and tighten, or replace the front seat bolts as necessary, free of charge. Owner notification letters were mailed October 16, 2026. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is 26S74.…",
 "dnd": false,
 "po": false,
 "by": "MFR",
@@ -10888,6 +10897,34 @@
 2025,
 2026,
 2027
+]
+},
+{
+"id": "26V653000",
+"date": "2026-10-06",
+"units": 102159,
+"component": "Electrical System",
+"components": [
+"Electrical System"
+],
+"models": [
+"2026 Ford F-150",
+"2025-2026 Ford F-250 SD",
+"2025-2026 Ford F-350 SD",
+"2025-2026 Ford F-450 SD",
+"2025-2026 Ford F-550 SD",
+"2025-2026 Ford F-600 SD"
+],
+"more": 1,
+"summary": "Ford Motor Company (Ford) is recalling certain 2025-2026 F-250 SD, F-350 SD, F-450 SD, F-550 SD, F-600, 2026 F-150, and F-750 SD vehicles. The analog cluster’s tachometer and speedometer may become stuck or move erratically, providing inaccurate readings to the driver. As such, these vehicles fail to comply with the…",
+"consequence": "A speedometer that fails to display accurate vehicle speed can increase the risk of a crash.",
+"fix": "Dealers will replace the instrument cluster modules, free of charge. Interim letters, notifying owners of the safety risk, are expected to be mailed in October 26, 2026. Additional letters will be sent once the remedy is available, anticipated in December…",
+"dnd": false,
+"po": false,
+"by": "MFR",
+"years": "2026",
+"ys": [
+2026
 ]
 },
 {
@@ -10979,7 +11016,7 @@
 "more": 0,
 "summary": "Ford Motor Company (Ford) is recalling certain 2026 Maverick, F-150, and Bronco Sport vehicles. Certain vehicle joints may be improperly tightened. This can lead to detached parts, unsecured cargo, degraded crash protection, electrical system failure, or a loss of vehicle stability.",
 "consequence": "Improperly tightened vehicle joints may lead to a loss of vehicle control, electrical failure, or detached parts, increasing the risk of a crash or fire.",
-"fix": "Dealers will inspect and tighten the vehicle joints or repair and replace the joint retention mechanisms as necessary, free of charge. Owner notifications letters are expected to be mailed September 21, 2026. Owners may contact Ford customer service at…",
+"fix": "Dealers will inspect and tighten the vehicle joints or repair and replace the joint retention mechanisms as necessary, free of charge. Owner notifications letters were mailed October 19, 2026. Owners may contact Ford customer service at 1-866-436-7332. Ford's…",
 "dnd": false,
 "po": false,
 "by": "MFR",
@@ -14663,7 +14700,7 @@
 "more": 0,
 "summary": "Ford Motor Company (Ford) is recalling certain 2020-2022 Explorer, Escape, Lincoln Aviator, and Lincoln Corsair vehicles. The windshield wiper motor may fail and prevent the windshield wipers from operating properly.",
 "consequence": "Windshield wipers that fail to operate properly can reduce visibility, increasing the risk of a crash.",
-"fix": "Dealers will inspect and replace the front wiper motors as necessary, free of charge. Interim letters, notifying owners of the safety risk, were mailed April 2, 2026. Additional letters will be sent once the final remedy is available, anticipated in October…",
+"fix": "Dealers will inspect and replace the front wiper motors as necessary, free of charge. Interim letters, notifying owners of the safety risk, were mailed April 2, 2026. Additional letters will be sent once the final remedy is available, anticipated in November…",
 "dnd": false,
 "po": false,
 "by": "MFR",
@@ -16863,7 +16900,7 @@
 "more": 0,
 "summary": "Ford Motor Company (Ford) is recalling certain 2026 Escape and Lincoln Corsair vehicles. The integrated park module may fail to lock into the park position when the driver shifts into park. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard (FMVSS) number 114, \"Theft…",
 "consequence": "A loss of park function can allow the vehicle to rollaway, increasing the risk of a crash.",
-"fix": "The Secondary On Board Diagnostic Module C (SOBDMC) software will be updated over-the-air (OTA) or by a dealer, free of charge. Interim letters, notifying owners of the safety risk, were mailed June 5, 2026. Additional letters will be sent once the remedy is…",
+"fix": "The Secondary On Board Diagnostic Module C (SOBDMC) software will be updated over-the-air (OTA) or by a dealer, free of charge. Owner notification letters were mailed October 16, 2026. Owners may contact Ford customer service at 1-866-436-7332. Ford's number…",
 "dnd": false,
 "po": false,
 "by": "MFR",
@@ -16941,7 +16978,7 @@
 "more": 0,
 "summary": "Ford Motor Company (Ford) is recalling certain 2020-2022 Explorer, Escape, Lincoln Aviator, and Lincoln Corsair vehicles. The windshield wiper motor may fail and prevent the windshield wipers from operating properly.",
 "consequence": "Windshield wipers that fail to operate properly can reduce visibility, increasing the risk of a crash.",
-"fix": "Dealers will inspect and replace the front wiper motors as necessary, free of charge. Interim letters, notifying owners of the safety risk, were mailed April 2, 2026. Additional letters will be sent once the final remedy is available, anticipated in October…",
+"fix": "Dealers will inspect and replace the front wiper motors as necessary, free of charge. Interim letters, notifying owners of the safety risk, were mailed April 2, 2026. Additional letters will be sent once the final remedy is available, anticipated in November…",
 "dnd": false,
 "po": false,
 "by": "MFR",
@@ -21970,7 +22007,7 @@
 2
 ],
 [
-"Engine And Engine Cooling",
+"Service Brakes, Hydraulic",
 2
 ]
 ],
@@ -22859,11 +22896,11 @@
 3
 ],
 [
-"Engine",
+"Tires",
 2
 ],
 [
-"Tires",
+"Engine",
 2
 ]
 ],
@@ -24653,11 +24690,11 @@
 ],
 "components": [
 [
-"Steering",
+"Power Train",
 4
 ],
 [
-"Power Train",
+"Steering",
 4
 ],
 [
@@ -33142,10 +33179,10 @@
 "2023": 2,
 "2024": 4,
 "2025": 7,
-"2026": 5
+"2026": 6
 },
-"campaigns": 24,
-"units": 3869708,
+"campaigns": 25,
+"units": 3869732,
 "dnd": 0,
 "worstYear": 2025,
 "cleanYears": [],
@@ -33163,19 +33200,43 @@
 3
 ],
 [
+"Power Train",
+2
+],
+[
 "Exterior Lighting",
 2
 ],
 [
 "Trailer Hitches",
 2
-],
-[
-"Power Train",
-2
 ]
 ],
 "list": [
+{
+"id": "26V692000",
+"date": "2026-10-20",
+"units": 24,
+"component": "Suspension",
+"components": [
+"Suspension"
+],
+"models": [
+"2026 Hyundai ELANTRA",
+"2026 Hyundai TUCSON HYBRID"
+],
+"more": 0,
+"summary": "Hyundai Motor America (Hyundai) is recalling certain 2026 Tucson Hybrid and Elantra vehicles. The front strut assembly fasteners may not be tightened properly, which can result in a loss of vehicle steering control.",
+"consequence": "A loss of vehicle steering control increases the risk of a crash.",
+"fix": "Dealers will inspect and replace the front strut assembly fasteners and perform a wheel alignment, as necessary, free of charge. Owner notification letters are expected to be mailed December 19, 2026. Owners may contact Hyundai customer service at…",
+"dnd": false,
+"po": false,
+"by": "MFR",
+"years": "2026",
+"ys": [
+2026
+]
+},
 {
 "id": "26V400000",
 "date": "2026-06-23",
@@ -33830,11 +33891,55 @@
 "po": 18
 },
 "2026": {
-"dnd": 13,
+"dnd": 16,
 "po": 21
 }
 },
 "recent": [
+{
+"id": "26V685000",
+"date": "2026-10-19",
+"units": 8,
+"component": "Suspension",
+"components": [
+"Suspension"
+],
+"models": [
+"2026 Subaru CROSSTREK",
+"2026 Subaru FORESTER"
+],
+"more": 0,
+"summary": "Subaru of America, Inc. (Subaru) is recalling certain 2026 Crosstrek and Forester vehicles. The castle nut on the left-front lower control arm ball joint may be improperly fastened, which can lead to the ball joint separating from the lower control arm.",
+"consequence": "A ball joint that separates from the lower control arm can cause a loss of vehicle control, increasing the risk of a crash.",
+"fix": "Owners are advised not to drive their vehicle until the remedy is completed. Dealers will inspect and replace the left-front lower control arm ball joint assembly, as necessary, free of charge. Owner notification letters are expected to be mailed December 16…",
+"dnd": true,
+"po": false,
+"by": "MFR"
+},
+{
+"id": "26V682000",
+"date": "2026-10-16",
+"units": 548,
+"component": "Wheels",
+"components": [
+"Wheels"
+],
+"models": [
+"2024 Porsche 718 CAYMAN GT4 RS",
+"2024 Porsche 718 SPYDER RS",
+"2024 Porsche 911",
+"2024 Porsche 911 CARRERA GTS",
+"2024 Porsche 911 GT3",
+"2024 Porsche 911 GT3 RS"
+],
+"more": 2,
+"summary": "Porsche Cars North America, Inc. (Porsche) is recalling certain 2024 718 Cayman GT4 RS, 911 Turbo S, 911 Turbo, 911 S/T, 911 GT3 RS, 911 GT3, 911 Carrera GTS, and 718 Spyder RS vehicles. The center lock wheel bolt may fracture and cause the wheel to detach.",
+"consequence": "Wheel detachment can result in a loss of vehicle control, increasing the risk of a crash.",
+"fix": "Owners are advised not to drive their vehicles until they have been repaired. Dealers will check the center lock wheel fastening system and replace any incorrectly manufactured parts, as necessary, free of charge. Owner notification letters are expected to be…",
+"dnd": true,
+"po": false,
+"by": "MFR"
+},
 {
 "id": "26V664000",
 "date": "2026-10-08",
@@ -33853,6 +33958,25 @@
 "fix": "Owners are advised to park their vehicles outdoors and away from other vehicles or structures until the repair has been performed. The remedy is currently under development. Owner notification letters are expected to be mailed December 7, 2026. Owners of…",
 "dnd": false,
 "po": true,
+"by": "MFR"
+},
+{
+"id": "26V656000",
+"date": "2026-10-06",
+"units": 69,
+"component": "Trailer Hitches",
+"components": [
+"Trailer Hitches"
+],
+"models": [
+"2027 Great Dane CHAMPION"
+],
+"more": 0,
+"summary": "Great Dane Trailers (Great Dane) is recalling certain 2027 Champion dry van trailers. The upper coupler may have an incorrect bottom plate installed. The kingpin may protrude, preventing the trailer from coupling properly.",
+"consequence": "An improperly coupled trailer may detach, increasing the risk of a crash.",
+"fix": "Owners are advised not to use their trailers until the repair is completed. Great Dane will inspect and replace the upper coupler assembly as necessary, free of charge. Owner notification letters are expected to be mailed December 4, 2026. Owners may contact…",
+"dnd": true,
+"po": false,
 "by": "MFR"
 },
 {
@@ -34070,65 +34194,6 @@
 "dnd": false,
 "po": true,
 "by": "MFR"
-},
-{
-"id": "26V367000",
-"date": "2026-06-05",
-"units": 4173,
-"component": "Exterior Lighting",
-"components": [
-"Exterior Lighting"
-],
-"models": [
-"2025 Yamaha XTZ690"
-],
-"more": 0,
-"summary": "Yamaha Motor Corporation, USA (Yamaha) is recalling certain 2025 XTZ690 motorcycles. The turn signal lights may fail to operate when activated. As such, these motorcycles fail to comply with the requirements of Federal Motor Vehicle Safety Standard number 108, \"Lamps, Reflective Devices, and Associated Equipment.\"",
-"consequence": "Turn signals that do not function properly may fail to indicate the rider's intention to change direction, increasing the risk of a crash.",
-"fix": "Owners are advised not to ride their motorycle until the remedy is complete. Yamaha will replace the meter assembly, free of charge. Owner notification letters are expected to be mailed June 26, 2026. Owners may contact Yamaha's customer service at…",
-"dnd": true,
-"po": false,
-"by": "MFR"
-},
-{
-"id": "26V363000",
-"date": "2026-06-04",
-"units": 1076999,
-"component": "Steering",
-"components": [
-"Steering"
-],
-"models": [
-"2021-2025 Jeep GLADIATOR",
-"2021-2025 Jeep WRANGLER",
-"2021-2025 Jeep WRANGLER 4XE"
-],
-"more": 0,
-"summary": "Chrysler (FCA US, LLC) is recalling certain 2021-2025 Jeep Wrangler, Wrangler 4XE, and Jeep Gladiator vehicles. The electric hydraulic power steering pump wiring may overheat and cause a vehicle fire, even when the vehicle is parked with the ignition in the \"Off\" position.",
-"consequence": "A vehicle fire increases the risk of injury.",
-"fix": "Owners are advised to park outside and away from structures, until their vehicle is repaired. Dealers will inspect and replace the wiring and electric hydraulic power steering pump, as necessary, free of charge. Owner notification letters are expected to be…",
-"dnd": false,
-"po": true,
-"by": "ODI"
-},
-{
-"id": "26V362000",
-"date": "2026-06-04",
-"units": 17277,
-"component": "Electrical System",
-"components": [
-"Electrical System"
-],
-"models": [
-"2020-2022 Chrysler PACIFICA"
-],
-"more": 0,
-"summary": "Chrysler (FCA US, LLC) is recalling certain 2020-2022 Pacifica Plug-In Hybrid Electric (PHEV) vehicles. The battery pack may cause a vehicle fire, even when the vehicle is parked with the ignition in the \"Off\" position.",
-"consequence": "A vehicle fire increases the risk of injury.",
-"fix": "Owners are advised not to charge their vehicles, and to park outside and away from structures, until their vehicle is repaired. Dealers will update the high voltage battery pack control module software. In addition, dealers will inspect and replace the…",
-"dnd": false,
-"po": true,
-"by": "ODI"
 }
 ],
 "dnd10": 164,
@@ -34177,30 +34242,6 @@
 "by": "MFR"
 },
 {
-"id": "26V325000",
-"date": "2026-05-21",
-"units": 4315,
-"component": "Air Bags",
-"components": [
-"Air Bags"
-],
-"models": [
-"2018 Chevrolet SILVERADO 1500",
-"2019 Chevrolet SILVERADO 2500",
-"2019 Chevrolet SILVERADO 3500",
-"2018 GMC SIERRA 1500",
-"2019 GMC SIERRA 2500",
-"2019 GMC SIERRA 3500"
-],
-"more": 0,
-"summary": "General Motors, LLC (GM) is recalling certain 2018 Chevrolet Silverado 1500, GMC Sierra 1500, 2019 Chevrolet Silverado 2500, Silverado 3500, GMC Sierra 2500, and Sierra 3500 vehicles. The left-side or right-side roof rail air bag (RRAB) inflator end cap may detach from the inflator or the inflator sidewall may rupture.",
-"consequence": "A detached end cap or inflator rupture can allow compressed gas to escape and project the end cap or fragments of the inflator into the vehicle, increasing the risk of injury.",
-"fix": "Dealers will replace both RRAB modules, free of charge. Owner notification letters were mailed June 24, 2026. Owners may contact GMC customer service at 1-888-988-7267 or Chevrolet customer service at 1-800-222-1020. GM's number for this recall is N262557310.…",
-"dnd": false,
-"po": false,
-"by": "MFR"
-},
-{
 "id": "26V329000",
 "date": "2026-05-21",
 "units": 5014,
@@ -34220,6 +34261,30 @@
 "summary": "General Motors, LLC (GM) is recalling certain 2015 Cadillac Escalade, Escalade ESV, XTS, 2015-2016 Cadillac ATS, CTS, and SRX vehicles. The front-driver air bag inflator may rupture during deployment.",
 "consequence": "An inflator rupture may result in sharp metal fragments striking the driver or other occupants, resulting in serious injury or death.",
 "fix": "Dealers will replace the front-driver air bag module, free of charge. Interim letters notifying owners of the safety risk were mailed June 19, 2026. Additional letters will be mailed once the remedy is available. Owners may contact Cadillac customer service…",
+"dnd": false,
+"po": false,
+"by": "MFR"
+},
+{
+"id": "26V325000",
+"date": "2026-05-21",
+"units": 4315,
+"component": "Air Bags",
+"components": [
+"Air Bags"
+],
+"models": [
+"2018 Chevrolet SILVERADO 1500",
+"2019 Chevrolet SILVERADO 2500",
+"2019 Chevrolet SILVERADO 3500",
+"2018 GMC SIERRA 1500",
+"2019 GMC SIERRA 2500",
+"2019 GMC SIERRA 3500"
+],
+"more": 0,
+"summary": "General Motors, LLC (GM) is recalling certain 2018 Chevrolet Silverado 1500, GMC Sierra 1500, 2019 Chevrolet Silverado 2500, Silverado 3500, GMC Sierra 2500, and Sierra 3500 vehicles. The left-side or right-side roof rail air bag (RRAB) inflator end cap may detach from the inflator or the inflator sidewall may rupture.",
+"consequence": "A detached end cap or inflator rupture can allow compressed gas to escape and project the end cap or fragments of the inflator into the vehicle, increasing the risk of injury.",
+"fix": "Dealers will replace both RRAB modules, free of charge. Owner notification letters were mailed June 24, 2026. Owners may contact GMC customer service at 1-888-988-7267 or Chevrolet customer service at 1-800-222-1020. GM's number for this recall is N262557310.…",
 "dnd": false,
 "po": false,
 "by": "MFR"
@@ -34496,8 +34561,8 @@
 ]
 },
 "cameras": {
-"campaigns": 255,
-"units": 29042605,
+"campaigns": 257,
+"units": 29137655,
 "byYear": {
 "2016": 1,
 "2017": 2,
@@ -34509,7 +34574,7 @@
 "2023": 32,
 "2024": 40,
 "2025": 61,
-"2026": 33
+"2026": 35
 }
 }
 }

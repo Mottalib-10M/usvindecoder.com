@@ -1,16 +1,16 @@
 {
 "source": "https://www.fueleconomy.gov/feg/epadata/vehicles.csv.zip",
 "prices_source": "https://www.fueleconomy.gov/ws/rest/fuelprices",
-"retrieved_at": "2026-10-19",
+"retrieved_at": "2026-10-26",
 "prices": {
 "cng": 3.08,
-"diesel": 6.18,
+"diesel": 6.28,
 "e85": 3.31,
 "electric": 0.15,
 "lpg": 3.59,
-"midgrade": 4.96,
-"premium": 5.37,
-"regular": 4.33
+"midgrade": 4.92,
+"premium": 5.31,
+"regular": 4.28
 },
 "latestYear": 2027,
 "refYear": 2026,

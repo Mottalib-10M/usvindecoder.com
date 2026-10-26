@@ -1,5 +1,5 @@
 {
-"retrieved_at": "2026-10-19",
+"retrieved_at": "2026-10-26",
 "source": "https://vpic.nhtsa.dot.gov/api/",
 "wmi": {
 "19U": {
@@ -3359,7 +3359,7 @@
 },
 "ZFA": {
 "country": "Italy",
-"make": "Fiat",
+"make": "Stellantis",
 "type": "car"
 },
 "ZFB": {
