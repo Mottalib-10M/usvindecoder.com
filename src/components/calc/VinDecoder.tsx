@@ -63,11 +63,16 @@ export default function VinDecoder({ mode = 'car', initialVin, initial, prices, 
     return () => clearTimeout(t);
   }, [vin, ready]);
 
-  const f = shown.facts;
+  // VIN modifié depuis le dernier décodage : l'ancien véhicule n'est plus affiché comme le résultat
+  const stale = vin !== shown.vin;
+  const f = stale ? null : shown.facts;
   const v = off.validation;
   const parkIt = shown.recalls.filter((r) => r.parkIt || r.parkOutside).length;
   const rated = shown.ratings.filter((r) => r.overall);
   const best = rated.length ? Math.max(...rated.map((r) => r.overall as number)) : null;
+  // Ancien protocole (avant 2011) : pas de note globale, les étoiles par test de la version la plus proche du VIN
+  const old = best ? undefined : shown.ratings.find((r) => r.legacy);
+  const st = (n: number | null | undefined) => (n ? `${n}★` : 'n/a');
   const e0 = shown.epa[0];
   const fuelPrice = (ev: EpaVehicle) => (ev.fuel.includes('Premium') ? prices.premium : ev.fuel === 'Diesel' ? prices.diesel : price);
   const costOf = (ev: EpaVehicle) => (ev.kind === 'ev' ? annualElectric(miles, ev.combE, prices.electric).cost : annualFuel({ miles, mpg: ev.comb, price: fuelPrice(ev) }).cost);
@@ -121,9 +126,9 @@ export default function VinDecoder({ mode = 'car', initialVin, initial, prices, 
                 <p className="text-xs text-navy-600">{parkIt ? `${parkIt} with a park or don't-drive warning` : `${f.year} ${f.model}`}</p>
               </div>
               {mode !== 'moto' && <div className="rounded-lg border border-navy-200 bg-white p-3">
-                <p className="text-xs text-navy-600">NCAP overall</p>
-                <p className="text-2xl font-bold text-navy-900">{status.ratings === 'loading' ? '…' : best ? <><span className="tabular-nums sm:hidden" aria-label={`${best} out of 5 stars`}>{best}<span className="text-amber-800">★</span></span><span className="hidden sm:inline"><Stars n={best} /></span></> : 'n/a'}</p>
-                <p className="text-xs text-navy-600">{best ? `${rated.length} rated version${rated.length > 1 ? 's' : ''}` : shown.ratings.some((r) => r.front || r.side || r.rollover) ? 'no overall score; partial stars below' : 'not rated by NHTSA'}</p>
+                <p className="text-xs text-navy-600">{old && status.ratings !== 'loading' ? 'NCAP frontal, driver' : 'NCAP overall'}</p>
+                <p className="text-2xl font-bold text-navy-900">{status.ratings === 'loading' ? '…' : best ? <><span className="tabular-nums sm:hidden" aria-label={`${best} out of 5 stars`}>{best}<span className="text-amber-800">★</span></span><span className="hidden sm:inline"><Stars n={best} /></span></> : old?.frontDriver ? <><span className="tabular-nums sm:hidden" aria-label={`${old.frontDriver} out of 5 stars`}>{old.frontDriver}<span className="text-amber-800">★</span></span><span className="hidden sm:inline"><Stars n={old.frontDriver} /></span></> : 'n/a'}</p>
+                <p className="text-xs text-navy-600">{status.ratings === 'loading' ? 'asking NHTSA…' : best ? `${rated.length} rated version${rated.length > 1 ? 's' : ''}` : old ? `pre-2011 test: passenger ${st(old.frontPassenger)}, side ${st(old.sideDriver)}, rollover ${st(old.rollover)}` : shown.ratings.some((r) => r.front || r.side || r.rollover) ? 'no overall score; partial stars below' : status.ratings === 'error' ? 'NHTSA did not answer' : 'not rated by NHTSA'}</p>
               </div>}
               <div className="rounded-lg border border-navy-200 bg-white p-3">
                 {mode === 'moto' ? (<><p className="text-xs text-navy-600">Engine</p><p className="tabular-nums text-2xl font-bold text-navy-900">{f.displacementL ? `${int(Number(f.displacementL) * 1000)} cc` : 'n/a'}</p><p className="text-xs text-navy-600">{f.motorcycle || f.body || 'motorcycle'}</p></>)
@@ -134,7 +139,7 @@ export default function VinDecoder({ mode = 'car', initialVin, initial, prices, 
             </div>
             <p className="mt-4 text-sm text-navy-700">Campaigns cover the {f.year} {f.model} as a model. Whether <em>this</em> vehicle was already repaired is on <a className="font-medium text-accent-700 underline" href={nhtsaVin} target="_blank" rel="nofollow noopener noreferrer">NHTSA's VIN lookup</a>.</p>
           </>) : (
-            <p className="mt-2 text-navy-700">{status.facts === 'loading' ? 'Reading the manufacturer data…' : status.facts === 'error' ? 'NHTSA did not answer. The reading on the left is computed in your browser and stays valid; try again in a minute.' : ready ? 'NHTSA has no data for this VIN pattern. Check the characters against the title.' : 'Type the 17 characters: the factory record, recalls, crash ratings and EPA mileage appear here.'}</p>
+            <p className="mt-2 text-navy-700">{status.facts === 'loading' || (ready && stale) ? 'Reading the manufacturer data…' : status.facts === 'error' && !stale ? 'NHTSA did not answer. The reading on the left is computed in your browser and stays valid; try again in a minute.' : ready ? 'NHTSA has no data for this VIN pattern. Check the characters against the title.' : 'Type the 17 characters: the factory record, recalls, crash ratings and EPA mileage appear here.'}</p>
           )}
           <div className="no-print mt-4 flex flex-wrap gap-2 text-sm">
             <button type="button" onClick={copy} className="rounded-md border border-navy-300 bg-white px-3 py-1.5 text-navy-800 hover:bg-navy-50">{copied ? 'Copied' : 'Copy summary'}</button>

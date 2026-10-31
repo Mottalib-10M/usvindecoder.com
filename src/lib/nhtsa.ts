@@ -75,13 +75,34 @@ export function parseRecalls(json: unknown): RecallRow[] {
   return rows.sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
 }
 
-export interface Rating { id: number; desc: string; overall: number | null; front: number | null; side: number | null; rollover: number | null; rollRisk: number | null; complaints: number | null; recalls: number | null; investigations: number | null }
+/**
+ * Notes NCAP d'une version. Avant 2011 (ancien protocole), l'API ne donne ni note globale ni note
+ * frontale ou latérale d'ensemble (« Not Rated ») : seulement les étoiles par test, conducteur et
+ * passager au choc frontal, conducteur et passager arrière au choc latéral, et le retournement
+ * dans `RolloverRating2` (2003 Accord 4-DR, VehicleId 4738 ; 2010 Malibu, VehicleId 5700 : lus le
+ * 2026-10-31). `legacy` signale ces versions notées test par test.
+ */
+export interface Rating {
+  id: number; desc: string; overall: number | null; front: number | null; side: number | null; rollover: number | null; rollRisk: number | null;
+  frontDriver?: number | null; frontPassenger?: number | null; sideDriver?: number | null; sideRear?: number | null; legacy?: boolean;
+  complaints: number | null; recalls: number | null; investigations: number | null;
+}
 const star = (v: unknown) => { const n = parseInt(s(v), 10); return Number.isFinite(n) ? n : null; };
 export function parseRating(json: unknown): Rating | null {
   const r = ((json as Raw)?.Results as Raw[] | undefined)?.[0];
   if (!r) return null;
   const n = (v: unknown) => (typeof v === 'number' ? v : v == null || v === '' ? null : Number(v));
-  return { id: Number(r.VehicleId), desc: s(r.VehicleDescription), overall: star(r.OverallRating), front: star(r.OverallFrontCrashRating), side: star(r.OverallSideCrashRating), rollover: star(r.RolloverRating), rollRisk: n(r.RolloverPossibility), complaints: n(r.ComplaintsCount), recalls: n(r.RecallsCount), investigations: n(r.InvestigationCount) };
+  const risk = (v: unknown) => { const x = n(v); return x != null && x > 0 ? x : null; };
+  const overall = star(r.OverallRating), front = star(r.OverallFrontCrashRating), side = star(r.OverallSideCrashRating);
+  const frontDriver = star(r.FrontCrashDriversideRating), frontPassenger = star(r.FrontCrashPassengersideRating);
+  const sideDriver = star(r.SideCrashDriversideRating), sideRear = star(r.SideCrashPassengersideRating);
+  return {
+    id: Number(r.VehicleId), desc: s(r.VehicleDescription), overall, front, side,
+    rollover: star(r.RolloverRating) ?? star(r.RolloverRating2), rollRisk: risk(r.RolloverPossibility) ?? risk(r.RolloverPossibility2),
+    frontDriver, frontPassenger, sideDriver, sideRear,
+    legacy: overall == null && front == null && side == null && [frontDriver, frontPassenger, sideDriver, sideRear].some((x) => x != null),
+    complaints: n(r.ComplaintsCount), recalls: n(r.RecallsCount), investigations: n(r.InvestigationCount),
+  };
 }
 
 export interface EpaVehicle { id: string; year: string; make: string; model: string; trany: string; drive: string; fuel: string; city: number; hwy: number; comb: number; combE: number; cost: number; youSaveSpend: number; co2: number; ghg: number; fe: number; smog: number; range: number; kind: 'ev' | 'phev' | 'gas' }

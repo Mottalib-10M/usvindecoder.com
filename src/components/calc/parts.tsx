@@ -16,7 +16,7 @@ export function VinRibbon({ vin, years }: { vin: string; years: number[] }) {
       <div className="grid grid-cols-[repeat(17,minmax(0,1fr))] gap-0.5">
         {chars.map((c, i) => { const seg = SEG.find((s) => i >= s.from && i < s.to)!; return <span key={i} className={`flex h-8 items-center justify-center rounded-sm font-mono text-sm font-semibold ${c.trim() ? seg.cls : 'bg-navy-50 text-navy-300'}`}>{c.trim() || '·'}</span>; })}
       </div>
-      <div className="mt-1 grid grid-cols-[repeat(17,minmax(0,1fr))] gap-0.5 text-[10px] leading-tight text-navy-600">
+      <div className="mt-1 grid grid-cols-[repeat(17,minmax(0,1fr))] gap-0.5 text-xs leading-tight text-navy-600">
         {SEG.map((s) => <span key={s.label} style={{ gridColumn: `${s.from + 1} / ${s.to + 1}` }} className={`truncate text-center ${s.to - s.from === 1 ? 'hidden sm:block' : ''}`}>{s.label === 'Year' && years.length ? years.join('/') : s.label === 'Maker (WMI)' ? <><span className="sm:hidden">WMI</span><span className="hidden sm:inline">Maker (WMI)</span></> : s.label}</span>)}
       </div>
       {/* Sur téléphone, une colonne fait 20 px : les trois repères d'un caractère passent en clair sous le ruban. */}
@@ -30,7 +30,7 @@ export function Stars({ n, of = 5 }: { n: number; of?: number }) {
 const longDate = (iso: string) => { const d = new Date(`${iso}T00:00:00Z`); return Number.isNaN(d.getTime()) ? iso : d.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }); };
 const nice = (c: string) => c.split(':').map((x) => x.trim().toLowerCase()).filter(Boolean).join(' › ');
 export function RecallList({ rows, max = 8 }: { rows: RecallRow[]; max?: number }) {
-  if (!rows.length) return <p className="mt-2 text-sm text-navy-700">NHTSA lists no safety recall campaign for this model and year. That covers the model as a whole; it says nothing about service bulletins or warranty extensions, which are not safety recalls.</p>;
+  if (!rows.length) return <p className="mt-2 text-sm text-navy-700">No safety recall campaign found under this model name for this year. NHTSA files some versions under another name (the 2022 Silverado 1500 LTD, for one), so confirm with the VIN on <a className="text-accent-700 underline" href="https://www.nhtsa.gov/recalls" target="_blank" rel="nofollow noopener noreferrer">nhtsa.gov/recalls</a>. Service bulletins and warranty extensions are not safety recalls and are not listed.</p>;
   return (
     <ol className="mt-3 space-y-3">
       {rows.slice(0, max).map((r) => (
@@ -49,12 +49,19 @@ export function RecallList({ rows, max = 8 }: { rows: RecallRow[]; max?: number 
 export function RatingTable({ rows }: { rows: Rating[] }) {
   if (!rows.length) return <p className="mt-2 text-sm text-navy-700">NHTSA has not crash-tested this model and year. NCAP tests a selection of new models each year, chosen by sales and new designs; an untested model is not an unsafe one.</p>;
   // Sur téléphone, cinq colonnes de cinq étoiles écrasaient la version en un mot par ligne : chiffre + une étoile sous 640 px.
-  const cell = (n: number | null) => (n ? <><span className="whitespace-nowrap font-semibold tabular-nums text-amber-800 sm:hidden" aria-label={`${n} out of 5 stars`}>{n}★</span><span className="hidden sm:inline"><Stars n={n} /></span></> : <span className="text-navy-500">not rated</span>);
+  const cell = (n: number | null | undefined) => (n ? <><span className="whitespace-nowrap font-semibold tabular-nums text-amber-800 sm:hidden" aria-label={`${n} out of 5 stars`}>{n}★</span><span className="hidden sm:inline"><Stars n={n} /></span></> : <span className="text-navy-500">not rated</span>);
+  // Avant 2011, pas de note d'ensemble par choc : les étoiles de chaque test (conducteur / passager).
+  const pair = (a: number | null | undefined, b: number | null | undefined, la: string, lb: string) => (
+    <span className="flex flex-col items-center gap-0.5 text-xs">{[[la, a], [lb, b]].map(([l, n]) => <span key={l as string} className="whitespace-nowrap"><span className="text-navy-600">{l} </span>{cell(n as number | null | undefined)}</span>)}</span>
+  );
+  const legacy = rows.some((r) => r.legacy);
   return (
     <div className="mt-2 overflow-x-auto"><table className="journal w-full text-sm">
       <thead><tr><th scope="col" className="text-left">Version</th>{[['Overall', 'All'], ['Front', 'Front'], ['Side', 'Side'], ['Rollover', 'Roll']].map(([l, sh]) => <th key={l} scope="col" className="px-1"><span className="hidden sm:inline">{l}</span><span className="sm:hidden" aria-hidden="true">{sh}</span></th>)}</tr></thead>
-      <tbody className="divide-y divide-navy-100">{rows.map((r) => <tr key={r.id}><td className="min-w-[9rem] py-1.5 pr-2 text-navy-800">{r.desc}{r.rollRisk ? <span className="block text-xs text-navy-600">rollover risk {Math.round(r.rollRisk * 1000) / 10} %</span> : null}</td><td className="text-center">{cell(r.overall)}</td><td className="text-center">{cell(r.front)}</td><td className="text-center">{cell(r.side)}</td><td className="text-center">{cell(r.rollover)}</td></tr>)}</tbody>
-    </table></div>
+      <tbody className="divide-y divide-navy-100">{rows.map((r) => <tr key={r.id}><td className="min-w-[9rem] py-1.5 pr-2 text-navy-800">{r.desc}{r.rollRisk ? <span className="block text-xs text-navy-600">rollover risk {Math.round(r.rollRisk * 1000) / 10} %</span> : null}</td><td className="text-center">{r.legacy ? <span className="text-navy-500">none before 2011</span> : cell(r.overall)}</td><td className="text-center">{r.legacy ? pair(r.frontDriver, r.frontPassenger, 'Driver', 'Passenger') : cell(r.front)}</td><td className="text-center">{r.legacy ? pair(r.sideDriver, r.sideRear, 'Driver', 'Rear') : cell(r.side)}</td><td className="text-center">{cell(r.rollover)}</td></tr>)}</tbody>
+    </table>
+    {legacy && <p className="mt-2 text-xs text-navy-600">Vehicles tested before 2011 were rated test by test, with no overall score: frontal crash for the driver and front passenger, side crash for the driver and rear passenger. NHTSA warns that these stars cannot be compared with ratings from 2011 on.</p>}
+    </div>
   );
 }
 export const SourceNote = ({ text }: { text: string }) => <p className="mt-2 text-xs text-navy-600">{text}</p>;

@@ -61,7 +61,7 @@ export default function CrashRatings({ year: y0, make: m0, model: d0, models: l0
         </form>
         <section data-resultat aria-live="polite" className="rounded-xl border border-accent-200 bg-accent-50/60 p-5">
           <p className="text-xs font-semibold uppercase tracking-wide text-accent-700">{state === 'loading' ? 'Asking NHTSA…' : state === 'error' ? 'NHTSA did not answer' : 'NHTSA 5-Star Safety Ratings'}</p>
-          <p className="mt-1 font-serif text-3xl font-bold text-navy-900">{best ? <>Best overall <Stars n={best} /></> : 'Not rated'}</p>
+          <p className="mt-1 font-serif text-3xl font-bold text-navy-900">{best ? <>Best overall <Stars n={best} /></> : rows.some((r) => r.legacy) ? 'Rated test by test' : 'Not rated'}</p>
           <p className="text-sm text-navy-700">{year} {label(make)} {model} · {rows.length} version{rows.length === 1 ? '' : 's'} listed, {rated.length} with an overall rating</p>
           <RatingTable rows={rows} />
           <p className="mt-3 text-xs text-navy-600">Stars compare vehicles of similar weight and class only: a 5-star compact car and a 5-star pickup do not protect equally in a crash between them.</p>
