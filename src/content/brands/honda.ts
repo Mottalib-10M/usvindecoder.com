@@ -6,7 +6,7 @@ export default defineBrand({
   title: `Honda Recalls 2026: CR-V, Civic, Accord, Pilot by Year`,
   description: `Honda recalls from NHTSA's file: ${f.c10} vehicle campaigns from 2016 to 2025, ${f.airbag} of them for air bag inflators. Look up any CR-V, Civic, Accord or Pilot by year.`,
   h1: 'Honda recalls, cars and motorcycles',
-  intro: `${f.c10} NHTSA campaigns from 2016 to 2025, ${f.airbag} of them for air bag inflators, ${f.c26} in 2026 so far.`,
+  intro: `Honda appears in ${f.c10} NHTSA recall campaigns from 2016 to 2025, ${f.airbag} of them for air bag inflators, ${f.c26} in 2026 so far.`,
   resume: `Honda's recall record is dominated by one supplier. American Honda was the largest customer of Takata, whose ammonium nitrate air bag inflators can rupture and spray metal fragments, and it ran some of the largest inflator campaigns in US history: ${f.big.id}, received on ${f.day(f.big.date)}, covered ${f.units(f.big.units)} vehicles on its own. Counting every campaign naming the Honda make, NHTSA's file holds ${f.c10} between 2016 and 2025 and ${f.u10} vehicle notices; ${f.airbag} of those campaigns concern air bag inflators. Honda never recorded a do-not-drive advisory under its own make in that period, but the oldest Takata-equipped Hondas, from 2001 to 2003, have been under a do-not-drive warning from NHTSA since 2016. The make also covers Honda motorcycles and scooters, which file under American Honda too, so a fuel pump campaign on a cruiser shares the list with the CR-V.`,
   body: (h) => `
 <h2>The fuel pump campaign of 2023</h2>

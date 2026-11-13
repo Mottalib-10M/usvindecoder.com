@@ -10,7 +10,7 @@ export default definePage({
   title: 'Recall Check 2026: Free NHTSA Lookup by Model or VIN',
   description: 'Free car recall check: pick the year, make and model or paste a VIN and get every NHTSA safety recall campaign, with its remedy and any do-not-drive warning.',
   h1: 'Recall check by year, make and model',
-  intro: `Choose a model year, a make and a model: NHTSA's campaigns for it load at once. The example shows the ${rc.year} Honda CR-V, with ${count} campaigns.`,
+  intro: `Choose a model year, a make and a model: NHTSA's recall campaigns for it load at once. The example shows the ${rc.year} Honda CR-V, with ${count} campaigns.`,
   resume: `This recall check asks NHTSA's public Recalls API, the database behind nhtsa.gov, for every safety recall campaign covering the model year, make and model you choose. Each campaign shows its NHTSA number, the date the manufacturer filed the defect report, the component involved, a summary of the defect, the remedy, and a red label when NHTSA attached a do-not-drive or park-outside warning. If you have the VIN, the second field decodes it through NHTSA vPIC and fills in the three lists for you. Model names follow NHTSA's spelling, which splits hybrids, plug-ins and heavy-duty versions into separate entries; check each one that could match your vehicle. The result is the campaign list for the model as built, which is what you want before buying. Whether one particular car still has a campaign open depends on its VIN and on dealer records, and NHTSA answers that on its own lookup.`,
   body: (h) => `
 <h2>Model-year campaigns and open recalls are two different answers</h2>

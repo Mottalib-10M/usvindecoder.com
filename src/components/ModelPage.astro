@@ -44,7 +44,7 @@ void units; void EPA;
     <Body html={def.body(helpers())} />
     <section data-chrome class="mt-10 grid gap-8 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)]">
       <div>
-        <h2 class="font-serif text-2xl font-bold text-navy-900">{full} by model year</h2>
+        <h2 class="font-serif text-2xl font-bold text-navy-900">{full} recalls by model year</h2>
         <Fragment set:html={table(['Model year', 'Recall campaigns', 'Best NCAP overall', 'EPA combined'], tableRows, `Campaigns from NHTSA's recall file (${c.rcl.join(', ')}); NCAP from the Safety Ratings API; EPA from fueleconomy.gov.`, ['l', 'r', 'l', 'l'])} />
       </div>
       <div>

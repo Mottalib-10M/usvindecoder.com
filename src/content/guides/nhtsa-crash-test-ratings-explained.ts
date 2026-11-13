@@ -16,7 +16,7 @@ export default definePage({
   title: 'NCAP Ratings Explained 2026: How NHTSA Crash Stars Work',
   description: 'NCAP ratings explained: how NHTSA turns frontal, side and rollover tests into 1 to 5 stars, what not rated means, and the 2025 stars of 16 best sellers.',
   h1: 'NHTSA crash test ratings explained',
-  intro: 'NCAP stars come from three crash tests and one stability measure, combined into an overall score. The rollover stars follow a simple scale; the calculator below converts a risk into stars.',
+  intro: 'NCAP star ratings come from three crash tests and one stability measure, combined into an overall score. The rollover stars follow a simple scale; the calculator below converts a risk into stars.',
   resume: `NHTSA's New Car Assessment Program, which began rating frontal crash protection in 1978 and adopted 5-Star Safety Ratings in 1993, is the federal consumer crash test program, distinct from the minimum safety standards every vehicle must meet. NHTSA buys vehicles from dealers and runs a frontal test into a rigid barrier at 35 mph with an average-size male dummy driving and a small female dummy as passenger, a side test where a 3,015 lb barrier moving at 38.5 mph hits the driver side, and a side pole test at 20 mph and a 75-degree angle. Injury measurements become a probability of serious injury, then stars. The rollover rating is different: it is not a crash but a calculation from the static stability factor, half the track width divided by the height of the center of gravity, together with a driving maneuver that tests whether the vehicle tips up, giving a percentage risk of rollover in a single-vehicle crash. The overall rating weighs the three.`,
   body: (h) => `
 <p>Type the rollover risk NHTSA shows for a vehicle to see the stars it earns.</p>
@@ -32,7 +32,7 @@ ${h.table(['Model', 'Best overall 2025', 'Lowest rollover risk', 'Rated versions
 <p>NHTSA does not test every vehicle every year. It picks models by expected sales, new designs and safety interest, and ratings carry over when a model is unchanged. A version shown without stars was not tested in that configuration that year. Heavy-duty pickups above 10,000 lb are outside the program. A missing rating is a gap of information, not a negative result; look at the closest rated body style and at the insurance industry's tests, which use different crashes.</p>
 <h2>How ratings have changed</h2>
 <p>NHTSA enhanced the program in 2010, for vehicles from the 2011 model year, with an overall vehicle score, the side pole test and the small female dummy, so stars from before 2011 are not comparable with later ones. In 2015 the agency announced plans to update the program again with new crash avoidance technologies and better protection of passengers and pedestrians. When you compare two used cars, compare ratings from the same period.</p>
-<h2>Using the ratings when you buy</h2>
+<h2>Using NCAP ratings when you buy</h2>
 <p>Look at the version you are buying: cab style, drive type and body all change results. Look at the frontal and side columns separately from the overall score, and at the rollover risk for tall vehicles. Pair the stars with the ${h.a('recall-check', 'recall campaigns')} for the same year: a model with a top rating and an open air bag campaign is not safe until the campaign is done.</p>
 `,
   faqs: [

@@ -6,7 +6,7 @@ export default defineModel({
   title: `Hyundai Tucson Recalls by Model Year, Hybrid and Plug-In Too`,
   description: `Hyundai Tucson recalls by model year from NHTSA's file: ${f.c} campaigns since 2012, ${f.worstN} on the ${f.worst} SUV, hybrid and plug-in included. NCAP stars and EPA mpg too.`,
   h1: 'Hyundai Tucson recalls by model year',
-  intro: `NHTSA's file holds ${f.c} campaigns on Tucson model years 2012 to 2026. After a quiet 2018 to 2021, the ${f.worst} Tucson has the most, ${f.worstN}. Pick your year.`,
+  intro: `NHTSA's file holds ${f.c} Hyundai Tucson recall campaigns on model years 2012 to 2026. After a quiet 2018 to 2021, the ${f.worst} Tucson has the most, ${f.worstN}. Pick your year.`,
   resume: `The Tucson went through 2018, 2019, 2020 and 2021 with a single campaign each in NHTSA's file, then the fourth generation, launched for 2022 with hybrid and plug-in hybrid versions, began collecting more: ${f.my(2022)} on the 2022, ${f.my(2024)} on the 2024, ${f.worstN} on the ${f.worst} and ${f.my(2026)} already on the 2026. In all, ${f.c} campaigns cover Tucson model years 2012 to 2026, counting the Tucson Hybrid and Tucson Plug-In Hybrid. The electrical system leads with ${f.compN(0)} campaigns, then air bags and hydraulic brakes (${f.compN(1)} each). The ABS fire campaigns that marked Hyundai's record cover older Tucsons: a 2020 campaign, expanded in December 2020, covered 2016 to 2021 models whose ABS module could short and burn, with a park-outside warning. NCAP rates the Tucson five stars overall in most years since 2016. For 2025, gas, hybrid and plug-in versions range from ${f.epa(2025)?.gasMin} to ${f.epa(2025)?.gasMax} mpg combined.`,
   body: (h) => `
 <h2>Recent campaigns: software, cameras and engines</h2>

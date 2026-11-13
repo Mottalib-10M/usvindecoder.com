@@ -6,12 +6,12 @@ export default definePage({
   title: 'VIN Location 2026: Where to Find the VIN on Any Vehicle',
   description: 'VIN location on cars, trucks and motorcycles: windshield plate, door jamb label, frame, title and insurance card. Compare two copies with the free matcher.',
   h1: 'Where is the VIN number? Every place to look',
-  intro: 'Look through the windshield at the lower driver-side corner, then at the label on the driver door jamb. Both must match the title, character for character; the matcher below checks it.',
+  intro: 'Look for the VIN through the windshield at the lower driver-side corner, then at the label on the driver door jamb. Both must match the title, character for character; the matcher below checks it.',
   resume: `Federal rules require the VIN of every car, SUV, pickup and van up to 10,000 lb GVWR to sit inside the passenger compartment, readable through the glass in daylight by someone standing outside next to the left windshield pillar, in characters at least 4 mm high (49 CFR 565.13(f)). The same number is printed on the certification label that 49 CFR Part 567 requires on the driver door, door edge or jamb, together with the month and year of manufacture and the weight ratings. Makers also stamp or label it in places that are harder to alter: on the frame of a truck, under the hood, on the firewall, and on many major parts. On paper, it appears on the title, the registration, the insurance card and the sales contract. For a used car, the point is not only to find the VIN but to compare every copy: a dashboard VIN that differs from the door label or the title is a reason to stop the sale until the state DMV explains it.`,
   body: (h) => `
 <p>Copy the VIN from two places, the dashboard plate and the title for example, and the matcher shows any difference, and whether it is a typical look-alike error.</p>
 ${h.mini('match')}
-<h2>On the vehicle</h2>
+<h2>VIN locations on the vehicle</h2>
 <h3>Windshield plate</h3>
 <p>Stand outside at the driver side and look through the bottom corner of the windshield: a metal plate on the dashboard carries the 17 characters. This is the location the federal rule makes mandatory, so it exists on every light vehicle sold in the US since 1981. The plate is riveted with special rivets; scratches, glue or non-matching rivets around it are a warning sign.</p>
 <h3>Driver door jamb label</h3>

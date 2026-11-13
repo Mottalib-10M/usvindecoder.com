@@ -14,12 +14,12 @@ export default definePage({
   title: 'MPG Fuel Cost Difference 2026: What 5 MPG Saves Each Year',
   description: `MPG fuel cost difference: going from 15 to 20 mpg saves ${usd(big.diff)} a year over 15,000 miles, 40 to 50 mpg only ${usd(small.diff)}. Compare two cars at your own gas price.`,
   h1: 'What a few mpg are worth: the fuel cost difference',
-  intro: `At 15,000 miles a year and $${p} a gallon, moving from 15 to 20 mpg saves ${usd(big.diff)}; moving from 40 to 50 mpg saves ${usd(small.diff)}. Low-mpg vehicles gain the most.`,
+  intro: `At 15,000 miles a year and $${p} a gallon, moving from 15 to 20 mpg cuts the fuel cost by ${usd(big.diff)}; moving from 40 to 50 mpg saves ${usd(small.diff)}. Low-mpg vehicles gain the most.`,
   resume: `Fuel cost is proportional to gallons per mile, not to miles per gallon, and that changes how mpg differences should be read. A truck that improves from 15 to 20 mpg burns 1,000 gallons instead of 750 over 15,000 miles, a saving of 250 gallons. A hybrid that improves from 40 to 50 mpg saves only 75 gallons over the same distance, even though the gain looks larger. At the national regular gas price fueleconomy.gov publishes, $${p} a gallon for this build, the first change is worth ${usd(big.diff)} a year and the second ${usd(small.diff)}. That is why the EPA label in the United States also shows gallons per 100 miles, and why replacing the least efficient vehicle in a household saves more than upgrading the most efficient one. The calculator below takes your current and target ratings, your yearly mileage and your price, and returns the yearly and five-year difference, using the same formula as the ${'mpg lookup'}.`,
   body: (h) => `
 <p>Enter both ratings and your own driving; the difference updates as you type.</p>
 ${h.mini('mpgdiff')}
-<h2>The same 5 mpg, very different savings</h2>
+<h2>The same 5 mpg, very different fuel cost savings</h2>
 ${h.table(['Change', 'Yearly fuel before', 'Yearly fuel after', 'Saved per year', 'Gallons saved'], rows, `15,000 miles a year at $${p} a gallon of regular.`, ['l', 'r', 'r', 'r', 'r'])}
 <p>The table makes the point that fuel economy labels hide: each step of 5 mpg saves less than the one before. Gallons per mile fall quickly at low mpg and slowly at high mpg. For a buyer choosing between a 22 mpg SUV and a 26 mpg one, the gap is worth more than the gap between a 45 mpg hybrid and a 52 mpg one.</p>
 <h2>Which mpg to use</h2>

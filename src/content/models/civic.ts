@@ -7,7 +7,7 @@ export default defineModel({
   title: `Honda Civic Recalls by Model Year, Type R and Hybrid Too`,
   description: `Honda Civic recalls by model year from NHTSA's file: ${f.c} campaigns since 2012, none on the 2013 model, ${f.worstN} on the ${f.worst}. Each year with NCAP stars and EPA mpg.`,
   h1: 'Honda Civic recalls by model year',
-  intro: `NHTSA's file holds ${f.c} campaigns on Civic model years 2012 to 2026, at most ${f.maxN} a year; the 2013 Civic has none. Pick your year to see each campaign.`,
+  intro: `NHTSA's file holds ${f.c} Honda Civic recall campaigns on model years 2012 to 2026, at most ${f.maxN} a year; the 2013 Civic has none. Pick your year to see each campaign.`,
   resume: `Honda's compact car has an even recall record: ${f.c} campaigns cover Civic model years 2012 to 2026 in NHTSA's file, including the Civic Hatchback, Si, Type R and Hybrid, which NHTSA sometimes lists under their own names. No year carries more than ${f.maxN} campaigns and the 2013 has none. The tenth generation, launched for 2016 with a turbocharged engine, brought ${f.my(2016)} campaigns on its first year and ${f.my(2017)} on the 2017, on its electric parking brake, LED lights, half shafts and steering. The power train, steering and fuel system tie for first place with ${f.compN(0)} campaigns each. NCAP has rated the Civic five stars overall every year since 2016. The 2025 Civic Hybrid raised the top EPA rating of the range to ${f.epa(2025)?.gasMax} mpg combined, against ${f.epa(2024)?.gasMax} for the best 2024 Civic.`,
   body: (h) => `
 <h2>Steering on the 2022 to 2025 cars</h2>

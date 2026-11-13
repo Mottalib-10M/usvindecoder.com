@@ -10,7 +10,7 @@ export default definePage({
   title: 'Motorcycle VIN Decoder 2026: Free NHTSA Specs and Recalls',
   description: 'Free motorcycle VIN decoder: make, model, year, engine size and type from NHTSA vPIC, plus every recall campaign. Works with the first 11 characters of the VIN.',
   h1: 'Motorcycle VIN decoder',
-  intro: `Type the VIN from the steering head or the frame label; the first 11 characters are enough for the model. Example: ${SAMPLES.moto.vin} reads as a ${m.year} ${m.make} ${m.model}.`,
+  intro: `Type the motorcycle's VIN from the steering head or the frame label; the first 11 characters are enough for the model. Example: ${SAMPLES.moto.vin} reads as a ${m.year} ${m.make} ${m.model}.`,
   resume: `Motorcycles sold in the United States carry the same 17-character VIN as cars, under the same federal rule, 49 CFR Part 565, and their makers file the same VIN decoding data with NHTSA. This decoder reads the structure in your browser, then asks NHTSA vPIC for the make, model, model year, engine displacement, motorcycle type and assembly plant, and the NHTSA Recalls API for every campaign on that model and year. Two things differ from cars. Motorcycle VINs are often stamped into the frame and are hard to read in full; vPIC can decode a pattern of the first 11 characters, with the serial replaced by nothing or an asterisk, and still identify the model. And there are no NCAP crash ratings or EPA fuel economy labels for motorcycles, so those sections stay empty. Recall names can be written differently by vPIC and by the recall database, such as YZF-R1 and YZFR1; the decoder matches them for you.`,
   body: (h) => `
 <h2>Where the VIN is on a motorcycle</h2>

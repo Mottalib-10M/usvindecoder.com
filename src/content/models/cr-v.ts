@@ -7,7 +7,7 @@ export default defineModel({
   title: `Honda CR-V Recalls by Model Year: Gas and Hybrid Since 2012`,
   description: `Honda CR-V recalls by model year from NHTSA's file: ${f.c} campaigns since 2012, ${f.worstN} on the ${f.worst} SUV, fuel pumps first. Each year with NCAP stars and EPA mpg.`,
   h1: 'Honda CR-V recalls by model year',
-  intro: `NHTSA's file holds ${f.c} campaigns on CR-V model years 2012 to 2026, hybrid included; the ${f.worst} CR-V has the most, ${f.worstN}. Pick your year to see each one.`,
+  intro: `NHTSA's file holds ${f.c} Honda CR-V recall campaigns on model years 2012 to 2026, hybrid included; the ${f.worst} CR-V has the most, ${f.worstN}. Pick your year to see each one.`,
   resume: `The CR-V's recall list is longest on its fifth generation, sold from 2017 to 2022, the first with a turbocharged 1.5 liter engine: ${f.my(2017)} campaigns cover the 2017, ${f.my(2019)} the 2019 and ${f.worstN} the ${f.worst}, the peak. In all, NHTSA's file lists ${f.c} campaigns on CR-V and CR-V Hybrid model years 2012 to 2026. The fuel system leads with ${f.compN(0)} campaigns, a reflection of Honda's 2023 fuel pump recall and of fuel supply pipe and high-pressure pump campaigns, ahead of equipment, air bags and electrical faults. The CR-V Fuel Cell EV, a hydrogen plug-in version sold from 2025, appears in campaigns on the tire repair kit. NCAP has rated the CR-V five stars overall every year since 2016. For 2025, the gas CR-V is rated ${f.epa(2025)?.gasMin} mpg combined and the hybrid up to ${f.epa(2025)?.gasMax}.`,
   body: (h) => `
 <h2>Fuel pumps, fuel pipes and the 2023 campaign</h2>

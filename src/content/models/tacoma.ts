@@ -7,7 +7,7 @@ export default defineModel({
   title: `Toyota Tacoma Recalls by Model Year, With NCAP and MPG`,
   description: `Toyota Tacoma recalls by model year from NHTSA's file: ${f.c} campaigns since 2012, none on the 2021 truck, ${f.my(2024)} on the redesigned 2024. NCAP stars and mpg too.`,
   h1: 'Toyota Tacoma recalls by model year',
-  intro: `NHTSA's file lists ${f.c} campaigns on Tacoma model years 2012 to 2026; the 2021 truck has none, the redesigned 2024 has ${f.my(2024)}. Pick your year to see them.`,
+  intro: `NHTSA's file lists ${f.c} Toyota Tacoma recall campaigns on model years 2012 to 2026; the 2021 truck has none, the redesigned 2024 has ${f.my(2024)}. Pick your year to see them.`,
   resume: `The Tacoma, Toyota's midsize pickup, has a short recall list for a truck sold in such numbers: ${f.c} campaigns cover model years 2012 to 2026 in NHTSA's file, at most ${f.maxN} in a year, and none on the ${f.zero.join(' and ')} models. The fourth generation, launched for 2024 with a turbocharged four-cylinder and the i-Force Max hybrid, which NHTSA lists as Tacoma Hybrid, shows ${f.my(2024)} campaigns on its first year and ${f.my(2025)} on the 2025. Equipment leads the systems with ${f.compN(0)} campaigns, a category covering accessories such as running boards and towing hardware, ahead of air bags and brakes. NCAP has rated the Tacoma four stars overall in every rated year we hold, one star below most pickups, largely because of its rollover rating. Fuel economy is modest: ${f.epa(2025)?.gasMin} to ${f.epa(2025)?.gasMax} mpg combined for 2025.`,
   body: (h) => `
 <h2>Brake hoses and suspension on the 2024 trucks</h2>
